@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "/src/assets/blog-placeholder-1.jpg";
+---
+
+<header
+  class="relative isolate pt-14 overflow-hidden h-[101vh] text-white flex
+    items-center"
+>
+  <Image
+    src={HeroImage}
+    alt="A description of my image."
+    class="absolute top-0 w-full h-full object-cover -z-50"
+    quality={10}
+  />
+
+  <div class="absolute inset-0 bg-dark-blue/60 -z-40"></div>
+  <div class="flex w-full justify-center">
+    <div class="px-5 font-medium text-center flex flex-col gap-4 lg:gap-8">
+      <h1 class="lg:text-xl animate-fade-down uppercase tracking-widest">
+        Welcome to High Tide Aviation
+      </h1>
+      <h2
+        class="text-4xl sm:text-5xl lg:text-7xl uppercase max-w-6xl animate-fade-down"
+      >
+        The Southeast Shores' Leading Pilot Training Center
+      </h2>
+      <h3
+        class="text-xl lg:text-3xl animate-fade-down uppercase tracking-widest mb-2"
+      >
+        Southport, NC | St. Simons Island, GA
+      </h3>
+      <div
+        class="flex flex-col md:flex-row items-center gap-5 w-full justify-center md:gap-10 animate-fade-up"
+      >
+        <a href="/intro-flight" target="_blank" class="btn-yellow">Book Now</a>
+        <a href="#home-menu" class="btn-white">Read More</a>
+      </div>
+    </div>
+  </div>
+</header>
