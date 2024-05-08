@@ -5,7 +5,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+        sans: ["Raleway Variable", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        "dark-blue": "#09212b",
+        "medium-blue": "#2cc0ff",
       },
     },
   },

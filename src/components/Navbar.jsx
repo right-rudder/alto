@@ -60,21 +60,21 @@ const Navbar = ({ pathname }) => {
             : "bg-transparent border-white/20"
         } duration-300`}
       >
-        <div className="mx-auto px-5 xl:px-12">
+        <div className="px-5 max-w-7xl mx-auto">
           <div
-            className={`lg:h-24 relative flex h-20 items-center justify-between transition-all`}
+            className={`lg:h-28 relative flex h-20 items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
-              <a href="/">
-                {/* <img
-                  src={HighTideLogo.src}
-                  alt="High Tide Aviation Logo"
-                  className="lg:h-14 h-12 w-auto"
-                /> */}
+              <div className="absolute bg-red-700 top-0 -left-[80rem] lg:-left-[75rem] h-20 lg:h-28 w-[90rem]"></div>
+              <a
+                href="/"
+                className="uppercase text-white font-bold text-3xl tracking-wider z-50 ml-5 lg:ml-10"
+              >
+                Alto
               </a>
               <div className="hidden lg:block">
-                <div className="flex gap-5 xl:gap-10 items-center mx-5">
+                <div className="flex gap-5 xl:gap-10 items-center">
                   {navbarLinks.map((item) => (
                     <NavLink
                       key={item.name}
@@ -84,32 +84,6 @@ const Navbar = ({ pathname }) => {
                       onShow={handleMenuItemClick}
                     />
                   ))}
-                </div>
-              </div>
-              <div className="hidden lg:flex items-center gap-3 text-white border-l border-white/20 pl-10">
-                <a
-                  href="https://shop.flyhightide.com/"
-                  target="_blank"
-                  aria-label="High Tide's Shop"
-                >
-                  <IoStorefront className="size-8 cursor-pointer hover:text-mustard-yellow duration-300 shrink-0" />
-                </a>
-                <a
-                  href={`tel:${PHONE_NUMBER}`}
-                  aria-label="Call High Tide Aviation Now!"
-                  className="group border p-3 border-mustard-yellow rounded-full bg-mustard-yellow hover:bg-white hover:border-white duration-300"
-                >
-                  <FaPhone className="size-4 group-hover:text-dark-blue duration-300" />
-                </a>
-                <div className="hidden xl:block shrink-0">
-                  <p className="text-sm text-white/80">Call Anytime</p>
-                  <a
-                    href={`tel:${PHONE_NUMBER}`}
-                    aria-label="Call High Tide Aviation to Book a Flight Now!"
-                    className="font-medium hover:text-mustard-yellow duration-300"
-                  >
-                    {PHONE_NUMBER}
-                  </a>
                 </div>
               </div>
             </div>
@@ -161,27 +135,14 @@ const Navbar = ({ pathname }) => {
           </div>
         </div>
       </div>
-      <div
-        className={`h-screen w-full bg-black/70 absolute backdrop-blur-sm top-0 duration-300 ${
-          openMobile ? "translate-x-0" : "-translate-x-full delay-300"
-        }`}
-        onClick={handleHamburgerClick}
-      ></div>
 
       <div
         className={`${
-          openMobile ? "max-w-80 delay-300" : "max-w-0"
+          openMobile ? "max-h-screen" : "max-h-0"
         } overflow-x-hidden duration-300 ease-in-out h-screen lg:hidden absolute w-full bg-dark-blue z-50 top-0`}
         id="mobile-menu"
       >
-        <div className="flex justify-between items-center pl-5 pr-[26px] py-6">
-          <a href="/">
-            {/* <img
-              src={HighTideLogo.src}
-              alt="High Tide Aviation Logo"
-              className="h-12 w-auto"
-            /> */}
-          </a>
+        <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
             className={`text-white h-6 w-6 cursor-pointer`}
             fill="none"
@@ -200,26 +161,33 @@ const Navbar = ({ pathname }) => {
           </svg>
         </div>
 
+        <a
+          href="/"
+          className="text-white mx-auto w-fit block mb-5 uppercase font-bold text-3xl"
+        >
+          Alto
+        </a>
+
         <div className="px-4 pb-3 pt-2 flex flex-col">
           <MobileNavbar pathname={pathname} />
         </div>
 
-        <div className="p-5 text-white flex flex-col gap-3 overflow-hidden w-fit">
+        <div className="p-5 text-white flex flex-col gap-3 overflow-hidden items-center">
           <div className="flex gap-3 items-center">
             <a
               href={`mailto:${EMAIL_ADDRESS}`}
-              className="border p-2 w-fit border-mustard-yellow rounded-full bg-mustard-yellow cursor-pointer"
+              className="border p-2 w-fit border-white rounded-full bg-white cursor-pointer"
             >
-              <MdEmail className="size-3" />
+              <MdEmail className="size-3 text-red-700" />
             </a>
             <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
           </div>
           <div className="flex gap-3 items-center">
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="border p-2 w-fit border-mustard-yellow rounded-full bg-mustard-yellow"
+              className="border p-2 w-fit border-white rounded-full bg-white"
             >
-              <FaPhone className="size-3" />
+              <FaPhone className="size-3 text-red-700" />
             </a>
             <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
           </div>
@@ -228,7 +196,7 @@ const Navbar = ({ pathname }) => {
             <a href={FACEBOOK_URL} target="_blank">
               <span className="sr-only">Facebook</span>
               <svg
-                className="size-6"
+                className="size-6 text-red-700"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -243,7 +211,7 @@ const Navbar = ({ pathname }) => {
             <a href={INSTAGRAM_URL} target="_blank">
               <span className="sr-only">Instagram</span>
               <svg
-                className="size-6"
+                className="size-6 text-red-700"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -258,7 +226,7 @@ const Navbar = ({ pathname }) => {
             <a href={YOUTUBE_URL} target="_blank">
               <span className="sr-only">YouTube</span>
               <svg
-                className="size-6"
+                className="size-6 text-red-700"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

@@ -14,8 +14,8 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
       <a
         id={menuItem.name}
         href={menuItem.link}
-        className={`w-full flex items-center justify-between py-3 whitespace-nowrap ${
-          isActive ? "text-mustard-yellow" : "text-white"
+        className={`w-full flex items-center font-bold justify-between py-3 whitespace-nowrap ${
+          isActive ? "text-red-700" : "text-white"
         }`}
       >
         <p className="pointer-events-none">{menuItem.name}</p>
@@ -26,18 +26,18 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
       <button
         id={menuItem.name}
         onClick={onShow}
-        className={`w-full flex items-center justify-between py-3 whitespace-nowrap ${
-          isActive ? "text-mustard-yellow" : "text-white"
+        className={`w-full flex items-center font-bold justify-between py-3 whitespace-nowrap ${
+          isActive ? "text-red-700" : "text-white"
         }`}
       >
         <p className="pointer-events-none">{menuItem.name}</p>
         <div
-          className={` p-1 pointer-events-none duration-300 ${
-            toggled ? "bg-white rotate-90" : "bg-mustard-yellow"
+          className={`p-1 pointer-events-none duration-300 rounded-full ${
+            toggled ? "bg-white rotate-90" : "bg-red-700 -rotate-90"
           }`}
         >
           <IoIosArrowForward
-            className={`${toggled ? "text-mustard-yellow" : "text-white"} size-5`}
+            className={`${toggled ? "text-red-700" : "text-white"} size-5`}
           />
         </div>
       </button>
@@ -45,12 +45,12 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
   }
 
   return (
-    <div className="flex flex-col items-start border-t border-white/30 last:border-b">
+    <div className="flex flex-col max-w-md mx-auto w-full border-t border-white/20 last:border-b">
       {buttonOrAnchor}
       <ul
         className={`overflow-hidden text-white ${
           toggled ? "max-h-[30rem]" : "max-h-0"
-        } transition-[max-height] duration-300 ease-in-out w-full pl-3 }`}
+        } transition-[max-height] duration-300 ease-in-out pl-3 }`}
       >
         {menuItem.submenu.map((item) => (
           <li
@@ -59,9 +59,9 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
           >
             <a
               href={item.link}
-              className={`block w-full py-3  ${
+              className={`block py-3 font-bold ${
                 item.link === pathname || item.link + "/" === pathname
-                  ? "text-mustard-yellow"
+                  ? "text-red-700"
                   : ""
               }`}
             >

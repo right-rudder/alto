@@ -14,8 +14,8 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
       <a
         name={menuItem.name}
         href={menuItem.link}
-        className={`cursor-pointer font-semibold text-sm xl:text-base tracking-widest duration-300 hover:text-mustard-yellow py-12 border-main-red whitespace-nowrap uppercase ${
-          isActive ? "text-mustard-yellow" : "text-white"
+        className={`font-semibold text-sm tracking-widest duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap ${
+          isActive ? "text-red-700" : "text-white"
         }`}
       >
         {menuItem.name}
@@ -25,8 +25,8 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
     linkOrDropdown = (
       <a
         name={menuItem.name}
-        className={`font-semibold cursor-default text-sm xl:text-base tracking-widest duration-300 hover:text-mustard-yellow py-12 border-main-red whitespace-nowrap uppercase ${
-          isActive ? "text-mustard-yellow" : "text-white"
+        className={`font-semibold cursor-default text-sm tracking-widest duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap ${
+          isActive ? "text-red-700" : "text-white"
         }`}
       >
         {menuItem.name}
@@ -34,12 +34,17 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
     );
   }
   return (
-    <div className="relative" onMouseEnter={onShow} onMouseLeave={onShow}>
+    <div
+      className="relative"
+      onMouseEnter={onShow}
+      onMouseLeave={onShow}
+      name={menuItem.name}
+    >
       {linkOrDropdown}
       <div
         className={`overflow-hidden ${
-          toggled ? "max-h-[30rem] opacity-100" : "max-h-0 opacity-0"
-        } w-64 duration-700 ease-in-out absolute bg-white flex flex-col whitespace-nowrap top-[61px]`}
+          toggled ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+        } w-64 duration-700 ease-in-out absolute bg-dark-blue text-white flex flex-col whitespace-nowrap top-[50px]`}
       >
         {menuItem.submenu.map((item) => (
           <a
@@ -47,12 +52,12 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
             href={item.link}
             className={`${
               item.link === pathname || item.link + "/" === pathname
-                ? "bg-mustard-yellow/50 text-dark-blue"
-                : "text-gray-500"
-            } my-2 mx-5 px-3 py-2 hover:bg-mustard-yellow/15 font-medium group duration-200 hover:text-dark-blue first:mt-8 last:mb-8 flex items-center justify-between`}
+                ? "bg-dark-blue "
+                : ""
+            } mx-5 px-3 py-2 text-sm font-semibold duration-200 hover:text-red-700 first:mt-8 last:mb-8 flex items-center justify-between`}
           >
             <p>{item.name}</p>
-            <IoIosArrowForward className="text-dark-blue opacity-0 group-hover:opacity-100 duration-200" />
+            <IoIosArrowForward className="" />
           </a>
         ))}
       </div>

@@ -5,7 +5,7 @@ export const navbarLinks = [
     submenu: [],
   },
   {
-    name: "Why become a pilot?",
+    name: "Why Become a Pilot?",
     link: "/why-become-a-pilot",
     submenu: [],
   },
@@ -68,8 +68,8 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Contact Us",
-    link: "/contact-us",
+    name: "Contact",
+    link: "/contact",
     submenu: [],
   },
 ];

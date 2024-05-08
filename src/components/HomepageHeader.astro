@@ -1,10 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import HeroImage from "/src/assets/blog-placeholder-1.jpg";
+import HeroImage from "/src/assets/homepage-banner.jpg";
 ---
 
 <header
-  class="relative isolate pt-14 overflow-hidden h-[101vh] text-white flex
+  class="relative isolate pt-14 overflow-hidden h-[60vh] lg:h-[80vh] text-white flex
     items-center"
 >
   <Image
@@ -14,28 +14,13 @@ import HeroImage from "/src/assets/blog-placeholder-1.jpg";
     quality={10}
   />
 
-  <div class="absolute inset-0 bg-dark-blue/60 -z-40"></div>
-  <div class="flex w-full justify-center">
-    <div class="px-5 font-medium text-center flex flex-col gap-4 lg:gap-8">
-      <h1 class="lg:text-xl animate-fade-down uppercase tracking-widest">
-        Welcome to High Tide Aviation
-      </h1>
-      <h2
-        class="text-4xl sm:text-5xl lg:text-7xl uppercase max-w-6xl animate-fade-down"
-      >
-        The Southeast Shores' Leading Pilot Training Center
-      </h2>
-      <h3
-        class="text-xl lg:text-3xl animate-fade-down uppercase tracking-widest mb-2"
-      >
-        Southport, NC | St. Simons Island, GA
-      </h3>
-      <div
-        class="flex flex-col md:flex-row items-center gap-5 w-full justify-center md:gap-10 animate-fade-up"
-      >
-        <a href="/intro-flight" target="_blank" class="btn-yellow">Book Now</a>
-        <a href="#home-menu" class="btn-white">Read More</a>
-      </div>
-    </div>
+  <div class="absolute inset-0 bg-dark-blue/30 -z-40"></div>
+  <div
+    class="flex w-full max-w-7xl mx-auto px-5 font-medium flex-col gap-4 lg:gap-8"
+  >
+    <h1 class="text-5xl max-w-xl lg:text-8xl font-extrabold lg:max-w-4xl">
+      Get a pilot license to start a career
+    </h1>
+    <a href="/intro-flight" target="_blank" class="btn-dark-blue">Book Now</a>
   </div>
 </header>
