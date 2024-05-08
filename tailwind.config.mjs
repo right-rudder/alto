@@ -14,4 +14,8 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    "[counter-set:_num_var(--num-graduates)]",
+    "[counter-set:_num_var(--num-professionals)]",
+  ],
 };

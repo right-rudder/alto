@@ -5,9 +5,24 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import HomepageHeader from "../components/HomepageHeader.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import StatCard from "../components/StatCard.astro";
+import { stats } from "../data/stats";
+import CTAform from "../components/CTAform.astro";
 ---
 
 <BaseLayout>
   <HomepageHeader slot="header" />
+  <section class="lg:max-h-[20rem]">
+    <div
+      class="max-w-7xl mx-auto px-5 flex flex-col lg:flex-row justify-between"
+    >
+      <div class="grid grid-cols-2 w-full">
+        {stats.map((stat) => <StatCard {...stat} />)}
+      </div>
+      <div class="lg:-translate-y-52">
+        <CTAform />
+      </div>
+    </div>
+  </section>
   <section class="h-[120rem]">something</section>
 </BaseLayout>

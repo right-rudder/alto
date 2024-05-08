@@ -13,3 +13,26 @@
     @apply block text-center font-medium uppercase py-4 px-14 bg-dark-blue w-fit text-white hover:bg-mustard-yellow hover:text-dark-blue rounded-full duration-300;
   } */
 }
+
+@property --num-graduates {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num-professionals {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes counter {
+  from {
+    --num-graduates: 0;
+    --num-professionals: 0;
+  }
+  to {
+    --num-graduates: 568;
+    --num-professionals: 345;
+  }
+}
