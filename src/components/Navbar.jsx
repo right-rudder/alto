@@ -60,7 +60,7 @@ const Navbar = ({ pathname }) => {
             : "bg-transparent border-white/20"
         } duration-300`}
       >
-        <div className="px-5 max-w-7xl mx-auto">
+        <div className="px-5 max-w-7xl mx-auto ">
           <div
             className={`lg:h-28 relative flex h-20 items-center justify-between transition-all`}
             id="navbar"
@@ -69,7 +69,7 @@ const Navbar = ({ pathname }) => {
               <div className="absolute bg-red-700 top-0 -left-[80rem] lg:-left-[75rem] h-20 lg:h-28 w-[90rem]"></div>
               <a
                 href="/"
-                className="uppercase text-white font-bold text-3xl tracking-wider z-50 ml-5 lg:ml-10"
+                className="uppercase text-white z-50 font-bold text-3xl tracking-wider ml-5 lg:ml-10"
               >
                 Alto
               </a>

@@ -11,6 +11,15 @@ export default {
         "dark-blue": "#09212b",
         "medium-blue": "#2cc0ff",
       },
+      keyframes: {
+        "slow-zoom": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+        },
+      },
+      animation: {
+        "slow-zoom": "slow-zoom 30s infinite",
+      },
     },
   },
   plugins: [],
