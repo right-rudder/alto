@@ -11,6 +11,9 @@ import CTAform from "../components/CTAform.astro";
 import { FaCheck } from "react-icons/fa";
 import CourseCard from "../components/CourseCard.astro";
 import { courses } from "../data/coursesData";
+import { blogSampleData } from "../data/blogSampleData";
+import BlogSmallCard from "../components/BlogSmallCard.astro";
+import BlogBigCard from "../components/BlogBigCard.astro";
 ---
 
 <BaseLayout>
@@ -55,26 +58,26 @@ import { courses } from "../data/coursesData";
         </p>
         <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
           <li class="flex gap-2 items-center">
-            <div class="p-2 bg-medium-blue rounded-full">
-              <FaCheck className="size-3" />
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
             </div>
             <p>Beginners</p>
           </li>
           <li class="flex gap-2 items-center">
-            <div class="p-2 bg-medium-blue rounded-full">
-              <FaCheck className="size-3" />
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
             </div>
             <p>Degree</p>
           </li>
           <li class="flex gap-2 items-center">
-            <div class="p-2 bg-medium-blue rounded-full">
-              <FaCheck className="size-3" />
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
             </div>
             <p>Overseas</p>
           </li>
           <li class="flex gap-2 items-center">
-            <div class="p-2 bg-medium-blue rounded-full">
-              <FaCheck className="size-3" />
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
             </div>
             <p>Hobby</p>
           </li>
@@ -95,9 +98,9 @@ import { courses } from "../data/coursesData";
       </div>
     </div>
     <div
-      class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-40 left-32 right-32 bg-medium-blue pt-32 pb-24 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-24 z-10"
+      class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-32 left-32 right-32 bg-red-700 pt-28 pb-20 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-24 z-10"
     >
-      <h3 class="text-dark-blue font-bold text-3xl flex-1">
+      <h3 class="text-white font-bold text-3xl flex-1">
         Hurry up! New courses will start on February 17, 2020
       </h3>
       <div class="flex relative flex-1 w-full">
@@ -108,7 +111,7 @@ import { courses } from "../data/coursesData";
         />
         <button
           type="submit"
-          class="btn-dark-blue px-8 absolute right-0 py-4 top-[1px]"
+          class="btn-dark-blue px-8 absolute right-[1px] py-4 top-[1px]"
         >
           Subscribe
         </button>
@@ -116,5 +119,21 @@ import { courses } from "../data/coursesData";
     </div>
   </section>
 
-  <section class="pb-24 px-5 pt-52"></section>
+  <section class="py-24 px-5 lg:pt-56">
+    <div class="max-w-lg lg:max-w-7xl mx-auto flex gap-16">
+      <div>
+        <h2 class="text-5xl font-bold">Our latest news and reports</h2>
+        <div class="flex flex-col gap-10 lg:gap-5 mt-10">
+          {
+            blogSampleData
+              .slice(0, 3)
+              .map((blog) => <BlogSmallCard {...blog} />)
+          }
+        </div>
+      </div>
+      <div class="hidden lg:flex gap-10">
+        {blogSampleData.slice(3, 6).map((blog) => <BlogBigCard {...blog} />)}
+      </div>
+    </div>
+  </section>
 </BaseLayout>
