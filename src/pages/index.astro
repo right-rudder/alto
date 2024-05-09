@@ -2,7 +2,14 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  PHONE_NUMBER,
+  AIRPORT,
+  ADDRESS_LINE_1,
+  ADDRESS_LINE_2,
+} from "../consts";
 import HomepageHeader from "../components/HomepageHeader.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import StatCard from "../components/StatCard.astro";
@@ -14,6 +21,11 @@ import { courses } from "../data/coursesData";
 import { blogSampleData } from "../data/blogSampleData";
 import BlogSmallCard from "../components/BlogSmallCard.astro";
 import BlogBigCard from "../components/BlogBigCard.astro";
+import { getImage } from "astro:assets";
+import { Image } from "astro:assets";
+import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
 ---
 
 <BaseLayout>
@@ -107,7 +119,7 @@ import BlogBigCard from "../components/BlogBigCard.astro";
       </div>
     </div>
     <div
-      class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-32 left-32 right-32 bg-red-700 pt-28 pb-20 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-24 z-10"
+      class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-28 left-32 right-32 bg-red-700 py-20 lg:pt-28 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
     >
       <h3 class="text-white font-bold text-3xl flex-1">
         Hurry up! New courses will start on February 17, 2020
@@ -142,6 +154,48 @@ import BlogBigCard from "../components/BlogBigCard.astro";
       </div>
       <div class="hidden lg:flex gap-10">
         {blogSampleData.slice(3, 6).map((blog) => <BlogBigCard {...blog} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 px-5 relative overflow-hidden">
+    <Image
+      src={ComponentBackground}
+      alt="View from the skies inside Alto airplane"
+      class="absolute inset-0 object-cover w-full h-full"
+    />
+    <div class="bg-white/10 w-full h-full absolute inset-0"></div>
+    <div
+      class="max-w-7xl mx-auto z-20 relative text-dark-blue flex justify-between items-center flex-col lg:flex-row gap-10"
+    >
+      <h2 class="text-5xl font-bold max-w-sm">
+        <span class="text-white">Get in touch</span> with us
+      </h2>
+      <div class="flex">
+        <IoPhonePortraitOutline className="size-24 text-dark-blue" />
+        <div class="flex flex-col justify-between font-bold">
+          <a class="text-white font-bold text-2xl" href=`tel:${PHONE_NUMBER}`
+            >{PHONE_NUMBER}</a
+          >
+          <div class="flex flex-col">
+            <p>Monday — Saturday: 8.00am - 5.00pm</p>
+            <p>Sunday: 12.00pm - 5.00pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex">
+        <IoLocationOutline className="size-24 text-dark-blue" />
+        <div class="flex flex-col justify-between font-bold">
+          <a
+            class="text-white font-bold text-2xl"
+            href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
+            target="_blank">{AIRPORT}</a
+          >
+          <div class="flex flex-col">
+            <p>{ADDRESS_LINE_1}</p>
+            <p>{ADDRESS_LINE_2}</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
