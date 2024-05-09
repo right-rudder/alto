@@ -10,35 +10,35 @@ export const navbarLinks = [
     submenu: [],
   },
   {
-    name: "Flight Programs",
+    name: "Our Courses",
     submenu: [
       {
         name: "Ground School",
-        link: "/flight-program/ground-school",
+        link: "/courses/ground-school",
       },
       {
         name: "Private Pilot",
-        link: "/flight-program/private-pilot",
+        link: "/courses/private-pilot",
       },
       {
         name: "Instrument Rating",
-        link: "/flight-program/instrument-rating",
+        link: "/courses/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/flight-program/commercial-pilot",
+        link: "/courses/commercial-pilot",
       },
       {
         name: "Flight Instructor",
-        link: "/flight-program/flight-instructor",
+        link: "/courses/flight-instructor",
       },
       {
         name: "Multi-Engine Rating",
-        link: "/flight-program/multi-engine",
+        link: "/courses/multi-engine",
       },
       {
         name: "Airline Transport Pilot",
-        link: "/flight-program/atp",
+        link: "/courses/atp",
       },
     ],
   },
