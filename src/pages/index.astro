@@ -9,6 +9,8 @@ import StatCard from "../components/StatCard.astro";
 import { stats } from "../data/stats";
 import CTAform from "../components/CTAform.astro";
 import { FaCheck } from "react-icons/fa";
+import CourseCard from "../components/CourseCard.astro";
+import { courses } from "../data/coursesData";
 ---
 
 <BaseLayout>
@@ -46,7 +48,7 @@ import { FaCheck } from "react-icons/fa";
         <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
           Let your dreams take a flight
         </h2>
-        <p class="text-gray-500 font-medium leading-loose">
+        <p class="paragraph">
           At this academy, the instructors are 100% committed to providing the
           highest quality flight training. We guarantee a supportive and
           friendly environment with a motivating professional team.
@@ -80,4 +82,39 @@ import { FaCheck } from "react-icons/fa";
       </div>
     </div>
   </section>
+
+  <section class="py-24 px-5 bg-dark-blue relative">
+    <div class="max-w-7xl mx-auto text-white z-20 relative">
+      <h2 class="text-5xl font-bold">
+        <span class="text-red-700">Find the right</span> course for you
+      </h2>
+      <div
+        class="grid lg:grid-cols-3 max-w-xl mx-auto lg:max-w-none gap-16 mt-10"
+      >
+        {courses.map((course) => <CourseCard {...course} />)}
+      </div>
+    </div>
+    <div
+      class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-40 left-32 right-32 bg-medium-blue pt-32 pb-24 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-24 z-10"
+    >
+      <h3 class="text-dark-blue font-bold text-3xl flex-1">
+        Hurry up! New courses will start on February 17, 2020
+      </h3>
+      <div class="flex relative flex-1 w-full">
+        <input
+          type="text"
+          placeholder="Your email"
+          class="px-5 py-4 w-full outline-1 border-gray-300 border outline-gray-400 rounded-full"
+        />
+        <button
+          type="submit"
+          class="btn-dark-blue px-8 absolute right-0 py-4 top-[1px]"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-24 px-5 pt-52"></section>
 </BaseLayout>
