@@ -5,8 +5,8 @@ export const stats = [
     cssVariable: "--num-graduates",
   },
   {
-    value: 1,
-    title: "hours of professional flight instruction",
+    value: 50000,
+    title: "Flight hours of instruction",
     cssVariable: "--num-professionals",
   },
 ];
