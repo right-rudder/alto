@@ -5,8 +5,8 @@ export const stats = [
     cssVariable: "--num-graduates",
   },
   {
-    value: 345,
-    title: "professionals in our team",
+    value: 1,
+    title: "hours of professional flight instruction",
     cssVariable: "--num-professionals",
   },
 ];

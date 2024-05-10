@@ -69,9 +69,10 @@ const Navbar = ({ pathname }) => {
               <div className="absolute bg-red-700 top-0 -left-[80rem] lg:-left-[75rem] h-20 lg:h-28 w-[90rem]"></div>
               <a
                 href="/"
-                className="uppercase text-white z-50 font-bold text-3xl tracking-wider ml-5 lg:ml-10"
+                className="uppercase text-white z-50 font-bold text-3xl tracking-wider ml-3 lg:ml-8"
               >
-                Alto
+                Alto<br />
+                <span className="text-sm lg:text-xl text-gray-200">Flight Academy</span>
               </a>
               <div className="hidden lg:block">
                 <div className="flex gap-5 xl:gap-10 items-center">
