@@ -26,6 +26,7 @@ import { Image } from "astro:assets";
 import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
+import CoursesCarrousel from "../components/CoursesCarrousel";
 ---
 
 <BaseLayout>
@@ -108,7 +109,7 @@ import { IoLocationOutline } from "react-icons/io5";
   </section>
 
   <section class="py-24 px-5 bg-dark-blue relative">
-    <div class="max-w-7xl mx-auto text-white z-20 relative">
+    <!-- <div class="max-w-7xl mx-auto text-white z-20 relative">
       <h2 class="text-5xl font-bold">
         <span class="text-red-700">Find the right</span> course for you
       </h2>
@@ -117,7 +118,8 @@ import { IoLocationOutline } from "react-icons/io5";
       >
         {courses.map((course) => <CourseCard {...course} />)}
       </div>
-    </div>
+    </div> -->
+    <CoursesCarrousel client:visible />
     <div
       class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-28 left-32 right-32 bg-red-700 py-20 lg:pt-28 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
     >
