@@ -1,0 +1,23 @@
+---
+import Header from "../../components/Header.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CourseLayout from "../../layouts/CourseLayout.astro";
+import allCoursesData from "../../data/allCoursesData";
+export function getStaticPaths() {
+  return allCoursesData.map(({ data, slug }) => {
+    return {
+      params: { slug },
+      props: {
+        data,
+      },
+    };
+  });
+}
+
+const { data } = Astro.props;
+---
+
+<BaseLayout>
+  <Header slot="header" data={data} />
+  <CourseLayout data={data} />
+</BaseLayout>

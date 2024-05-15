@@ -1,6 +1,6 @@
-const groundSchoolData = {
+const multiEngineRatingData = {
   data: {
-    title: "Ground School",
+    title: "Multi-Engine Rating",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
     price: "$1350",
     intro:
@@ -34,7 +34,7 @@ const groundSchoolData = {
       "Pass the practical test",
     ],
   },
-  slug: "ground-school",
+  slug: "multi-engine-rating",
 };
 
-export default groundSchoolData;
+export default multiEngineRatingData;

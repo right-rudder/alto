@@ -29,11 +29,11 @@ export const navbarLinks = [
       },
       {
         name: "Multi-Engine Rating",
-        link: "/courses/multi-engine",
+        link: "/courses/multi-engine-rating",
       },
       {
         name: "Airline Transport Pilot",
-        link: "/courses/atp",
+        link: "/courses/airline-transport-pilot",
       },
     ],
   },

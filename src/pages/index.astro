@@ -1,10 +1,5 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import {
-  SITE_TITLE,
-  SITE_DESCRIPTION,
   PHONE_NUMBER,
   AIRPORT,
   ADDRESS_LINE_1,
@@ -16,12 +11,9 @@ import StatCard from "../components/StatCard.astro";
 import { stats } from "../data/stats";
 import CTAform from "../components/CTAform.astro";
 import { FaCheck } from "react-icons/fa";
-import CourseCard from "../components/CourseCard.astro";
-import { courses } from "../data/coursesData";
 import { blogSampleData } from "../data/blogSampleData";
 import BlogSmallCard from "../components/BlogSmallCard.astro";
 import BlogBigCard from "../components/BlogBigCard.astro";
-import { getImage } from "astro:assets";
 import { Image } from "astro:assets";
 import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
 import { IoPhonePortraitOutline } from "react-icons/io5";
@@ -209,5 +201,4 @@ import CoursesCarrousel from "../components/CoursesCarrousel";
   defer
   crossorigin="anonymous"
   src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
-  nonce="jR0DcSkY"
-></script>
+  nonce="jR0DcSkY"></script>
