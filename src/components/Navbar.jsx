@@ -66,13 +66,15 @@ const Navbar = ({ pathname }) => {
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
-              <div className="absolute bg-red-700 top-0 -left-[80rem] lg:-left-[75rem] h-20 lg:h-28 w-[90rem]"></div>
+              <div className="absolute bg-red-700 top-0 -left-[77rem] lg:-left-[73rem] h-20 lg:h-28 w-[90rem]"></div>
               <a
                 href="/"
-                className="uppercase text-white z-50 font-bold text-3xl tracking-wider ml-3 lg:ml-8"
+                className="uppercase leading-none flex flex-col text-white z-50 font-bold text-4xl tracking-wider ml-3 lg:ml-8"
               >
-                Alto<br />
-                <span className="text-sm lg:text-xl text-gray-200">Flight Academy</span>
+                <p>Alto</p>
+                <p className="text-sm font-extrabold lg:text-xl text-gray-200">
+                  Flight Academy
+                </p>
               </a>
               <div className="hidden lg:block">
                 <div className="flex gap-5 xl:gap-10 items-center">

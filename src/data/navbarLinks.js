@@ -1,10 +1,5 @@
 export const navbarLinks = [
   {
-    name: "Home",
-    link: "/",
-    submenu: [],
-  },
-  {
     name: "Why Become a Pilot?",
     link: "/why-become-a-pilot",
     submenu: [],

@@ -14,8 +14,8 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
       <a
         name={menuItem.name}
         href={menuItem.link}
-        className={`font-bold text-sm tracking-widest duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap ${
-          isActive ? "text-red-700" : "text-white"
+        className={`font-black text-lg tracking-widest duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap ${
+          isActive ? "text-red-600" : "text-white"
         }`}
       >
         {menuItem.name}
@@ -25,8 +25,8 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
     linkOrDropdown = (
       <a
         name={menuItem.name}
-        className={`font-semibold cursor-default text-sm tracking-widest duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap ${
-          isActive ? "text-red-700" : "text-white"
+        className={`font-black cursor-default text-lg tracking-widest duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap ${
+          isActive ? "text-red-600" : "text-white"
         }`}
       >
         {menuItem.name}
