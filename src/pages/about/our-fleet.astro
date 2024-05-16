@@ -1,0 +1,20 @@
+---
+import Header from "../../components/Header.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const headerData = {
+  title: "Our Fleet",
+  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
+  headerAlt: "Cessna flying over Sundance Airport",
+};
+import fleet from "../../data/fleet";
+import PlaneCard from "../../components/PlaneCard.astro";
+---
+
+<BaseLayout>
+  <Header slot="header" data={headerData} />
+  <section class="py-12 px-5">
+    <div class="max-w-7xl mx-auto flex flex-col gap-20">
+      {fleet.map((plane) => <PlaneCard {...plane} />)}
+    </div>
+  </section>
+</BaseLayout>

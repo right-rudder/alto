@@ -6,7 +6,7 @@ export const stats = [
   },
   {
     value: 50000,
-    title: "Flight hours of instruction",
+    title: "flight hours of instruction",
     cssVariable: "--num-professionals",
   },
 ];
