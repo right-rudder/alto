@@ -1,0 +1,97 @@
+---
+import Header from "../components/Header.astro";
+import TeamMemberCard from "../components/TeamMemberCard.astro";
+import team from "../data/team";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const headerData = {
+  title: "Why become a pilot?",
+  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
+  headerAlt: "Cessna flying over Sundance Airport",
+};
+import EmailCTA from "../components/EmailCTA.astro";
+import { FaCheck } from "react-icons/fa";
+import { Image } from "astro:assets";
+import PiperArrow from "../assets/piper-arrow.jpg";
+import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
+---
+
+<BaseLayout>
+  <Header slot="header" data={headerData} />
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <Image
+          class="rounded-lg"
+          src={PiperArrow}
+          alt="Cessna flying over Sundance Airport"
+        />
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          Why learn to fly?
+        </h2>
+        <p class="paragraph">
+          Becoming a pilot is a dream for many people. It's a career that offers
+          a lot of excitement and adventure, as well as the opportunity to see
+          the world from a whole new perspective. But there are also many other
+          reasons why becoming a pilot is a great choice. We offer a variety of
+          programs to help you achieve your dreams like:
+        </p>
+        <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Private Pilot</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Commercial Pilot</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Multi-Engine Rating</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Airline Transport Pilot</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-36 px-5 relative overflow-hidden">
+    <Image
+      src={ComponentBackground}
+      alt="View from the skies inside Alto airplane"
+      class="absolute inset-0 object-cover w-full h-full"
+    />
+    <div class="bg-white/10 w-full h-full absolute inset-0"></div>
+    <div
+      class="max-w-7xl mx-auto z-10 relative text-white flex justify-between items-center flex-col gap-8"
+    >
+      <h2 class="text-6xl font-extrabold">
+        <span class="text-dark-blue">Let your dreams</span> take a flight!
+      </h2>
+      <p class="font-semibold text-lg leading-relaxed max-w-5xl text-center">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quidem
+        ab, ipsum, voluptatem itaque possimus delectus qui fuga deserunt
+        deleniti eaque optio perspiciatis similique quisquam ad aperiam sed
+        dolorem eum.
+      </p>
+      <a href="#" class="btn-dark-blue">Contact us</a>
+    </div>
+  </section>
+
+  <EmailCTA />
+</BaseLayout>
