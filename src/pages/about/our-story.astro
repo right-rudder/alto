@@ -1,0 +1,204 @@
+---
+import Header from "../../components/Header.astro";
+import TeamMemberCard from "../../components/TeamMemberCard.astro";
+import team from "../../data/team";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const headerData = {
+  title: "Our Story",
+  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
+  headerAlt: "Cessna flying over Sundance Airport",
+};
+import EmailCTA from "../../components/EmailCTA.astro";
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import PilotImage from "../../assets/team-member-1.jpg";
+import Signature from "../../assets/signature.webp";
+import { ImQuotesLeft } from "react-icons/im";
+import { ImAirplane } from "react-icons/im";
+import { GrVirtualMachine } from "react-icons/gr";
+import { FaClipboardUser } from "react-icons/fa6";
+import { MdVerifiedUser } from "react-icons/md";
+import Post1 from "../../assets/post1.jpg";
+import Post5 from "../../assets/post5.jpg";
+import reviews from "../../data/reviews";
+---
+
+<BaseLayout>
+  <Header slot="header" data={headerData} />
+
+  <section class="pb-12 pt-24 px-5">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="flex flex-col gap-5 sm:col-span-2 lg:col-span-1">
+        <h2 class="text-5xl text-dark-blue font-bold leading-tight">
+          About Us
+        </h2>
+        <p class="paragraph">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+          iste hic nesciunt consectetur totam dolorum adipisci ut debitis,
+          similique vero molestiae magnam nobis quam voluptates itaque ratione
+          nostrum asperiores reprehenderit.
+        </p>
+        <p class="paragraph">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+          iste hic nesciunt consectetur totam dolorum adipisci ut debitis,
+          similique vero molestiae magnam nobis quam voluptates itaque ratione
+          nostrum asperiores reprehenderit.
+        </p>
+        <p class="paragraph">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+          iste hic nesciunt consectetur totam dolorum dipisci ut debitis,
+          similique vero
+        </p>
+      </div>
+      <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
+        <Image
+          src={PilotImage}
+          alt="Cessna flying over Sundance Airport"
+          class="h-full w-full object-cover object-top lg:max-h-none"
+        />
+      </div>
+      <div
+        class="bg-dark-blue text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
+      >
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <p class="text-lg font-bold">
+          Alto Flight Academy was founded in 2019 by a group of aviation
+          enthusiasts who wanted to share their love of flying with the world.
+          Our mission is to provide safe, affordable flight training to anyone
+          who has ever dreamed of becoming a pilot.
+        </p>
+        <Image
+          src={Signature}
+          alt="Cessna flying over Sundance Airport"
+          class=""
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 px-5">
+    <div
+      class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-dark-blue"
+    >
+      <div class="flex flex-col gap-3">
+        <ImAirplane className="text-red-700 size-14" />
+        <h3 class="text-3xl font-bold">100% newest fleet available</h3>
+        <p class="paragraph">
+          We possess the newest fleet that allows you to be trained and then
+          work in the best environment.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <GrVirtualMachine className="text-red-700 size-14" />
+        <h3 class="text-3xl font-bold">New professional simulators</h3>
+        <p class="paragraph">
+          Advanced training makes us going on the leading edge owing to the
+          State-of-the-art equipment.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <FaClipboardUser className="text-red-700 size-14" />
+        <h3 class="text-3xl font-bold">12,000+ pilots accredited</h3>
+        <p class="paragraph">
+          This fact proves that you'll be at the academy that supplies the
+          world's airlines with the best pilots.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <MdVerifiedUser className="text-red-700 size-14" />
+        <h3 class="text-3xl font-bold">Fully accredited and secure</h3>
+        <p class="paragraph">
+          As a fully accredited flight academy, we have built our name an
+          reputation for over 25 years.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5 bg-dark-blue">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-5xl text-white font-bold mx-auto w-fit">
+        <span class="text-red-700">Meet</span> Our Team
+      </h2>
+      <div class="grid gap-5 lg:grid-cols-3 mt-10">
+        {
+          team.map((member) => (
+            <TeamMemberCard
+              name={member.name}
+              qualifications={member.qualifications}
+              imagePath={member.imagePath}
+              bio={member.bio}
+            />
+          ))
+        }
+      </div>
+      <a href="our-team" class="btn-red block mt-10 mx-auto">View all members</a
+      >
+    </div>
+  </section>
+
+  <section class="py-24 px-5">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="flex flex-col gap-5 sm:col-span-2 lg:col-span-1">
+        <h2 class="text-5xl text-dark-blue font-bold leading-tight">
+          Students about the training team
+        </h2>
+        <ImQuotesLeft className="text-red-700 size-8" />
+        <div id="reviews-container" class="duration-1000">
+          <p id="review-text" class="paragraph">
+            I earned my private pilot license through High Tide out of St Simons
+            Island, GA. They are an excellent program with a great cadre of
+            instructors. I am very thankful to have had such a great team to
+            help me start this journey into aviation!
+          </p>
+          <p id="review-author" class="mt-5 md:text-xl">Jake B.</p>
+        </div>
+      </div>
+      <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
+        <Image
+          src={Post1}
+          alt="Cessna flying over Sundance Airport"
+          class="h-full w-full object-cover object-top lg:max-h-none"
+        />
+      </div>
+      <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
+        <Image
+          src={Post5}
+          alt="Cessna flying over Sundance Airport"
+          class="h-full w-full object-cover object-top lg:max-h-none"
+        />
+      </div>
+    </div>
+  </section>
+
+  <EmailCTA />
+</BaseLayout>
+
+<script define:vars={{ reviews }}>
+  let currentIndex = 0;
+  const reviewTextElement = document.getElementById("review-text");
+  const reviewAuthorElement = document.getElementById("review-author");
+  const reviewsContainerElement = document.getElementById("reviews-container");
+
+  function showMessage() {
+    if (reviewAuthorElement && reviewTextElement) {
+      reviewTextElement.textContent = reviews[currentIndex].review;
+      reviewAuthorElement.textContent = `— ${reviews[currentIndex].name}`;
+    }
+    reviewsContainerElement?.classList.add("opacity-100");
+    reviewsContainerElement?.classList.remove("opacity-0");
+
+    currentIndex = (currentIndex + 1) % reviews.length;
+
+    setTimeout(hideMessage, 6000);
+  }
+
+  function hideMessage() {
+    reviewsContainerElement?.classList.remove("opacity-100");
+    reviewsContainerElement?.classList.add("opacity-0");
+
+    setTimeout(showMessage, 1200);
+  }
+
+  showMessage();
+</script>
