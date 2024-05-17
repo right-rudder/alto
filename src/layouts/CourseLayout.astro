@@ -5,6 +5,7 @@ import type { ImageMetadata } from "astro";
 import CourseInfo from "../components/CourseInfo";
 import CourseCard from "../components/CourseCard.astro";
 import { courses } from "../data/coursesData";
+import EmailCTA from "../components/EmailCTA.astro";
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
@@ -64,25 +65,4 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   </div>
 </section>
 
-<section class="bg-red-700 py-12 px-5">
-  <div
-    class="max-w-xl lg:max-w-7xl mx-auto flex flex-col lg:flex-row gap-5 lg:gap-20 items-center"
-  >
-    <h3 class="text-white font-bold text-3xl flex-1">
-      Hurry up! New courses will start on June 17, 2024
-    </h3>
-    <div class="flex relative flex-1 w-full">
-      <input
-        type="text"
-        placeholder="Your email"
-        class="px-5 py-4 w-full outline-1 border-gray-300 border outline-gray-400 rounded-full"
-      />
-      <button
-        type="submit"
-        class="btn-dark-blue px-8 absolute right-[1px] py-4 top-[1px]"
-      >
-        Subscribe
-      </button>
-    </div>
-  </div>
-</section>
+<EmailCTA />
