@@ -1,0 +1,176 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Banner from "../../assets/high-tide-aviation-hangar.jpg";
+import { Image } from "astro:assets";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { IoIosArrowRoundBack } from "react-icons/io";
+import aircrafts from "../../data/aircrafts.js";
+import AircraftCarousel from "../../components/AircraftCarousel.jsx";
+export function getStaticPaths() {
+  return aircrafts.map(({ slug, data }) => {
+    return {
+      params: { slug },
+      props: {
+        slug,
+        data,
+      },
+    };
+  });
+}
+
+const { data, slug } = Astro.props;
+const headerData = {
+  title: data.name,
+  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
+  headerAlt: "Cessna flying over Sundance Airport",
+};
+import type { ImageMetadata } from "astro";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+);
+if (!images[data.imagePath]) {
+  throw new Error(
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+  );
+}
+
+const index = aircrafts.findIndex((aircraft) => aircraft.slug === slug);
+const newImagesArray = await Promise.all(
+  data.imagesArray.map(async (image) => {
+    const imgModule = await images[image]();
+    return imgModule.default;
+  }),
+);
+---
+
+<BaseLayout>
+  <Header data={headerData} />
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-8 lg:max-w-6xl mx-auto flex flex-col lg:flex-row items-center"
+    >
+      <AircraftCarousel client:load imagesArray={newImagesArray} />
+      <div
+        class="flex lg:flex-1 w-full py-8 px-10 flex-col justify-around gap-2 lg:h-[27rem] lg:min-w-60 bg-mustard-yellow/15"
+      >
+        <div class="flex flex-col gap-2">
+          <h4 class="text-dark-blue font-medium">Model:</h4>
+          <p class="text-medium-blue">{data.model}</p>
+        </div>
+        <hr />
+        <div class="flex flex-col gap-2">
+          <h4 class="text-dark-blue font-medium">Tail Number:</h4>
+          <p class="text-medium-blue">{data.slug}</p>
+        </div>
+        <hr />
+        <div class="flex flex-col gap-2">
+          <h4 class="text-dark-blue font-medium">Usable Fuel:</h4>
+          <p class="text-medium-blue">{data.usableFuel}</p>
+        </div>
+        {
+          data.rentalPrice && (
+            <>
+              <hr />
+              <div class="flex flex-col gap-2">
+                <h4 class="text-dark-blue font-medium">Rental Price:</h4>
+                <p class="text-medium-blue">{data.rentalPrice}</p>
+              </div>
+            </>
+          )
+        }
+      </div>
+    </div>
+
+    <div class="max-w-xl mx-auto lg:max-w-6xl mt-8 flex flex-col gap-8">
+      <h2 class="text-5xl text-dark-blue font-medium">{data.name}</h2>
+      {
+        data.description?.map((item) => (
+          <p class="leading-loose text-gray-600">{item}</p>
+        ))
+      }
+      {
+        data.equipment.length > 0 && (
+          <>
+            <h3 class="text-3xl text-dark-blue font-medium">Equipment</h3>
+            <ul class="grid sm:grid-cols-2 gap-3">
+              {data.equipment?.map((item) => (
+                <li class="flex items-center gap-3">
+                  <FaArrowAltCircleRight className="text-mustard-yellow size-5" />
+                  <p class="text-dark-blue font-semibold">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+      {
+        data.rentalPrice ? (
+          <a href="/contact-us" class="btn-blue mx-auto">
+            Book Now
+          </a>
+        ) : (
+          <a href="/enrollment-form" class="btn-blue mx-auto">
+            Start Training
+          </a>
+        )
+      }
+      <hr />
+      <div class="flex justify-between">
+        <a
+          href=`/about/fleet-rentals/${index === 0 ? aircrafts[aircrafts.length-1].slug : aircrafts[index-1].slug}`
+          class="flex gap-3 items-center self-end cursor-pointer group"
+        >
+          <div
+            class="p-3 bg-light-blue/15 rounded-full group-hover:bg-medium-blue duration-700"
+          >
+            <IoIosArrowRoundBack
+              className="text-dark-blue size-6 group-hover:text-white duration-700"
+            />
+          </div>
+          <p
+            class="text-medium-blue text-sm uppercase font-medium tracking-widest"
+          >
+            Previous
+          </p>
+        </a>
+        <a
+          href=`/about/fleet-rentals/${index === aircrafts.length-1 ? aircrafts[0].slug : aircrafts[index+1].slug}`
+          class="flex gap-3 items-center self-end cursor-pointer group"
+        >
+          <p
+            class="text-medium-blue text-sm uppercase font-medium tracking-widest"
+          >
+            Next
+          </p>
+          <div
+            class="p-3 bg-light-blue/15 rounded-full group-hover:bg-medium-blue duration-700"
+          >
+            <IoIosArrowRoundForward
+              className="text-dark-blue size-6 group-hover:text-white duration-700"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 px-5 bg-mustard-yellow">
+    <div
+      class="max-w-7xl mx-auto gap-10 lg:gap-52 flex justify-between items-center lg:flex-row flex-col"
+    >
+      <div>
+        <h3
+          class="text-5xl text-dark-blue font-bold leading-tight text-center lg:text-left"
+        >
+          Reach out to us today to fly a High Tide aircraft
+        </h3>
+      </div>
+      <a href="/contact-us" class="flex-shrink-0 btn-blue hover:bg-white"
+        >Submit Rental Inquiry</a
+      >
+    </div>
+  </section>
+</BaseLayout>
