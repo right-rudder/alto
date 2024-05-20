@@ -86,13 +86,29 @@ import {
         <div class="flex flex-col lg:flex-row gap-5">
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="Your first name"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
           />
           <input
             type="text"
+            placeholder="Your last name"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="email"
             placeholder="Your email"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
+          />
+          <input
+            type="tel"
+            placeholder="Your phone number"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
           />
         </div>
 
@@ -112,7 +128,9 @@ import {
             for="agree-data-collection"
             class="text-gray-500 text-sm lg:text-base"
           >
-            I agree that my submitted data is being collected and stored
+            I agree to the terms & conditions provided by the company. By
+            providing my phone number, I agree to receive text messages from
+            Alto Flight Academy.
           </label>
         </div>
         <button type="submit" class="btn-dark-blue mx-auto">Send message</button
