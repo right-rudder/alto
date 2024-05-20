@@ -14,9 +14,10 @@ import {
   AIRPORT,
 } from "../consts";
 import { navbarLinks } from "../data/navbarLinks";
+const { pathname } = Astro.url;
 ---
 
-<footer class="bg-dark-blue pt-24 px-5">
+<footer class=`bg-dark-blue pt-24 px-5 ${pathname === "/" ? "pt-40" : ""}`>
   <div class="text-white max-w-xl lg:max-w-7xl mx-auto">
     <div class="flex gap-10 flex-col lg:flex-row">
       <div class="flex flex-col gap-5">
