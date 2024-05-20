@@ -13,8 +13,9 @@ if (!images[data.imagePath]) {
 }
 ---
 
-<div
-  class="flex max-w-sm gap-2 outline outline-dark-blue flex-col rounded-3xl p-8 text-dark-blue hover:scale-[1.02] duration-200 relative"
+<a
+  href=`/acquisitions-sales/${slug}`
+  class="flex max-w-sm gap-2 group outline outline-dark-blue flex-col rounded-3xl p-8 text-dark-blue hover:scale-[1.02] duration-200 relative"
 >
   {
     data.hasRibbon && data.ribbonTitle && (
@@ -25,13 +26,16 @@ if (!images[data.imagePath]) {
       </div>
     )
   }
-  <h2 class="font-extrabold text-2xl">{data.year} {data.model}</h2>
+  <h2 class="font-extrabold text-2xl h-16 line-clamp-2">
+    {data.year}
+    {data.model}
+  </h2>
 
   <div class="flex-1 flex">
     <Image
       src={images[data.imagePath]()}
       alt={data.alt}
-      class="h-full w-full object-cover max-h-[10rem]"
+      class="h-full w-full object-cover aspect-video max-h-[8rem]"
       quality={50}
     />
   </div>
@@ -40,9 +44,8 @@ if (!images[data.imagePath]) {
     class="flex-1 text-dark-blue flex flex-col max-h-[28rem] justify-between"
   >
     <p class="line-clamp-4 paragraph text-sm">{data.description[0]}</p>
-    <a
-      href=`/acquisitions-sales/${slug}`
-      class="btn-dark-blue mt-5 block w-full">More info</a
+    <button class="btn-dark-blue mt-5 block w-full group-hover:bg-red-700"
+      >More info</button
     >
   </div>
-</div>
+</a>

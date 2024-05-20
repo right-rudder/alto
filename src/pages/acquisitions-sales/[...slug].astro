@@ -24,8 +24,8 @@ export function getStaticPaths() {
 const { data, slug } = Astro.props;
 const headerData = {
   title: data.name,
-  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
-  headerAlt: "Cessna flying over Sundance Airport",
+  headerImage: data.imagePath,
+  headerAlt: data.alt,
 };
 import type { ImageMetadata } from "astro";
 const images = import.meta.glob<{ default: ImageMetadata }>(

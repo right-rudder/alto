@@ -21,7 +21,7 @@ const AircraftCarousel = ({ imagesArray }) => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="inline lg:h-[35rem] lg:flex-[2_2_0] w-full"
+        className="inline aspect-video lg:flex-[2_2_0] w-full"
       >
         {imagesArray.map((image) => (
           <SwiperSlide key={image.src}>

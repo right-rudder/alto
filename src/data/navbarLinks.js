@@ -83,17 +83,13 @@ export const navbarLinks = [
         link: "/about/our-fleet",
       },
       {
-        name: "Financing",
-        link: "/about/financing",
-      },
-      {
         name: "Learning Center",
         link: "/about/learning-center",
       },
     ],
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     link: "/contact",
     submenu: [],
   },
