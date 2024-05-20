@@ -2,9 +2,9 @@
 import Header from "../../components/Header.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CourseLayout from "../../layouts/CourseLayout.astro";
-import allCoursesData from "../../data/allCoursesData";
+import allCoursesDataGroundSchool from "../../data/allCoursesDataGroundSchool";
 export function getStaticPaths() {
-  return allCoursesData.map(({ data, slug }) => {
+  return allCoursesDataGroundSchool.map(({ data, slug }) => {
     return {
       params: { slug },
       props: {

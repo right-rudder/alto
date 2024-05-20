@@ -63,6 +63,11 @@ export const navbarLinks = [
     ],
   },
   {
+    name: "Acquisitions & Sales",
+    link: "/acquisitions-sales",
+    submenu: [],
+  },
+  {
     name: "About",
     submenu: [
       {
