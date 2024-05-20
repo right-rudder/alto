@@ -13,12 +13,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
 <section class="py-12 px-5">
   <div class="max-w-7xl mx-auto text-dark-blue">
-    <div class="flex justify-between py-10">
+    <div class="flex justify-between py-10 items-center">
       <h2 class="font-bold text-3xl">{data.date}</h2>
-      <p class="font-extrabold text-3xl">
-        {data.price}
-        <span class="text-base">/month</span>
-      </p>
+      <a href="#" class="btn-dark-blue"> Sign up now </a>
     </div>
     <p class="paragraph py-5">{data.intro}</p>
     <div class="">
