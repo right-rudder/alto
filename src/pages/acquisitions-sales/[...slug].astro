@@ -1,13 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
-import Banner from "../../assets/high-tide-aviation-hangar.jpg";
-import { Image } from "astro:assets";
 import { FaArrowAltCircleRight } from "react-icons/fa";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import { IoIosArrowRoundBack } from "react-icons/io";
 import aircrafts from "../../data/aircrafts.js";
 import AircraftCarousel from "../../components/AircraftCarousel.jsx";
+import {
+  MdKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
+import { FaCheck } from "react-icons/fa";
 export function getStaticPaths() {
   return aircrafts.map(({ slug, data }) => {
     return {
@@ -48,129 +49,144 @@ const newImagesArray = await Promise.all(
 <BaseLayout>
   <Header data={headerData} />
 
-  <section class="py-24 px-5">
-    <div
-      class="max-w-xl gap-8 lg:max-w-6xl mx-auto flex flex-col lg:flex-row items-center"
-    >
-      <AircraftCarousel client:load imagesArray={newImagesArray} />
-      <div
-        class="flex lg:flex-1 w-full py-8 px-10 flex-col justify-around gap-2 lg:h-[27rem] lg:min-w-60 bg-mustard-yellow/15"
-      >
-        <div class="flex flex-col gap-2">
-          <h4 class="text-dark-blue font-medium">Model:</h4>
-          <p class="text-medium-blue">{data.model}</p>
-        </div>
-        <hr />
-        <div class="flex flex-col gap-2">
-          <h4 class="text-dark-blue font-medium">Tail Number:</h4>
-          <p class="text-medium-blue">{data.slug}</p>
-        </div>
-        <hr />
-        <div class="flex flex-col gap-2">
-          <h4 class="text-dark-blue font-medium">Usable Fuel:</h4>
-          <p class="text-medium-blue">{data.usableFuel}</p>
-        </div>
-        {
-          data.rentalPrice && (
-            <>
-              <hr />
-              <div class="flex flex-col gap-2">
-                <h4 class="text-dark-blue font-medium">Rental Price:</h4>
-                <p class="text-medium-blue">{data.rentalPrice}</p>
-              </div>
-            </>
-          )
-        }
-      </div>
-    </div>
-
-    <div class="max-w-xl mx-auto lg:max-w-6xl mt-8 flex flex-col gap-8">
-      <h2 class="text-5xl text-dark-blue font-medium">{data.name}</h2>
-      {
-        data.description?.map((item) => (
-          <p class="leading-loose text-gray-600">{item}</p>
-        ))
-      }
-      {
-        data.equipment.length > 0 && (
-          <>
-            <h3 class="text-3xl text-dark-blue font-medium">Equipment</h3>
-            <ul class="grid sm:grid-cols-2 gap-3">
-              {data.equipment?.map((item) => (
-                <li class="flex items-center gap-3">
-                  <FaArrowAltCircleRight className="text-mustard-yellow size-5" />
-                  <p class="text-dark-blue font-semibold">{item}</p>
-                </li>
-              ))}
-            </ul>
-          </>
-        )
-      }
-      {
-        data.rentalPrice ? (
-          <a href="/contact-us" class="btn-blue mx-auto">
-            Book Now
-          </a>
-        ) : (
-          <a href="/enrollment-form" class="btn-blue mx-auto">
-            Start Training
-          </a>
-        )
-      }
-      <hr />
+  <section class="py-2 px-5">
+    <div class="max-w-xl lg:max-w-7xl mx-auto flex mt-5 flex-col gap-5">
       <div class="flex justify-between">
         <a
-          href=`/about/fleet-rentals/${index === 0 ? aircrafts[aircrafts.length-1].slug : aircrafts[index-1].slug}`
+          href=`/acquisitions-sales/${index === 0 ? aircrafts[aircrafts.length-1].slug : aircrafts[index-1].slug}`
           class="flex gap-3 items-center self-end cursor-pointer group"
         >
           <div
-            class="p-3 bg-light-blue/15 rounded-full group-hover:bg-medium-blue duration-700"
+            class="p-3 bg-light-blue/15 rounded-full group-hover:bg-red-700 duration-200"
           >
-            <IoIosArrowRoundBack
-              className="text-dark-blue size-6 group-hover:text-white duration-700"
+            <MdKeyboardArrowLeft
+              className="text-dark-blue size-6 group-hover:text-white duration-200"
             />
           </div>
-          <p
-            class="text-medium-blue text-sm uppercase font-medium tracking-widest"
-          >
+          <p class="text-red-700 text-sm uppercase font-medium tracking-widest">
             Previous
           </p>
         </a>
         <a
-          href=`/about/fleet-rentals/${index === aircrafts.length-1 ? aircrafts[0].slug : aircrafts[index+1].slug}`
+          href=`/acquisitions-sales/${index === aircrafts.length-1 ? aircrafts[0].slug : aircrafts[index+1].slug}`
           class="flex gap-3 items-center self-end cursor-pointer group"
         >
-          <p
-            class="text-medium-blue text-sm uppercase font-medium tracking-widest"
-          >
+          <p class="text-red-700 text-sm uppercase font-medium tracking-widest">
             Next
           </p>
           <div
-            class="p-3 bg-light-blue/15 rounded-full group-hover:bg-medium-blue duration-700"
+            class="p-3 bg-light-blue/15 rounded-full group-hover:bg-red-700 duration-200"
           >
-            <IoIosArrowRoundForward
-              className="text-dark-blue size-6 group-hover:text-white duration-700"
+            <MdOutlineKeyboardArrowRight
+              className="text-dark-blue size-6 group-hover:text-white duration-200"
             />
           </div>
         </a>
       </div>
+      <hr />
     </div>
   </section>
 
-  <section class="py-12 px-5 bg-mustard-yellow">
-    <div
-      class="max-w-7xl mx-auto gap-10 lg:gap-52 flex justify-between items-center lg:flex-row flex-col"
-    >
-      <div>
-        <h3
-          class="text-5xl text-dark-blue font-bold leading-tight text-center lg:text-left"
-        >
-          Reach out to us today to fly a High Tide aircraft
-        </h3>
+  <section class="py-12 px-5">
+    <div class="max-w-xl lg:max-w-7xl mx-auto flex flex-col gap-10">
+      <h2 class="text-5xl text-dark-blue font-extrabold">
+        {data.year}
+        {data.model}
+      </h2>
+      <div class="flex flex-col lg:flex-row items-center gap-8">
+        <AircraftCarousel client:load imagesArray={newImagesArray} />
+        <div class="flex-1 flex flex-col gap-2">
+          <p class="font-semibold text-4xl">{data.price}</p>
+          <form class="flex flex-col max-w-4xl mx-auto gap-3 my-5">
+            <div class="flex flex-col lg:flex-row gap-3">
+              <input
+                type="text"
+                placeholder="Your first name"
+                class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Your last name"
+                class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+                required
+              />
+            </div>
+            <div class="flex flex-col lg:flex-row gap-3">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Your phone number"
+                class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+                required
+              />
+            </div>
+
+            <textarea
+              placeholder="Your message"
+              class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
+            ></textarea>
+
+            <div class="flex gap-3">
+              <input
+                type="checkbox"
+                name="agree-data-collection"
+                id="agree-data-collection"
+              />
+
+              <label for="agree-data-collection" class="text-gray-500 text-xs">
+                I agree to the terms & conditions provided by the company. By
+                providing my phone number, I agree to receive text messages from
+                Alto Flight Academy.
+              </label>
+            </div>
+            <button type="submit" class="btn-dark-blue mx-auto"
+              >Send message</button
+            >
+          </form>
+        </div>
       </div>
-      <a href="/contact-us" class="flex-shrink-0 btn-blue hover:bg-white"
-        >Submit Rental Inquiry</a
-      >
+    </div>
+
+    <div class="max-w-xl mx-auto lg:max-w-7xl mt-8 grid lg:grid-cols-2 gap-10">
+      <div class="bg-gray-100 p-5">
+        <h3 class="font-bold text-3xl mb-3">General Specs</h3>
+      </div>
+      <div class="bg-gray-100 p-5">
+        <h3 class="font-bold text-3xl mb-3">Additional Classifications</h3>
+      </div>
+      <div class="bg-gray-100 p-5">
+        <h3 class="font-bold text-3xl mb-3">Detailed Description</h3>
+        {
+          data.description?.map((item) => (
+            <p class="leading-loose text-gray-600">{item}</p>
+          ))
+        }
+      </div>
+      <div class="bg-gray-100 p-5">
+        <h3 class="font-bold text-3xl mb-3">Equipment</h3>
+        {
+          data.equipment.length > 0 && (
+            <>
+              <ul class="grid sm:grid-cols-2 gap-3">
+                {data.equipment?.map((item) => (
+                  <li class="flex gap-2 items-center">
+                    <div class="p-2 bg-red-700 rounded-full">
+                      <FaCheck className="size-3 text-white" />
+                    </div>
+                    <p class="text-dark-blue font-semibold">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )
+        }
+      </div>
     </div>
   </section>
 </BaseLayout>
