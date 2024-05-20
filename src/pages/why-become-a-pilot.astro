@@ -5,13 +5,15 @@ import team from "../data/team";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerData = {
   title: "Why become a pilot?",
-  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
-  headerAlt: "Cessna flying over Sundance Airport",
+  headerImage: "/src/assets/student-standing-next-to-his-flight-instructor.jpg",
+  headerAlt:
+    "John Nolen (left) standing with his Flight Instructor (right) Hal Harris (CFI, CFII, MEI)",
 };
 import EmailCTA from "../components/EmailCTA.astro";
 import { FaCheck } from "react-icons/fa";
 import { Image } from "astro:assets";
 import PiperArrow from "../assets/piper-arrow.jpg";
+import IntroImage from "../assets/student-and-cfi-in-cessna.jpg";
 import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
 ---
 
@@ -25,8 +27,8 @@ import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airpl
       <div class="flex-[1.5_1.5_0] w-full">
         <Image
           class="rounded-lg"
-          src={PiperArrow}
-          alt="Cessna flying over Sundance Airport"
+          src={IntroImage}
+          alt="Student and CFI in Alto Flight Academy"
         />
       </div>
       <div class="flex flex-col flex-1 gap-5">

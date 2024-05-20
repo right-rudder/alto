@@ -6,7 +6,6 @@ const CourseInfo = ({ data }) => {
 
   const tabs = [
     { id: "prerequisites", label: "Program Prerequisites" },
-    { id: "duration", label: "Duration" },
     { id: "process", label: "Enrollment Process" },
   ];
 
@@ -43,7 +42,6 @@ const CourseInfo = ({ data }) => {
       </div>
       <div className="mt-5 h-full flex flex-col justify-center">
         <TabContent id="prerequisites" content={data.prerequisites} />
-        <TabContent id="duration" content={data.duration} />
         <TabContent id="process" content={data.process} />
       </div>
     </>

@@ -15,14 +15,14 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   <div class="max-w-7xl mx-auto text-dark-blue">
     <div class="flex justify-between py-10 items-center">
       <h2 class="font-bold text-3xl">{data.date}</h2>
-      <a href="#" class="btn-dark-blue"> Sign up now </a>
+      <a href="/contact" class="btn-dark-blue"> Sign up now </a>
     </div>
     <p class="paragraph py-5">{data.intro}</p>
     <div class="">
       <Image
         src={images[data.primaryImage]()}
         alt={data.primaryAlt}
-        class="object-cover max-h-[36rem]"
+        class="object-cover max-h-[36rem] w-full"
       />
     </div>
     <div class="py-5 flex flex-col gap-3">
