@@ -63,7 +63,7 @@ const newImagesArray = await Promise.all(
               className="text-dark-blue size-6 group-hover:text-white duration-200"
             />
           </div>
-          <p class="text-red-700 text-sm uppercase font-medium tracking-widest">
+          <p class="text-dark-blue group-hover:text-red-700 font-bold">
             Previous
           </p>
         </a>
@@ -71,9 +71,7 @@ const newImagesArray = await Promise.all(
           href=`/acquisitions-sales/${index === aircrafts.length-1 ? aircrafts[0].slug : aircrafts[index+1].slug}`
           class="flex gap-3 items-center self-end cursor-pointer group"
         >
-          <p class="text-red-700 text-sm uppercase font-medium tracking-widest">
-            Next
-          </p>
+          <p class="text-dark-blue group-hover:text-red-700 font-bold">Next</p>
           <div
             class="p-3 bg-light-blue/15 rounded-full group-hover:bg-red-700 duration-200"
           >
