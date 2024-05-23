@@ -98,12 +98,12 @@ const Navbar = ({ pathname }) => {
                       {item.link ? (
                         <a
                           href={item.link}
-                          className="font-semibold text-white text-lg duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap group-last:hover:text-dark-blue group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:hover:bg-white"
+                          className="font-bold text-white text-lg duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap group-last:hover:text-dark-blue group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:hover:bg-white"
                         >
                           {item.name}
                         </a>
                       ) : (
-                        <span className="font-semibold cursor-default text-white text-lg duration-300  hover:text-red-700  py-12 border-main-red whitespace-nowrap">
+                        <span className="font-bold cursor-default text-white text-lg duration-300  hover:text-red-700  py-12 border-main-red whitespace-nowrap">
                           {item.name}
                         </span>
                       )}
