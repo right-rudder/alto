@@ -51,6 +51,16 @@ const Navbar = ({ pathname }) => {
     };
   }, []);
 
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [subHoveredIndex, setSubHoveredIndex] = useState(null);
+
+  const isActive = (menuItem) => {
+    menuItem.submenu.some(
+      (item) => item.link === pathname || item.link + "/" === pathname,
+    ) ||
+      menuItem.link === pathname ||
+      menuItem.link + "/" === pathname;
+  };
   return (
     <nav className="w-full h-0 sticky top-0 z-50">
       <div
@@ -77,17 +87,76 @@ const Navbar = ({ pathname }) => {
                 </p>
               </a>
               <div className="hidden lg:block">
-                <div className="flex gap-5 xl:gap-10 items-center">
-                  {navbarLinks.map((item) => (
-                    <NavLink
-                      key={item.name}
-                      menuItem={item}
-                      pathname={pathname}
-                      toggled={item.name === openSubmenu}
-                      onShow={handleMenuItemClick}
-                    />
+                <ul className="flex gap-5 xl:gap-10 items-center">
+                  {navbarLinks.map((item, index) => (
+                    <li
+                      key={index}
+                      className="relative group"
+                      onMouseEnter={() => setHoveredIndex(index)}
+                      onMouseLeave={() => setHoveredIndex(null)}
+                    >
+                      {item.link ? (
+                        <a
+                          href={item.link}
+                          className="font-semibold text-white text-lg duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap group-last:hover:text-dark-blue group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:hover:bg-white"
+                        >
+                          {item.name}
+                        </a>
+                      ) : (
+                        <span className="font-semibold cursor-default text-white text-lg duration-300  hover:text-red-700  py-12 border-main-red whitespace-nowrap">
+                          {item.name}
+                        </span>
+                      )}
+                      {item.submenu && item.submenu.length > 0 && (
+                        <ul
+                          className={`absolute z-10 top-12 bg-dark-blue whitespace-nowrap text-white left-0 duration-500 ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
+                        >
+                          {item.submenu.map((subitem, subIndex) => (
+                            <li
+                              key={subIndex}
+                              className="relative hover:bg-red-600"
+                              onMouseEnter={() => setSubHoveredIndex(subIndex)}
+                              onMouseLeave={() => setSubHoveredIndex(null)}
+                            >
+                              {subitem.link ? (
+                                <a className="p-3 block" href={subitem.link}>
+                                  {subitem.name}
+                                </a>
+                              ) : (
+                                <span className="cursor-default p-3 block">
+                                  {subitem.name}
+                                </span>
+                              )}
+
+                              {subitem.subsubmenu &&
+                                subitem.subsubmenu.length > 0 && (
+                                  <ul
+                                    className={`absolute z-20 top-0 bg-dark-blue whitespace-nowrap left-full duration-500 ${subHoveredIndex === subIndex ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
+                                  >
+                                    {subitem.subsubmenu.map(
+                                      (subsubitem, subsubIndex) => (
+                                        <li
+                                          key={subsubIndex}
+                                          className="relative hover:bg-red-600"
+                                        >
+                                          <a
+                                            href={subsubitem.link}
+                                            className="block p-3"
+                                          >
+                                            {subsubitem.name}
+                                          </a>
+                                        </li>
+                                      ),
+                                    )}
+                                  </ul>
+                                )}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
 
