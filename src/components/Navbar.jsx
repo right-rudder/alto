@@ -3,6 +3,7 @@ import NavLink from "./NavLink";
 import { navbarLinks } from "../data/navbarLinks.js";
 import { useEffect, useState } from "react";
 import { IoStorefront } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 // import HighTideLogo from "../assets/high-tide-aviation-logo-gradation.png";
@@ -16,7 +17,6 @@ import {
 
 const Navbar = ({ pathname }) => {
   const [openMobile, setOpenMobile] = useState(false);
-  const [openSubmenu, setOpenSubmenu] = useState("");
   const [navBar, setNavbar] = useState(false);
 
   const handleHamburgerClick = () => {
@@ -25,14 +25,6 @@ const Navbar = ({ pathname }) => {
       document.body.classList.add("overflow-hidden");
     } else {
       document.body.classList.remove("overflow-hidden");
-    }
-  };
-
-  const handleMenuItemClick = (e) => {
-    if (openSubmenu === e.target.getAttribute("name")) {
-      setOpenSubmenu("");
-    } else {
-      setOpenSubmenu(e.target.getAttribute("name"));
     }
   };
 
@@ -61,6 +53,20 @@ const Navbar = ({ pathname }) => {
       menuItem.link === pathname ||
       menuItem.link + "/" === pathname;
   };
+
+  const handleItemClick = (index) => {
+    if (hoveredIndex == index) {
+      setHoveredIndex(null);
+      setSubHoveredIndex(null);
+    } else setHoveredIndex(index);
+  };
+
+  const handleSubItemClick = (event, subIndex) => {
+    event.stopPropagation();
+    if (subHoveredIndex == subIndex) setSubHoveredIndex(null);
+    else setSubHoveredIndex(subIndex);
+  };
+
   return (
     <nav className="w-full h-0 sticky top-0 z-50">
       <div
@@ -240,9 +246,84 @@ const Navbar = ({ pathname }) => {
           Alto
         </a>
 
-        <div className="px-4 pb-3 pt-2 flex flex-col">
-          <MobileNavbar pathname={pathname} />
-        </div>
+        <ul className="px-4 pb-3 pt-2 flex flex-col max-w-lg mx-auto">
+          {navbarLinks.map((item, index) => (
+            <li
+              key={index}
+              className="relative group"
+              onClick={() => handleItemClick(index)}
+            >
+              {item.link ? (
+                <a
+                  href={item.link}
+                  className="font-bold p-5 block text-white text-lg duration-300 border-main-red whitespace-nowrap group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-main-red whitespace-nowrap">
+                  <p>{item.name}</p>
+                  <div
+                    className={`p-1 pointer-events-none duration-300 rounded-full ${hoveredIndex === index ? "bg-white rotate-90" : "bg-red-700 -rotate-90"} 
+                    `}
+                  >
+                    <IoIosArrowForward
+                      className={`${hoveredIndex === index ? "text-red-700" : "text-white"} size-5`}
+                    />
+                  </div>
+                </div>
+              )}
+              {item.submenu && item.submenu.length > 0 && (
+                <ul
+                  className={`z-10 ml-5 bg-dark-blue whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[28rem]" : "max-h-0"}`}
+                >
+                  {item.submenu.map((subitem, subIndex) => (
+                    <li
+                      key={subIndex}
+                      className="relative"
+                      onClick={(event) => handleSubItemClick(event, subIndex)}
+                    >
+                      {subitem.link ? (
+                        <a className="p-5 block font-bold" href={subitem.link}>
+                          {subitem.name}
+                        </a>
+                      ) : (
+                        <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-main-red whitespace-nowrap">
+                          <p>{subitem.name}</p>
+                          <div
+                            className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-red-700 -rotate-90"} 
+                    `}
+                          >
+                            <IoIosArrowForward
+                              className={`${subHoveredIndex === subIndex ? "text-red-700" : "text-white"} size-5`}
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      {subitem.subsubmenu && subitem.subsubmenu.length > 0 && (
+                        <ul
+                          className={`z-20 ml-8 bg-dark-blue whitespace-nowrap left-full duration-500 overflow-hidden ${subHoveredIndex === subIndex ? "max-h-32" : "max-h-0"}`}
+                        >
+                          {subitem.subsubmenu.map((subsubitem, subsubIndex) => (
+                            <li key={subsubIndex} className="relative">
+                              <a
+                                href={subsubitem.link}
+                                className="block p-5 font-bold"
+                              >
+                                {subsubitem.name}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
 
         <div className="p-5 text-white flex flex-col gap-3 overflow-hidden items-center">
           <div className="flex gap-3 items-center">
