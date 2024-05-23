@@ -46,12 +46,23 @@ const Navbar = ({ pathname }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [subHoveredIndex, setSubHoveredIndex] = useState(null);
 
-  const isActive = (menuItem) => {
-    menuItem.submenu.some(
-      (item) => item.link === pathname || item.link + "/" === pathname,
-    ) ||
+  const isActive = (menuItem, pathname) => {
+    let selected =
+      menuItem?.submenu?.some(
+        (item) =>
+          item.link === pathname ||
+          item.link + "/" === pathname ||
+          item.subsubmenu?.some(
+            (subItem) =>
+              subItem.link === pathname || subItem.link + "/" === pathname,
+          ),
+      ) ||
+      menuItem?.subsubmenu?.some(
+        (item) => item.link === pathname || item.link + "/" === pathname,
+      ) ||
       menuItem.link === pathname ||
       menuItem.link + "/" === pathname;
+    return selected;
   };
 
   const handleItemClick = (index) => {
@@ -97,19 +108,19 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className="relative group"
+                      className={`${isActive(item, pathname) ? "underline" : ""} underline-offset-2 decoration-white relative group last:no-underline`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
                       {item.link ? (
                         <a
                           href={item.link}
-                          className="font-bold text-white text-lg duration-300 hover:text-red-700 py-12 border-main-red whitespace-nowrap group-last:hover:text-dark-blue group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:hover:bg-white"
+                          className="text-white font-bold text-lg duration-300 hover:underline py-12 border-main-red whitespace-nowrap group-last:hover:text-dark-blue group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           {item.name}
                         </a>
                       ) : (
-                        <span className="font-bold cursor-default text-white text-lg duration-300  hover:text-red-700  py-12 border-main-red whitespace-nowrap">
+                        <span className="font-bold cursor-default text-white text-lg duration-300 hover:underline py-12 border-main-red whitespace-nowrap">
                           {item.name}
                         </span>
                       )}
@@ -120,7 +131,7 @@ const Navbar = ({ pathname }) => {
                           {item.submenu.map((subitem, subIndex) => (
                             <li
                               key={subIndex}
-                              className="relative hover:bg-red-600"
+                              className={`${isActive(subitem, pathname) ? "bg-red-700" : ""} relative hover:bg-red-600`}
                               onMouseEnter={() => setSubHoveredIndex(subIndex)}
                               onMouseLeave={() => setSubHoveredIndex(null)}
                             >
@@ -143,7 +154,7 @@ const Navbar = ({ pathname }) => {
                                       (subsubitem, subsubIndex) => (
                                         <li
                                           key={subsubIndex}
-                                          className="relative hover:bg-red-600"
+                                          className={`${isActive(subsubitem, pathname) ? "bg-red-700" : ""} relative hover:bg-red-600`}
                                         >
                                           <a
                                             href={subsubitem.link}
