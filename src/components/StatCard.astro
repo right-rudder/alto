@@ -9,7 +9,7 @@
     <span
       class="text-5xl lg:text-7xl font-bold tabular-nums scroll-counter"
       x-data="{ current: 0, target: 1490, time: 1000}" 
-      x-init="() => {
+      x-init="() => { 
         start = current; 
         const interval = Math.max(time / (target - start), 5); 
         const step = (target - start) /  (time / interval);  
@@ -22,7 +22,7 @@
           }   
         }, interval)
       }"
-      >
+    >
       <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
     </span>
     <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">students trained at Alto</p>
@@ -50,7 +50,7 @@
           }   
         }, interval)
       }"
-      >
+    >
       <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
     </span>
     <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">hours of flight instruction</p>
