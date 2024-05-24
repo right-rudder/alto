@@ -15,6 +15,7 @@ import BlogSmallCard from "../components/BlogSmallCard.astro";
 import BlogBigCard from "../components/BlogBigCard.astro";
 import { Image } from "astro:assets";
 import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
+import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import CoursesCarrousel from "../components/CoursesCarrousel";
@@ -63,14 +64,63 @@ import Memberships from "../components/Memberships.astro";
       </div>
       <div class="flex flex-col flex-1 gap-5">
         <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
-          Let your dreams take a flight
+          So you want to be a pilot?
         </h2>
         <p class="paragraph">
-          At Alto Flight academy, the instructors are 100% committed to
-          providing the highest quality flight training. We guarantee a
-          supportive and friendly environment with a motivating professional
-          team.
+          Ever since my dad took me up in his Cessna, I couldn't stop dreaming about flying. Maybe you want to launch a career as a commercial airline pilot, or you are just curious about this exciting industry. 
         </p>
+        <p class="paragraph">
+          People come to the world of aviation from all backgrounds. The one thing that matters is that you want a chance to see if flying is right for you. That is why we are here.
+        </p>
+        <h3 class="font-bold text-xl">We help student pilots at all levels and goals</h3>
+        <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Beginners</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Career Pilot</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Hobby</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Advanced Training</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <Image src={ SectionImage1 } alt="Alto Flight Academy instructors in front of a piper aircraft in Oklahoma City, OK."/>
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          So you want to be a pilot?
+        </h2>
+        <p class="paragraph">
+          Ever since my dad took me up in his Cessna, I couldn't stop dreaming about flying. Maybe you want to launch a career as a commercial airline pilot, or you are just curious about this exciting industry. 
+        </p>
+        <p class="paragraph">
+          People come to the world of aviation from all backgrounds. The one thing that matters is that you want a chance to see if flying is right for you. That is why we are here.
+        </p>
+        <h3 class="font-bold text-xl">We help student pilots at all levels and goals</h3>
         <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
           <li class="flex gap-2 items-center">
             <div class="p-2 bg-red-700 rounded-full">
