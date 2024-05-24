@@ -225,32 +225,38 @@ import Memberships from "../components/Memberships.astro";
     />
     <div class="bg-white/10 w-full h-full absolute inset-0"></div>
     <div
-      class="max-w-7xl translate-y-16 mx-auto z-20 relative text-dark-blue flex justify-between items-center flex-col lg:flex-row gap-10"
+      class="max-w-7xl translate-y-24 lg:pb-5 mx-auto z-20 relative text-white flex justify-between items-center flex-col lg:flex-row gap-10"
     >
-      <h2 class="text-5xl font-bold max-w-sm">
-        <span class="text-white">Get in touch</span> with us
+      <h2 class="text-5xl font-bold max-w-sm text-dark-blue lg:text-white">
+        Get in <span class="text-white lg:text-dark-blue">contact with us</span>
       </h2>
-      <div class="flex">
-        <IoPhonePortraitOutline className="size-24 text-dark-blue" />
-        <div class="flex flex-col justify-between font-bold">
-          <a class="text-white font-bold text-2xl" href=`tel:${PHONE_NUMBER}`
-            >{PHONE_NUMBER}</a
+      <div class="flex items-center">
+        <IoPhonePortraitOutline className="size-24" />
+        <div class="flex flex-col justify-between font-bold gap-5">
+          
+          <a class="font-bold text-2xl" href=`tel:${PHONE_NUMBER}`>
+            Give us a call today<br>
+            {PHONE_NUMBER}
+          </a
           >
-          <div class="flex flex-col">
-            <p>Monday — Saturday: 8.00am - 5.00pm</p>
-            <p>Sunday: 12.00pm - 5.00pm</p>
+          <div class="grid grid-cols-2 text-white ">
+            <div class="">Mon — Sat</div>
+            <div class="">8 AM - 5 PM</div>
+            <div class="">Sun</div>
+            <div class="">12 PM - 5 PM</div>
           </div>
         </div>
       </div>
-      <div class="flex">
-        <IoLocationOutline className="size-24 text-dark-blue" />
+      <div class="flex items-center">
+        <IoLocationOutline className="size-24" />
         <div class="flex flex-col justify-between font-bold">
           <a
             class="text-white font-bold text-2xl"
             href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
-            target="_blank">{AIRPORT}</a
-          >
-          <div class="flex flex-col">
+            target="_blank">{AIRPORT}
+            <br>(KHSD)
+          </a>
+          <div class="flex flex-col pt-5">
             <p>{ADDRESS_LINE_1}</p>
             <p>{ADDRESS_LINE_2}</p>
           </div>
