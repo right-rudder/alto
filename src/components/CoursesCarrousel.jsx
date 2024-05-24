@@ -11,39 +11,51 @@ const CoursesCarrousel = () => {
   const courses = [
     {
       name: "Private Pilot",
-      duration: "6 months",
+      duration: "6 months to 1 year",
       description:
-        "Become a private pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
-    },
-    {
-      name: "Commercial Pilot",
-      duration: "12 months",
-      description:
-        "Become a commercial pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
-    },
-    {
-      name: "Airline Transport Pilot",
-      duration: "18 months",
-      description:
-        "Become an airline transport pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
-    },
-    {
-      name: "Multi-Engine Rating",
-      duration: "6 months",
-      description:
-        "Become a multi-engine rated pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
-    },
-    {
-      name: "Flight Instructor",
-      duration: "6 months",
-      description:
-        "Become a flight instructor and learn to fly an aircraft with the highest level of safety and professionalism.",
+        "The private pilot certificate is the first certification you will receive as a pilot.  You will be granted the privileges of flying an aircraft as the pilot in command and can fly passengers.",
+        button: "Become a private pilot",
+        href: "/flight-training/private-pilot"
     },
     {
       name: "Instrument Rating",
-      duration: "6 months",
+      duration: "6 months to 1 year",
       description:
-        "Become an instrument rated pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
+        "Being an instrument rated pilot means that you've received training to fly an airplane with sole reference to the flight instruments.  This allows you to safely navigate more challenging weather and makes you a sharper pilot.",
+      button: "Become instrument rated",
+      href: ""
+    },
+    {
+      name: "Commercial Pilot",
+      duration: "3 to 6 months",
+      description:
+        "Obtaining a commercial pilot certificate allows you to fly for compensation or hire. Start your pilot career and gain flight experience while getting paid to fly.",
+      button: "Become a commercial pilot",
+      href: ""
+    },
+    {
+      name: "Flight Instructor",
+      duration: "3 to 6 months",
+      description:
+        "Many pilots choose to flight instruct to gain experience and teach their art of flying to new student pilots.  Flight instructors train the next generation of future aviators.",
+      button: "Become a CFI",
+      href: ""
+    },
+    {
+      name: "Multi-Engine Rating",
+      duration: "1 to 3 months",
+      description:
+        "Become a multi-engine rated pilot and learn to fly an aircraft with the highest level of safety and professionalism.  Pilot larger and more complex aircraft with multiple engines.",
+      button: "Complete your ME addon",
+      href: ""
+    },
+    {
+      name: "Airline Transport Pilot",
+      duration: "6 months to 1 year",
+      description:
+        "Become an airline transport pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
+      button: "Finish your ATP",
+      href: ""
     },
   ];
 
