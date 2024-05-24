@@ -23,7 +23,7 @@ const CoursesCarrousel = () => {
       description:
         "Being an instrument rated pilot means that you've received training to fly an airplane with sole reference to the flight instruments.  This allows you to safely navigate more challenging weather and makes you a sharper pilot.",
       button: "Become instrument rated",
-      href: ""
+      href: "/flight-training/instrument-rating"
     },
     {
       name: "Commercial Pilot",
@@ -31,7 +31,7 @@ const CoursesCarrousel = () => {
       description:
         "Obtaining a commercial pilot certificate allows you to fly for compensation or hire. Start your pilot career and gain flight experience while getting paid to fly.",
       button: "Become a commercial pilot",
-      href: ""
+      href: "/flight-training/commercial-pilot"
     },
     {
       name: "Flight Instructor",
@@ -39,7 +39,7 @@ const CoursesCarrousel = () => {
       description:
         "Many pilots choose to flight instruct to gain experience and teach their art of flying to new student pilots.  Flight instructors train the next generation of future aviators.",
       button: "Become a CFI",
-      href: ""
+      href: "/flight-training/flight-instructor"
     },
     {
       name: "Multi-Engine Rating",
@@ -47,7 +47,7 @@ const CoursesCarrousel = () => {
       description:
         "Become a multi-engine rated pilot and learn to fly an aircraft with the highest level of safety and professionalism.  Pilot larger and more complex aircraft with multiple engines.",
       button: "Complete your ME addon",
-      href: ""
+      href: "/flight-training/multi-engine-rating"
     },
     {
       name: "Airline Transport Pilot",
@@ -55,7 +55,7 @@ const CoursesCarrousel = () => {
       description:
         "Become an airline transport pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
       button: "Finish your ATP",
-      href: ""
+      href: "/flight-training/airline-transport-pilot"
     },
   ];
 
