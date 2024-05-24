@@ -30,7 +30,7 @@ const CoursesCarrousel = () => {
       duration: "3 to 6 months",
       description:
         "Obtaining a commercial pilot certificate allows you to fly for compensation or hire. Start your pilot career and gain flight experience while getting paid to fly.",
-      button: "Become a commercial pilot",
+      button: "Start your pilot career",
       href: "/flight-training/commercial-pilot"
     },
     {
