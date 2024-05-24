@@ -4,8 +4,8 @@ const CourseCard = ({ name, duration, description, button, href }) => {
       <div className="bg-white p-8 lg:p-16 text-dark-blue flex flex-col gap-3 h-full justify-between ">
         <div className="flex flex-col gap-3">
           <h1 className="font-bold text-2xl">{name}</h1>
-          <h2 className="font-semibold">Duration: {duration}</h2>
-          <p className="paragraph text-base font-light">{description}</p>
+          <h2 className="font-semibold text-gray-700">Duration: {duration}</h2>
+          <p className="paragraph text-base font-normal">{description}</p>
         </div>
         <div className="flex self-start pt-10">
           <a
