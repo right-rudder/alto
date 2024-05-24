@@ -163,7 +163,7 @@ import Memberships from "../components/Memberships.astro";
     </div>
   </section>
   <Memberships />
-  <section class="pt-48 pb-24 px-5 bg-dark-blue relative">
+  <section class="pt-48 lg:pb-24 px-5 bg-dark-blue relative">
     <!-- <div class="max-w-7xl mx-auto text-white z-20 relative">
       <h2 class="text-5xl font-bold">
         <span class="text-red-700">Find the right</span> course for you
@@ -178,22 +178,22 @@ import Memberships from "../components/Memberships.astro";
     
     <!-- Email form -->
     <div
-      class="lg:max-w-none lg:absolute max-w-xl mx-auto  bg-red-700 py-20 lg:pt-28 px-5 lg:px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
+      class="lg:max-w-6xl mt-20 lg:mt-24 max-w-xl mx-auto  bg-red-700 py-20 px-5 lg:px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
     >
       <h3 class="text-white font-bold text-3xl flex-1">
-        Want to be notified when the next ground school starts?  Sign up here.
+        Want to be notified when the next ground school starts? <br class="lg:block hidden"> Sign up here.
       </h3>
       <div class="flex relative flex-1 flex-col w-full pt-10">
         <input
           type="text"
           placeholder="Your email"
-          class="px-5 py-4 w-full outline-1 border-gray-300 border outline-gray-400 rounded-full"
+          class="px-5 py-4 w-full outline-1 focus:ring-0 border-gray-300 border outline-gray-400 rounded-full"
         />
         <button
           type="submit"
-          class="btn-dark-blue px-8 lg:absolute lg:right-[1px] py-4 lg:top-[1px] mt-10"
+          class="btn-dark-blue hover:border hover:bg-white hover:text-blue-800 border-blue-800 px-8 lg:absolute lg:right-[1px] py-4 lg:top-[1px] mt-10"
         >
-          Send
+          SEND
         </button>
       </div>
     </div>
