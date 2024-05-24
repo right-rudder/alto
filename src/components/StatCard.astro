@@ -8,19 +8,20 @@
   >
     <span
       class="text-5xl lg:text-7xl font-bold tabular-nums scroll-counter"
-      x-data="{ current: 0, target: 1490, time: 1000}" x-init="() => {
+      x-data="{ current: 0, target: 1490, time: 1000}" 
+      x-init="() => {
         start = current; 
         const interval = Math.max(time / (target - start), 5); 
         const step = (target - start) /  (time / interval);  
         const handle = setInterval(() => {
-            if(current < target) 
-                current += step
-            else {
-                clearInterval(handle);
-                current = target
-            }   
-            }, interval)
-    }"
+          if(current < target) 
+            current += step
+          else {
+            clearInterval(handle);
+            current = target
+          }   
+        }, interval)
+      }"
       >
       <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
     </span>
@@ -35,19 +36,20 @@
   >
     <span
       class="text-5xl lg:text-7xl font-bold tabular-nums scroll-counter"
-      x-data="{ current: 0, target: 52500, time: 1000}" x-init="() => {
+      x-data="{ current: 0, target: 52500, time: 1000}" 
+      x-init="() => {
         start = current; 
         const interval = Math.max(time / (target - start), 5); 
         const step = (target - start) /  (time / interval);  
         const handle = setInterval(() => {
-            if(current < target) 
-                current += step
-            else {
-                clearInterval(handle);
-                current = target
-            }   
-            }, interval)
-    }"
+          if(current < target) 
+            current += step
+          else {
+            clearInterval(handle);
+            current = target
+          }   
+        }, interval)
+      }"
       >
       <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
     </span>
