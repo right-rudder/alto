@@ -23,29 +23,6 @@
   } */
 }
 
-@property --num-graduates {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-
-@property --num-professionals {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-
-@keyframes counter {
-  from {
-    --num-graduates: 0;
-    --num-professionals: 0;
-  }
-  to {
-    --num-graduates: 568;
-    --num-professionals: 50000;
-  }
-}
-
 .outlined-text {
   text-shadow:
     -1px -1px 0 white,
