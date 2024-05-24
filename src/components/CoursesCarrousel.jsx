@@ -53,7 +53,7 @@ const CoursesCarrousel = () => {
       name: "Airline Transport Pilot",
       duration: "6 months to 1 year",
       description:
-        "Become an airline transport pilot and learn to fly an aircraft with the highest level of safety and professionalism.",
+        "Become an airline transport pilot and learn to fly an aircraft with the highest level of safety and professionalism.  Become an airline transport pilot and start working for the airlines, corporate aviation, and other high paying career opportunities.",
       button: "Finish your ATP",
       href: "/flight-training/airline-transport-pilot"
     },
