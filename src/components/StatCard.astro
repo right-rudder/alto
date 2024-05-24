@@ -8,7 +8,7 @@
   >
     <span
       class="text-5xl lg:text-7xl font-bold tabular-nums scroll-counter"
-      x-data="{ current: 0, target: 1000, time: 1000}" x-init="() => {
+      x-data="{ current: 0, target: 1490, time: 1000}" x-init="() => {
         start = current; 
         const interval = Math.max(time / (target - start), 5); 
         const step = (target - start) /  (time / interval);  
@@ -22,9 +22,9 @@
             }, interval)
     }"
       >
-      <div class="card"x-text="Math.round(current)"></div>
+      <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
     </span>
-    <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">graduates hired last year</p>
+    <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">students trained at Alto</p>
   </div>
 </div>
 
@@ -35,7 +35,7 @@
   >
     <span
       class="text-5xl lg:text-7xl font-bold tabular-nums scroll-counter"
-      x-data="{ current: 0, target: 50000, time: 1000}" x-init="() => {
+      x-data="{ current: 0, target: 52500, time: 1000}" x-init="() => {
         start = current; 
         const interval = Math.max(time / (target - start), 5); 
         const step = (target - start) /  (time / interval);  
@@ -49,8 +49,8 @@
             }, interval)
     }"
       >
-      <div class="card"x-text="Math.round(current)"></div>
+      <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
     </span>
-    <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">graduates hired last year</p>
+    <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">hours of flight instruction</p>
   </div>
 </div>
