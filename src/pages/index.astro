@@ -175,13 +175,15 @@ import Memberships from "../components/Memberships.astro";
       </div>
     </div> -->
     <CoursesCarrousel client:visible />
+    
+    <!-- Email form -->
     <div
-      class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-28 left-32 right-32 bg-red-700 py-20 lg:pt-28 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
+      class="lg:max-w-none lg:absolute max-w-xl mx-auto  bg-red-700 py-20 lg:pt-28 px-5 lg:px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
     >
       <h3 class="text-white font-bold text-3xl flex-1">
-        Hurry up! New courses will start on June 17, 2024
+        Want to be notified when the next ground school starts?  Sign up here.
       </h3>
-      <div class="flex relative flex-1 w-full">
+      <div class="flex relative flex-1 flex-col w-full pt-10">
         <input
           type="text"
           placeholder="Your email"
@@ -189,9 +191,9 @@ import Memberships from "../components/Memberships.astro";
         />
         <button
           type="submit"
-          class="btn-dark-blue px-8 absolute right-[1px] py-4 top-[1px]"
+          class="btn-dark-blue px-8 lg:absolute lg:right-[1px] py-4 lg:top-[1px] mt-10"
         >
-          Subscribe
+          Send
         </button>
       </div>
     </div>
