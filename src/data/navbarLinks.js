@@ -114,7 +114,7 @@ export const navbarLinks = [
     ],
   },
   {
-    name: "Contact Us",
+    name: "CONTACT US",
     link: "/contact",
     submenu: [],
   },
