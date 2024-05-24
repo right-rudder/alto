@@ -1,50 +1,206 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import {
+  PHONE_NUMBER,
+  AIRPORT,
+  ADDRESS_LINE_1,
+  ADDRESS_LINE_2,
+} from "../consts";
+import HomepageHeader from "../components/HomepageHeader.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import StatCard from "../components/StatCard.astro";
+import { stats } from "../data/stats";
+import CTAform from "../components/CTAform.astro";
+import { FaCheck } from "react-icons/fa";
+import { blogSampleData } from "../data/blogSampleData";
+import BlogSmallCard from "../components/BlogSmallCard.astro";
+import BlogBigCard from "../components/BlogBigCard.astro";
+import { Image } from "astro:assets";
+import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import CoursesCarrousel from "../components/CoursesCarrousel";
+import Memberships from "../components/Memberships.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout>
+  <HomepageHeader slot="header" />
+  <section class="lg:max-h-[20rem] px-5">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between">
+      <div class="grid grid-cols-2 w-full">
+        {stats.map((stat) => <StatCard {...stat} />)}
+      </div>
+      <div class="lg:-translate-y-52">
+        <CTAform />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <div
+          class="fb-video"
+          data-href="https://www.facebook.com/AltoFlightAcademy/videos/short-soft-field-takeoff-from-snow-and-ice-covered-runways/640546870370487"
+          data-show-text="false"
+        >
+          <blockquote
+            cite="https://www.facebook.com/AltoFlightAcademy/videos/640546870370487/"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a
+              href="https://www.facebook.com/AltoFlightAcademy/videos/640546870370487/"
+              >Short soft field takeoff from snow and ice covered runways.</a
+            ><p>
+              A student, Alex, at the controls to perform a soft field takeoff
+              from a snow and ice covered runway with his flight instructor,
+              Cole Shipes.
+            </p>Posted by <a href="https://facebook.com/AltoFlightAcademy"
+              >Alto Flight Academy</a
+            > on Saturday, February 26, 2022
+          </blockquote>
+        </div>
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          Let your dreams take a flight
+        </h2>
+        <p class="paragraph">
+          At Alto Flight academy, the instructors are 100% committed to
+          providing the highest quality flight training. We guarantee a
+          supportive and friendly environment with a motivating professional
+          team.
+        </p>
+        <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Beginners</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Career Pilot</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Hobby</p>
+          </li>
+          <li class="flex gap-2 items-center">
+            <div class="p-2 bg-red-700 rounded-full">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p>Advanced Training</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5 bg-dark-blue relative">
+    <!-- <div class="max-w-7xl mx-auto text-white z-20 relative">
+      <h2 class="text-5xl font-bold">
+        <span class="text-red-700">Find the right</span> course for you
+      </h2>
+      <div
+        class="grid lg:grid-cols-3 max-w-xl mx-auto lg:max-w-none gap-16 mt-10"
+      >
+        {courses.map((course) => <CourseCard {...course} />)}
+      </div>
+    </div> -->
+    <CoursesCarrousel client:visible />
+    <div
+      class="lg:max-w-none lg:absolute max-w-xl mx-auto mt-20 -bottom-28 left-32 right-32 bg-red-700 py-20 lg:pt-28 px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
+    >
+      <h3 class="text-white font-bold text-3xl flex-1">
+        Hurry up! New courses will start on June 17, 2024
+      </h3>
+      <div class="flex relative flex-1 w-full">
+        <input
+          type="text"
+          placeholder="Your email"
+          class="px-5 py-4 w-full outline-1 border-gray-300 border outline-gray-400 rounded-full"
+        />
+        <button
+          type="submit"
+          class="btn-dark-blue px-8 absolute right-[1px] py-4 top-[1px]"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5 lg:pt-56">
+    <div class="max-w-lg lg:max-w-7xl mx-auto flex gap-16">
+      <div>
+        <h2 class="text-5xl font-bold">Our latest news and reports</h2>
+        <div class="flex flex-col gap-10 lg:gap-5 mt-10">
+          {
+            blogSampleData
+              .slice(0, 3)
+              .map((blog) => <BlogSmallCard {...blog} />)
+          }
+        </div>
+      </div>
+      <div class="hidden lg:flex gap-10">
+        {blogSampleData.slice(3, 6).map((blog) => <BlogBigCard {...blog} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 px-5 relative">
+    <Image
+      src={ComponentBackground}
+      alt="View from the skies inside Alto airplane"
+      class="absolute inset-0 object-cover w-full h-full"
+    />
+    <div class="bg-white/10 w-full h-full absolute inset-0"></div>
+    <div
+      class="max-w-7xl translate-y-16 mx-auto z-20 relative text-dark-blue flex justify-between items-center flex-col lg:flex-row gap-10"
+    >
+      <h2 class="text-5xl font-bold max-w-sm">
+        <span class="text-white">Get in touch</span> with us
+      </h2>
+      <div class="flex">
+        <IoPhonePortraitOutline className="size-24 text-dark-blue" />
+        <div class="flex flex-col justify-between font-bold">
+          <a class="text-white font-bold text-2xl" href=`tel:${PHONE_NUMBER}`
+            >{PHONE_NUMBER}</a
+          >
+          <div class="flex flex-col">
+            <p>Monday — Saturday: 8.00am - 5.00pm</p>
+            <p>Sunday: 12.00pm - 5.00pm</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex">
+        <IoLocationOutline className="size-24 text-dark-blue" />
+        <div class="flex flex-col justify-between font-bold">
+          <a
+            class="text-white font-bold text-2xl"
+            href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
+            target="_blank">{AIRPORT}</a
+          >
+          <div class="flex flex-col">
+            <p>{ADDRESS_LINE_1}</p>
+            <p>{ADDRESS_LINE_2}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Memberships />
+  </section>
+</BaseLayout>
+
+<script
+  async
+  defer
+  crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+  nonce="jR0DcSkY"></script>

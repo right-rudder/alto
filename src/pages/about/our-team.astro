@@ -1,0 +1,38 @@
+---
+import Header from "../../components/Header.astro";
+import TeamMemberCard from "../../components/TeamMemberCard.astro";
+import team from "../../data/team";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const headerData = {
+  title: "Our Team",
+  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
+  headerAlt: "Cessna flying over Sundance Airport",
+};
+import EmailCTA from "../../components/EmailCTA.astro";
+---
+
+<BaseLayout>
+  <Header slot="header" data={headerData} />
+
+  <section id="alto-team" class="py-24 px-5">
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <h2 class="text-5xl text-dark-blue font-bold leading-tight mb-5">
+        Alto Team
+      </h2>
+      <div class="grid gap-5 lg:grid-cols-3 mt-5">
+        {
+          team.map((member) => (
+            <TeamMemberCard
+              name={member.name}
+              qualifications={member.qualifications}
+              imagePath={member.imagePath}
+              bio={member.bio}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <EmailCTA />
+</BaseLayout>

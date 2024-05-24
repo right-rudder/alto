@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import aircrafts from "../../data/aircrafts.js";
+import AircraftCard from "../../components/AircraftCard.astro";
+const headerData = {
+  title: "Acquisitions & Sales",
+  headerImage: "/src/assets/aero-commander-front.jpg",
+  headerAlt: "Cessna 172 SP in airport",
+};
+---
+
+<BaseLayout>
+  <Header slot="header" data={headerData} />
+
+  <section id="fleet" class="py-24 px-5 bg-light-blue/10 scroll-my-20">
+    <div class="max-w-xl lg:max-w-7xl mx-auto flex flex-col items-center">
+      <h2 class="text-5xl text-dark-blue font-extrabold mb-5 text-center">
+        Aircraft Acquisitions and Sales
+      </h2>
+      <p class="text-xl text-dark-blue text-center mb-10">
+        We have a wide range of aircraft available for sale or acquisition. If
+        you are looking to sell your aircraft, we can help you find a buyer. If
+        you are looking to purchase an aircraft, we can help you find the
+        perfect aircraft for your needs.
+      </p>
+      <div class="grid gap-8 mt-5 sm:grid-cols-2 lg:grid-cols-4">
+        {aircrafts.map((aircraft) => <AircraftCard {...aircraft} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
