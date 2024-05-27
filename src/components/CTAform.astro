@@ -26,6 +26,13 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
   />
 
   <input
+    type="email"
+    name="confirm-email"
+    placeholder="Confirm email"
+    class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+  />
+
+  <input
     type="text"
     name="phone"
     placeholder="Phone"
@@ -65,6 +72,7 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
   </div>
   <button
     id="submit-button"
+    disabled
     type="submit"
     class="px-5 py-3 btn-dark-blue w-full cursor-not-allowed bg-gray-400 hover:bg-gray-400"
     >START FLYING</button

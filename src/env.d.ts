@@ -4,8 +4,10 @@
 interface ImportMetaEnv {
   readonly ENROLLMENT_FORM_WEBHOOK_URL: string;
   readonly CONTACT_US_FORM_WEBHOOK_URL: string;
-  readonly QUIZ_FORM_WEBHOOK_URL: string;
   readonly QUICK_START_FORM_WEBHOOK_URL: string;
+  readonly EMAIL_FORM_WEBHOOK_URL: string;
+  readonly TRAINING_COURSE_FORM_WEBHOOK_URL: string;
+  readonly INTRO_FLIGHT_FORM_WEBHOOK_URL: string;
 }
 
 interface ImportMeta {

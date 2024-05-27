@@ -18,13 +18,13 @@ import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airpl
 import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
-import CoursesCarrousel from "../components/CoursesCarrousel";
 import Memberships from "../components/Memberships.astro";
 import TrainingCoursesCarrousel from "../components/TrainingCoursesCarrousel";
 import {
   MdKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import EmailNotificationForm from "../components/EmailNotificationForm.astro";
 ---
 
 <BaseLayout>
@@ -217,28 +217,7 @@ import {
     </div>
 
     <!-- Email form -->
-    <div
-      class="lg:max-w-6xl mt-20 lg:mt-24 max-w-xl mx-auto bg-red-700 py-20 px-5 lg:px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
-    >
-      <h3 class="text-white font-bold text-3xl flex-1">
-        Want to be notified when the next ground school starts? <br
-          class="lg:block hidden"
-        /> Sign up here.
-      </h3>
-      <div class="flex relative flex-1 flex-col w-full pt-10">
-        <input
-          type="text"
-          placeholder="Your email"
-          class="px-5 py-4 w-full outline-1 focus:ring-0 border-gray-300 border outline-gray-400 rounded-full"
-        />
-        <button
-          type="submit"
-          class="btn-dark-blue hover:border hover:bg-white hover:text-blue-800 border-blue-800 px-8 lg:absolute lg:right-[1px] py-4 lg:top-[1px] mt-10"
-        >
-          SEND
-        </button>
-      </div>
-    </div>
+    <EmailNotificationForm />
   </section>
 
   <section class="py-24 px-5">

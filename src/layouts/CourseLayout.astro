@@ -9,6 +9,8 @@ import EmailCTA from "../components/EmailCTA.astro";
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
+const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
+  .TRAINING_COURSE_FORM_WEBHOOK_URL;
 ---
 
 <section class="py-12 px-5">
@@ -81,16 +83,21 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         </p>
       </div>
       <div class="lg:flex-1">
-        <form class="flex flex-col max-w-4xl mx-auto gap-5 my-5">
+        <form
+          id="training-course-form"
+          class="flex flex-col max-w-4xl mx-auto gap-5 my-5"
+        >
           <div class="flex flex-col lg:flex-row gap-5">
             <input
               type="text"
+              name="first-name"
               placeholder="Your first name"
               class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
               required
             />
             <input
               type="text"
+              name="last-name"
               placeholder="Your last name"
               class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
               required
@@ -99,12 +106,20 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
           <div class="flex flex-col lg:flex-row gap-5">
             <input
               type="email"
+              name="email"
               placeholder="Your email"
               class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
               required
             />
             <input
+              type="email"
+              name="confirm-email"
+              placeholder="Confirm email"
+              class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            />
+            <input
               type="tel"
+              name="phone"
               placeholder="Your phone number"
               class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
               required
@@ -145,6 +160,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
           </div>
           <button
             id="submit-button"
+            disabled
             type="submit"
             class="btn-dark-blue mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
             >Sign up now</button
@@ -157,13 +173,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
 <EmailCTA />
 
-<script>
-  const checkbox = document.getElementById(
-    "agree-data-collection",
-  ) as HTMLInputElement;
-  const submitButton = document.getElementById(
-    "submit-button",
-  ) as HTMLButtonElement;
+<script define:vars={{ TRAINING_COURSE_FORM_WEBHOOK_URL }}>
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
 
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
@@ -180,6 +192,63 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         "bg-gray-400",
         "hover:bg-gray-400",
       );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const trainingCourseForm = document.getElementById("training-course-form");
+
+    // Check if the contactUs form element exists
+    if (trainingCourseForm !== null) {
+      // Add submit event listener to the contactUs form
+      trainingCourseForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(trainingCourseForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          trainingCourseForm.action = TRAINING_COURSE_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", trainingCourseForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/training-course-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Training course form element not found.");
     }
   });
 </script>

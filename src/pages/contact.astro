@@ -1,18 +1,11 @@
 ---
 import Header from "../components/Header.astro";
-import TeamMemberCard from "../components/TeamMemberCard.astro";
-import team from "../data/team";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerData = {
   title: "Contact Us",
   headerImage: "/src/assets/cfi-in-cessna.jpg",
   headerAlt: "CFI in Cessna",
 };
-import EmailCTA from "../components/EmailCTA.astro";
-import { FaCheck } from "react-icons/fa";
-import { Image } from "astro:assets";
-import PiperArrow from "../assets/piper-arrow.jpg";
-import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
@@ -24,6 +17,8 @@ import {
   ADDRESS_LINE_2,
   EMAIL_ADDRESS,
 } from "../consts";
+
+const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
 ---
 
 <BaseLayout>
@@ -82,16 +77,21 @@ import {
       <h2 class="text-dark-blue text-5xl font-extrabold mx-auto w-fit">
         Get in touch
       </h2>
-      <form class="flex flex-col max-w-4xl mx-auto gap-5 my-5">
+      <form
+        id="contact-form"
+        class="flex flex-col max-w-4xl mx-auto gap-5 my-5"
+      >
         <div class="flex flex-col lg:flex-row gap-5">
           <input
             type="text"
+            name="first-name"
             placeholder="Your first name"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
           />
           <input
             type="text"
+            name="last-name"
             placeholder="Your last name"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
@@ -100,12 +100,20 @@ import {
         <div class="flex flex-col lg:flex-row gap-5">
           <input
             type="email"
+            name="email"
             placeholder="Your email"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
           />
           <input
+            type="email"
+            name="confirm-email"
+            placeholder="Confirm email"
+            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+          />
+          <input
             type="tel"
+            name="phone"
             placeholder="Your phone number"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
@@ -114,6 +122,7 @@ import {
 
         <textarea
           required
+          name="message"
           placeholder="Your message"
           class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
         ></textarea>
@@ -136,6 +145,7 @@ import {
         </div>
         <button
           id="submit-button"
+          disabled
           type="submit"
           class="btn-dark-blue mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
           >Send message</button
@@ -155,13 +165,9 @@ import {
   </iframe>
 </BaseLayout>
 
-<script>
-  const checkbox = document.getElementById(
-    "agree-data-collection",
-  ) as HTMLInputElement;
-  const submitButton = document.getElementById(
-    "submit-button",
-  ) as HTMLButtonElement;
+<script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
 
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
@@ -178,6 +184,63 @@ import {
         "bg-gray-400",
         "hover:bg-gray-400",
       );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const contactForm = document.getElementById("contact-form");
+
+    // Check if the contactUs form element exists
+    if (contactForm !== null) {
+      // Add submit event listener to the contactUs form
+      contactForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(contactForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          contactForm.action = CONTACT_US_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", contactForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/contact-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Contact us form element not found.");
     }
   });
 </script>

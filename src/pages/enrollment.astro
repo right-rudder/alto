@@ -6,6 +6,8 @@ const headerData = {
   headerImage: "/src/assets/cfi-in-cessna.jpg",
   headerAlt: "CFI in Cessna",
 };
+
+const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
 ---
 
 <BaseLayout>
@@ -23,16 +25,21 @@ const headerData = {
         get in touch with you and walk you through the next steps on getting you
         in the air.
       </h3>
-      <form class="flex flex-col max-w-4xl mx-auto gap-5 my-5">
+      <form
+        id="enrollment-form"
+        class="flex flex-col max-w-4xl mx-auto gap-5 my-5"
+      >
         <div class="flex flex-col lg:flex-row gap-5">
           <input
             type="text"
+            name="first-name"
             placeholder="Your first name"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
           />
           <input
             type="text"
+            name="last-name"
             placeholder="Your last name"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
@@ -41,42 +48,53 @@ const headerData = {
         <div class="flex flex-col lg:flex-row gap-5">
           <input
             type="email"
+            name="email"
             placeholder="Your email"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
           />
           <input
+            type="email"
+            name="confirm-email"
+            placeholder="Confirm email"
+            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+          />
+          <input
             type="tel"
+            name="phone"
             placeholder="Your phone number"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
           />
         </div>
 
-        <label for="question1">How far along are you in pilot training?*</label>
+        <label for="experience">How far along are you in pilot training?*</label
+        >
         <input
-          id="question1"
-          name="question1"
+          id="experience"
+          name="experience"
           type="text"
           placeholder=""
           class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
           required
         />
-        <label for="question2">What are your goals?*</label>
+        <label for="goals">What are your goals?*</label>
         <input
-          id="question2"
-          name="question2"
+          id="goals"
+          name="goals"
           type="text"
           placeholder=""
           class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
           required
         />
 
-        <label for="question3">Anything else you want us to know about?*</label>
+        <label for="extra-information"
+          >Anything else you want us to know about?*</label
+        >
         <textarea
           required
-          id="question3"
-          name="question3"
+          id="extra-information"
+          name="extra-information"
           placeholder=""
           class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
         ></textarea>
@@ -99,6 +117,7 @@ const headerData = {
         </div>
         <button
           id="submit-button"
+          disabled
           type="submit"
           class="btn-dark-blue mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
           >Submit</button
@@ -108,7 +127,7 @@ const headerData = {
   </section>
 </BaseLayout>
 
-<script>
+<script define:vars={{ ENROLLMENT_FORM_WEBHOOK_URL }}>
   // Function to format date as YYYY-MM-DD
   function formatDate(date) {
     let day = date.getDate();
@@ -135,12 +154,8 @@ const headerData = {
     .getElementById("requested-date")
     ?.setAttribute("min", formatDate(fourDaysFromToday));
 
-  const checkbox = document.getElementById(
-    "agree-data-collection",
-  ) as HTMLInputElement;
-  const submitButton = document.getElementById(
-    "submit-button",
-  ) as HTMLButtonElement;
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
 
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
@@ -157,6 +172,63 @@ const headerData = {
         "bg-gray-400",
         "hover:bg-gray-400",
       );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const enrollmentForm = document.getElementById("enrollment-form");
+
+    // Check if the contactUs form element exists
+    if (enrollmentForm !== null) {
+      // Add submit event listener to the contactUs form
+      enrollmentForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(enrollmentForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          enrollmentForm.action = ENROLLMENT_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", enrollmentForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/enrollment-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Enrollment form element not found.");
     }
   });
 </script>
