@@ -113,6 +113,7 @@ import {
         </div>
 
         <textarea
+          required
           placeholder="Your message"
           class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
         ></textarea>
@@ -133,7 +134,11 @@ import {
             Alto Flight Academy.
           </label>
         </div>
-        <button type="submit" class="btn-dark-blue mx-auto">Send message</button
+        <button
+          id="submit-button"
+          type="submit"
+          class="btn-dark-blue mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
+          >Send message</button
         >
       </form>
     </div>
@@ -149,3 +154,30 @@ import {
   >
   </iframe>
 </BaseLayout>
+
+<script>
+  const checkbox = document.getElementById(
+    "agree-data-collection",
+  ) as HTMLInputElement;
+  const submitButton = document.getElementById(
+    "submit-button",
+  ) as HTMLButtonElement;
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    }
+  });
+</script>
