@@ -2,7 +2,6 @@ const aircrafts = [
   {
     data: {
       name: "N110GA",
-      price: "$500,000",
       usableFuel: "38 gal",
       model: "Beechjet 400 ",
       year: "1988",
@@ -18,13 +17,15 @@ const aircrafts = [
         "The Cessna 172 is the gold standard for new pilots. Its forgiving flight characteristics and robust reliability make it the perfect choice for initial flight training. The high-wing design offers exceptional stability and visibility, boosting student confidence as they master essential flying skills. The aircraft responds gently to control inputs and recovers smoothly from errors, instilling the poise needed to become a competent pilot. With widespread availability and easy access to maintenance expertise, the Cessna 172 keeps operational costs low, allowing for consistent training schedules.",
         "Beyond its physical attributes, the aircraft is equipped with modern avionics and instrumentation, giving students a real-world flying experience. Its versatility extends from solo flights to instrument training, making the Cessna 172 a fundamental tool in developing proficient pilots",
       ],
+      hasRibbon: true,
+      ribbonTitle: "acquired",
+      ribbonColor: "bg-green-500",
     },
     slug: "N110GA",
   },
   {
     data: {
       name: "N2201U",
-      price: "$500,000",
       usableFuel: "38 gal",
       model: "Beech Bonanza B36TC",
       year: "1998",
@@ -44,13 +45,13 @@ const aircrafts = [
       ],
       hasRibbon: true,
       ribbonTitle: "sold",
+      ribbonColor: "bg-red-700",
     },
     slug: "N2201U",
   },
   {
     data: {
       name: "N6197B",
-      price: "$500,000",
       usableFuel: "38 gal",
       model: "Cessna 182A",
       year: "1957",
@@ -70,13 +71,13 @@ const aircrafts = [
       ],
       hasRibbon: true,
       ribbonTitle: "sold",
+      ribbonColor: "bg-red-700",
     },
     slug: "N6197B",
   },
   {
     data: {
       name: "N500TU",
-      price: "$500,000",
       usableFuel: "38 gal",
       model: "Aero Commander",
       year: "1962",
@@ -99,6 +100,7 @@ const aircrafts = [
       ],
       hasRibbon: true,
       ribbonTitle: "sold",
+      ribbonColor: "bg-red-700",
     },
     slug: "N500TU",
   },
