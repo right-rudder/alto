@@ -1,6 +1,7 @@
 const multiEngineRatingData = {
   data: {
     title: "Multi-Engine Rating",
+    hiddenField: "Multi-Engine Rating Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
     price: "$1350",
     intro:

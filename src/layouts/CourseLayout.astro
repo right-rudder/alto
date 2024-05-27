@@ -13,9 +13,13 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
 <section class="py-12 px-5">
   <div class="max-w-7xl mx-auto text-dark-blue">
-    <div class="flex justify-between py-10 items-center">
+    <div
+      class="flex justify-between flex-col lg:flex-row gap-10 py-10 items-center"
+    >
       <h2 class="font-bold text-3xl">{data.date}</h2>
-      <a href="/contact" class="btn-dark-blue"> Sign up now </a>
+      <a href="#sign-up-form" class="btn-dark-blue w-full lg:w-fit">
+        Sign up now
+      </a>
     </div>
     <p class="paragraph py-5">{data.intro}</p>
     <div class="">
@@ -62,4 +66,120 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   </div>
 </section>
 
+<hr class="border-t max-w-7xl mx-auto border-gray-300" />
+
+<section class="py-12 px-5 scroll-my-24" id="sign-up-form">
+  <div class="max-w-xl lg:max-w-7xl mx-auto text-dark-blue">
+    <div class="flex flex-col lg:flex-row gap-10 mt-10">
+      <div class="lg:flex-1 flex flex-col gap-10">
+        <h2 class="font-extrabold text-5xl">Take the first step...</h2>
+        <p class="paragraph">
+          Start your training today at Alto Flight Academy and take the first
+          step. Start training today with our <span class="lowercase"
+            >{data.title}</span
+          > training course.
+        </p>
+      </div>
+      <div class="lg:flex-1">
+        <form class="flex flex-col max-w-4xl mx-auto gap-5 my-5">
+          <div class="flex flex-col lg:flex-row gap-5">
+            <input
+              type="text"
+              placeholder="Your first name"
+              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Your last name"
+              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              required
+            />
+          </div>
+          <div class="flex flex-col lg:flex-row gap-5">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Your phone number"
+              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              required
+            />
+          </div>
+
+          <input
+            id="interested-in"
+            name="interested-in"
+            type="text"
+            value={data.hiddenField}
+            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
+          />
+
+          <textarea
+            id="more-info"
+            name="more-info"
+            placeholder="How far along are you in your training?"
+            class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-24"
+          ></textarea>
+
+          <div class="flex gap-3">
+            <input
+              type="checkbox"
+              name="agree-data-collection"
+              id="agree-data-collection"
+            />
+
+            <label
+              for="agree-data-collection"
+              class="text-gray-500 text-sm lg:text-base"
+            >
+              I agree to the terms & conditions provided by the company. By
+              providing my phone number, I agree to receive text messages from
+              Alto Flight Academy.
+            </label>
+          </div>
+          <button
+            id="submit-button"
+            type="submit"
+            class="btn-dark-blue mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
+            >Sign up now</button
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <EmailCTA />
+
+<script>
+  const checkbox = document.getElementById(
+    "agree-data-collection",
+  ) as HTMLInputElement;
+  const submitButton = document.getElementById(
+    "submit-button",
+  ) as HTMLButtonElement;
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    }
+  });
+</script>
