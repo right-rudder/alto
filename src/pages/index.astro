@@ -15,7 +15,7 @@ import BlogSmallCard from "../components/BlogSmallCard.astro";
 import BlogBigCard from "../components/BlogBigCard.astro";
 import { Image } from "astro:assets";
 import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
-import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import CoursesCarrousel from "../components/CoursesCarrousel";
@@ -67,12 +67,18 @@ import Memberships from "../components/Memberships.astro";
           So you want to be a pilot?
         </h2>
         <p class="paragraph">
-          Ever since my dad took me up in his Cessna, I couldn't stop dreaming about flying. Maybe you want to start a career as a commercial airline pilot, or you are just curious about this exciting industry. 
+          Ever since my dad took me up in his Cessna, I couldn't stop dreaming
+          about flying. Maybe you want to start a career as a commercial airline
+          pilot, or you are just curious about this exciting industry.
         </p>
         <p class="paragraph">
-          People come to the world of aviation from all backgrounds. The one thing that matters is that you want a chance to see if flying is right for you. That is why we are here.
+          People come to the world of aviation from all backgrounds. The one
+          thing that matters is that you want a chance to see if flying is right
+          for you. That is why we are here.
         </p>
-        <h3 class="font-bold text-xl">We help student pilots at all levels and goals</h3>
+        <h3 class="font-bold text-xl">
+          We help student pilots at all levels and goals
+        </h3>
         <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
           <li class="flex gap-2 items-center">
             <div class="p-2 bg-red-700 rounded-full">
@@ -108,17 +114,26 @@ import Memberships from "../components/Memberships.astro";
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:gap-20"
     >
       <div class="flex-[1.5_1.5_0] w-full">
-        <Image src={ SectionImage1 } alt="Alto Flight Academy instructors in front of a piper aircraft in Oklahoma City, OK."/>
+        <Image
+          src={SectionImage1}
+          alt="Alto Flight Academy instructors in front of a piper aircraft in Oklahoma City, OK."
+        />
       </div>
       <div class="flex flex-col flex-1 gap-5">
         <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
           Start training to become a pilot today
         </h2>
         <p class="paragraph">
-          Alto Flight Academy is a professional, full-service flight academy providing comprehensive flight training to everyone from students and private pilots to commercial pilots and airline transport flyers. Make your lifelong dream come true with our affordable, practical, and exciting classes at our flight school in Yukon, OK. 
+          Alto Flight Academy is a professional, full-service flight academy
+          providing comprehensive flight training to everyone from students and
+          private pilots to commercial pilots and airline transport flyers. Make
+          your lifelong dream come true with our affordable, practical, and
+          exciting classes at our flight school in Yukon, OK.
         </p>
         <p class="paragraph">
-          Whether you are looking for private pilot training, instrument rating courses, or commercial pilot license programs, Alto Flight Academy has the expertise to help you achieve your aviation goals.
+          Whether you are looking for private pilot training, instrument rating
+          courses, or commercial pilot license programs, Alto Flight Academy has
+          the expertise to help you achieve your aviation goals.
         </p>
         <h3 class="font-bold text-xl">Become a safer more proficient pilot</h3>
         <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
@@ -175,13 +190,15 @@ import Memberships from "../components/Memberships.astro";
       </div>
     </div> -->
     <CoursesCarrousel client:visible />
-    
+
     <!-- Email form -->
     <div
-      class="lg:max-w-6xl mt-20 lg:mt-24 max-w-xl mx-auto  bg-red-700 py-20 px-5 lg:px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
+      class="lg:max-w-6xl mt-20 lg:mt-24 max-w-xl mx-auto bg-red-700 py-20 px-5 lg:px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
     >
       <h3 class="text-white font-bold text-3xl flex-1">
-        Want to be notified when the next ground school starts? <br class="lg:block hidden"> Sign up here.
+        Want to be notified when the next ground school starts? <br
+          class="lg:block hidden"
+        /> Sign up here.
       </h3>
       <div class="flex relative flex-1 flex-col w-full pt-10">
         <input
@@ -225,7 +242,7 @@ import Memberships from "../components/Memberships.astro";
     />
     <div class="bg-white/10 w-full h-full absolute inset-0"></div>
     <div
-      class="max-w-7xl translate-y-24 lg:pb-5 mx-auto z-20 relative text-white flex justify-between items-center flex-col lg:flex-row gap-10"
+      class="max-w-7xl lg:pb-5 mx-auto z-20 relative text-white flex justify-between items-center flex-col lg:flex-row gap-10"
     >
       <h2 class="text-5xl font-bold max-w-sm text-dark-blue lg:text-white">
         Get in <span class="text-white lg:text-dark-blue">contact with us</span>
@@ -233,13 +250,11 @@ import Memberships from "../components/Memberships.astro";
       <div class="flex items-center">
         <IoPhonePortraitOutline className="size-24" />
         <div class="flex flex-col justify-between font-bold gap-5">
-          
           <a class="font-bold text-2xl" href=`tel:${PHONE_NUMBER}`>
-            Give us a call today<br>
+            Give us a call today<br />
             {PHONE_NUMBER}
-          </a
-          >
-          <div class="grid grid-cols-2 text-white ">
+          </a>
+          <div class="grid grid-cols-2 text-white">
             <div class="">Mon — Sat</div>
             <div class="">8 AM - 5 PM</div>
             <div class="">Sun</div>
@@ -253,8 +268,9 @@ import Memberships from "../components/Memberships.astro";
           <a
             class="text-white font-bold text-2xl"
             href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
-            target="_blank">{AIRPORT}
-            <br>(KHSD)
+            target="_blank"
+            >{AIRPORT}
+            <br />(KHSD)
           </a>
           <div class="flex flex-col pt-5">
             <p>{ADDRESS_LINE_1}</p>
