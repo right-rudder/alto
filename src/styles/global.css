@@ -15,12 +15,6 @@
   .paragraph {
     @apply text-gray-500 lg:text-lg font-semibold leading-loose;
   }
-  /* .btn-white {
-    @apply block text-center font-medium uppercase py-4 px-14 bg-white w-fit text-dark-blue hover:bg-medium-blue rounded-full  hover:text-white duration-300;
-  }
-  .btn-blue {
-    @apply block text-center font-medium uppercase py-4 px-14 bg-dark-blue w-fit text-white hover:bg-mustard-yellow hover:text-dark-blue rounded-full duration-300;
-  } */
 }
 
 .outlined-text {
@@ -29,4 +23,13 @@
     1px -1px 0 white,
     -1px 1px 0 white,
     1px 1px 0 white;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
 }
