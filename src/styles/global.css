@@ -33,3 +33,11 @@
 .swiper-pagination-bullet-active {
   background-color: black !important;
 }
+
+/* .swiper-wrapper {
+  height: 100% !important;
+} */
+
+.swiper-slide {
+  height: auto !important;
+}

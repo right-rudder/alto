@@ -20,6 +20,11 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import CoursesCarrousel from "../components/CoursesCarrousel";
 import Memberships from "../components/Memberships.astro";
+import TrainingCoursesCarrousel from "../components/TrainingCoursesCarrousel";
+import {
+  MdKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 ---
 
 <BaseLayout>
@@ -189,7 +194,27 @@ import Memberships from "../components/Memberships.astro";
         {courses.map((course) => <CourseCard {...course} />)}
       </div>
     </div> -->
-    <CoursesCarrousel client:visible />
+    <div class="max-w-7xl mx-auto text-white z-20 relative">
+      <div class="flex items-center gap-10 justify-between mb-10">
+        <h2 class="text-3xl lg:text-5xl font-bold">
+          <span class="text-red-700">Find the right</span> course for you
+        </h2>
+        <!-- <div class="flex gap-4">
+          <button
+            class="p-2 bg-white hover:bg-red-700 duration-200 rounded-full"
+          >
+            <MdKeyboardArrowLeft className="text-dark-blue size-7" />
+          </button>
+          <button
+            class="p-2 bg-white hover:bg-red-700 duration-200 rounded-full"
+          >
+            <MdOutlineKeyboardArrowRight className="text-dark-blue size-7" />
+          </button>
+        </div> -->
+      </div>
+
+      <TrainingCoursesCarrousel client:visible />
+    </div>
 
     <!-- Email form -->
     <div
@@ -216,7 +241,7 @@ import Memberships from "../components/Memberships.astro";
     </div>
   </section>
 
-  <section class="py-24 px-5 lg:pt-56">
+  <section class="py-24 px-5">
     <div class="max-w-lg lg:max-w-7xl mx-auto flex gap-16">
       <div>
         <h2 class="text-5xl font-bold">Our latest news and reports</h2>
