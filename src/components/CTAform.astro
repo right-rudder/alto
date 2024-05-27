@@ -3,7 +3,8 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
   .QUICK_START_FORM_WEBHOOK_URL;
 ---
 
-<div
+<form
+  id="quick-start-form"
   class="p-10 shadow-lg flex flex-col gap-5 mx-auto shadow-gray-400 max-w-xl lg:w-[30rem] bg-white"
 >
   <h3 class="font-bold text-xl">
@@ -11,12 +12,14 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
   </h3>
   <input
     type="text"
+    name="full-name"
     placeholder="Full name"
     class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full"
     required
   />
   <input
     type="text"
+    name="email"
     placeholder="Email"
     class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full"
     required
@@ -24,19 +27,20 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
 
   <input
     type="text"
+    name="phone"
     placeholder="Phone"
     class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full"
     required
   />
 
   <select
-    id="course"
-    name="course"
-    autocomplete="course-name"
+    name="experience"
     required
     class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full bg-white"
   >
-    <option class="text-gray-500">Do you have any pilot experience?</option>
+    <option class="text-gray-500" value="" selected
+      >Do you have any pilot experience?</option
+    >
     <option>I haven't started yet and I want to start flying</option>
     <option>I have a few hours, but I haven't solo'd yet</option>
     <option>I working on my private pilot</option>
@@ -65,30 +69,30 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
     class="px-5 py-3 btn-dark-blue w-full cursor-not-allowed bg-gray-400 hover:bg-gray-400"
     >START FLYING</button
   >
-</div>
+</form>
 
 <script define:vars={{ QUICK_START_FORM_WEBHOOK_URL }}>
   // Wait for the DOM content to be fully loaded
   document.addEventListener("DOMContentLoaded", function () {
     // Get the contactUs form element
-    const contactUsForm = document.getElementById("contact-us-form");
+    const quickStartForm = document.getElementById("quick-start-form");
 
     // Check if the contactUs form element exists
-    if (contactUsForm !== null) {
+    if (quickStartForm !== null) {
       // Add submit event listener to the contactUs form
-      contactUsForm.addEventListener("submit", function (event) {
+      quickStartForm.addEventListener("submit", function (event) {
         // Prevent the default form submission
         event.preventDefault();
 
         // Serialize the form data
-        const formData = new FormData(contactUsForm);
+        const formData = new FormData(quickStartForm);
 
         // Check the value of the honeypot field
         const confirmEmailValue = formData.get("confirm-email");
         if (confirmEmailValue === "" || confirmEmailValue === null) {
           // If the honeypot field is empty, it's a human
           // Set the form action to the URL for processing the form and redirecting to thank you
-          contactUsForm.action = QUICK_START_FORM_WEBHOOK_URL;
+          quickStartForm.action = QUICK_START_FORM_WEBHOOK_URL;
         }
 
         // Convert FormData to URLSearchParams
@@ -99,7 +103,7 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
 
         // Send an AJAX request to submit the form
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", contactUsForm.action);
+        xhr.open("POST", quickStartForm.action);
         xhr.setRequestHeader(
           "Content-Type",
           "application/x-www-form-urlencoded",
@@ -108,7 +112,7 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
           // Check if the request was successful (status 200)
           if (xhr.status === 200) {
             // Redirect the user after a successful form submission
-            window.location.href = "/contact-us-confirmation";
+            window.location.href = "/quick-start-confirmation";
           } else {
             // Handle errors if any
             console.error("Form submission failed:", xhr.statusText);
