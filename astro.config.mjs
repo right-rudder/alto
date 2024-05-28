@@ -18,4 +18,10 @@ export default defineConfig({
     alpinejs(),
     partytown(),
   ],
+  redirects: {
+    "/pilot-training": "/ground-school/private-pilot",
+    "/airplanes-for-sale": "/acquisitions-sales",
+    "/airplanes-for-rent": "/about/our-fleet",
+    "/how-to-operate-an-airplane": "/ground-school/instrument-rating",
+  },
 });
