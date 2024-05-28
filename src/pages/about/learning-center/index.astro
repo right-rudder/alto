@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import BlogPostCard from "../../../components/BlogPostCard.astro";
+
+const posts = (await getCollection("articles")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const headerData = {
+  title: "Learning Center",
+  headerImage: "/src/assets/cfi-in-cessna.jpg",
+  headerAlt: "CFI in Cessna",
+};
+---
+
+<BaseLayout>
+  <Header slot="header" data={headerData} />
+  <section class="py-24 px-5">
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-7">
+        {
+          posts.map((post) => (
+            <BlogPostCard
+              imagePath={post.data.heroImage}
+              title={post.data.title}
+              date={post.data.pubDate}
+              blogUrl={`/about/learning-center/${post.slug}/`}
+              description={post.data.description}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
