@@ -22,7 +22,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
   safelist: [
     "[counter-set:_num_var(--num-graduates)]",
     "[counter-set:_num_var(--num-professionals)]",
