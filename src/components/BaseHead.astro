@@ -15,6 +15,23 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
+<!-- Site Created By:    
+       _____  _       _     _     _____           _     _           
+      |  __ \(_)     | |   | |   |  __ \         | |   | |          
+      | |__) |_  __ _| |__ | |_  | |__) |   _  __| | __| | ___ _ __ 
+      |  _  /| |/ _` | '_ \| __| |  _  / | | |/ _` |/ _` |/ _ \ '__|
+      | | \ \| | (_| | | | | |_  | | \ \ |_| | (_| | (_| |  __/ |   
+      |_|  \_\_|\__, |_| |_|\__| |_|  \_\__,_|\__,_|\__,_|\___|_|   
+      |  \/  |   __/ |  | |      | | (_)                            
+      | \  / | _|___/ __| | _____| |_ _ _ __   __ _                 
+      | |\/| |/ _` | '__| |/ / _ \ __| | '_ \ / _` |                
+      | |  | | (_| | |  |   <  __/ |_| | | | | (_| |                
+      |_|  |_|\__,_|_|  |_|\_\___|\__|_|_| |_|\__, |                
+                                               __/ |                
+                                              |___/                 
+
+    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
+
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/logo.ico" />
 <meta name="generator" content={Astro.generator} />
@@ -40,3 +57,18 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Google tag (gtag.js) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-GJM49SEQC5"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-GJM49SEQC5");
+</script>
