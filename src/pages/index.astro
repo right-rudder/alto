@@ -5,7 +5,7 @@ import {
   ADDRESS_LINE_1,
   ADDRESS_LINE_2,
 } from "../consts";
-import HomepageHeader from "../components/HomepageHeader.astro";
+import HomepageHeader2 from "../components/HomepageHeader2.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import StatCard from "../components/StatCard.astro";
 import CTAform from "../components/CTAform.astro";
@@ -28,14 +28,14 @@ import EmailNotificationForm from "../components/EmailNotificationForm.astro";
 ---
 
 <BaseLayout>
-  <HomepageHeader slot="header" />
+  <HomepageHeader2 slot="header" />
   <section class="lg:max-h-[20rem] px-5">
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between">
       <div class="grid grid-cols-2 w-full">
-        <StatCard />
+        <!-- <StatCard /> -->
       </div>
       <div class="lg:-translate-y-52">
-        <CTAform />
+        <!-- <CTAform /> -->
       </div>
     </div>
   </section>
