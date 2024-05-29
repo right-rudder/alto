@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Raleway Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        sans2: ["Raleway Variable", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         "dark-blue": "#09212b",
