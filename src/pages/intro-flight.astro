@@ -2,83 +2,32 @@
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerData = {
-  title: "Contact Us",
+  title: "Intro Flight",
   headerImage: "/src/assets/cfi-in-cessna.jpg",
   headerAlt: "CFI in Cessna",
 };
-import { IoPhonePortraitOutline } from "react-icons/io5";
-import { IoLocationOutline } from "react-icons/io5";
-import { TfiEmail } from "react-icons/tfi";
 
-import {
-  PHONE_NUMBER,
-  AIRPORT,
-  ADDRESS_LINE_1,
-  ADDRESS_LINE_2,
-  EMAIL_ADDRESS,
-} from "../consts";
-
-const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
+const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
+  .INTRO_FLIGHT_FORM_WEBHOOK_URL;
 ---
 
 <BaseLayout>
   <Header slot="header" data={headerData} />
 
-  <section class="py-20 px-5 relative overflow-hidden bg-dark-blue">
-    <div
-      class="max-w-7xl mx-auto z-20 relative text-dark-blue flex justify-between items-center flex-col lg:flex-row gap-10"
-    >
-      <div class="flex">
-        <IoPhonePortraitOutline className="size-24 text-red-700" />
-        <div class="flex flex-col justify-between font-bold">
-          <a class="text-white font-bold text-2xl" href=`tel:${PHONE_NUMBER}`
-            >{PHONE_NUMBER}</a
-          >
-          <div class="flex flex-col text-gray-300">
-            <p>Monday — Saturday: 8.00am - 5.00pm</p>
-            <p>Sunday: 12.00pm - 5.00pm</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex">
-        <IoLocationOutline className="size-24 text-red-700" />
-        <div class="flex flex-col justify-between font-bold">
-          <a
-            class="text-white font-bold text-2xl"
-            href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
-            target="_blank">{AIRPORT}</a
-          >
-          <div class="flex flex-col text-gray-300">
-            <p>{ADDRESS_LINE_1}</p>
-            <p>{ADDRESS_LINE_2}</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex gap-5">
-        <TfiEmail className="size-24 text-red-700" />
-        <div class="flex flex-col justify-between font-bold">
-          <a
-            class="text-white font-bold text-2xl"
-            href={`mailto:${EMAIL_ADDRESS}`}
-            target="_blank">Alto mail</a
-          >
-          <div class="flex flex-col text-gray-300">
-            <a href={`mailto:${EMAIL_ADDRESS}`} target="_blank"
-              >{EMAIL_ADDRESS}</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="py-24 px-5">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-dark-blue text-5xl font-extrabold mx-auto w-fit">
-        Get in touch
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
+      >
+        Request an Intro Flight at Alto Flight Academy
       </h2>
+      <h3 class="font-medium text-center mx-auto text-xl">
+        Fill out the form below and let's start flying! An Alto team member will
+        get in touch with you and walk you through the next steps on getting you
+        in the air.
+      </h3>
       <form
-        id="contact-form"
+        id="intro-flight-form"
         class="flex flex-col max-w-4xl mx-auto gap-5 my-5"
       >
         <div class="flex flex-col lg:flex-row gap-5">
@@ -120,10 +69,34 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
           />
         </div>
 
-        <textarea
+        <label for="requested-date">Requested date:</label>
+
+        <input
           required
-          name="message"
-          placeholder="Your message"
+          type="date"
+          id="requested-date"
+          name="requested-date"
+          min="2018-01-01"
+          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-full"
+        />
+
+        <label for="requested-time">Requested time:</label>
+        <select
+          required
+          id="requested-time"
+          name="requested-time"
+          class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full bg-white"
+        >
+          <option value="" selected> -- select an option -- </option>
+          <option>7AM - 9AM</option>
+          <option>9AM - 11AM</option>
+          <option>9AM - 1PM</option>
+          <option>1PM - 3PM</option>
+        </select>
+
+        <textarea
+          placeholder="Additional comments or questions?"
+          name="comments"
           class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
         ></textarea>
 
@@ -153,19 +126,35 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
       </form>
     </div>
   </section>
-
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.057927577292!2d-97.710454723616!3d35.60163763434128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2014e29c352e9%3A0x466ca3f4081dcdf5!2sAlto%20Flight%20Academy!5e0!3m2!1sen!2sgt!4v1715928246714!5m2!1sen!2sgt"
-    class="w-full h-[35rem]"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-  >
-  </iframe>
 </BaseLayout>
 
-<script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
+<script define:vars={{ INTRO_FLIGHT_FORM_WEBHOOK_URL }}>
+  // Function to format date as YYYY-MM-DD
+  function formatDate(date) {
+    let day = date.getDate();
+    let month = date.getMonth() + 1; // Months are zero based
+    let year = date.getFullYear();
+
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  // Calculate the date four days from today
+  const today = new Date();
+  const fourDaysFromToday = new Date(today);
+  fourDaysFromToday.setDate(today.getDate() + 4);
+
+  // Set the min attribute
+  document
+    .getElementById("requested-date")
+    ?.setAttribute("min", formatDate(fourDaysFromToday));
+
   const checkbox = document.getElementById("agree-data-collection");
   const submitButton = document.getElementById("submit-button");
 
@@ -190,24 +179,24 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   // Wait for the DOM content to be fully loaded
   document.addEventListener("DOMContentLoaded", function () {
     // Get the contactUs form element
-    const contactForm = document.getElementById("contact-form");
+    const introFlightForm = document.getElementById("intro-flight-form");
 
     // Check if the contactUs form element exists
-    if (contactForm !== null) {
+    if (introFlightForm !== null) {
       // Add submit event listener to the contactUs form
-      contactForm.addEventListener("submit", function (event) {
+      introFlightForm.addEventListener("submit", function (event) {
         // Prevent the default form submission
         event.preventDefault();
 
         // Serialize the form data
-        const formData = new FormData(contactForm);
+        const formData = new FormData(introFlightForm);
 
         // Check the value of the honeypot field
         const confirmEmailValue = formData.get("confirm-email");
         if (confirmEmailValue === "" || confirmEmailValue === null) {
           // If the honeypot field is empty, it's a human
           // Set the form action to the URL for processing the form and redirecting to thank you
-          contactForm.action = CONTACT_US_FORM_WEBHOOK_URL;
+          introFlightForm.action = INTRO_FLIGHT_FORM_WEBHOOK_URL;
         }
 
         // Convert FormData to URLSearchParams
@@ -218,7 +207,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
 
         // Send an AJAX request to submit the form
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", contactForm.action);
+        xhr.open("POST", introFlightForm.action);
         xhr.setRequestHeader(
           "Content-Type",
           "application/x-www-form-urlencoded",
@@ -227,7 +216,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
           // Check if the request was successful (status 200)
           if (xhr.status === 200) {
             // Redirect the user after a successful form submission
-            window.location.href = "/contact-confirmation";
+            window.location.href = "/enrollment-confirmation";
           } else {
             // Handle errors if any
             console.error("Form submission failed:", xhr.statusText);
@@ -240,7 +229,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
         xhr.send(urlSearchParams);
       });
     } else {
-      console.error("Contact us form element not found.");
+      console.error("Intro flight form element not found.");
     }
   });
 </script>

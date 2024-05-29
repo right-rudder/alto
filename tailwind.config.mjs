@@ -22,7 +22,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
   safelist: [
     "[counter-set:_num_var(--num-graduates)]",
     "[counter-set:_num_var(--num-professionals)]",
@@ -46,5 +46,7 @@ export default {
     "-translate-x-[calc(7*100%)]",
     "-translate-x-[calc(8*100%)]",
     "-translate-x-[calc(9*100%)]",
+    "bg-red-700",
+    "bg-green-500",
   ],
 };

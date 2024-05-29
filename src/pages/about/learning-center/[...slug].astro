@@ -1,0 +1,50 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("articles");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"articles">;
+
+const post = Astro.props;
+const { title, description, pubDate, heroImage } = post.data;
+const { Content } = await post.render();
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import type { ImageMetadata } from "astro";
+const headerData = {
+  title: title,
+  headerImage: heroImage,
+  headerAlt: "CFI in Cessna",
+};
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}",
+);
+if (!images[heroImage]) {
+  throw new Error(
+    `"${heroImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+  );
+}
+---
+
+<BaseLayout siteTitle={title}>
+  <Header slot="header" data={headerData} />
+  <article class="max-w-3xl mx-auto py-24 px-5">
+    <div class="max-h-[30rem] flex mb-10">
+      <Image
+        src={images[heroImage]()}
+        alt={title}
+        class="object-cover w-full"
+        quality={80}
+      />
+    </div>
+    <div class="prose lg:prose-xl text-gray-600">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

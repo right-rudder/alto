@@ -13,11 +13,11 @@ if (!images[imagePath]) {
 ---
 
 <div class="flex flex-col lg:flex-row lg:gap-3 lg:max-w-96">
-  <div class="lg:min-h-fit lg:w-28 lg:h-24 aspect-video">
+  <div class="lg:min-h-fit lg:min-w-28 lg:max-w-28 lg:h-24 aspect-video">
     <Image
       src={images[imagePath]()}
       alt={alt}
-      class="h-full w-full object-cover"
+      class="h-full w-full object-cover shrink-0"
       quality={50}
     />
   </div>

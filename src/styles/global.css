@@ -10,17 +10,11 @@
     @apply text-center font-bold py-4 px-8 outline outline-1 outline-gray-700 w-fit bg-gray-100 text-dark-blue rounded-full;
   }
   .btn-red {
-    @apply text-center font-bold py-5 px-14 bg-red-700 w-fit text-dark-blue rounded-full hover:bg-white duration-200;
+    @apply text-center font-bold py-5 px-14 bg-red-700 w-fit text-white hover:text-dark-blue rounded-full hover:bg-white duration-200;
   }
   .paragraph {
     @apply text-gray-500 lg:text-lg font-semibold leading-loose;
   }
-  /* .btn-white {
-    @apply block text-center font-medium uppercase py-4 px-14 bg-white w-fit text-dark-blue hover:bg-medium-blue rounded-full  hover:text-white duration-300;
-  }
-  .btn-blue {
-    @apply block text-center font-medium uppercase py-4 px-14 bg-dark-blue w-fit text-white hover:bg-mustard-yellow hover:text-dark-blue rounded-full duration-300;
-  } */
 }
 
 .outlined-text {
@@ -29,4 +23,21 @@
     1px -1px 0 white,
     -1px 1px 0 white,
     1px 1px 0 white;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
+/* .swiper-wrapper {
+  height: 100% !important;
+} */
+
+.swiper-slide {
+  height: auto !important;
 }

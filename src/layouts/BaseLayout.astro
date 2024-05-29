@@ -6,6 +6,7 @@ import "@fontsource-variable/raleway";
 import Navbar from "../components/Navbar";
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
+import ChatWidget from "../components/ChatWidget.astro";
 ---
 
 <!doctype html>
@@ -24,6 +25,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
       <slot />
     </main>
     <Footer />
+    <ChatWidget />
     <!-- <script src="../scripts/animate-on-scroll.js"></script> -->
   </body>
 </html>
