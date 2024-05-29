@@ -1,6 +1,6 @@
 const flightInstructorData = {
   data: {
-    title: "Flight Instructor",
+    title: "Become a CFI",
     hiddenField: "Flight Instructor Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
     price: "$1350",
