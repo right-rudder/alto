@@ -10,7 +10,7 @@ const TrainingCourseCard = ({ name, duration, description, button, href }) => {
 
         <a
           href={href}
-          className="btn-red mt-5 w-full text-sm py-4 px-0 hover:bg-dark-blue"
+          className="btn-red mt-5 w-full text-sm py-4 px-0 hover:bg-dark-blue font-light uppercase"
         >
           {button}
         </a>
