@@ -12,7 +12,7 @@ import Badge from "../assets/30-years-in-business.png"
           x-data="{
             current: 0,
             target: 30,
-            time: 1000,
+            time: 1500,
             startCounter() {
               let start = this.current;
               const interval = Math.max(this.time / (this.target - start), 5);
@@ -31,9 +31,13 @@ import Badge from "../assets/30-years-in-business.png"
         >
           <span class="card" x-text="Math.round(current).toLocaleString()"></span>
         </span>
-        Years of <br class="lg:hidden">professional pilot training
+        years of <br class="lg:hidden">professional pilot training
       </h2>
-      <Image src={Badge} alt="Alto FLight Academy has been training pilots for 30 years" class="w-32 lg:w-64" />
+      <Image src={Badge} alt="Alto FLight Academy has been training pilots for 30 years" class="w-28 lg:w-56" />
+      
+      <p class="paragraph pt-10 text-gray-400">
+        Alto Flight has been training thousands of pilots in Oklahoma City for 3 decades!  
+      </p>
     </div>
   </div>
 </section>
