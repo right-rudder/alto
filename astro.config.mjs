@@ -15,7 +15,7 @@ export default defineConfig({
     sitemap(),
     tailwind(),
     react(),
-    alpinejs(),
+    alpinejs({ entrypoint: '/src/entrypoint' }),
     partytown(),
   ],
   redirects: {

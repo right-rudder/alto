@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import Badge from "../assets/30-years-in-business.png"
+---
+
+<section class="mb-0 py-12 lg:py-24 sm:py-10 bg-gradient-to-tl from-dark-blue to-sky-950  text-white relative max-w-[90rem] mx-auto lg:mb-20">
+  <div class="grid place-items-center">
+    <div class="flex flex-col items-center">
+      <h2 class="text-center text-3xl lg:text-5xl pb-10">
+        <span
+          class="tabular-nums"
+          x-data="{
+            current: 0,
+            target: 30,
+            time: 1000,
+            startCounter() {
+              let start = this.current;
+              const interval = Math.max(this.time / (this.target - start), 5);
+              const step = (this.target - start) / (this.time / interval);
+              const handle = setInterval(() => {
+                if (this.current < this.target) {
+                  this.current += step;
+                } else {
+                  clearInterval(handle);
+                  this.current = this.target;
+                }
+              }, interval);
+            },
+          }"
+          x-intersect.enter="startCounter"
+        >
+          <span class="card" x-text="Math.round(current).toLocaleString()"></span>
+        </span>
+        Years of <br class="lg:hidden">professional pilot training
+      </h2>
+      <Image src={Badge} alt="Alto FLight Academy has been training pilots for 30 years" class="w-32 lg:w-64" />
+    </div>
+  </div>
+</section>
