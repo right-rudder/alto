@@ -22,11 +22,12 @@ import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airpl
   />
   <div class="bg-white/10 w-full h-full absolute inset-0"></div>
   <div
-    class="max-w-7xl lg:pb-5 mx-auto z-20 relative text-white flex justify-between items-center flex-col lg:flex-row gap-10"
+    class="max-w-7xl lg:pb-5 mx-auto z-20 relative text-white flex justify-between lg:items-center items-start flex-col lg:flex-row gap-10"
   >
-    <h2 class="text-5xl font-bold max-w-sm text-dark-blue lg:text-white">
-      Get in <span class="text-white lg:text-dark-blue">contact with us</span>
+    <h2 class="text-5xl font-bold max-w-sm text-dark-blue lg:text-white lg:mt-20">
+      Get in <span class="text-white lg:text-dark-blue">contact with us</span><br class="hidden lg:block"><br class="hidden lg:block"><a href="/contact" class="hidden lg:block btn-red shrink-0 text-sm">CONTACT US</a>
     </h2>
+    
     <div class="flex items-center">
       <IoPhonePortraitOutline className="size-24" />
       <div class="flex flex-col justify-between font-bold gap-5">
@@ -58,5 +59,9 @@ import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airpl
         </div>
       </div>
     </div>
+    <div class="flex items-center lg:hidden">
+      <a href="/contact" class="btn-red text-sm">CONTACT US</a>
+    </div>
   </div>
+  
 </section>
