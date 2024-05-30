@@ -1,6 +1,6 @@
 const instrumentRatingDataGroundSchool = {
   data: {
-    title: "Instrument Rating",
+    title: "Instrument Ground School",
     hiddenField: "Instrument Rating Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
     price: "$1350",

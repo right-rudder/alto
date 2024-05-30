@@ -1,6 +1,6 @@
 const privatePilotDataGroundSchool = {
   data: {
-    title: "Private Pilot",
+    title: "Private Pilot Ground School",
     hiddenField: "Private Pilot Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
     price: "$1350",

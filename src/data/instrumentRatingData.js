@@ -1,6 +1,6 @@
 const instrumentRatingData = {
   data: {
-    title: "Instrument Rating",
+    title: "Become an Instrument Rated Pilot",
     hiddenField: "Instrument Rating Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
     price: "$1350",

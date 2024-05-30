@@ -79,7 +79,7 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky top-0 z-50">
+    <nav className="w-full h-0 sticky top-0 z-50 font-stock tracking-wider">
       <div
         className={`${
           navBar || openMobile
@@ -93,13 +93,13 @@ const Navbar = ({ pathname }) => {
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
-              <div className="absolute bg-red-700 top-0 -left-[77rem] lg:-left-[73rem] h-20 lg:h-28 w-[90rem]"></div>
+              <div className="absolute bg-gradient-to-br from-red-500 to-red-700 top-0 -left-[77rem] lg:-left-[73rem] h-20 lg:h-28 w-[90rem]"></div>
               <a
                 href="/"
                 className="uppercase leading-none flex flex-col text-white z-50 font-bold text-4xl tracking-wider ml-3 lg:ml-8"
               >
-                <p>Alto</p>
-                <p className="text-sm font-extrabold lg:text-xl text-gray-200">
+                <p class="font-sans2">Alto</p>
+                <p className="text-sm lg:text-xl font-stock tracking-loose font-semibold text-gray-800">
                   Flight Academy
                 </p>
               </a>
@@ -108,19 +108,19 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "underline" : ""} underline-offset-2 decoration-white relative group last:no-underline`}
+                      className={`${isActive(item, pathname) ? "underline" : ""} relative group last:no-underline`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
                       {item.link ? (
                         <a
                           href={item.link}
-                          className="text-white font-bold text-lg duration-300 hover:underline py-12 border-main-red whitespace-nowrap group-last:hover:text-dark-blue group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:hover:bg-white group-last:hover:no-underline"
+                          className="text-white font-bold text-lg duration-300 hover:underline decoration-red-600  decoration-4 underline-offset-[10px] py-12 border-main-red whitespace-nowrap group-last:hover:text-dark-blue group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           {item.name}
                         </a>
                       ) : (
-                        <span className="font-bold cursor-default text-white text-lg duration-300 hover:underline py-12 border-main-red whitespace-nowrap">
+                        <span className="font-bold cursor-default text-white text-lg duration-300 hover:underline decoration-red-600  decoration-4 underline-offset-[10px] py-12 border-main-red whitespace-nowrap">
                           {item.name}
                         </span>
                       )}

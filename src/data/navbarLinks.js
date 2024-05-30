@@ -9,6 +9,7 @@ export const navbarLinks = [
     submenu: [
       {
         name: "Private Pilot",
+        link: "/flight-training/private-pilot",
         subsubmenu: [
           {
             name: "Ground School",
@@ -22,6 +23,7 @@ export const navbarLinks = [
       },
       {
         name: "Instrument Rating",
+        link: "/flight-training/instrument-rating",
         subsubmenu: [
           {
             name: "Ground School",
@@ -35,6 +37,7 @@ export const navbarLinks = [
       },
       {
         name: "Commercial Pilot",
+        link: "/flight-training/commercial-pilot",
         subsubmenu: [
           {
             name: "Ground School",
@@ -48,6 +51,7 @@ export const navbarLinks = [
       },
       {
         name: "Flight Instructor",
+        link: "/flight-training/flight-instructor",
         subsubmenu: [
           {
             name: "Ground School",
@@ -61,6 +65,7 @@ export const navbarLinks = [
       },
       {
         name: "Multi-Engine Rating",
+        link: "/flight-training/multi-engine-rating",
         subsubmenu: [
           {
             name: "Ground School",
@@ -74,6 +79,7 @@ export const navbarLinks = [
       },
       {
         name: "Airline Transport Pilot",
+        link: "/flight-training/airline-transport-pilot",
         subsubmenu: [
           {
             name: "Ground School",
