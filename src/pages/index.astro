@@ -1,5 +1,4 @@
 ---
-
 import HomepageHeader2 from "../components/HomepageHeader2.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 //import StatCard from "../components/StatCard.astro";
@@ -18,14 +17,12 @@ import {
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 import EmailNotificationForm from "../components/EmailNotificationForm.astro";
-import ThirtyYears from "../components/ThirtyYears.astro"
-
+import ThirtyYears from "../components/ThirtyYears.astro";
 
 import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg";
 import GroupPhoto from "../assets/alto-flight-sundance-airport-yukon-oklahoma.jpg";
 import GetInContact from "../components/GetInContact.astro";
 import GoogleMaps from "../components/GoogleMaps.astro";
-
 ---
 
 <BaseLayout>
@@ -46,22 +43,32 @@ import GoogleMaps from "../components/GoogleMaps.astro";
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
     >
       <div class="flex-[1.5_1.5_0] w-full">
-        <Image src={GroupPhoto} alt="Alto Flight Academy team in front of multi engine airplane at Sundance Airport KHSD" />
+        <Image
+          src={GroupPhoto}
+          alt="Alto Flight Academy team in front of multi engine airplane at Sundance Airport KHSD"
+        />
       </div>
       <div class="flex flex-col flex-1 gap-5">
         <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
           Start your pilot career in Yukon, OK
         </h2>
         <p class="paragraph">
-          Alto Flight Academy is your flight school to get you in the air.  
-          Conveniently located in Sundance Airport (KHSD), just northwest of Oklahoma City,
-          we have training programs to get from zero to hero.  Start with your private pilot certificate and train all the way 
-          to your ATP.  Alto Flight Academy is your family in aviation.  We're here to support you along your journey to become a professional pilot.
+          Alto Flight Academy is your flight school to get you in the air.
+          Conveniently located in Sundance Airport (KHSD), just northwest of
+          Oklahoma City, we have training programs to get from zero to hero.
+          Start with your private pilot certificate and train all the way to
+          your ATP. Alto Flight Academy is your family in aviation. We're here
+          to support you along your journey to become a professional pilot.
         </p>
         <h3 class="font-bold text-xl">
-          For those just starting out to advanced training in instrument, multi-engine, commercial, and beyond.
+          For those just starting out to advanced training in instrument,
+          multi-engine, commercial, and beyond.
         </h3>
-        <a href="/intro-flight" target="_blank" class="btn-red uppercase font-light tracking-wider">
+        <a
+          href="/intro-flight"
+          target="_blank"
+          class="btn-red uppercase font-light tracking-wider hover:from-dark-blue hover:to-blue-900 hover:text-white"
+        >
           Book an intro flight
         </a>
       </div>
@@ -83,13 +90,16 @@ import GoogleMaps from "../components/GoogleMaps.astro";
           How do I get started?
         </h2>
         <p class="paragraph">
-          Congratulations on making the decision to become a pilot.  
-          Becoming a pilot means learning new skills, gaining aeronautical knowledge, and 
-          developing yourself to become a safe, skilled, and proficient pilot.  It's life changing and opens the door to many opportunities.
+          Congratulations on making the decision to become a pilot. Becoming a
+          pilot means learning new skills, gaining aeronautical knowledge, and
+          developing yourself to become a safe, skilled, and proficient pilot.
+          It's life changing and opens the door to many opportunities.
         </p>
         <p class="paragraph">
-          To start off, we recommend dropping by or giving us a call.  Speak to one of our certified flight instructors and we'll work with you to
-          understand your situation, your goals, and how Alto Flight can give you the necessary skills needed to become an airline pilot.
+          To start off, we recommend dropping by or giving us a call. Speak to
+          one of our certified flight instructors and we'll work with you to
+          understand your situation, your goals, and how Alto Flight can give
+          you the necessary skills needed to become an airline pilot.
         </p>
         <h3 class="font-bold text-xl">Oklahoma City Pilot Training</h3>
         <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
@@ -97,37 +107,55 @@ import GoogleMaps from "../components/GoogleMaps.astro";
             <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
               <FaCheck className="size-3 text-white" />
             </div>
-            <p class="group-hover:underline"><a href="flight-training/private-pilot">Private Pilot</a></p>
+            <p class="group-hover:underline">
+              <a href="flight-training/private-pilot">Private Pilot</a>
+            </p>
           </li>
           <li class="flex gap-2 items-center group">
             <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
               <FaCheck className="size-3 text-white" />
             </div>
-            <p class="group-hover:underline"><a href="flight-training/instrument-rating">Instrument Rating</a></p>
+            <p class="group-hover:underline">
+              <a href="flight-training/instrument-rating">Instrument Rating</a>
+            </p>
           </li>
           <li class="flex gap-2 items-center group">
             <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
               <FaCheck className="size-3 text-white" />
             </div>
-            <p class="group-hover:underline"><a href="flight-training/commercial-pilot">Commercial Pilot</a></p>
+            <p class="group-hover:underline">
+              <a href="flight-training/commercial-pilot">Commercial Pilot</a>
+            </p>
           </li>
           <li class="flex gap-2 items-center group">
             <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
               <FaCheck className="size-3 text-white" />
             </div>
-            <p class="group-hover:underline"><a href="flight-training/multi-engine-rating">Multi-Engine Rating</a></p>
+            <p class="group-hover:underline">
+              <a href="flight-training/multi-engine-rating"
+                >Multi-Engine Rating</a
+              >
+            </p>
           </li>
           <li class="flex gap-2 items-center group">
             <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
               <FaCheck className="size-3 text-white" />
             </div>
-            <p class="group-hover:underline"><a href="flight-training/certified-flight-instructor">Certified Flight Instructor</a></p>
+            <p class="group-hover:underline">
+              <a href="flight-training/certified-flight-instructor"
+                >Certified Flight Instructor</a
+              >
+            </p>
           </li>
           <li class="flex gap-2 items-center group">
             <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
               <FaCheck className="size-3 text-white" />
             </div>
-            <p class="group-hover:underline"><a href="flight-training/airline-transport-pilot">Airline Transport Pilot</a></p>
+            <p class="group-hover:underline">
+              <a href="flight-training/airline-transport-pilot"
+                >Airline Transport Pilot</a
+              >
+            </p>
           </li>
         </ul>
       </div>
@@ -135,7 +163,7 @@ import GoogleMaps from "../components/GoogleMaps.astro";
   </section>
 
   <ThirtyYears />
-  
+
   <Memberships />
   <section class="py-20 lg:pb-24 px-5 bg-dark-blue relative">
     <!-- <div class="max-w-7xl mx-auto text-white z-20 relative">
@@ -194,7 +222,6 @@ import GoogleMaps from "../components/GoogleMaps.astro";
 
   <GetInContact />
   <GoogleMaps />
-  
 </BaseLayout>
 
 <script
