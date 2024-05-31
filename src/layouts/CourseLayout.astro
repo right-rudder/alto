@@ -57,18 +57,14 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
   </div>
 </section>
 
-<hr class="border-t max-w-7xl mx-auto border-gray-300" />
-
-<section class="py-12 px-5">
+<section class="py-16 px-5 bg-dark-blue">
   <div class="max-w-xl lg:max-w-7xl mx-auto text-dark-blue">
-    <h2 class="font-extrabold text-5xl">Future Pathways</h2>
+    <h2 class="font-extrabold text-5xl text-white">Future Pathways</h2>
     <div class="flex flex-col lg:flex-row gap-10 mt-10">
       {courses.map((course) => <CourseCard course={course} />)}
     </div>
   </div>
 </section>
-
-<hr class="border-t max-w-7xl mx-auto border-gray-300" />
 
 <section class="py-12 px-5 scroll-my-24" id="sign-up-form">
   <div class="max-w-xl lg:max-w-7xl mx-auto text-dark-blue">
