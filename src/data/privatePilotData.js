@@ -1,6 +1,7 @@
 const privatePilotData = {
   data: {
     siteTitle: "Private Pilot Training | Flight School Oklahoma City",
+    siteDescription: "Obtaining your private pilot certificate is the first certification in your pilot training journey.  Having a private pilot certificate allows you to be pilot in command and also allows you to take passengers.  You may not fly in IMC (think cloudy weather), or fly for compensation or hire.  Start your private pilot training today in Oklahoma City!",
     title: "Private Pilot Training",
     hiddenField: "Private Pilot Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

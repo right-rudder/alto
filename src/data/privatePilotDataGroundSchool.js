@@ -1,6 +1,7 @@
 const privatePilotDataGroundSchool = {
   data: {
     siteTitle: "Private Pilot Ground School | Flight School Oklahoma City",
+    siteDescription: "One of our most popular courses.  Begin your pilot training journey and knock out your private pilot written exam.  Our private pilot ground school will teach you the fundamentals of flight, weather, regulations, and aerodynamics.  Take the first step and join our private pilot ground school.",
     title: "Private Pilot Ground School",
     hiddenField: "Private Pilot Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

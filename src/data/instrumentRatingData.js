@@ -1,6 +1,7 @@
 const instrumentRatingData = {
   data: {
     siteTitle: "Instrument Rating | Flight School Oklahoma City",
+    siteDescription: "An instrument rating is the next step for those who have already completed their private pilot certificate but would like to expand their horizon (or be able to fly the horizon without being able to see it.  Becoming an instrument rated pilot makes you a safer more articulate pilot.",
     title: "Become an Instrument Rated Pilot",
     hiddenField: "Instrument Rating Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

@@ -1,6 +1,7 @@
 const multiEngineRatingDataGroundSchool = {
   data: {
     siteTitle: "Multi-Engine Ground School | Flight School Oklahoma City",
+    siteDescription: "Enroll in our multi engine ground school.  Learn the fundamentals in multi engine aircraft.  Learning how to control two or more engines and understanding aircraft systems to fly safely and proficiently is a must.  Having multi engine time and ratings helps you be more competitive if you are looking to start your airline pilot career.  Enroll today at Alto Flight Academy located just in Yukon, OK.",
     title: "Multi-Engine Ground School",
     hiddenField: "Multi-Engine Rating Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

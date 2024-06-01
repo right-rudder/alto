@@ -1,6 +1,7 @@
 const airlineTransportPilotData = {
   data: {
     siteTitle: "ATP Flight School | Flight School Oklahoma City",
+    siteDescription: "Obtaining your ATP is considered to be the pinnacle of your ab-initio pilot training.  Having your ATP is a minimum requirement to fly in the airlines and corporate aviation.  Begin your airline pilot career today and enroll at Alto Flight Academy,  Your premier flight school in Yukon, OK.",
     title: "Get your ATP",
     hiddenField: "Airline Transport Pilot Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

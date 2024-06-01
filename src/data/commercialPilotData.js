@@ -1,6 +1,7 @@
 const commercialPilotData = {
   data: {
     siteTitle: "Commercial Pilot Certificate | Flight School Oklahoma City",
+    siteDescription: "Start your pilot career now.  Obtain your commercial pilot certificate and get paid to fly.  Undergoing commercial pilot training means learning a new set of manuevers and regulations.  You'll learn how to be a more safe and precise pilot.  Enroll today at Alto Flight Academy and start your commercial pilot training in Oklahoma City.",
     title: "Commercial Pilot Training",
     hiddenField: "Commercial Pilot Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

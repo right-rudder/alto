@@ -1,6 +1,7 @@
 const commercialPilotDataGroundSchool = {
   data: {
     siteTitle: "Commercial Pilot Ground School | Flight School Oklahoma City",
+    siteDescription: "Obtaining your commercial pilot certificate allows you to fly for compensation or hire.  With those new privileges, you will be required to learn additional regulations, become more familiar with how weather works, and learn about more complex aircraft. Start with taking our commercial pilot ground school located in Sundance Airpark over in Oklahoma City.",
     title: "Commercial Pilot Ground School",
     hiddenField: "Commercial Pilot Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

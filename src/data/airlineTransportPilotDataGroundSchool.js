@@ -1,6 +1,7 @@
 const airlineTransportPilotDataGroundSchool = {
   data: {
     siteTitle: "ATP Ground School | Flight School Oklahoma City",
+    siteDescription: "Enroll in our ATP ground school.  btaining your ATP is considered to be the pinnacle of your ab-initio pilot training.  Having your ATP is a minimum requirement to fly in the airlines and corporate aviation.  Begin your airline pilot career today and enroll at Alto Flight Academy,  Your premier flight school in Yukon, OK.",
     title: "ATP Ground School",
     hiddenField: "Airline Transport Pilot Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

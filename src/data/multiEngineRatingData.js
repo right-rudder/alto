@@ -1,6 +1,7 @@
 const multiEngineRatingData = {
   data: {
     siteTitle: "Multi-Engine Pilot Training | Flight School Oklahoma City",
+    siteDescription: "Obtaining your multi-engine rating is a significant step in your pilot learning journey.  Learning how to control two or more engines and understanding aircraft systems to fly safely and proficiently is a must.  Having multi engine time and ratings helps you be more competitive if you are looking to start your airline pilot career.  Enroll today at Alto Flight Academy located just west of Bethany, OK.",
     title: "Multi-Engine Rating Training",
     hiddenField: "Multi-Engine Rating Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

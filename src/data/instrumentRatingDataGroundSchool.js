@@ -1,6 +1,7 @@
 const instrumentRatingDataGroundSchool = {
   data: {
     siteTitle: "Instrument Ground School | Flight School Oklahoma City",
+    siteDescription: "Enroll in our upcoming instrument ground school.  This ground school will prepare you to take the instrument written exam.  The requirements for obtaining your instrument rating can be very technical and text-book heavy.  You'll need to learn how to read approach plates, STARs and SIDs, along with learning a whole new set of regulations that apply when flying in IMC (instrument meterological conditions).",
     title: "Instrument Ground School",
     hiddenField: "Instrument Rating Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
