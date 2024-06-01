@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-dark-blue {
-    @apply text-center font-bold py-5 px-14 bg-dark-blue w-fit text-white rounded-full hover:bg-red-700 duration-200;
+    @apply text-center font-bold py-5 px-14 bg-dark-blue w-fit text-white rounded-full hover:bg-red-700 duration-300;
   }
   .btn-white {
     @apply text-center font-bold py-4 px-8 outline outline-1 outline-gray-700 w-fit bg-gray-100 text-dark-blue rounded-full;
