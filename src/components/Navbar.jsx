@@ -108,7 +108,7 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "underline" : ""} relative group last:no-underline`}
+                      className={`${isActive(item, pathname) ? "underline decoration-red-600 decoration-4 underline-offset-[10px]" : ""} relative group last:no-underline`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
