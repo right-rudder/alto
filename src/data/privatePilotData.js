@@ -1,5 +1,6 @@
 const privatePilotData = {
   data: {
+    siteTitle: "test",
     title: "Private Pilot Training",
     hiddenField: "Private Pilot Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

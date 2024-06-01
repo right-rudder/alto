@@ -1,4 +1,4 @@
-export const SITE_TITLE = "Alto Flight Academy";
+export const SITE_TITLE = "Pilot Training in Oklahoma City";
 export const SITE_DESCRIPTION = "Discover top-notch flight training at Alto Flight Academy in Oklahoma City. Since 1995, we've been helping aspiring pilots achieve their dreams with FAA-certified instructors, competitive rates, and comprehensive programs including private pilot training, instrument rating courses, and commercial pilot license training. Join our professional flight school in Yukon, OK, and take the first step towards your aviation career.";
 export const KEYWORDS =
   "flight school, flight training, pilot training, pilot school, flight lessons, flight instruction, flight instructor, flight school near me, flight training near me, pilot training near me, pilot school near me, flight lessons near me, flight instruction near me, flight instructor near me";
