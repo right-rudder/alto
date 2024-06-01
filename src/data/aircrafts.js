@@ -19,7 +19,7 @@ const aircrafts = [
       ],
       hasRibbon: true,
       ribbonTitle: "acquired",
-      ribbonColor: "bg-green-500",
+      ribbonColor: "bg-dark-blue",
     },
     slug: "N110GA",
   },
