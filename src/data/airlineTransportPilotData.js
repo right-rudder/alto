@@ -1,5 +1,6 @@
 const airlineTransportPilotData = {
   data: {
+    siteTitle: "ATP Flight School | Flight School Oklahoma City",
     title: "Get your ATP",
     hiddenField: "Airline Transport Pilot Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

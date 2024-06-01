@@ -1,5 +1,6 @@
 const multiEngineRatingData = {
   data: {
+    siteTitle: "Multi-Engine Pilot Training | Flight School Oklahoma City",
     title: "Multi-Engine Rating Training",
     hiddenField: "Multi-Engine Rating Flight Training",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

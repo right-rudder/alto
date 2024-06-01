@@ -1,5 +1,6 @@
 const flightInstructorDataGroundSchool = {
   data: {
+    siteTitle: "CFI Ground School | Flight School Oklahoma City",
     title: "CFI Ground School",
     hiddenField: "Flight Instructor Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

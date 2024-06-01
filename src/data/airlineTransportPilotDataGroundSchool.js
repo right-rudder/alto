@@ -1,5 +1,6 @@
 const airlineTransportPilotDataGroundSchool = {
   data: {
+    siteTitle: "ATP Ground School | Flight School Oklahoma City",
     title: "ATP Ground School",
     hiddenField: "Airline Transport Pilot Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",

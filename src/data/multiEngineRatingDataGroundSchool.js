@@ -1,5 +1,6 @@
 const multiEngineRatingDataGroundSchool = {
   data: {
+    siteTitle: "Multi-Engine Ground School | Flight School Oklahoma City",
     title: "Multi-Engine Ground School",
     hiddenField: "Multi-Engine Rating Ground School",
     date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
