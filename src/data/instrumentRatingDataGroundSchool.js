@@ -7,17 +7,16 @@ const instrumentRatingDataGroundSchool = {
     date: "Next group ground school starts soon. Sign up to join",
     price: "$1350",
     intro:
-      "In as little as 35 hours of flight training, you can become a private pilot. This will allow you to fly anywhere in the United States and is the first step of becoming a professional pilot! Being a private pilot has many advantages. You can take a loved one, children, friends, or anyone you want to any location. Imagine flying a spouse to Key West for dinner and back in time for the 11 o’clock news. All of this and more is possible with your private pilot license lorem ipsum dolor sit amet",
+      "If you are a private pilot, getting your instrument is the next part of your aviation journey.",
     content: [
-      "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet.",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "Our Instrument Pilot Ground School are group classes held at Sundance Airport KHSD in Oklahoma City, OK.  These classes will help prepare you to take the FAA written exam: one of the prerequisites you must complete in order to get your private pilot certificate.  When you enroll in our private pilot ground school course, you'll also get your ground school kit.  This kit contains all of the essentials you'll need to start your pilot training journey.  You'll get your logbook where you will track all of your flight time in.  A syllabus which contains the lesson plans of your future flights and also the specific ground lessons we'll go over.  You'll also receive the Jeppesen Private Pilot textbook, a manuevers textbook, a plotter, and an E-6B flight calculator.  To enroll in our Private Pilot Ground School, it is $671 to enroll and $328.96 for the ground school kit.  At the end of the course, you'll receive an endorsement from our certified flight instructor.",
     ],
     headerImage: "/src/assets/IFR-chart-oklahoma-city-kokc-will-rogers-world.png",
     headerAlt: "Michael Salazar passed his instrument rating exam",
     primaryImage:
-      "/src/assets/applicants-passed-their-instrument-instructor-checkrides.jpg",
+      "/src/assets/instrument-ground-school-in-oklahoma-city.jpg",
     primaryAlt: "Applicants passed their instrument instructor checkrides",
-    secondaryImage: "/src/assets/student-passed-his-instrument-rating.jpg",
+    secondaryImage: "/src/assets/flying-IMC-and-pitot-tube-iced-up.jpg",
     secondaryAlt: "Michael Salazar passed his instrument rating exam",
     prerequisites: [
       "Be at least 17 years old",
