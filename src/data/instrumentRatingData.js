@@ -12,12 +12,12 @@ const instrumentRatingData = {
       "Students are encouraged to have completed their written exam prior to beginning instrument flight training or be enrolled in an instrument ground school. During instrument flight training, you'll learn to apply the advanced navigation and flight techniques covered in ground school. You'll learn how to reach IFR charts, approach plates, and arrival and departure procedures. You'll be paired with a certified flight instrument instructor to fine tune your instrument skills and help you become more skilled and precise. Together, you and your CFII (certified flight instructor - instrument) will develop a personalized plan that fits your learning style and schedule, ensuring you meet all the necessary requirements to obtain your instrument rating. The first step is reaching out to us by phone or filling out one of our contact forms to connect with an Alto Flight Academy team member. Give us a call today and take the next step towards mastering instrument flight!",
     ],
     headerImage: "/src/assets/flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg",
-    headerAlt: "Dalton Bracken passed his instrument practical exam",
+    headerAlt: "Flying above Lake Hefner in the clouds in a Cessna 172 instrument rated pilot",
     primaryImage: "/src/assets/instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg",
-    primaryAlt: "P.T. Solinski passed his instrument practical exam",
+    primaryAlt: "Instrument rating training pilot flying in clouds above ardmore ok",
     secondaryImage:
       "/src/assets/night-landing-sundance-airport-yukon-cessna.jpg",
-    secondaryAlt: "Dalton Bracken passed his instrument practical exam",
+    secondaryAlt: "Night landing at sundance airport yukon, OK in a cessna",
     prerequisites: [
       "Complete necessary cross country flight time (50 hours)",
       "Fly 40 hours simulated or actual IMC",
