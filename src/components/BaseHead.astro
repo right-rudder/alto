@@ -79,11 +79,11 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
   {
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
-    "name": "Alto Flight Academ",
+    "name": "Alto Flight Academy",
     "description": "Discover top-notch flight training at Alto Flight Academy in Oklahoma City. Since 1995, we've been helping aspiring pilots achieve their dreams with FAA-certified instructors, competitive rates, and comprehensive programs including private pilot training, instrument rating courses, and commercial pilot license training. Join our professional flight school in Yukon, OK, and take the first step towards your aviation career.",
     "keywords": "flight school, flight training, pilot training, pilot school, flight lessons, flight instruction, flight instructor, flight school near me, flight training near me, pilot training near me, pilot school near me, flight lessons near me, flight instruction near me, flight instructor near me",
-    "image": "pendingdeploy",
-    "logo": "pendingdeploy",
+    "image": "pending",
+    "logo": "pending",
     "telephone": "(405) 789-1234",
     "email": "info@altoflight.com",
     "address": {
@@ -120,16 +120,54 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
         "opens": "08:00",
         "closes": "17:00"
-      }
+      },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
         "opens": "12:00",
         "closes": "17:00"
+      }
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "serviceType": "Flight Instruction"
       },
-    ]
+      "priceCurrency": "USD",
+      "price": "Varies"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Cessna Pilot Center"
+    },
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "name": "IATA Code",
+        "value": "HSD"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "ICAO Code",
+        "value": "KHSD"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Airport Code",
+        "value": "HSD"
+      }
+    ],
+    "hasMap": "https://www.google.com/maps/place/13000+N+Sara+Rd,+Yukon,+OK+73099"
   }
 </script>
