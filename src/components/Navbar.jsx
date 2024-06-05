@@ -98,7 +98,7 @@ const Navbar = ({ pathname }) => {
                 href="/"
                 className="uppercase leading-none flex flex-col text-white z-50 font-bold text-4xl tracking-wider ml-3 lg:ml-8"
               >
-                <p class="font-sans2">Alto</p>
+                <p className="font-sans2">Alto</p>
                 <p className="text-sm lg:text-xl font-stock tracking-loose font-semibold text-gray-800">
                   Flight Academy
                 </p>
