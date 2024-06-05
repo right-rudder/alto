@@ -6,8 +6,9 @@ const privatePilotData = {
     hiddenField: "Private Pilot Flight Training",
     date: "Book a discovery flight and start your pilot training today",
     price: "$1350",
-    intro:
+    intro:[
       "If you're just starting out and learning how to fly, this is where you'll be.  The private pilot certificate, also infamously known as a 'pilot license' is the first certification you will receive in your pilot training journey.  You'll learn the fundamentals of flight: straight and level flight, turns, climbs, and descents. You'll also learn what all those gauges and screens mean.  Soon enough you'll know the difference between an attitude indicator and a directional gyro.  If all of that looks fun to you, we encourage you to reach out to us and schedule an introductory discovery flight.  It'll be your first flight lesson where you take controls of an airplane.",
+    ],
     headerImage:
       "/src/assets/alto-flight-private-pilot-student-after-solo.jpg",
     headerAlt: "An Alto Flight Academy private pilot student at Sundance Airport in front of a cessna 172 at Sundance Airport",

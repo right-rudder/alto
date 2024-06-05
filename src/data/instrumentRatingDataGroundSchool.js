@@ -6,8 +6,9 @@ const instrumentRatingDataGroundSchool = {
     hiddenField: "Instrument Rating Ground School",
     date: "Next group ground school starts soon. Sign up to join",
     price: "$1350",
-    intro:
+    intro:[
       "If you are a private pilot, getting your instrument is the next part of your aviation journey.  Obtaining your instrument rating allows you to fly in IMC - instrument meterological conditions.  To fly safely in IMC weather, you're going to need to become familiar with how the aircraft systems work and how ATC (air traffic control) can help keep you safe when you're unable to fly visually.  Flying safely in IMC weather means flying procedurally.  You'll need to be able to read and interpret approach plates and charts to help you navigate safely. Additionally, although having an instrument rating allows you to fly in less favorable weather, you'll need to understand the limitations that are there and the safe guards that are in place to keep you flying the next day as well.  Enrolling in our instrument ground school is your chance to meet with a CFII and other pilots who are in similar stages of pilot training.  Give us a call today and stop by Alto Flight Academy for more information.",
+    ],
     content: [
       "Our Instrument Pilot Ground School are group classes held at Sundance Airport KHSD in Oklahoma City, OK.  These classes will help prepare you to take the FAA written exam: one of the prerequisites you must complete in order to get your instrument rating.  When you enroll in our instrument ground school course, you'll also get your ground school kit.  This kit contains all of the essentials you'll need to start your instrument training.  You'll receive a syllabus which contains the lesson plans of your future flights and also the specific ground lessons we'll go over.  You'll also receive the Jeppesen Instrument and Commercial textbook, a procedures textbook, and a pair of foggles.  To enroll in our Instrument Pilot Ground School, it is $645 to enroll and $354.96 for the ground school kit.  At the end of the course, you'll receive an endorsement from our certified flight instructor.",
     ],

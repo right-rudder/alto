@@ -25,7 +25,9 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
         Start Today
       </a>
     </div>
-    <p class="paragraph py-5">{data.intro}</p>
+    <div class="py-5 flex flex-col gap-3">
+      {data.intro.map((intro) => <p class="paragraph" set:html={intro}></p>)}
+    </div>
     <div class="">
       <Image
         src={images[data.primaryImage]()}
@@ -37,7 +39,7 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
       </div>
     </div>
     <div class="py-5 flex flex-col gap-3">
-      {data.content.map((paragraph) => <p class="paragraph">{paragraph}</p>)}
+      {data.content.map((paragraph) => <p class="paragraph" set:html={paragraph}></p>)}
     </div>
   </div>
 </section>
