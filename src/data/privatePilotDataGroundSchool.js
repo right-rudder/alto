@@ -20,17 +20,11 @@ const privatePilotDataGroundSchool = {
     secondaryAlt: "Student passed his private pilot exam",
     prerequisites: [
       "Meet your instructor and classmates",
-      "Advanced aviation opportunities and career pathways",
-      "Advanced navigation and flight planning",
-      "Commercial aviation weather analysis",
-      "Commercial regulations and air traffic control",
-      "Aircraft systems and performance",
-      "Advanced human factors and safety",
-      "Commercial flight maneuvers and techniques",
-      "Complex aircraft operations",
-      "Emergency procedures and decision making",
-      "Understanding commercial pilot limitations and responsibilities",
-      "Preparation for the FAA commercial pilot practical exam"
+      "Aviation opportunities and career pathways",
+      "Navigation in the United States National Airspace System",
+      "Aviation weather and science",
+      "Regulations and air traffic control",
+      "Human factors and safety",
     ],
     process: [
       "Get in contact with us",
