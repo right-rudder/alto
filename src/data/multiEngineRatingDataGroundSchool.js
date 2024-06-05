@@ -16,10 +16,10 @@ const multiEngineRatingDataGroundSchool = {
       "To enroll in our Multi-Engine Ground School, the cost is $645. Our comprehensive syllabus covers both the theoretical and practical aspects of multi-engine flight, ensuring you are well-prepared for success. Upon completion of the course, you'll receive an endorsement from our experienced instructors, certifying your readiness for the FAA exams.",
       "Take the next step in advancing your aviation career by joining Alto Flight Academy's Multi-Engine Ground School today. Let us guide you towards achieving your goals as a proficient and confident multi-engine pilot!"
     ],
-    headerImage: "/src/assets/flying-in-a-multi-engine-aircraft.jpg",
-    headerAlt: "Flying in a multi engine aircraft",
-    primaryImage: "/src/assets/student-passed-his-multi-engine-rating.jpg",
-    primaryAlt: "Student earning his multi-engine rating",
+    headerImage: "/src/assets/student-passed-his-multi-engine-rating.jpg",
+    headerAlt: "Student earning his multi-engine rating",
+    primaryImage:  "/src/assets/flying-in-a-multi-engine-aircraft.jpg",
+    primaryAlt: "Flying in a multi engine aircraft",  
     secondaryImage: "/src/assets/multi-engine-rating-students.jpg",
     secondaryAlt: "Students earning their multi-engine rating",
     prerequisites: [
