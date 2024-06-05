@@ -2,7 +2,7 @@ const privatePilotDataGroundSchool = {
   data: {
     siteTitle: "Private Pilot Ground School | Flight School Oklahoma City",
     siteDescription: "One of our most popular courses.  Begin your pilot training journey and knock out your private pilot written exam.  Our private pilot ground school will teach you the fundamentals of flight, weather, regulations, and aerodynamics.  Take the first step and join our private pilot ground school.",
-    title: "Private Pilot Ground School",
+    title: "Pass your FAA Private Pilot Written Exam",
     hiddenField: "Private Pilot Ground School",
     date: "Next group ground school starts soon. Sign up to join",
     price: "$1350",
@@ -20,11 +20,17 @@ const privatePilotDataGroundSchool = {
     secondaryAlt: "Student passed his private pilot exam",
     prerequisites: [
       "Meet your instructor and classmates",
-      "Aviation opportunities and career pathways",
-      "Navigation in the United States National Airspace System",
-      "Aviation weather and science",
-      "Regulations and air traffic control",
-      "Human factors and safety",
+      "Advanced aviation opportunities and career pathways",
+      "Advanced navigation and flight planning",
+      "Commercial aviation weather analysis",
+      "Commercial regulations and air traffic control",
+      "Aircraft systems and performance",
+      "Advanced human factors and safety",
+      "Commercial flight maneuvers and techniques",
+      "Complex aircraft operations",
+      "Emergency procedures and decision making",
+      "Understanding commercial pilot limitations and responsibilities",
+      "Preparation for the FAA commercial pilot practical exam"
     ],
     process: [
       "Get in contact with us",
