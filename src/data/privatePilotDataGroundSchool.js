@@ -12,7 +12,7 @@ const privatePilotDataGroundSchool = {
     content: [
       "Our Private Pilot Ground School are group classes held at Sundance Airport KHSD in Oklahoma City, OK.  These classes will help prepare you to take the FAA written exam: one of the prerequisites you must complete in order to get your private pilot certificate.  When you enroll in our private pilot ground school course, you'll also get your ground school kit.  This kit contains all of the essentials you'll need to start your pilot training journey.  You'll get your logbook where you will track all of your flight time in.  A syllabus which contains the lesson plans of your future flights and also the specific ground lessons we'll go over.  You'll also receive the Jeppesen Private Pilot textbook, a manuevers textbook, a plotter, and an E-6B flight calculator.  To enroll in our Private Pilot Ground School, it is $671 to enroll and $328.96 for the ground school kit.  At the end of the course, you'll receive an endorsement from our certified flight instructor.  ",
     ],
-    headerImage: "/src/assets/night-landing-sundance-airport-yukon-cessna.jpg",
+    headerImage: "/src/assets/private-pilot-ground-materials-for-flight-school-yukon-ok.jpg",
     headerAlt: "Night landing in Alto Flight Academy's Cessna 172 at Sundance Airport over in Yukon, OK.",
     primaryImage: "/src/assets/alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg",
     primaryAlt: "You can fly above the clouds as well.  Group ground school for private pilots in Oklahoma City, OK.",
