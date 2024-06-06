@@ -6,9 +6,9 @@ const aircrafts = [
       model: "Beechjet 400 ",
       year: "1988",
       equipment: [
-        "Garmin106 CDI Indicator",
-        "Garmin GNX 375 Navigator/Transponder",
-        "Dual Bendix/King KX 155 Nav/Comm",
+        // "Garmin106 CDI Indicator",
+        // "Garmin GNX 375 Navigator/Transponder",
+        // "Dual Bendix/King KX 155 Nav/Comm",
       ],
       imagePath: "/src/assets/beechjet-400.jpeg",
       alt: "Beechjet 400",
