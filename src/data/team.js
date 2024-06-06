@@ -15,7 +15,7 @@ const team = [
     name: "Grace Manglicmot",
     qualifications: ["Operations Director"],
     imagePath: "/src/assets/grace-manglicmot-alto-flight-team.jpg",
-    bio: "Gracie Harris, a private pilot herself, helps run the academy with energy and a fresh perspective. Her hands on approach and enthusiasm for aviation help new students feel confident and excited about their training.",
+    bio: "Grace Manglicmot, a private pilot herself, helps run the academy with energy and a fresh perspective. Her hands on approach and enthusiasm for aviation help new students feel confident and excited about their training.",
   },
 ];
 
