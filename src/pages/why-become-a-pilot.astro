@@ -17,6 +17,8 @@ import PiperArrow from "../assets/piper-arrow.jpg";
 import IntroImage from "../assets/student-and-cfi-in-cessna.jpg";
 import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
 import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg";
+import FemalePilots from "../assets/female-pilots-at-sundance-airport-in-front-of-planes.jpg";
+import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jpg"
 ---
 
 <BaseLayout 
@@ -65,6 +67,14 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
+              <a href="flight-training/instrument-rating">Instrument Rating</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
               <a href="flight-training/commercial-pilot">Commercial Pilot</a>
             </p>
           </li>
@@ -75,6 +85,16 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
             <p class="group-hover:underline">
               <a href="flight-training/multi-engine-rating"
                 >Multi-Engine Rating</a
+              >
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="flight-training/flight-instructor"
+                >Certified Flight Instructor</a
               >
             </p>
           </li>
@@ -155,20 +175,44 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
       <div class="flex-[1.5_1.5_0] w-full">
         <Image
           class="rounded-lg"
-          src={IntroImage}
+          src={FemalePilots}
           alt="Student and CFI in Alto Flight Academy"
         />
       </div>
       <div class="flex flex-col flex-1 gap-5">
         <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
-          Why learn to fly?
+          How it works
         </h2>
         <p class="paragraph">
-          Becoming a pilot is a dream for many people. It's a career that offers
-          a lot of excitement and adventure, as well as the opportunity to see
-          the world from a whole new perspective. But there are also many other
-          reasons why becoming a pilot is a great choice. We offer a variety of
-          programs to help you achieve your dreams like:
+          At Alto Flight Academy, we offer two different courses for each type of certification and rating: ground school and flight training.  In order to receive any certification or rating there are two main requirements and that is passing the FAA written exam and the FAA practical exam (also known as a checkride).  
+        </p>
+        <p class="paragraph">
+          If you're ready to take the first step in learning how to become a pilot or you're looking to take advanced classes to further your pilot career and knowledge, we encourage you to start with our ground school courses.  Being in a ground school course is an excellent opportunity to meet fellow pilots in a similar stage in their training as you. Like the expression goes... "it takes a village".  
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <Image
+          class="rounded-lg"
+          src={GroundSchool}
+          alt="Student and CFI in Alto Flight Academy"
+        />
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          Start with ground school
+        </h2>
+        <p class="paragraph">
+          Having a community and family to support your in your journey is extremely beneficial to your success. After completing the ground school and passing the written exam, move forward and get paired up with a flight instructor to prepare for your checkride.
+        </p>
+        <p class="paragraph">
+          Below you'll find links to more information to our ground school sessions.  Click below to learn more and give us a call or fill out one of the forms to get started.
         </p>
         <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
           <li class="flex gap-2 items-center group">
@@ -176,7 +220,7 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/private-pilot">Private Pilot</a>
+              <a href="ground-school/private-pilot">Private Pilot</a>
             </p>
           </li>
           <li class="flex gap-2 items-center group">
@@ -184,7 +228,7 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/commercial-pilot">Commercial Pilot</a>
+              <a href="ground-school/instrument-rating">Instrument Rating</a>
             </p>
           </li>
           <li class="flex gap-2 items-center group">
@@ -192,7 +236,15 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/multi-engine-rating"
+              <a href="ground-school/commercial-pilot">Commercial Pilot</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/multi-engine-rating"
                 >Multi-Engine Rating</a
               >
             </p>
@@ -202,7 +254,17 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/airline-transport-pilot"
+              <a href="ground-school/flight-instructor"
+                >Certified Flight Instructor</a
+              >
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/airline-transport-pilot"
                 >Airline Transport Pilot</a
               >
             </p>
