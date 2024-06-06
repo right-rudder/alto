@@ -1,32 +1,49 @@
 const flightInstructorDataGroundSchool = {
   data: {
-    title: "CFI Ground School",
+    siteTitle: "CFI Ground School | Flight School Oklahoma City",
+    title: "Learn the Fundamentals of Instruction",
     hiddenField: "Flight Instructor Ground School",
-    date: "Starting November 21, 2024 - 4:00pm-6:00pm - 4 months",
+    date: "Certified Flight Instructor Ground School",
     price: "$1350",
-    intro:
-      "In as little as 35 hours of flight training, you can become a private pilot. This will allow you to fly anywhere in the United States and is the first step of becoming a professional pilot! Being a private pilot has many advantages. You can take a loved one, children, friends, or anyone you want to any location. Imagine flying a spouse to Key West for dinner and back in time for the 11 o’clock news. All of this and more is possible with your private pilot license lorem ipsum dolor sit amet",
+    intro: [
+      "If you are an commercially certificated pilot, getting your Certified Flight Instructor (CFI) certificate is the next part of your aviation journey. Obtaining your CFI certificate allows you to teach and train aspiring pilots, gaining valuable experience and flight hours. To fly safely and professionally as a CFI, you'll need to become familiar with advanced teaching techniques, flight maneuvers, and the fundamentals of instruction.",
+      "Flying as a CFI means adhering to higher standards of precision and proficiency. You'll need to master flight maneuvers, navigate challenging instructional situations, and communicate effectively with your students and ATC (air traffic control). Additionally, while having a CFI certificate opens up many opportunities, you'll need to understand the limitations and regulations to ensure safe and efficient operations. Enrolling in our CFI ground school is your chance to meet with a seasoned CFI and other pilots who are in similar stages of their aviation careers. Give us a call today and stop by Alto Flight Academy for more information."
+    ],
     content: [
-      "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet.",
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "Our CFI Ground School consists of group classes held at Sundance Airport KHSD in Oklahoma City, OK. These classes will help prepare you to take the FAA written exams: the Fundamentals of Instruction (FOI) and the Flight Instructor Airplane (FIA), which are prerequisites for obtaining your CFI certificate. When you enroll in our CFI ground school course, you'll also receive a comprehensive syllabus covering both the flight and ground lessons you'll need.",
+      "One of the major benefits of becoming a CFI is the opportunity to build flight hours towards the Airline Transport Pilot (ATP) certificate. As a CFI, you'll gain substantial flight experience, which is essential for meeting the ATP minimums required to become an airline pilot. This path not only enhances your skills and knowledge but also helps you accumulate the necessary flight time in a structured and rewarding environment.",
+      "To enroll in our CFI Ground School, the cost is $645. At the end of the course, you'll receive an endorsement from our certified flight instructor. This endorsement will certify that you have completed the necessary ground training and are prepared for the FAA written exams and practical test. Take the next step in your aviation career by joining Alto Flight Academy's CFI Ground School today and start building the experience needed to achieve your dream of becoming an airline pilot!"
     ],
     headerImage:
-      "/src/assets/applicants-passed-their-flight-instructor-exam.jpg",
-    headerAlt: "Applicants passed their flight instructor exam",
-    primaryImage: "/src/assets/student-with-his-instructor.jpg",
-    primaryAlt: "Student with his instructor",
+      "/src/assets/pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg",
+    headerAlt: "CFI with his student pilot after passing private pilot checkride",
+    primaryImage: "/src/assets/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg",
+    primaryAlt: "pilot in a cirrus sr22 airplane programming garmin 430",
     secondaryImage:
-      "/src/assets/applicants-passed-their-flight-instructor-exam.jpg",
-    secondaryAlt: "Applicants passed their flight instructor exam",
+      "/src/assets/CFI-showing-airplane-model-to-interested-student-pilot.jpg",
+    secondaryAlt: "CFI showing airplane model to interested student pilot",
     prerequisites: [
-      "Be at least 17 years old",
-      "Be able to read, speak, write, and understand the English language",
-      "Hold at least a third-class medical certificate",
+      "Meet your instructor and classmates",
+      "Advanced aviation opportunities and career pathways",
+      "Principles of effective instruction",
+      "Teaching techniques and communication skills",
+      "Advanced navigation and flight planning",
+      "Aviation weather analysis and instruction",
+      "Regulations and responsibilities of a flight instructor",
+      "Advanced human factors and safety",
+      "Developing lesson plans and training programs",
+      "Evaluating student performance and providing feedback",
+      "Preparation for the FAA Fundamentals of Instruction (FOI) exam",
+      "Preparation for the FAA Flight Instructor Airplane (FIA) exam"
     ],
     process: [
-      "Complete the required flight training",
-      "Pass the FAA knowledge test",
-      "Pass the practical test",
+      "Get in contact with us",
+      "Learn more about our ground school",
+      "Enroll into the next start date",
+      "Attend ground school and participate",
+      "Complete the final exam",
+      "Receive endorsement from a qualified instructor",
+      "Complete the FAA written exams",
     ],
   },
   slug: "flight-instructor",

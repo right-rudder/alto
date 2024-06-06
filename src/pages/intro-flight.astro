@@ -2,16 +2,19 @@
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerData = {
-  title: "Intro Flight",
-  headerImage: "/src/assets/cfi-in-cessna.jpg",
-  headerAlt: "CFI in Cessna",
+  title: "Introductory Flight: Your First Flight Lesson",
+  headerImage: "/src/assets/cessna-172-n4891j-flying-over-bethany-ok.jpg",
+  headerAlt: "Cessna 182 N4891J flying over Bethany, OK",
 };
 
 const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
   .INTRO_FLIGHT_FORM_WEBHOOK_URL;
 ---
 
-<BaseLayout>
+<BaseLayout 
+  siteTitle="Book an Introductory Discovery Flight | Oklahoma City Flight Training"
+  siteDescription="Completing an introductory flight, also known as a discovery flight, is the first step in becoming a pilot.  It's your first lesson where you'll be paired up with a certified flight instructor.  Your instructor will help you with take offs and landings, but you'll be at the controls for the majority of the time.  After the flight, you can learn more about the pilot training process and see if it's right for you."
+>
   <Header slot="header" data={headerData} />
 
   <section class="py-24 px-5">

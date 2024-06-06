@@ -4,14 +4,16 @@ import TeamMemberCard from "../../components/TeamMemberCard.astro";
 import team from "../../data/team";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const headerData = {
-  title: "Our Story",
+  title: "We are Alto Flight Academy",
   headerImage: "/src/assets/alto-community.jpg",
   headerAlt: "Alto Flight Academy Community",
 };
+import Memberships from "../../components/Memberships.astro";
+import ThirtyYears from "../../components/ThirtyYears.astro";
 import EmailCTA from "../../components/EmailCTA.astro";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-import PilotImage from "../../assets/team-member-1.jpg";
+import PilotImage from "../../assets/alto-flight-academy-leadership-team.jpg";
 import Signature from "../../assets/signature.webp";
 import { ImQuotesLeft } from "react-icons/im";
 import { ImAirplane } from "react-icons/im";
@@ -21,9 +23,13 @@ import { MdVerifiedUser } from "react-icons/md";
 import Post1 from "../../assets/post1.jpg";
 import Post5 from "../../assets/post5.jpg";
 import reviews from "../../data/reviews";
+import WallOfGrads from "../../components/WallOfGrads.astro";
 ---
 
-<BaseLayout>
+<BaseLayout
+  siteTitle="About Us | Alto Flight Academy"
+  siteDescription="Alto Flight Academy in Oklahoma City, Oklahoma, is a female and Asian owned business. Alto is a professional, full-service flight academy providing training to everyone from students and pilots to airline transport pilots. Make your lifelong dream come true with our affordable, practical, and exciting classes."
+>
   <Header slot="header" data={headerData} />
 
   <section class="pb-12 pt-24 px-5">
@@ -33,50 +39,45 @@ import reviews from "../../data/reviews";
           About Us
         </h2>
         <p class="paragraph">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-          iste hic nesciunt consectetur totam dolorum adipisci ut debitis,
-          similique vero molestiae magnam nobis quam voluptates itaque ratione
-          nostrum asperiores reprehenderit.
+          Welcome to Alto Flight Academy, where dreams take flight. Founded and operated by Hal Harris and his family, our academy is rooted in a love for aviation that spans generations. Hal, a seasoned Certified Flight Instructor (CFI) and jet pilot with a Citation type rating, has been sharing his passion for flying with aspiring pilots for over 30 years. His dedication to aviation is matched by his wife, MariCris, and their daughter, Gracie, who both contribute their unique talents and enthusiasm to our family run school.
         </p>
         <p class="paragraph">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-          iste hic nesciunt consectetur totam dolorum adipisci ut debitis,
-          similique vero molestiae magnam nobis quam voluptates itaque ratione
-          nostrum asperiores reprehenderit.
+          At Alto Flight Academy, we believe that the sky is not the limit but just the beginning. Our journey began with Hal’s childhood dream of flight, nurtured by his father’s own love for the skies. Now, Hal, MariCris, and Gracie are dedicated to helping others experience the magic of flying, whether you are pursuing a career as a commercial airline pilot or simply want to explore the thrill of aviation.
         </p>
         <p class="paragraph">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-          iste hic nesciunt consectetur totam dolorum dipisci ut debitis,
-          similique vero
+          As a female and Asian owned business in Oklahoma City, Oklahoma, we take pride in offering a welcoming and inclusive environment for students from all walks of life. Our full-service flight academy provides comprehensive training for everyone, from beginners to seasoned pilots aiming for their airline transport certification. With our affordable, practical, and exciting classes, we strive to make your aviation dreams a reality.
         </p>
       </div>
       <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
         <Image
           src={PilotImage}
           alt="Cessna flying over Sundance Airport"
-          class="h-full w-full object-cover object-top lg:max-h-none"
+          class="h-full w-full object-cover object-center lg:max-h-none"
         />
       </div>
       <div
         class="bg-dark-blue text-white p-8 sm:p-14 lg:p-20 flex flex-col gap-10"
       >
         <ImQuotesLeft className="text-red-700 size-8" />
-        <p class="text-lg font-bold">
-          Alto Flight Academy was founded in 2019 by a group of aviation
-          enthusiasts who wanted to share their love of flying with the world.
-          Our mission is to provide safe, affordable flight training to anyone
-          who has ever dreamed of becoming a pilot.
+        <p class="text-lg font-semibold">
+          When you join Alto Flight Academy, you become part of our family. 
         </p>
-        <Image
+        <p class="text-lg text-gray-100">
+        We understand the transformative power of aviation and are committed to guiding you every step of the way. 
+        </p>
+        <p class="text-lg text-gray-100">
+          Let us share our love of flight with you and help you soar to new heights. Your journey into the world of aviation begins here, where your dreams take wing with Alto Flight Academy.
+        </p>
+        <!-- <Image
           src={Signature}
           alt="Cessna flying over Sundance Airport"
           class=""
-        />
+        /> -->
       </div>
     </div>
   </section>
 
-  <section class="py-12 px-5">
+  <!-- <section class="py-12 px-5">
     <div
       class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-dark-blue"
     >
@@ -169,8 +170,10 @@ import reviews from "../../data/reviews";
         />
       </div>
     </div>
-  </section>
-
+  </section> -->
+  <WallOfGrads />
+  <ThirtyYears />
+  <Memberships />
   <EmailCTA />
 </BaseLayout>
 

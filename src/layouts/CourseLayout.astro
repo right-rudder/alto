@@ -6,6 +6,8 @@ import CourseInfo from "../components/CourseInfo";
 import CourseCard from "../components/CourseCard.astro";
 import { courses } from "../data/coursesData";
 import EmailCTA from "../components/EmailCTA.astro";
+import GetInContact from "../components/GetInContact.astro";
+
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
@@ -20,25 +22,31 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
     >
       <h2 class="font-bold text-3xl">{data.date}</h2>
       <a href="#sign-up-form" class="btn-dark-blue w-full lg:w-fit">
-        Sign up now
+        Start Today
       </a>
     </div>
-    <p class="paragraph py-5">{data.intro}</p>
+    <div class="py-5 flex flex-col gap-3">
+      {data.intro.map((intro) => <p class="paragraph" set:html={intro}></p>)}
+    </div>
     <div class="">
       <Image
         src={images[data.primaryImage]()}
         alt={data.primaryAlt}
-        class="object-cover max-h-[36rem] w-full"
+        class="object-cover object-top max-h-[36rem] lg:max-h-[48rem] w-full"
       />
+      <div class="">
+        <span class="paragraph italic text-sm">{data.caption}</span>
+      </div>
     </div>
     <div class="py-5 flex flex-col gap-3">
-      {data.content.map((paragraph) => <p class="paragraph">{paragraph}</p>)}
+      {data.content.map((paragraph) => <p class="paragraph" set:html={paragraph}></p>)}
     </div>
   </div>
 </section>
 
 <hr class="border-t max-w-7xl mx-auto border-gray-300" />
 
+<!-- two button section -->
 <section class="py-12 px-5">
   <div class="max-w-xl lg:max-w-7xl mx-auto text-dark-blue">
     <h2 class="font-extrabold text-5xl">Course Additional Info</h2>
@@ -52,19 +60,24 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
           alt={data.secondaryAlt}
           class="object-cover max-h-[36rem]"
         />
+        <div class="">
+          <span class="paragraph italic text-sm">{data.secondaryCaption}</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="py-16 px-5 bg-dark-blue">
+<!-- Links to other courses -->
+<!-- <section class="py-16 px-5 bg-dark-blue">
   <div class="max-w-xl lg:max-w-7xl mx-auto text-dark-blue">
     <h2 class="font-extrabold text-5xl text-white">Future Pathways</h2>
     <div class="flex flex-col lg:flex-row gap-10 mt-10">
       {courses.map((course) => <CourseCard course={course} />)}
     </div>
   </div>
-</section>
+</section> -->
+<GetInContact />
 
 <section class="py-12 px-5 scroll-my-24" id="sign-up-form">
   <div class="max-w-xl lg:max-w-7xl mx-auto text-dark-blue">
@@ -75,7 +88,10 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
           Start your training today at Alto Flight Academy and take the first
           step. Start training today with our <span class="lowercase"
             >{data.title}</span
-          > training course.
+          > training course.  
+        </p>
+        <p class="paragraph">
+          Fill out the form and we'll contact you to schedule a visit to our flight school.  You'll get the chance to see Alto Flight Academy first hand and meet with one of our certified flight instructors.
         </p>
       </div>
       <div class="lg:flex-1">

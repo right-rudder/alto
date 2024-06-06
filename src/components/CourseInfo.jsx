@@ -5,8 +5,8 @@ const CourseInfo = ({ data }) => {
   const [selected, setSelected] = useState("prerequisites");
 
   const tabs = [
-    { id: "prerequisites", label: "Program Prerequisites" },
-    { id: "process", label: "Enrollment Process" },
+    { id: "prerequisites", label: "Our Program" },
+    { id: "process", label: "How To Enroll" },
   ];
 
   const handleClick = (id) => {
