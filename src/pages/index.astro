@@ -11,6 +11,7 @@ import { Image } from "astro:assets";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import Memberships from "../components/Memberships.astro";
+import WallOfGrads from "../components/WallOfGrads.astro";
 import TrainingCoursesCarrousel from "../components/TrainingCoursesCarrousel";
 import {
   MdKeyboardArrowLeft,
@@ -24,9 +25,7 @@ import GroupPhoto from "../assets/alto-flight-sundance-airport-yukon-oklahoma.jp
 import GetInContact from "../components/GetInContact.astro";
 import GoogleMaps from "../components/GoogleMaps.astro";
 import AltoGrad from "../assets/former-alto-flight-academy-student-flying-jets.jpg"
-import Wall1 from "../assets/wall-of-students-passing-checkride-near-sectional.jpg"
-import Wall2 from "../assets/wall-of-students-passing-checkride-by-sectional.jpg"
-import Wall3 from "../assets/wall-of-students-passing-checkride.jpg"
+
 ---
 
 <BaseLayout siteTitle="Alto Flight Academy | Pilot Training in Oklahoma City, OK">
@@ -198,27 +197,7 @@ import Wall3 from "../assets/wall-of-students-passing-checkride.jpg"
     </div>
   </section>
 
-  <section
-  class="mb-0 py-12 lg:py-24 sm:py-10 bg-red-700 relative max-w-[80rem] mx-auto lg:mb-20"
->
-  <h2 class="text-center font-semibold px-5 mb-10 sm:mb-32 text-3xl lg:text-5xl text-white">
-    Join the thousands of students that have trusted Alto Flight Academy with their pilot training
-  </h2>
-  <div class="gap-y-24 gap-x-10 px-10 grid place-items-center">
-    <Image
-      src={Wall1}
-      alt="Alto Flight Academy Students after completing checkride"
-    />
-    <Image
-      src={Wall2}
-      alt="Alto Flight Academy Students after completing checkride"
-    />
-    <Image
-      src={Wall3}
-      alt="Alto Flight Academy Students after completing checkride"
-    />
-  </div>
-</section>
+  <WallOfGrads />
 
   
   <section class="py-20 lg:pb-24 px-5 bg-dark-blue relative">
