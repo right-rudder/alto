@@ -18,7 +18,7 @@ const airlineTransportPilotData = {
     headerAlt: "Airliner cockpit landing in Bethany Oklahoma",
     primaryImage: "/src/assets/former-alto-flight-academy-student-flying-jets.jpg",
     primaryAlt: "Student passed his ATP exam",
-    caption: "Former student pilot at Alto Flight Academy now flying the Phenom 300",
+    caption: "Former student pilot at Alto Flight Academy flying the Phenom 300",
     secondaryImage: "/src/assets/simulator-type-rating-citation-oklahoma.jpg",
     secondaryAlt: "Student in ATP lesson",
     prerequisites: [
