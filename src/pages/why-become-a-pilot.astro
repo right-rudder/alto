@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Counter from "../components/Counter.jsx"
 import TeamMemberCard from "../components/TeamMemberCard.astro";
 import team from "../data/team";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -118,29 +119,95 @@ import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-
   
   
         </div>
+        
         <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
           <div class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-100 font-sans">Pilots needed in the next 10 years</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">280,000</dd>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=280000 /></dd>
           </div>
           <div class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-100 font-sans">Pilots over 50 years old</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">38%</dd>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=38 />%</dd>
           </div>
           <div class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-100 font-sans">Pilots retiring in the next 10 years</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">45,000</dd>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=45000 /></dd>
           </div>
           <div class="flex flex-col-reverse">
             <dt class="text-base leading-7 text-gray-100 font-sans">Growth in pilot demand</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">39%</dd>
+            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=39 />%</dd>
           </div>
         </dl>
       </div>
     </div>
+    
     <div class="flex flex-row justify-end">
       <div class="text-gray-500 mt-20 mb-10 mr-10 italic text-sm">
         <a href="https://www.cae.com/media/documents/ATF/Aviation-Talent-Forecast-2023.pdf" target="blank">Source: 2023 CAE Aviation Talent Forcast</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <Image
+          class="rounded-lg"
+          src={IntroImage}
+          alt="Student and CFI in Alto Flight Academy"
+        />
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          Why learn to fly?
+        </h2>
+        <p class="paragraph">
+          Becoming a pilot is a dream for many people. It's a career that offers
+          a lot of excitement and adventure, as well as the opportunity to see
+          the world from a whole new perspective. But there are also many other
+          reasons why becoming a pilot is a great choice. We offer a variety of
+          programs to help you achieve your dreams like:
+        </p>
+        <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="flight-training/private-pilot">Private Pilot</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="flight-training/commercial-pilot">Commercial Pilot</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="flight-training/multi-engine-rating"
+                >Multi-Engine Rating</a
+              >
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="flight-training/airline-transport-pilot"
+                >Airline Transport Pilot</a
+              >
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
