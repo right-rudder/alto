@@ -20,20 +20,20 @@ if (!images[imagePath])
       quality={10}
     />
   </div>
-  <div
+  <!-- <div
     class="absolute w-full h-full bg-dark-blue/80 backdrop-blur-sm -translate-x-[101%] group-hover:translate-x-0 duration-700"
   >
     <p class="p-10 leading-loose text-white">{bio}</p>
-  </div>
+  </div> -->
   <div class="p-10 z-10">
     <h2
-      class="text-dark-blue text-3xl font-medium mb-3 group-hover:text-white duration-700"
+      class="text-dark-blue text-3xl font-medium mb-3 group-hover:text-red-700 duration-700"
     >
       {name}
     </h2>
     {
       qualifications.map((qualification) => (
-        <p class="uppercase tracking-widest text-xs font-bold group-hover:text-white duration-700">
+        <p class="uppercase tracking-widest text-xs font-bold group-hover:text-red-700 duration-700">
           {qualification}
         </p>
       ))

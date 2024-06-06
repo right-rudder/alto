@@ -1,14 +1,18 @@
 ---
 import Header from "../../components/Header.astro";
 import TeamMemberCard from "../../components/TeamMemberCard.astro";
-import team from "../../data/team";
+import StaffCard from "../../components/StaffCard.astro";
+import InstructorCard from "../../components/InstructorCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const headerData = {
   title: "Our Team",
-  headerImage: "/src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
+  headerImage: "/src/assets/alto-flight-academy-team-at-sundance-airport.jpg",
   headerAlt: "Cessna flying over Sundance Airport",
 };
 import EmailCTA from "../../components/EmailCTA.astro";
+import teamInstructors from "../../data/teamInstructors";
+import teamStaff from "../../data/teamStaff";
+import team from "../../data/team";
 ---
 
 <BaseLayout
@@ -20,12 +24,50 @@ import EmailCTA from "../../components/EmailCTA.astro";
   <section id="alto-team" class="py-24 px-5">
     <div class="max-w-7xl mx-auto flex flex-col items-center">
       <h2 class="text-5xl text-dark-blue font-bold leading-tight mb-5">
-        Alto Team
+        Alto Flight Academy Leadership
       </h2>
       <div class="grid gap-5 lg:grid-cols-3 mt-5">
         {
           team.map((member) => (
             <TeamMemberCard
+              name={member.name}
+              qualifications={member.qualifications}
+              imagePath={member.imagePath}
+              bio={member.bio}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <section id="alto-team" class="py-24 px-5">
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <h2 class="text-5xl text-dark-blue font-bold leading-tight mb-5">
+        Alto Flight Academy Staff
+      </h2>
+      <div class="grid gap-5 lg:grid-cols-3 mt-5">
+        {
+          teamStaff.map((member) => (
+            <StaffCard
+              name={member.name}
+              qualifications={member.qualifications}
+              imagePath={member.imagePath}
+              bio={member.bio}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <section id="alto-team" class="py-24 px-5">
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <h2 class="text-5xl text-dark-blue font-bold leading-tight mb-5">
+        Alto Flight Academy Flight Instructors
+      </h2>
+      <div class="grid gap-5 lg:grid-cols-3 mt-5">
+        {
+          teamInstructors.map((member) => (
+            <InstructorCard
               name={member.name}
               qualifications={member.qualifications}
               imagePath={member.imagePath}
