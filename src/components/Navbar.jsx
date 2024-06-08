@@ -1,8 +1,6 @@
-import MobileNavbar from "./MobileNavbar";
-import NavLink from "./NavLink";
 import { navbarLinks } from "../data/navbarLinks.js";
+import { mobileNavbarLinks } from "../data/mobileNavbarLinks.js";
 import { useEffect, useState } from "react";
-import { IoStorefront } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -258,7 +256,7 @@ const Navbar = ({ pathname }) => {
         </a>
 
         <ul className="px-4 pb-3 pt-2 flex flex-col max-w-lg mx-auto">
-          {navbarLinks.map((item, index) => (
+          {mobileNavbarLinks.map((item, index) => (
             <li
               key={index}
               className="relative group"
