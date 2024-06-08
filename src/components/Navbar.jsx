@@ -225,7 +225,7 @@ const Navbar = ({ pathname }) => {
 
       <div
         className={`${
-          openMobile ? "max-h-screen" : "max-h-0"
+          openMobile ? "max-h-screen" : "max-h-0 delay-300"
         } overflow-x-hidden duration-300 ease-in-out h-screen lg:hidden absolute w-full bg-dark-blue z-50 top-0`}
         id="mobile-menu"
       >
@@ -250,12 +250,19 @@ const Navbar = ({ pathname }) => {
 
         <a
           href="/"
-          className="text-white mx-auto w-fit block mb-5 uppercase font-bold text-3xl"
+          className="text-white px-10 w-fit block leading-none uppercase font-bold text-lg z-40 relative"
         >
-          Alto
+          <h1 className="text-4xl">Alto</h1>
+          <h2 className="text-dark-blue font-medium">Flight Academy</h2>
         </a>
 
-        <ul className="px-4 pb-3 pt-2 flex flex-col max-w-lg mx-auto">
+        <div
+          className={`absolute w-60 h-20 bg-red-700 top-16 z-30 duration-300  ${
+            openMobile ? "translate-x-0 delay-300" : "-translate-x-full "
+          }`}
+        ></div>
+
+        <ul className="px-4 pb-3 mt-5 pt-2 flex flex-col">
           {mobileNavbarLinks.map((item, index) => (
             <li
               key={index}
@@ -265,7 +272,7 @@ const Navbar = ({ pathname }) => {
               {item.link ? (
                 <a
                   href={item.link}
-                  className="font-bold p-5 block text-white text-lg duration-300 border-main-red whitespace-nowrap group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center"
+                  className="font-bold p-5 block text-white text-lg duration-300 border-main-red whitespace-nowrap group-last:bg-red-700 group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
@@ -334,7 +341,7 @@ const Navbar = ({ pathname }) => {
           ))}
         </ul>
 
-        <div className="p-5 text-white flex flex-col gap-3 overflow-hidden items-center">
+        <div className="p-5 px-10 text-white flex flex-col gap-3 overflow-hidden">
           <div className="flex gap-3 items-center">
             <a
               href={`mailto:${EMAIL_ADDRESS}`}
