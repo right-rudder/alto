@@ -1,12 +1,13 @@
 ---
 import Header from "../components/Header.astro";
-import Counter from "../components/Counter.jsx"
+import Counter from "../components/Counter.jsx";
 import TeamMemberCard from "../components/TeamMemberCard.astro";
 import team from "../data/team";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerData = {
   title: "Is becoming a pilot right for you?",
-  headerImage: "/src/assets/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg",
+  headerImage:
+    "/src/assets/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg",
   headerAlt:
     "Fleet of Alto Flight Academy airplanes in front of Sundance Airpark KHSD",
 };
@@ -18,17 +19,13 @@ import IntroImage from "../assets/student-and-cfi-in-cessna.jpg";
 import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
 import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg";
 import FemalePilots from "../assets/female-pilots-at-sundance-airport-in-front-of-planes.jpg";
-import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jpg"
+import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jpg";
 ---
 
-<BaseLayout 
+<BaseLayout
   siteTitle="Why Become a Pilot? | Flight Training in Yukon, OK"
   siteDescription="Becoming a pilot is a rewarding path.  Whether you're flying for fun or you're learning to fly for a career, the skills, knowledge, and experience will mold you to become a better version of yourself.  In terms of careers, pilots can make a very nice salary and income and have unparalleled work life balance.  Once the parking brake is set, you don't need to take home client calls, emails, and meetings.  Pilot careers are in high demand and it keeps getting better as more people take to the skies for travel and business."
 >
-
-
-
-
   <Header slot="header" data={headerData} />
 
   <section class="py-24 px-5">
@@ -49,8 +46,9 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
         <p class="paragraph">
           Becoming a pilot is a dream for many people. It's a career that offers
           a lot of excitement and adventure, as well as the opportunity to see
-          the world from a whole new perspective. It may be something you've been thinking about, 
-          but never thought possible.  We're here to say that it is possible!
+          the world from a whole new perspective. It may be something you've
+          been thinking about, but never thought possible. We're here to say
+          that it is possible!
         </p>
         <h3 class="font-bold text-2xl">
           We have flight training programs for all experience levels
@@ -61,7 +59,7 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/private-pilot">Private Pilot</a>
+              <a href="/flight-training/private-pilot">Private Pilot</a>
             </p>
           </li>
           <li class="flex gap-2 items-center group">
@@ -69,7 +67,7 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/instrument-rating">Instrument Rating</a>
+              <a href="/flight-training/instrument-rating">Instrument Rating</a>
             </p>
           </li>
           <li class="flex gap-2 items-center group">
@@ -77,7 +75,7 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/commercial-pilot">Commercial Pilot</a>
+              <a href="/flight-training/commercial-pilot">Commercial Pilot</a>
             </p>
           </li>
           <li class="flex gap-2 items-center group">
@@ -85,7 +83,7 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/multi-engine-rating"
+              <a href="/flight-training/multi-engine-rating"
                 >Multi-Engine Rating</a
               >
             </p>
@@ -95,7 +93,7 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/flight-instructor"
+              <a href="/flight-training/flight-instructor"
                 >Certified Flight Instructor</a
               >
             </p>
@@ -105,7 +103,7 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="flight-training/airline-transport-pilot"
+              <a href="/flight-training/airline-transport-pilot"
                 >Airline Transport Pilot</a
               >
             </p>
@@ -115,57 +113,117 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
     </div>
   </section>
 
-  <section class="relative isolate overflow-hidden bg-gray-900 pt-24 sm:pt-32 lg:-mt-12 -mt-16">
-  
-    <Image 
-      src={Airliner} 
-      alt="back of pilot flying" class="absolute inset-0 -z-10 h-full w-full object-cover object-center" 
+  <section
+    class="relative isolate overflow-hidden bg-gray-900 pt-24 sm:pt-32 lg:-mt-12 -mt-16"
+  >
+    <Image
+      src={Airliner}
+      alt="back of pilot flying"
+      class="absolute inset-0 -z-10 h-full w-full object-cover object-center"
     />
-    
-    <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+
+    <div
+      class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+      aria-hidden="true"
+    >
       <div class="aspect-[1097/845] w-[68.5625rem] bg-black opacity-50"></div>
     </div>
-    <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+    <div
+      class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+      aria-hidden="true"
+    >
       <div class="aspect-[1097/845] w-[68.5625rem] bg-black opacity-80"></div>
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl font-header">Is there a pilot shortage?</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-100 font-sans">The aviation industry faces a pilot supply challenge due to a confluence of factors including mandatory retirement ages, early retirements prompted by COVID, and the escalating demand for pilots. Experts predict that within the next year or two, global demand for pilots will surpass the available supply, with this trend anticipated to endure for the next decade.</p>
+        <h2
+          class="text-4xl font-bold tracking-tight text-white sm:text-6xl font-header"
+        >
+          Is there a pilot shortage?
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-100 font-sans">
+          The aviation industry faces a pilot supply challenge due to a
+          confluence of factors including mandatory retirement ages, early
+          retirements prompted by COVID, and the escalating demand for pilots.
+          Experts predict that within the next year or two, global demand for
+          pilots will surpass the available supply, with this trend anticipated
+          to endure for the next decade.
+        </p>
       </div>
       <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 font-sans text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-          <a href="/intro-flight" target="_blank" class="hover:text-red-700 duration-300">Discovery Flight <span>→</span></a>
-          <a href="/enrollment" target="_blank" class="hover:text-red-700 duration-300">Enroll Today <span>→</span></a>
-          <a href="/contact" class="hover:text-red-700 duration-300">Contact Us <span>→</span></a>
-  
-  
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 font-sans text-white sm:grid-cols-2 md:flex lg:gap-x-10"
+        >
+          <a
+            href="/intro-flight"
+            target="_blank"
+            class="hover:text-red-700 duration-300"
+            >Discovery Flight <span>→</span></a
+          >
+          <a
+            href="/enrollment"
+            target="_blank"
+            class="hover:text-red-700 duration-300"
+            >Enroll Today <span>→</span></a
+          >
+          <a href="/contact" class="hover:text-red-700 duration-300"
+            >Contact Us <span>→</span></a
+          >
         </div>
-        
-        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+
+        <dl
+          class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"
+        >
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-100 font-sans">Pilots needed in the next 10 years</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=280000 /></dd>
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Pilots needed in the next 10 years
+            </dt>
+            <dd
+              class="text-2xl font-bold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="280000" />
+            </dd>
           </div>
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-100 font-sans">Pilots over 50 years old</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=38 />%</dd>
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Pilots over 50 years old
+            </dt>
+            <dd
+              class="text-2xl font-bold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="38" />%
+            </dd>
           </div>
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-100 font-sans">Pilots retiring in the next 10 years</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=45000 /></dd>
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Pilots retiring in the next 10 years
+            </dt>
+            <dd
+              class="text-2xl font-bold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="45000" />
+            </dd>
           </div>
           <div class="flex flex-col-reverse">
-            <dt class="text-base leading-7 text-gray-100 font-sans">Growth in pilot demand</dt>
-            <dd class="text-2xl font-bold leading-9 tracking-tight text-white flex"><Counter client:only="react" value=39 />%</dd>
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Growth in pilot demand
+            </dt>
+            <dd
+              class="text-2xl font-bold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="39" />%
+            </dd>
           </div>
         </dl>
       </div>
     </div>
-    
+
     <div class="flex flex-row justify-end">
       <div class="text-gray-500 mt-20 mb-10 mr-10 italic text-sm">
-        <a href="https://www.cae.com/media/documents/ATF/Aviation-Talent-Forecast-2023.pdf" target="blank">Source: 2023 CAE Aviation Talent Forcast</a>
+        <a
+          href="https://www.cae.com/media/documents/ATF/Aviation-Talent-Forecast-2023.pdf"
+          target="blank">Source: 2023 CAE Aviation Talent Forcast</a
+        >
       </div>
     </div>
   </section>
@@ -186,10 +244,19 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
           How it works
         </h2>
         <p class="paragraph">
-          At Alto Flight Academy, we offer two different courses for each type of certification and rating: ground school and flight training.  In order to receive any certification or rating there are two main requirements and that is passing the FAA written exam and the FAA practical exam (also known as a checkride).  
+          At Alto Flight Academy, we offer two different courses for each type
+          of certification and rating: ground school and flight training. In
+          order to receive any certification or rating there are two main
+          requirements and that is passing the FAA written exam and the FAA
+          practical exam (also known as a checkride).
         </p>
         <p class="paragraph">
-          If you're ready to take the first step in learning how to become a pilot or you're looking to take advanced classes to further your pilot career and knowledge, we encourage you to start with our ground school courses.  Being in a ground school course is an excellent opportunity to meet fellow pilots in a similar stage in their training as you. Like the expression goes... "it takes a village".  
+          If you're ready to take the first step in learning how to become a
+          pilot or you're looking to take advanced classes to further your pilot
+          career and knowledge, we encourage you to start with our ground school
+          courses. Being in a ground school course is an excellent opportunity
+          to meet fellow pilots in a similar stage in their training as you.
+          Like the expression goes... "it takes a village".
         </p>
       </div>
     </div>
@@ -211,10 +278,15 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
           Start with ground school
         </h2>
         <p class="paragraph">
-          Having a community and family to support your in your journey is extremely beneficial to your success. After completing the ground school and passing the written exam, move forward and get paired up with a flight instructor to prepare for your checkride.
+          Having a community and family to support your in your journey is
+          extremely beneficial to your success. After completing the ground
+          school and passing the written exam, move forward and get paired up
+          with a flight instructor to prepare for your checkride.
         </p>
         <p class="paragraph">
-          Below you'll find links to more information to our ground school sessions.  Click below to learn more and give us a call or fill out one of the forms to get started.
+          Below you'll find links to more information to our ground school
+          sessions. Click below to learn more and give us a call or fill out one
+          of the forms to get started.
         </p>
         <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
           <li class="flex gap-2 items-center group">
@@ -246,8 +318,7 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
               <FaCheck className="size-3 text-white" />
             </div>
             <p class="group-hover:underline">
-              <a href="ground-school/multi-engine-rating"
-                >Multi-Engine Rating</a
+              <a href="ground-school/multi-engine-rating">Multi-Engine Rating</a
               >
             </p>
           </li>
@@ -290,7 +361,13 @@ import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jp
         <span class="text-dark-blue">Let your dreams</span> take a flight!
       </h2>
       <p class="text-lg leading-relaxed max-w-5xl text-center">
-        Whether you're aspiring to soar through the skies as a private pilot, embark on a career in aviation, or advance your current pilot credentials, Alto Flight Academy is here to support your journey. Our experienced instructors, state of the art facilities, and comprehensive training programs are tailored to help you achieve your aviation goals. Don't let this opportunity pass you by. Contact us today to take the first step towards making your dreams a reality!
+        Whether you're aspiring to soar through the skies as a private pilot,
+        embark on a career in aviation, or advance your current pilot
+        credentials, Alto Flight Academy is here to support your journey. Our
+        experienced instructors, state of the art facilities, and comprehensive
+        training programs are tailored to help you achieve your aviation goals.
+        Don't let this opportunity pass you by. Contact us today to take the
+        first step towards making your dreams a reality!
       </p>
       <a href="/contact" class="btn-dark-blue">Contact us</a>
     </div>

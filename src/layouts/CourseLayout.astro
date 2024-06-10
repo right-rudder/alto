@@ -26,7 +26,7 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
       </a>
     </div>
     <div class="py-5 flex flex-col gap-3">
-      {data.intro.map((intro) => <p class="paragraph" set:html={intro}></p>)}
+      {data.intro.map((intro) => <p class="paragraph" set:html={intro} />)}
     </div>
     <div class="">
       <Image
@@ -39,7 +39,11 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
       </div>
     </div>
     <div class="py-5 flex flex-col gap-3">
-      {data.content.map((paragraph) => <p class="paragraph" set:html={paragraph}></p>)}
+      {
+        data.content.map((paragraph) => (
+          <p class="paragraph" set:html={paragraph} />
+        ))
+      }
     </div>
   </div>
 </section>
@@ -87,11 +91,13 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
         <p class="paragraph">
           Start your training today at Alto Flight Academy and take the first
           step. Start training today with our <span class="lowercase"
-            >{data.title}</span
-          > training course.  
+            >{data.hiddenField}</span
+          > course.
         </p>
         <p class="paragraph">
-          Fill out the form and we'll contact you to schedule a visit to our flight school.  You'll get the chance to see Alto Flight Academy first hand and meet with one of our certified flight instructors.
+          Fill out the form and we'll contact you to schedule a visit to our
+          flight school. You'll get the chance to see Alto Flight Academy first
+          hand and meet with one of our certified flight instructors.
         </p>
       </div>
       <div class="lg:flex-1">
