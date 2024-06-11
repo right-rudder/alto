@@ -10,7 +10,7 @@ const headerData = {
 const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
 ---
 
-<BaseLayout 
+<BaseLayout
   siteTitle="Start Flight Training in Oklahoma City"
   siteDescription="Alto Flight Academy has been training pilots for 30 years.  Start your journey today.  Enroll at Alto Flight Academy and join the family.  We are committed to your success and want to see you achieve your aviation goals."
 >
@@ -52,6 +52,7 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           <input
             type="email"
             name="email"
+            id="email"
             placeholder="Your email"
             class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
             required
@@ -232,6 +233,16 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
       });
     } else {
       console.error("Enrollment form element not found.");
+    }
+  });
+
+  document.getElementById("email").addEventListener("input", function () {
+    const email = this.value;
+    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+    if (!emailPattern.test(email)) {
+      this.setCustomValidity("Please enter a valid email address.");
+    } else {
+      this.setCustomValidity("");
     }
   });
 </script>

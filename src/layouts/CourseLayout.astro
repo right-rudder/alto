@@ -123,6 +123,7 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
           </div>
           <div class="flex flex-col lg:flex-row gap-5">
             <input
+              id="email"
               type="email"
               name="email"
               placeholder="Your email"
@@ -267,6 +268,16 @@ const TRAINING_COURSE_FORM_WEBHOOK_URL = import.meta.env
       });
     } else {
       console.error("Training course form element not found.");
+    }
+  });
+
+  document.getElementById("email").addEventListener("input", function () {
+    const email = this.value;
+    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+    if (!emailPattern.test(email)) {
+      this.setCustomValidity("Please enter a valid email address.");
+    } else {
+      this.setCustomValidity("");
     }
   });
 </script>

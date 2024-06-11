@@ -21,7 +21,7 @@ import {
 const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
 ---
 
-<BaseLayout 
+<BaseLayout
   siteTitle="Contact Us | Alto Flight Academy Yukon, OK"
   siteDescription="Begin your pilot career today.  Contact us and speak to an Alto Flight team member.  Whether you're just starting out, or you are looking for advanced training in instrument, commercial, CFI, or ATP; we can help you get to the skies quicker.  Alto Flight Academy is conveniently located in Oklahoma City, OK."
 >
@@ -102,6 +102,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
           </div>
           <div class="flex flex-col lg:flex-row gap-5">
             <input
+              id="email"
               type="email"
               name="email"
               placeholder="Your email"
@@ -245,6 +246,16 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
       });
     } else {
       console.error("Contact us form element not found.");
+    }
+  });
+
+  document.getElementById("email").addEventListener("input", function () {
+    const email = this.value;
+    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+    if (!emailPattern.test(email)) {
+      this.setCustomValidity("Please enter a valid email address.");
+    } else {
+      this.setCustomValidity("");
     }
   });
 </script>
