@@ -157,14 +157,6 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
       );
     }
   });
-
-  document.getElementById("email").addEventListener("input", function () {
-    const email = this.value;
-    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
-    if (!emailPattern.test(email)) {
-      this.setCustomValidity("Please enter a valid email address.");
-    } else {
-      this.setCustomValidity("");
-    }
-  });
 </script>
+
+<script src="../scripts/emailValidation.js"></script>
