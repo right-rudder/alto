@@ -21,15 +21,16 @@ import {
 import EmailNotificationForm from "../components/EmailNotificationForm.astro";
 
 import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg";
-import GroupPhoto from "../assets/alto-flight-sundance-airport-yukon-oklahoma.jpg";
+import GroupPhoto from "../assets/alto-flight-sundance-airport-yukon-oklahoma-touched.jpg";
 import GetInContact from "../components/GetInContact.astro";
 import GoogleMaps from "../components/GoogleMaps.astro";
-import AltoGrad from "../assets/former-alto-flight-academy-student-flying-jets.jpg"
-import AltoGradCessna from "../assets/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg"
-
+import AltoGrad from "../assets/former-alto-flight-academy-student-flying-jets.jpg";
+import AltoGradCessna from "../assets/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg";
 ---
 
-<BaseLayout siteTitle="Alto Flight Academy | Pilot Training in Oklahoma City, OK">
+<BaseLayout
+  siteTitle="Alto Flight Academy | Pilot Training in Oklahoma City, OK"
+>
   <HomepageHeader2 slot="header" />
   <section class="lg:max-h-[20rem] px-5">
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between">
@@ -170,40 +171,65 @@ import AltoGradCessna from "../assets/former-alto-student-with-cessna-first-trai
 
   <Memberships />
 
-  <section class="mb-0 py-12 lg:py-24 sm:py-10 bg-gradient-to-tl from-dark-blue to-sky-950  text-white relative max-w-[80rem] mx-auto lg:mb-20">
+  <section
+    class="mb-0 py-12 lg:py-24 sm:py-10 bg-gradient-to-tl from-dark-blue to-sky-950 text-white relative max-w-[80rem] mx-auto lg:mb-20"
+  >
     <div class="grid place-items-center">
       <div class="flex flex-col items-center">
-        <h2 class="text-center text-3xl lg:text-5xl pb-5">
-          Meet Pete Pardel
-        </h2>
+        <h2 class="text-center text-3xl lg:text-5xl pb-5">Meet Pete Pardel</h2>
         <h3 class="text-center text-xl lg:text-lg pb-10 px-5">
           Alto Flight Academy graduate flying the Phenom 300
         </h3>
 
-        <Image src={AltoGrad} alt="Former student at Alto Flight Academy flying the Phenom 300 jet" class="px-5 lg:px-0 lg:w-3/4" />
-        
+        <Image
+          src={AltoGrad}
+          alt="Former student at Alto Flight Academy flying the Phenom 300 jet"
+          class="px-5 lg:px-0 lg:w-3/4"
+        />
+
         <p class="paragraph pt-10 text-gray-200 text-left px-5 lg:px-40 w-full">
           October 2023
         </p>
         <p class="paragraph pt-10 text-gray-200 text-left px-5 lg:px-40">
-          I started flight training in May 2002 in 4891J at PWA. Cliff Shaw was my flight instructor, but he was also a friend of mine from our Naval Squadron at Tinker AFB. Hal Harris was the owner of the planes, and at the time they were kept over at the Service Center by the south end of the field at PWA.
+          I started flight training in May 2002 in 4891J at PWA. Cliff Shaw was
+          my flight instructor, but he was also a friend of mine from our Naval
+          Squadron at Tinker AFB. Hal Harris was the owner of the planes, and at
+          the time they were kept over at the Service Center by the south end of
+          the field at PWA.
         </p>
         <p class="paragraph pt-10 text-gray-200 text-left px-5 lg:px-40">
-          Since Cliff and I were both active duty, we were gone quite a bit so I couldn’t train as often as I would’ve liked, but I soloed in 67797 at Sundance on Feb 19, 2003. I’ve been flying ever since, primarily as a hobby, and I’ve been in several flying clubs. I’ve flown my family and friends all around the Midwest. I’ve had several different careers along the way, but I became a CFI in April 2022, and got hired by Airshare in April of this year (2023). 
+          Since Cliff and I were both active duty, we were gone quite a bit so I
+          couldn’t train as often as I would’ve liked, but I soloed in 67797 at
+          Sundance on Feb 19, 2003. I’ve been flying ever since, primarily as a
+          hobby, and I’ve been in several flying clubs. I’ve flown my family and
+          friends all around the Midwest. I’ve had several different careers
+          along the way, but I became a CFI in April 2022, and got hired by
+          Airshare in April of this year (2023).
         </p>
         <p class="paragraph pt-10 text-gray-200 text-left px-5 lg:px-40">
-          I’m an SIC on the Phenom 300, and recently got the opportunity to fly some clients to Sundance. I couldn’t believe it when I spotted both 67797 and 4891J on the ramp. I had to get my picture with each plane! It was quite the experience for me being able to reflect on my first solo, which seems like so long ago. It’s been my dream to fly corporate aircraft, but I’ll never forget where I started!
+          I’m an SIC on the Phenom 300, and recently got the opportunity to fly
+          some clients to Sundance. I couldn’t believe it when I spotted both
+          67797 and 4891J on the ramp. I had to get my picture with each plane!
+          It was quite the experience for me being able to reflect on my first
+          solo, which seems like so long ago. It’s been my dream to fly
+          corporate aircraft, but I’ll never forget where I started!
         </p>
 
-        <Image src={AltoGradCessna} alt="Former student at Alto Flight Academy with cessna plane he trained on 20 years ago Bethany, Oklahoma" class="px-5 lg:px-0 lg:w-3/4 pt-16" />
-        <p class="text-gray-200 text-sm italic pt-5 px-5 text-center">Pete standing next to original Cessna he got his pilot certificates with 20+ years ago</p>
+        <Image
+          src={AltoGradCessna}
+          alt="Former student at Alto Flight Academy with cessna plane he trained on 20 years ago Bethany, Oklahoma"
+          class="px-5 lg:px-0 lg:w-3/4 pt-16"
+        />
+        <p class="text-gray-200 text-sm italic pt-5 px-5 text-center">
+          Pete standing next to original Cessna he got his pilot certificates
+          with 20+ years ago
+        </p>
       </div>
     </div>
   </section>
 
   <WallOfGrads />
 
-  
   <section class="py-20 lg:pb-24 px-5 bg-dark-blue relative">
     <!-- <div class="max-w-7xl mx-auto text-white z-20 relative">
       <h2 class="text-5xl font-bold">
