@@ -17,6 +17,12 @@ const teamInstructors = [
     imagePath: "/src/assets/evan-navarro-alto-flight-team.jpg",
     //bio: "MariCris Harris manages Alto Flight Academy with a focus on a welcoming environment for all our students. Her organizational skills and warm personality ensure that every student feels like right at home.",
   },
+  {
+    name: "Reid Grigsby",
+    qualifications: ["Certified Flight Instructor"],
+    imagePath: "/src/assets/reid-grigsby-alto-flight-team.webp",
+    //bio: "MariCris Harris manages Alto Flight Academy with a focus on a welcoming environment for all our students. Her organizational skills and warm personality ensure that every student feels like right at home.",
+  },
 ];
 
 export default teamInstructors;
