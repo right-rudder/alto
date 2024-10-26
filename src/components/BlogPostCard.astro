@@ -22,7 +22,9 @@ const dateData = new Date(date);
       src={images[imagePath]()}
       alt={title}
       class="w-full h-full object-cover scale-105 group-hover:scale-100 duration-700"
-      quality={80}
+      quality={100}
+      widths={[120, 240, 360, 480, 600, 800, 1200]}
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
   </div>
 

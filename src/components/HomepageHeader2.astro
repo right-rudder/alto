@@ -9,9 +9,10 @@ import HeroImage from "/src/assets/alto-pilot-thumbs-up-oklahoma.jpg";
 >
   <Image
     src={HeroImage}
-    alt="A description of my image."
+    alt="Pilot giving thumbs up inside airplane cockpit at Alto Pilot Flight School in Oklahoma City"
     class="absolute top-0 w-full h-full object-cover -z-50 animate-slow-zoom"
-    quality={100}
+    widths={[240, 540, 720, HeroImage.width]}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${HeroImage.width}px`}
   />
 
   <div class="absolute inset-0 bg-dark-blue/30 -z-40"></div>
@@ -20,12 +21,16 @@ import HeroImage from "/src/assets/alto-pilot-thumbs-up-oklahoma.jpg";
       <h1 class="text-5xl max-w-xl lg:text-7xl font-extrabold lg:max-w-max">
         Professional <span class="text-red-500 font-strong">Pilot</span> Training
       </h1>
-      <h2 class="text-3xl max-w-xl lg:text-5xl font-extrabold lg:max-w-4xl text-gray-200">
+      <h2
+        class="text-3xl max-w-xl lg:text-5xl font-extrabold lg:max-w-4xl text-gray-200"
+      >
         <span class="text-red-500 font-strong">Flight School</span> in Oklahoma City
       </h2>
-      <a href="/intro-flight" target="_blank" class="btn-red uppercase font-light tracking-wider"
-        >Begin Today</a
+      <a
+        href="/intro-flight"
+        target="_blank"
+        class="btn-red uppercase font-light tracking-wider">Begin Today</a
       >
-  </div>
+    </div>
   </div>
 </header>
