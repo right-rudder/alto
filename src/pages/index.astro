@@ -1,25 +1,13 @@
 ---
 import HomepageHeader2 from "../components/HomepageHeader2.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-//import StatCard from "../components/StatCard.astro";
-//import CTAform from "../components/CTAform.astro";
 import { FaCheck } from "react-icons/fa";
-import { blogSampleData } from "../data/blogSampleData";
-import BlogSmallCard from "../components/BlogSmallCard.astro";
-import BlogBigCard from "../components/BlogBigCard.astro";
 import { Image } from "astro:assets";
-import { IoPhonePortraitOutline } from "react-icons/io5";
-import { IoLocationOutline } from "react-icons/io5";
 import Memberships from "../components/Memberships.astro";
 import WallOfGrads from "../components/WallOfGrads.astro";
 import ThirtyYears from "../components/ThirtyYears.astro";
 import TrainingCoursesCarrousel from "../components/TrainingCoursesCarrousel";
-import {
-  MdKeyboardArrowLeft,
-  MdOutlineKeyboardArrowRight,
-} from "react-icons/md";
 import EmailNotificationForm from "../components/EmailNotificationForm.astro";
-
 import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg";
 import GroupPhoto from "../assets/alto-flight-sundance-airport-yukon-oklahoma-touched.jpg";
 import GetInContact from "../components/GetInContact.astro";
@@ -32,16 +20,6 @@ import AltoGradCessna from "../assets/former-alto-student-with-cessna-first-trai
   siteTitle="Alto Flight Academy | Pilot Training in Oklahoma City, OK"
 >
   <HomepageHeader2 slot="header" />
-  <section class="lg:max-h-[20rem] px-5">
-    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between">
-      <div class="grid grid-cols-2 w-full">
-        <!-- <StatCard /> -->
-      </div>
-      <div class="lg:-translate-y-52">
-        <!-- <CTAform /> -->
-      </div>
-    </div>
-  </section>
 
   <section class="py-24 px-5">
     <div
@@ -239,39 +217,15 @@ import AltoGradCessna from "../assets/former-alto-student-with-cessna-first-trai
   <WallOfGrads />
 
   <section class="py-20 lg:pb-24 px-5 bg-dark-blue relative">
-    <!-- <div class="max-w-7xl mx-auto text-white z-20 relative">
-      <h2 class="text-5xl font-bold">
-        <span class="text-red-700">Find the right</span> course for you
-      </h2>
-      <div
-        class="grid lg:grid-cols-3 max-w-xl mx-auto lg:max-w-none gap-16 mt-10"
-      >
-        {courses.map((course) => <CourseCard {...course} />)}
-      </div>
-    </div> -->
     <div class="max-w-7xl mx-auto text-white z-20 relative">
       <div class="flex items-center gap-10 justify-between mb-10">
         <h2 class="text-3xl lg:text-5xl font-bold">
           <span class="text-red-600">Find the right</span> course for you
         </h2>
-        <!-- <div class="flex gap-4">
-          <button
-            class="p-2 bg-white hover:bg-red-700 duration-200 rounded-full"
-          >
-            <MdKeyboardArrowLeft className="text-dark-blue size-7" />
-          </button>
-          <button
-            class="p-2 bg-white hover:bg-red-700 duration-200 rounded-full"
-          >
-            <MdOutlineKeyboardArrowRight className="text-dark-blue size-7" />
-          </button>
-        </div> -->
       </div>
-
       <TrainingCoursesCarrousel client:visible />
     </div>
 
-    <!-- Email form -->
     <EmailNotificationForm />
   </section>
 
