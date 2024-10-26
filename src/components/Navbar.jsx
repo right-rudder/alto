@@ -346,6 +346,7 @@ const Navbar = ({ pathname }) => {
             <a
               href={`mailto:${EMAIL_ADDRESS}`}
               className="border p-2 w-fit border-white rounded-full bg-white cursor-pointer"
+              aria-label="Email"
             >
               <MdEmail className="size-3 text-red-700" />
             </a>
@@ -355,6 +356,7 @@ const Navbar = ({ pathname }) => {
             <a
               href={`tel:${PHONE_NUMBER}`}
               className="border p-2 w-fit border-white rounded-full bg-white"
+              aria-label="Phone"
             >
               <FaPhone className="size-3 text-red-700" />
             </a>
