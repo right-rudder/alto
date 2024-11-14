@@ -1,6 +1,8 @@
 ---
 import OpenModalButton from "./OpenModalButton";
 import ImageComp from "./ImageComp.astro";
+const BOOK_DOWNLOAD_FORM_WEBHOOK_URL = import.meta.env
+  .BOOK_DOWNLOAD_FORM_WEBHOOK_URL;
 ---
 
 <section class="bg-dark-blue text-white flex justify-center">
@@ -14,7 +16,10 @@ import ImageComp from "./ImageComp.astro";
         We have a free booklet which explains everything you need to know for
         your pilot certificate.
       </p>
-      <OpenModalButton client:visible />
+      <OpenModalButton
+        client:visible
+        webhook_url={BOOK_DOWNLOAD_FORM_WEBHOOK_URL}
+      />
     </div>
     <ImageComp
       imagePath="/src/assets/alto-flight-book-mockup.png"

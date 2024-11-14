@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
-const OpenModalButton = () => {
+const OpenModalButton = ({ webhook_url }) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
@@ -22,8 +22,7 @@ const OpenModalButton = () => {
     const name = formData.get("name");
     setUserName(name);
 
-    const url =
-      "https://services.leadconnectorhq.com/hooks/WnubPYDX2olkZfNPRQvT/webhook-trigger/f9a65fc9-e154-4711-b2ad-bae8a07a7f01";
+    const url = webhook_url;
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
@@ -106,7 +105,10 @@ const OpenModalButton = () => {
                     </label>
                   </p>
 
-                  <button type="submit" className="btn-red w-full">
+                  <button
+                    type="submit"
+                    className="btn-red w-full hover:from-red-700 hover:to-red-900 hover:text-white"
+                  >
                     Get the guide
                   </button>
                 </form>
@@ -127,7 +129,7 @@ const OpenModalButton = () => {
             )}
 
             <button
-              className="bg-main-red p-1 rounded-full absolute top-2 right-2"
+              className="bg-red-600 p-1 rounded-full absolute top-2 right-2"
               onClick={toggleModal}
             >
               <IoMdClose className="text-2xl text-white" />
