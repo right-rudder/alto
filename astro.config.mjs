@@ -12,10 +12,14 @@ export default defineConfig({
   site: "https://altoflight.com/",
   integrations: [
     mdx(),
-    sitemap(),
+    sitemap({
+      customPages: [
+        "https://altoflight.com/LearnToFly-with-AltoFlightAcademy-2024.pdf",
+      ],
+    }),
     tailwind(),
     react(),
-    alpinejs({ entrypoint: '/src/entrypoint' }),
+    alpinejs({ entrypoint: "/src/entrypoint" }),
     partytown(),
   ],
   redirects: {
