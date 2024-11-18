@@ -120,22 +120,21 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
+        "dayOfWeek": "Monday",
+        "opens": "9:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "opens": "08:00",
-        "closes": "17:00"
+        "closes": "18:00"
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
         "opens": "12:00",
-        "closes": "17:00"
+        "closes": "18:00"
       }
     ],
     "makesOffer": {
