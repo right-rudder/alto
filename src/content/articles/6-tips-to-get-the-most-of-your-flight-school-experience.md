@@ -1,5 +1,5 @@
 ---
-title: "How to Get the Most Out of Flight School at Alto Flight Academy"
+title: "6 Tips to Get the Most Out of Flight School Experience"
 description: "Learn how to make the most of your flight training experience at Alto Flight Academy in Oklahoma City. Start your aviation journey today!"
 pubDate: "January 14, 2025"
 heroImage: "/src/assets/post5.jpg"
