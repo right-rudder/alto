@@ -31,4 +31,4 @@ Learning to fly is an incredible adventure. Take time to appreciate the beauty o
 
 Ready to start your adventure in the world of aviation? Contact Alto Flight Academy for more details about our training programs and discover how we can help you achieve your pilot dreams.
 
-Visit our website at [Alto Flight Academy](/), or call us at [(405)-784-6209](<tel:(405)-784-6209%3E>) to schedule your discovery flight or to learn more about our flight training offerings.
+Visit our website at [Alto Flight Academy](/), or call us at [(405)-784-6209](<tel:(405)-784-6209>) to schedule your discovery flight or to learn more about our flight training offerings.
