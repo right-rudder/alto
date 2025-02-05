@@ -42,16 +42,25 @@ const locationKeyPlace2 = location.data.keyPlace2 || "Another must-see location 
 ---
 
 <BaseLayout
-  siteTitle="Why Become a Pilot? | Flight Training in Yukon, OK"
-  siteDescription="Becoming a pilot is a rewarding path.  Whether you're flying for fun or you're learning to fly for a career, the skills, knowledge, and experience will mold you to become a better version of yourself.  In terms of careers, pilots can make a very nice salary and income and have unparalleled work life balance.  Once the parking brake is set, you don't need to take home client calls, emails, and meetings.  Pilot careers are in high demand and it keeps getting better as more people take to the skies for travel and business."
+  siteTitle=`Become a Pilot in ${locationCity}, ${locationStateLong} | Alto Flight Academy`
+  siteDescription=`Learn to fly with Alto Flight Academy near ${locationCity}, ${locationStateLong}. 
+  Train at Sundance Airport (KHSD) and explore top local attractions like 
+  ${locationKeyPlace1} and ${locationKeyPlace2}. Our expert instructors provide professional 
+  flight training to help you achieve your aviation goals.`
+  keywords=`flight school in ${locationCity}, pilot training in ${locationCity} ${locationStateLong}, 
+  pilot training in ${locationCity} ${locationStateShort}, aviation training ${locationCity} ${locationCity}, 
+  become a pilot ${locationCity} ${locationStateLong}, become a pilot ${locationCity} ${locationStateShort}, 
+  Alto Flight Academy, flight lessons in ${locationCity}, private pilot training, 
+  commercial pilot training ${locationCity} ${locationStateLong}, pilot certification ${locationCity}, 
+  best flight school in ${locationCity} ${locationStateLong}, aviation programs ${locationCity}`
 >
   <Header slot="header" data={headerData} />
 
-  <section class="py-24 px-5">
+  <section class="py-24 px-5 lg:overflow-visible">
     <div
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
     >
-      <div class="flex-[1.5_1.5_0] w-full">
+      <div class="flex-[1.5_1.5_0] w-full lg:sticky lg:top-0 lg:self-start lg:justify-start">
         <Image
           class="rounded-lg"
           src={IntroImage}
@@ -60,14 +69,17 @@ const locationKeyPlace2 = location.data.keyPlace2 || "Another must-see location 
       </div>
       <div class="flex flex-col flex-1 gap-5">
         <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
-          Why learn to fly?
+          Become a Pilot in {locationCity}, {locationStateLong}
         </h2>
         <p class="paragraph">
-          Becoming a pilot is a dream for many people. It's a career that offers
-          a lot of excitement and adventure, as well as the opportunity to see
-          the world from a whole new perspective. It may be something you've
-          been thinking about, but never thought possible. We're here to say
-          that it is possible!
+          Located in {locationCounty}, {locationCity} offers a fantastic environment for flight training. With a mix of bustling city life and open airspace, student pilots benefit from both real-world air traffic experience and easy access to practice areas.
+
+          Alto Flight Academy provides personalized flight training to help you become a confident and skilled pilot. Whether you're aiming for a Private Pilot License (PPL), Instrument Rating (IR), Commercial Pilot License (CPL), or Certified Flight Instructor (CFI) certification, we tailor training to fit your goals.
+          
+          When you're not in the cockpit, explore local landmarks like {locationKeyPlace1} and {locationKeyPlace2}, adding to the unique experience of learning to fly in {locationCity}. With a strong aviation community, excellent weather conditions, and experienced instructors, this is the perfect place to take your first step toward a career in aviation.
+          
+          Start your journey today—enroll in flight training at Alto Flight Academy near {locationCity}, {locationStateLong}!
+          
         </p>
         <h3 class="font-bold text-2xl">
           We have flight training programs for all experience levels
