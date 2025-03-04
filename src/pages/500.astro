@@ -1,0 +1,37 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const headerData = {
+  title: "500 - Check our Instruments",
+  headerImage: "/src/assets/long-exposure-airport-night.jpg",
+  headerAlt: "Long exposure of an airport at night",
+};
+---
+
+<BaseLayout
+  siteTitle="500 Internal Server Error | Alto Flight Academy Yukon, OK"
+  siteDescription="Something went wrong on our end. Please try again later or contact Alto Flight Academy for assistance."
+  keywords="Alto Flight Academy, flight school, 500 error, server error, technical issue, aviation training, pilot school"
+>
+  <Header slot="header" data={headerData} />
+  <section class="py-16 px-5 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto py-24 text-center">
+      <h1 class="text-5xl font-extrabold text-dark-blue">500 - Check our Instruments</h1>
+      <p class="text-xl text-gray-500 mt-5">
+        The server encountered an internal error or misconfiguration and was unable to complete your request. <br/>Please contact the server administrator to report this error.
+      </p>
+    </div>
+    <div class="text-center flex gap-8 justify-center items-center">
+      <a href="/contact" class="btn-dark-blue">Contact Us</a>
+      <a href="/" class="btn-dark-blue">Go back to Home</a>
+    </div>
+  </section>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.057927577292!2d-97.710454723616!3d35.60163763434128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2014e29c352e9%3A0x466ca3f4081dcdf5!2sAlto%20Flight%20Academy!5e0!3m2!1sen!2sgt!4v1715928246714!5m2!1sen!2sgt"
+    class="w-full h-[20rem]"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Alto Flight Academy Location"></iframe>
+</BaseLayout>
