@@ -44,3 +44,9 @@ For takeoff and landing, when extra lift is crucial, pilots use **flaps**. These
 Lift is the unsung hero that allows airplanes to defy gravity. Through clever wing design, the application of the Bernoulli principle, adjustments to the angle of attack, and the use of flaps, airplanes harness the power of fluid dynamics to stay airborne.
 
 Next time you're on a plane, take a moment to appreciate the incredible physics at work. Look out the window and observe the wings in action. You'll have a deeper understanding of the intricate dance between lift and pilot control, and you'll marvel at the wonder of flight.
+
+## Get in Touch with Alto Flight Academy
+
+Ready to start your adventure in the world of aviation? Contact Alto Flight Academy for more details about our training programs and discover how we can help you achieve your pilot dreams.
+
+Visit our website at [Alto Flight Academy](/), or call us at [(405)-784-6209](<tel:(405)-784-6209%3E>) to schedule your discovery flight or to learn more about our flight training offerings.
