@@ -26,8 +26,8 @@ This difference in air velocity leads to a difference in air pressure, a phenome
 
 In simple terms:
 
-- Faster air on top = Lower pressure.
-- Slower air on bottom = Higher pressure.
+- Faster air on top = Lower pressure
+- Slower air on bottom = Higher pressure
 
 This pressure difference creates lift, pushing the wing upward. It’s the difference in pressure that literally pushes the plane into the sky.
 
