@@ -1,7 +1,7 @@
 ---
 pubDate: "May 15, 2025"
 title: "5 Common Mistakes Student Pilots Make (And How to Avoid Them)"
-description: "Learn how to make the most of your flight training experience at Alto Flight Academy in Oklahoma City. Start your aviation journey today!"
+description: "Learn the 5 most common mistakes student pilots make and how to avoid them with expert training from Alto Flight Academy in Oklahoma City. Master your flight skills and navigate Oklahoma's airspace with confidence."
 heroImage: "/src/assets/flying-IMC-and-pitot-tube-iced-up.jpg"
 ---
 
