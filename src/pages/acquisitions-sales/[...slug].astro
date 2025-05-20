@@ -46,7 +46,9 @@ const newImagesArray = await Promise.all(
 );
 ---
 
-<BaseLayout siteTitle={headerData.title + " | Aircraft Acquisition and Sales Oklahoma"}>
+<BaseLayout
+  siteTitle={headerData.title + " | Aircraft Acquisition and Sales Oklahoma"}
+>
   <Header data={headerData} />
 
   <section class="py-2 px-5">
@@ -93,7 +95,7 @@ const newImagesArray = await Promise.all(
       </h2>
       <div class="flex flex-col lg:flex-row items-center gap-8">
         <AircraftCarousel client:load imagesArray={newImagesArray} />
-        <div class="flex-1 flex flex-col gap-2">
+        <!-- <div class="flex-1 flex flex-col gap-2">
           <p class="font-semibold text-4xl">{data.price}</p>
           <form class="flex flex-col max-w-4xl mx-auto gap-3 my-5">
             <div class="flex flex-col lg:flex-row gap-3">
@@ -147,7 +149,7 @@ const newImagesArray = await Promise.all(
               >Send message</button
             >
           </form>
-        </div>
+        </div> -->
       </div>
     </div>
 
