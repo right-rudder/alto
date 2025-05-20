@@ -169,95 +169,95 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
     title="Alto Flight Academy Location"></iframe>
-</BaseLayout>
 
-<script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
-  const checkbox = document.getElementById("agree-data-collection");
-  const submitButton = document.getElementById("submit-button");
+  <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+    const checkbox = document.getElementById("agree-data-collection");
+    const submitButton = document.getElementById("submit-button");
 
-  checkbox.addEventListener("change", function () {
-    if (checkbox.checked) {
-      submitButton.disabled = false;
-      submitButton.classList.remove(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-      );
-    } else {
-      submitButton.disabled = true;
-      submitButton.classList.add(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-      );
-    }
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contact-form");
-    if (!form) {
-      console.error("Form element not found.");
-      return;
-    }
-
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
-
-      const formData = new FormData(form);
-      const confirmEmail = formData.get("confirm-email")?.trim();
-
-      if (confirmEmail) return;
-
-      const webhookURL = CONTACT_US_FORM_WEBHOOK_URL;
-      const apiKey = PORTAL_API_KEY;
-
-      const urlEncodedBody = new URLSearchParams(formData).toString();
-
-      const jsonBody = {
-        first_name: formData.get("first-name")?.trim() || "",
-        last_name: formData.get("last-name")?.trim() || "",
-        email: formData.get("email")?.trim() || "",
-        phone: formData.get("phone")?.trim() || "",
-        campaign: "contact_us",
-        account_random_id: "ac_xbpzsoyp",
-        metadata: {
-          message: formData.get("message")?.trim() || "",
-        },
-      };
-
-      try {
-        const [ghlRes, portalRes] = await Promise.all([
-          fetch(webhookURL, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: urlEncodedBody,
-          }),
-          fetch("https://portal.rightruddermarketing.com/api/leads", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-              "x-api-key": apiKey,
-            },
-            body: JSON.stringify(jsonBody),
-          }),
-        ]);
-
-        if (ghlRes.ok && portalRes.ok) {
-          window.location.href = "/contact-confirmation";
-        } else {
-          console.error("Submission failed", {
-            ghlStatus: ghlRes.status,
-            portalStatus: portalRes.status,
-          });
-        }
-      } catch (err) {
-        console.error("Submission error:", err);
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        submitButton.disabled = false;
+        submitButton.classList.remove(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.add(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
       }
     });
-  });
-</script>
 
-<script src="../scripts/emailValidation.js"></script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contact-form");
+      if (!form) {
+        console.error("Form element not found.");
+        return;
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const confirmEmail = formData.get("confirm-email")?.trim();
+
+        if (confirmEmail) return;
+
+        const webhookURL = CONTACT_US_FORM_WEBHOOK_URL;
+        const apiKey = PORTAL_API_KEY;
+
+        const urlEncodedBody = new URLSearchParams(formData).toString();
+
+        const jsonBody = {
+          first_name: formData.get("first-name")?.trim() || "",
+          last_name: formData.get("last-name")?.trim() || "",
+          email: formData.get("email")?.trim() || "",
+          phone: formData.get("phone")?.trim() || "",
+          campaign: "contact_us",
+          account_random_id: "ac_xbpzsoyp",
+          metadata: {
+            message: formData.get("message")?.trim() || "",
+          },
+        };
+
+        try {
+          const [ghlRes, portalRes] = await Promise.all([
+            fetch(webhookURL, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: urlEncodedBody,
+            }),
+            fetch("https://portal.rightruddermarketing.com/api/leads", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "x-api-key": apiKey,
+              },
+              body: JSON.stringify(jsonBody),
+            }),
+          ]);
+
+          if (ghlRes.ok && portalRes.ok) {
+            window.location.href = "/contact-confirmation";
+          } else {
+            console.error("Submission failed", {
+              ghlStatus: ghlRes.status,
+              portalStatus: portalRes.status,
+            });
+          }
+        } catch (err) {
+          console.error("Submission error:", err);
+        }
+      });
+    });
+  </script>
+
+  <script src="../scripts/emailValidation.js"></script>
+</BaseLayout>

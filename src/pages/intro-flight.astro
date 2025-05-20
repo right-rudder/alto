@@ -131,121 +131,120 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       </form>
     </div>
   </section>
-</BaseLayout>
+  <script define:vars={{ INTRO_FLIGHT_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+    function formatDate(date) {
+      let day = date.getDate();
+      let month = date.getMonth() + 1; // Months are zero based
+      let year = date.getFullYear();
 
-<script define:vars={{ INTRO_FLIGHT_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
-  function formatDate(date) {
-    let day = date.getDate();
-    let month = date.getMonth() + 1; // Months are zero based
-    let year = date.getFullYear();
+      if (day < 10) {
+        day = "0" + day;
+      }
+      if (month < 10) {
+        month = "0" + month;
+      }
 
-    if (day < 10) {
-      day = "0" + day;
-    }
-    if (month < 10) {
-      month = "0" + month;
-    }
-
-    return `${year}-${month}-${day}`;
-  }
-
-  // Calculate the date four days from today
-  const today = new Date();
-  const fourDaysFromToday = new Date(today);
-  fourDaysFromToday.setDate(today.getDate() + 4);
-
-  // Set the min attribute
-  document
-    .getElementById("requested-date")
-    ?.setAttribute("min", formatDate(fourDaysFromToday));
-
-  const checkbox = document.getElementById("agree-data-collection");
-  const submitButton = document.getElementById("submit-button");
-
-  checkbox.addEventListener("change", function () {
-    if (checkbox.checked) {
-      submitButton.disabled = false;
-      submitButton.classList.remove(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-      );
-    } else {
-      submitButton.disabled = true;
-      submitButton.classList.add(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-      );
-    }
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("intro-flight-form");
-    if (!form) {
-      console.error("Form element not found.");
-      return;
+      return `${year}-${month}-${day}`;
     }
 
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
+    // Calculate the date four days from today
+    const today = new Date();
+    const fourDaysFromToday = new Date(today);
+    fourDaysFromToday.setDate(today.getDate() + 4);
 
-      const formData = new FormData(form);
-      const confirmEmail = formData.get("confirm-email")?.trim();
+    // Set the min attribute
+    document
+      .getElementById("requested-date")
+      ?.setAttribute("min", formatDate(fourDaysFromToday));
 
-      if (confirmEmail) return;
+    const checkbox = document.getElementById("agree-data-collection");
+    const submitButton = document.getElementById("submit-button");
 
-      const webhookURL = INTRO_FLIGHT_FORM_WEBHOOK_URL;
-      const apiKey = PORTAL_API_KEY;
-
-      const urlEncodedBody = new URLSearchParams(formData).toString();
-
-      const jsonBody = {
-        first_name: formData.get("first-name")?.trim() || "",
-        last_name: formData.get("last-name")?.trim() || "",
-        email: formData.get("email")?.trim() || "",
-        phone: formData.get("phone")?.trim() || "",
-        campaign: "intro_flight",
-        account_random_id: "ac_xbpzsoyp",
-        metadata: {
-          requested_date: formData.get("requested-date")?.trim() || "",
-          comments: formData.get("comments")?.trim() || "",
-        },
-      };
-
-      try {
-        const [ghlRes, portalRes] = await Promise.all([
-          fetch(webhookURL, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: urlEncodedBody,
-          }),
-          fetch("https://portal.rightruddermarketing.com/api/leads", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-              "x-api-key": apiKey,
-            },
-            body: JSON.stringify(jsonBody),
-          }),
-        ]);
-
-        if (ghlRes.ok && portalRes.ok) {
-          window.location.href = "/intro-flight-confirmation";
-        } else {
-          console.error("Submission failed", {
-            ghlStatus: ghlRes.status,
-            portalStatus: portalRes.status,
-          });
-        }
-      } catch (err) {
-        console.error("Submission error:", err);
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        submitButton.disabled = false;
+        submitButton.classList.remove(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.add(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
       }
     });
-  });
-</script>
 
-<script src="../scripts/emailValidation.js"></script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("intro-flight-form");
+      if (!form) {
+        console.error("Form element not found.");
+        return;
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const confirmEmail = formData.get("confirm-email")?.trim();
+
+        if (confirmEmail) return;
+
+        const webhookURL = INTRO_FLIGHT_FORM_WEBHOOK_URL;
+        const apiKey = PORTAL_API_KEY;
+
+        const urlEncodedBody = new URLSearchParams(formData).toString();
+
+        const jsonBody = {
+          first_name: formData.get("first-name")?.trim() || "",
+          last_name: formData.get("last-name")?.trim() || "",
+          email: formData.get("email")?.trim() || "",
+          phone: formData.get("phone")?.trim() || "",
+          campaign: "intro_flight",
+          account_random_id: "ac_xbpzsoyp",
+          metadata: {
+            requested_date: formData.get("requested-date")?.trim() || "",
+            comments: formData.get("comments")?.trim() || "",
+          },
+        };
+
+        try {
+          const [ghlRes, portalRes] = await Promise.all([
+            fetch(webhookURL, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: urlEncodedBody,
+            }),
+            fetch("https://portal.rightruddermarketing.com/api/leads", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "x-api-key": apiKey,
+              },
+              body: JSON.stringify(jsonBody),
+            }),
+          ]);
+
+          if (ghlRes.ok && portalRes.ok) {
+            window.location.href = "/intro-flight-confirmation";
+          } else {
+            console.error("Submission failed", {
+              ghlStatus: ghlRes.status,
+              portalStatus: portalRes.status,
+            });
+          }
+        } catch (err) {
+          console.error("Submission error:", err);
+        }
+      });
+    });
+  </script>
+
+  <script src="../scripts/emailValidation.js"></script>
+</BaseLayout>

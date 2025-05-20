@@ -39,13 +39,31 @@ import WallOfGrads from "../../components/WallOfGrads.astro";
           About Us
         </h2>
         <p class="paragraph">
-          Welcome to Alto Flight Academy, where dreams take flight. Founded and operated by Hal Harris and his family, our academy is rooted in a love for aviation that spans generations. Hal, a seasoned Certified Flight Instructor (CFI) and jet pilot with a Citation type rating, has been sharing his passion for flying with aspiring pilots for over 30 years. His dedication to aviation is matched by his wife, MariCris, and their daughter, Grace, who both contribute their unique talents and enthusiasm to our family run school.
+          Welcome to Alto Flight Academy, where dreams take flight. Founded and
+          operated by Hal Harris and his family, our academy is rooted in a love
+          for aviation that spans generations. Hal, a seasoned Certified Flight
+          Instructor (CFI) and jet pilot with a Citation type rating, has been
+          sharing his passion for flying with aspiring pilots for over 30 years.
+          His dedication to aviation is matched by his wife, MariCris, and their
+          daughter, Grace, who both contribute their unique talents and
+          enthusiasm to our family run school.
         </p>
         <p class="paragraph">
-          At Alto Flight Academy, we believe that the sky is not the limit but just the beginning. Our journey began with Hal’s childhood dream of flight, nurtured by his father’s own love for the skies. Now, Hal, MariCris, and Grace are dedicated to helping others experience the magic of flying, whether you are pursuing a career as a commercial airline pilot or simply want to explore the thrill of aviation.
+          At Alto Flight Academy, we believe that the sky is not the limit but
+          just the beginning. Our journey began with Hal’s childhood dream of
+          flight, nurtured by his father’s own love for the skies. Now, Hal,
+          MariCris, and Grace are dedicated to helping others experience the
+          magic of flying, whether you are pursuing a career as a commercial
+          airline pilot or simply want to explore the thrill of aviation.
         </p>
         <p class="paragraph">
-          As a female and Asian owned business in Oklahoma City, Oklahoma, we take pride in offering a welcoming and inclusive environment for students from all walks of life. Our full-service flight academy provides comprehensive training for everyone, from beginners to seasoned pilots aiming for their airline transport certification. With our affordable, practical, and exciting classes, we strive to make your aviation dreams a reality.
+          As a female and Asian owned business in Oklahoma City, Oklahoma, we
+          take pride in offering a welcoming and inclusive environment for
+          students from all walks of life. Our full-service flight academy
+          provides comprehensive training for everyone, from beginners to
+          seasoned pilots aiming for their airline transport certification. With
+          our affordable, practical, and exciting classes, we strive to make
+          your aviation dreams a reality.
         </p>
       </div>
       <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
@@ -60,13 +78,16 @@ import WallOfGrads from "../../components/WallOfGrads.astro";
       >
         <ImQuotesLeft className="text-red-700 size-8" />
         <p class="text-lg font-semibold">
-          When you join Alto Flight Academy, you become part of our family. 
+          When you join Alto Flight Academy, you become part of our family.
         </p>
         <p class="text-lg text-gray-100">
-        We understand the transformative power of aviation and are committed to guiding you every step of the way. 
+          We understand the transformative power of aviation and are committed
+          to guiding you every step of the way.
         </p>
         <p class="text-lg text-gray-100">
-          Let us share our love of flight with you and help you soar to new heights. Your journey into the world of aviation begins here, where your dreams take wing with Alto Flight Academy.
+          Let us share our love of flight with you and help you soar to new
+          heights. Your journey into the world of aviation begins here, where
+          your dreams take wing with Alto Flight Academy.
         </p>
         <!-- <Image
           src={Signature}
@@ -175,33 +196,33 @@ import WallOfGrads from "../../components/WallOfGrads.astro";
   <ThirtyYears />
   <Memberships />
   <EmailCTA />
-</BaseLayout>
+  <script define:vars={{ reviews }}>
+    let currentIndex = 0;
+    const reviewTextElement = document.getElementById("review-text");
+    const reviewAuthorElement = document.getElementById("review-author");
+    const reviewsContainerElement =
+      document.getElementById("reviews-container");
 
-<script define:vars={{ reviews }}>
-  let currentIndex = 0;
-  const reviewTextElement = document.getElementById("review-text");
-  const reviewAuthorElement = document.getElementById("review-author");
-  const reviewsContainerElement = document.getElementById("reviews-container");
+    function showMessage() {
+      if (reviewAuthorElement && reviewTextElement) {
+        reviewTextElement.textContent = reviews[currentIndex].review;
+        reviewAuthorElement.textContent = `— ${reviews[currentIndex].name}`;
+      }
+      reviewsContainerElement?.classList.add("opacity-100");
+      reviewsContainerElement?.classList.remove("opacity-0");
 
-  function showMessage() {
-    if (reviewAuthorElement && reviewTextElement) {
-      reviewTextElement.textContent = reviews[currentIndex].review;
-      reviewAuthorElement.textContent = `— ${reviews[currentIndex].name}`;
+      currentIndex = (currentIndex + 1) % reviews.length;
+
+      setTimeout(hideMessage, 6000);
     }
-    reviewsContainerElement?.classList.add("opacity-100");
-    reviewsContainerElement?.classList.remove("opacity-0");
 
-    currentIndex = (currentIndex + 1) % reviews.length;
+    function hideMessage() {
+      reviewsContainerElement?.classList.remove("opacity-100");
+      reviewsContainerElement?.classList.add("opacity-0");
 
-    setTimeout(hideMessage, 6000);
-  }
+      setTimeout(showMessage, 1200);
+    }
 
-  function hideMessage() {
-    reviewsContainerElement?.classList.remove("opacity-100");
-    reviewsContainerElement?.classList.add("opacity-0");
-
-    setTimeout(showMessage, 1200);
-  }
-
-  showMessage();
-</script>
+    showMessage();
+  </script>
+</BaseLayout>
