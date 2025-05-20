@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
-const OpenModalButton = ({ webhook_url }) => {
+const OpenModalButton = ({ webhook_url, portal_api_key }) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
@@ -11,38 +11,59 @@ const OpenModalButton = ({ webhook_url }) => {
     setFormSubmitted(false);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    if (formData.get("confirm-email")) {
-      return;
+    const confirmEmail = formData.get("confirm-email")?.trim();
+
+    if (confirmEmail) return;
+
+    setUserName(formData.get("name"));
+    const webhookURL = webhook_url;
+    const apiKey = portal_api_key;
+
+    const urlEncodedBody = new URLSearchParams(formData).toString();
+    const jsonBody = {
+      first_name: formData.get("name")?.split(" ")[0] || "",
+      last_name: formData.get("name")?.split(" ")[1] || "",
+      email: formData.get("email")?.trim() || "",
+      phone: formData.get("phone")?.trim() || "",
+      campaign: "guide_download",
+      account_random_id: "ac_xbpzsoyp",
+    };
+
+    try {
+      const [ghlRes, portalRes] = await Promise.all([
+        fetch(webhookURL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: urlEncodedBody,
+        }),
+        fetch("https://portal.rightruddermarketing.com/api/leads", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            "x-api-key": apiKey,
+          },
+          body: JSON.stringify(jsonBody),
+        }),
+      ]);
+
+      if (ghlRes.ok && portalRes.ok) {
+        setFormSubmitted(true);
+      } else {
+        console.error("Submission failed", {
+          ghlStatus: ghlRes.status,
+          portalStatus: portalRes.status,
+        });
+      }
+    } catch (err) {
+      console.error("Submission error:", err);
     }
-
-    const name = formData.get("name");
-    setUserName(name);
-
-    const url = webhook_url;
-    fetch(url, {
-      method: "POST",
-      body: new URLSearchParams(formData),
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          setFormSubmitted(true);
-        } else {
-          console.error("Form submission failed:", response.statusText);
-        }
-      })
-      .catch((error) => {
-        console.error(
-          "Network error occurred while submitting the form:",
-          error,
-        );
-      });
   };
 
   return (

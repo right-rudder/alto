@@ -3,6 +3,7 @@ import OpenModalButton from "./OpenModalButton";
 import ImageComp from "./ImageComp.astro";
 const BOOK_DOWNLOAD_FORM_WEBHOOK_URL = import.meta.env
   .BOOK_DOWNLOAD_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <section class="bg-dark-blue text-white flex justify-center lg:mb-20">
@@ -19,6 +20,7 @@ const BOOK_DOWNLOAD_FORM_WEBHOOK_URL = import.meta.env
       <OpenModalButton
         client:visible
         webhook_url={BOOK_DOWNLOAD_FORM_WEBHOOK_URL}
+        portal_api_key={PORTAL_API_KEY}
       />
     </div>
     <ImageComp
