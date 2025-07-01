@@ -6,7 +6,7 @@ import "@fontsource-variable/raleway";
 import "@fontsource/poppins";
 import Navbar from "../components/Navbar";
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, keywords } = Astro.props;
+const { siteTitle, siteDescription, keywords, ogImage } = Astro.props;
 import ChatWidget from "../components/ChatWidget.astro";
 ---
 
@@ -17,6 +17,7 @@ import ChatWidget from "../components/ChatWidget.astro";
       title={siteTitle || SITE_TITLE}
       description={siteDescription || SITE_DESCRIPTION}
       keywords={keywords || KEYWORDS}
+      image={ogImage || "/Alto-OG-image.png"}
     />
   </head>
   <body>
