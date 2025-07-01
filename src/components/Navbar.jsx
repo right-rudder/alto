@@ -94,14 +94,15 @@ const Navbar = ({ pathname }) => {
               <div className="absolute bg-gradient-to-br from-red-500 to-red-700 top-0 -left-[77rem] lg:-left-[73rem] h-20 lg:h-28 w-[90rem]"></div>
               <a
                 href="/"
-                className="uppercase leading-none flex flex-col text-white z-50 font-bold text-4xl tracking-wider ml-3 lg:ml-8"
+                className="lg:w-1/4 flex justify-start text-white z-50"
               >
-                <p className="font-sans2">Alto</p>
-                <p className="text-sm lg:text-xl font-stock tracking-loose font-semibold text-gray-800">
-                  Flight Academy
-                </p>
+                <img
+                  src="/Alto-Flight-Academy-logo-2025-2-1.png"
+                  alt="Alto Flight Academy"
+                  className="h-16 lg:h-20 object-contain"
+                />
               </a>
-              <div className="hidden lg:block">
+              <div className="hidden lg:block w-3/4">
                 <ul className="flex gap-5 xl:gap-10 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
@@ -248,16 +249,16 @@ const Navbar = ({ pathname }) => {
           </svg>
         </div>
 
-        <a
-          href="/"
-          className="text-white px-10 w-fit block leading-none uppercase font-bold text-lg z-40 relative"
-        >
-          <h1 className="text-4xl">Alto</h1>
-          <h2 className="text-dark-blue font-medium">Flight Academy</h2>
+        <a href="/" className="mx-auto px-10 w-fit block z-40 relative">
+          <img
+            src="/Alto-Flight-Academy-logo-2025-2-1.png"
+            alt="Alto Flight Academy"
+            className="h-16 object-contain"
+          />
         </a>
 
         <div
-          className={`absolute w-60 h-20 bg-red-700 top-16 z-30 duration-300  ${
+          className={`absolute w-full h-20 bg-red-700 top-16 z-30 duration-300  ${
             openMobile ? "translate-x-0 delay-300" : "-translate-x-full "
           }`}
         ></div>

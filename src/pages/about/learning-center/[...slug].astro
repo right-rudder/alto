@@ -23,16 +23,16 @@ const headerData = {
 };
 import { Image } from "astro:assets";
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif}",
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[heroImage]) {
   throw new Error(
-    `"${heroImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+    `"${heroImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
   );
 }
 ---
 
-<BaseLayout siteTitle={title}>
+<BaseLayout siteTitle={title} siteDescription={description} ogImage={heroImage}>
   <Header slot="header" data={headerData} />
   <article class="max-w-3xl mx-auto py-24 px-5">
     <div class="max-h-[30rem] flex mb-10">
