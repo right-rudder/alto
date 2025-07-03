@@ -5,8 +5,6 @@ import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import alpinejs from "@astrojs/alpinejs";
 
-import partytown from "@astrojs/partytown";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://altoflight.com/",
@@ -20,7 +18,6 @@ export default defineConfig({
     tailwind(),
     react(),
     alpinejs({ entrypoint: "/src/entrypoint" }),
-    partytown(),
   ],
   redirects: {
     "/pilot-training": "/ground-school/private-pilot",
