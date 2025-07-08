@@ -24,11 +24,21 @@ import Post1 from "../../assets/post1.jpg";
 import Post5 from "../../assets/post5.jpg";
 import reviews from "../../data/reviews";
 import WallOfGrads from "../../components/WallOfGrads.astro";
+import { createBreadcrumbSchema } from "../../utils/seo";
+import { ABOUT_KEYWORDS } from "../../consts";
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: "Home", url: "https://altoflight.com/" },
+  { name: "About", url: "https://altoflight.com/about/our-story" },
+  { name: "Our Story", url: "https://altoflight.com/about/our-story" },
+]);
 ---
 
 <BaseLayout
-  siteTitle="About Us | Alto Flight Academy"
-  siteDescription="Alto Flight Academy in Oklahoma City, Oklahoma, is a female and Asian owned business. Alto is a professional, full-service flight academy providing training to everyone from students and pilots to airline transport pilots. Make your lifelong dream come true with our affordable, practical, and exciting classes."
+  siteTitle="About Alto Flight Academy | Professional Flight Training Since 1995"
+  siteDescription="Learn about Alto Flight Academy's 30-year history of excellence in aviation training. Founded by Hal Harris, our family-owned flight school in Yukon, Oklahoma has trained hundreds of professional pilots. Discover our story, mission, and commitment to quality flight education."
+  keywords={ABOUT_KEYWORDS}
+  breadcrumbSchema={breadcrumbSchema}
 >
   <Header slot="header" data={headerData} />
 

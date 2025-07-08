@@ -6,11 +6,26 @@ interface Props {
   description: string;
   keywords: string;
   image?: string;
+  robots?: string;
+  articleSchema?: object;
+  breadcrumbSchema?: object;
+  faqSchema?: object;
+  courseSchema?: object;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+const {
+  title,
+  description,
+  keywords,
+  image = "/Alto-OG-image.png",
+  robots = "index, follow",
+  articleSchema,
+  breadcrumbSchema,
+  faqSchema,
+  courseSchema,
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -47,6 +62,8 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<meta name="robots" content={robots} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -54,6 +71,8 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:site_name" content="Alto Flight Academy" />
+<meta property="og:locale" content="en_US" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -61,19 +80,28 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:site" content="@altoflightacademy" />
+
+<!-- Additional SEO Meta Tags -->
+<meta name="author" content="Alto Flight Academy" />
+<meta name="revisit-after" content="7 days" />
+<meta name="language" content="en-US" />
+<meta name="geo.region" content="US-OK" />
+<meta name="geo.placename" content="Yukon, Oklahoma" />
+<meta name="geo.position" content="35.60320320498056;-97.7079658306885" />
+<meta name="ICBM" content="35.60320320498056, -97.7079658306885" />
 
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJM49SEQC5"
 ></script>
-<script>
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
-
   gtag("config", "G-GJM49SEQC5");
 </script>
 
@@ -170,5 +198,88 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
       }
     ],
     "hasMap": "https://www.google.com/maps/place/13000+N+Sara+Rd,+Yukon,+OK+73099"
+  }
+</script>
+
+<!-- Additional Schema Markup for enhanced SEO -->
+{
+  breadcrumbSchema && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(breadcrumbSchema)}
+    />
+  )
+}
+
+{
+  articleSchema && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(articleSchema)}
+    />
+  )
+}
+
+{
+  faqSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  )
+}
+
+{
+  courseSchema && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(courseSchema)}
+    />
+  )
+}
+
+<!-- WebSite Schema for Search Box -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Alto Flight Academy",
+    "url": "https://altoflight.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://altoflight.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>
+
+<!-- Organization Schema -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Alto Flight Academy",
+    "url": "https://altoflight.com",
+    "logo": "https://altoflight.com/Alto-Flight-Academy-logo-2025-1.png",
+    "description": "Professional flight training academy in Oklahoma City offering pilot training programs from private pilot to ATP certification.",
+    "sameAs": [
+      "https://www.facebook.com/AltoFlightAcademy/",
+      "https://www.instagram.com/altoflightacademy/",
+      "https://www.tiktok.com/@altoflightacademy"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "(405) 784-6209",
+      "contactType": "customer service",
+      "email": "info@altoflight.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13000 N Sara Rd",
+      "addressLocality": "Yukon",
+      "addressRegion": "OK",
+      "postalCode": "73099",
+      "addressCountry": "US"
+    }
   }
 </script>

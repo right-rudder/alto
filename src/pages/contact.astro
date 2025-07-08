@@ -1,11 +1,20 @@
 ---
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { createBreadcrumbSchema } from "../utils/seo";
+import { CONTACT_KEYWORDS } from "../consts";
+
 const headerData = {
   title: "Contact Us",
   headerImage: "/src/assets/alto-flight-yukon-group-photo.jpg",
-  headerAlt: "CFI in Cessna",
+  headerAlt: "Alto Flight Academy Team Photo",
 };
+
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: "Home", url: "https://altoflight.com/" },
+  { name: "Contact", url: "https://altoflight.com/contact" },
+]);
+
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
@@ -23,8 +32,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <BaseLayout
-  siteTitle="Contact Us | Alto Flight Academy Yukon, OK"
-  siteDescription="Begin your pilot career today.  Contact us and speak to an Alto Flight team member.  Whether you're just starting out, or you are looking for advanced training in instrument, commercial, CFI, or ATP; we can help you get to the skies quicker.  Alto Flight Academy is conveniently located in Oklahoma City, OK."
+  siteTitle="Contact Alto Flight Academy | Flight Training in Yukon, OK"
+  siteDescription="Contact Alto Flight Academy for professional pilot training in Oklahoma City. Call (405) 784-6209 or visit us at Sundance Airport (KHSD). Expert flight instructors, modern aircraft, and flexible scheduling for all pilot training programs."
+  keywords={CONTACT_KEYWORDS}
+  breadcrumbSchema={breadcrumbSchema}
 >
   <Header slot="header" data={headerData} />
   <div class="flex flex-col-reverse lg:flex-col">
@@ -180,14 +191,14 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         submitButton.classList.remove(
           "cursor-not-allowed",
           "bg-gray-400",
-          "hover:bg-gray-400",
+          "hover:bg-gray-400"
         );
       } else {
         submitButton.disabled = true;
         submitButton.classList.add(
           "cursor-not-allowed",
           "bg-gray-400",
-          "hover:bg-gray-400",
+          "hover:bg-gray-400"
         );
       }
     });

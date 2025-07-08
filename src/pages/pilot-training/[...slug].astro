@@ -21,6 +21,7 @@ import ComponentBackground from "../../assets/view-from-the-skies-inside-alto-ai
 import Airliner from "../../assets/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg";
 import FemalePilots from "../../assets/female-pilots-at-sundance-airport-in-front-of-planes.jpg";
 import GroundSchool from "../../assets/instrument-ground-school-in-oklahoma-city.jpg";
+import { createBreadcrumbSchema, createServiceSchema } from "../../utils/seo";
 
 export async function getStaticPaths() {
   const locations = await getCollection("location");
@@ -34,11 +35,44 @@ const location = Astro.props;
 const locationCity = location.data.city || "your area";
 const locationStateShort = location.data.stateShort || "your state";
 const locationStateLong = location.data.stateLong || "your state";
-const locationDescription = location.data.description || "A great place with unique attractions and a welcoming community.";
-const locationCounty = location.data.baseLocation || "A well-known county with rich history and local charm.";
-const locationKeyPlace1 = location.data.keyPlace1 || "A popular landmark worth visiting.";
-const locationKeyPlace2 = location.data.keyPlace2 || "Another must-see location in the area.";
+const locationDescription =
+  location.data.description ||
+  "A great place with unique attractions and a welcoming community.";
+const locationCounty =
+  location.data.baseLocation ||
+  "A well-known county with rich history and local charm.";
+const locationKeyPlace1 =
+  location.data.keyPlace1 || "A popular landmark worth visiting.";
+const locationKeyPlace2 =
+  location.data.keyPlace2 || "Another must-see location in the area.";
 
+// Create breadcrumb schema
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: "Home", url: "https://altoflight.com/" },
+  { name: "Pilot Training", url: "https://altoflight.com/pilot-training" },
+  {
+    name: `${locationCity}, ${locationStateShort}`,
+    url: `https://altoflight.com/pilot-training/${location.slug}`,
+  },
+]);
+
+// Create service schema
+const serviceSchema = createServiceSchema(
+  `Pilot Training in ${locationCity}, ${locationStateLong}`,
+  `Professional flight training services available for residents of ${locationCity}, ${locationStateLong}. Learn to fly with experienced instructors at Alto Flight Academy.`,
+  "Flight Training",
+  "$100-$300"
+);
+
+// Enhanced keywords
+const enhancedKeywords = `flight school in ${locationCity}, pilot training in ${locationCity} ${locationStateLong}, 
+pilot training in ${locationCity} ${locationStateShort}, aviation training ${locationCity}, 
+become a pilot ${locationCity} ${locationStateLong}, become a pilot ${locationCity} ${locationStateShort}, 
+flight lessons ${locationCity}, flight instructor ${locationCity}, private pilot training ${locationCity}, 
+instrument rating ${locationCity}, commercial pilot ${locationCity}, flight training near ${locationCity}, 
+flight school near ${locationCity}, pilot school ${locationCity}, learn to fly ${locationCity}, 
+flight academy ${locationCity}, aviation school ${locationCity}, pilot certification ${locationCity}, 
+Alto Flight Academy, sundance airport flight training, professional pilot training oklahoma`;
 ---
 
 <BaseLayout
@@ -47,12 +81,9 @@ const locationKeyPlace2 = location.data.keyPlace2 || "Another must-see location 
   Train at Sundance Airport (KHSD) and explore top local attractions like 
   ${locationKeyPlace1} and ${locationKeyPlace2}. Our expert instructors provide professional 
   flight training to help you achieve your aviation goals.`
-  keywords=`flight school in ${locationCity}, pilot training in ${locationCity} ${locationStateLong}, 
-  pilot training in ${locationCity} ${locationStateShort}, aviation training ${locationCity} ${locationCity}, 
-  become a pilot ${locationCity} ${locationStateLong}, become a pilot ${locationCity} ${locationStateShort}, 
-  Alto Flight Academy, flight lessons in ${locationCity}, private pilot training, 
-  commercial pilot training ${locationCity} ${locationStateLong}, pilot certification ${locationCity}, 
-  best flight school in ${locationCity} ${locationStateLong}, aviation programs ${locationCity}`
+  keywords={enhancedKeywords}
+  breadcrumbSchema={breadcrumbSchema}
+  serviceSchema={serviceSchema}
 >
   <Header slot="header" data={headerData} />
 
@@ -60,7 +91,9 @@ const locationKeyPlace2 = location.data.keyPlace2 || "Another must-see location 
     <div
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
     >
-      <div class="flex-[1.5_1.5_0] w-full lg:sticky lg:top-[30%] lg:self-start lg:justify-start">
+      <div
+        class="flex-[1.5_1.5_0] w-full lg:sticky lg:top-[30%] lg:self-start lg:justify-start"
+      >
         <Image
           class="rounded-lg"
           src={IntroImage}
@@ -72,14 +105,22 @@ const locationKeyPlace2 = location.data.keyPlace2 || "Another must-see location 
           Become a Pilot in {locationCity}, {locationStateLong}
         </h2>
         <p class="paragraph">
-          Located in {locationCounty}, {locationCity} offers a fantastic environment for flight training. With a mix of bustling city life and open airspace, student pilots benefit from both real-world air traffic experience and easy access to practice areas.
-
-          Alto Flight Academy provides personalized flight training to help you become a confident and skilled pilot. Whether you're aiming for a Private Pilot License (PPL), Instrument Rating (IR), Commercial Pilot License (CPL), or Certified Flight Instructor (CFI) certification, we tailor training to fit your goals.
-          
-          When you're not in the cockpit, explore local landmarks like {locationKeyPlace1} and {locationKeyPlace2}, adding to the unique experience of learning to fly in {locationCity}. With a strong aviation community, excellent weather conditions, and experienced instructors, this is the perfect place to take your first step toward a career in aviation.
-          
-          Start your journey today—enroll in flight training at Alto Flight Academy near {locationCity}, {locationStateLong}!
-          
+          Located in {locationCounty}, {locationCity} offers a fantastic environment
+          for flight training. With a mix of bustling city life and open airspace,
+          student pilots benefit from both real-world air traffic experience and
+          easy access to practice areas. Alto Flight Academy provides personalized
+          flight training to help you become a confident and skilled pilot. Whether
+          you're aiming for a Private Pilot License (PPL), Instrument Rating (IR),
+          Commercial Pilot License (CPL), or Certified Flight Instructor (CFI) certification,
+          we tailor training to fit your goals. When you're not in the cockpit, explore
+          local landmarks like {locationKeyPlace1} and {locationKeyPlace2},
+          adding to the unique experience of learning to fly in {locationCity}.
+          With a strong aviation community, excellent weather conditions, and
+          experienced instructors, this is the perfect place to take your first
+          step toward a career in aviation. Start your journey today—enroll in
+          flight training at Alto Flight Academy near {locationCity}, {
+            locationStateLong
+          }!
         </p>
         <h3 class="font-bold text-2xl">
           We have flight training programs for all experience levels
