@@ -1,4 +1,37 @@
 User-agent: *
 Allow: /
 
+# Block access to admin and sensitive areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+Disallow: /src/
+
+# Allow important directories
+Allow: /public/
+Allow: /assets/
+Allow: /images/
+
+# Block duplicate content
+Disallow: /*?*utm_source=*
+Disallow: /*?*utm_medium=*
+Disallow: /*?*utm_campaign=*
+Disallow: /*?*utm_content=*
+Disallow: /*?*utm_term=*
+
+# Allow crawling of search-friendly URLs
+Allow: /flight-training/
+Allow: /ground-school/
+Allow: /pilot-training/
+Allow: /about/
+Allow: /contact/
+Allow: /acquisitions-sales/
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://altoflight.com/sitemap-index.xml
+
+# Additional sitemaps (if needed)
+Sitemap: https://altoflight.com/sitemap-0.xml

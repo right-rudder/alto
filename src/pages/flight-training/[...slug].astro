@@ -3,21 +3,45 @@ import Header from "../../components/Header.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CourseLayout from "../../layouts/CourseLayout.astro";
 import allCoursesData from "../../data/allCoursesData";
+import { createBreadcrumbSchema, createCourseSchema } from "../../utils/seo";
+
 export function getStaticPaths() {
   return allCoursesData.map(({ data, slug }) => {
     return {
       params: { slug },
       props: {
         data,
+        slug,
       },
     };
   });
 }
 
-const { data } = Astro.props;
+const { data, slug } = Astro.props;
+
+// Create breadcrumb schema
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: "Home", url: "https://altoflight.com/" },
+  { name: "Flight Training", url: "https://altoflight.com/flight-training" },
+  { name: data.title, url: `https://altoflight.com/flight-training/${slug}` },
+]);
+
+// Create course schema
+const courseSchema = createCourseSchema(
+  data.title,
+  data.siteDescription,
+  "Alto Flight Academy",
+  data.price || "Varies"
+);
 ---
 
-<BaseLayout siteTitle={data.siteTitle} siteDescription={data.siteDescription}>
+<BaseLayout
+  siteTitle={data.siteTitle}
+  siteDescription={data.siteDescription}
+  keywords={data.keywords}
+  breadcrumbSchema={breadcrumbSchema}
+  courseSchema={courseSchema}
+>
   <Header slot="header" data={data} />
   <CourseLayout data={data} />
 </BaseLayout>

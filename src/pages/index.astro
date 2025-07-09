@@ -15,10 +15,46 @@ import GoogleMaps from "../components/GoogleMaps.astro";
 import AltoGrad from "../assets/former-alto-flight-academy-student-flying-jets.jpg";
 import AltoGradCessna from "../assets/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg";
 import GuideDownload from "../components/GuideDownload.astro";
+import { createBreadcrumbSchema, createFAQSchema } from "../utils/seo";
+import { KEYWORDS } from "../consts";
+
+// Enhanced SEO data
+const breadcrumbSchema = createBreadcrumbSchema([
+  { name: "Home", url: "https://altoflight.com/" },
+]);
+
+const faqSchema = createFAQSchema([
+  {
+    question: "How long does it take to become a private pilot?",
+    answer:
+      "Most students complete their private pilot training in 3-6 months, depending on frequency of lessons and weather conditions. At Alto Flight Academy, we offer flexible scheduling to help you progress at your own pace.",
+  },
+  {
+    question: "What are the requirements to start flight training?",
+    answer:
+      "To start private pilot training, you must be at least 16 years old, able to read and speak English, and hold a valid driver's license or government-issued ID. A medical certificate is required before solo flight.",
+  },
+  {
+    question: "How much does flight training cost?",
+    answer:
+      "Flight training costs vary depending on the license type and frequency of lessons. Contact Alto Flight Academy for current pricing and financing options for our training programs.",
+  },
+  {
+    question: "Where is Alto Flight Academy located?",
+    answer:
+      "Alto Flight Academy is located at Sundance Airport (KHSD) in Yukon, Oklahoma, just west of Oklahoma City. Our address is 13000 N Sara Rd, Yukon, OK 73099.",
+  },
+]);
+
+const enhancedKeywords = `${KEYWORDS}, flight training oklahoma city, pilot school yukon ok, learn to fly oklahoma, aviation training oklahoma city, sundance airport flight school, professional pilot training, FAA certified flight school`;
 ---
 
 <BaseLayout
-  siteTitle="Alto Flight Academy | Pilot Training in Oklahoma City, OK"
+  siteTitle="Alto Flight Academy | Professional Pilot Training in Oklahoma City, OK"
+  siteDescription="Learn to fly with Oklahoma's premier flight school. Alto Flight Academy offers comprehensive pilot training from private pilot to ATP certification. Located at Sundance Airport (KHSD) in Yukon, OK. FAA-certified instructors, modern aircraft fleet, and flexible scheduling since 1995."
+  keywords={enhancedKeywords}
+  breadcrumbSchema={breadcrumbSchema}
+  faqSchema={faqSchema}
 >
   <HomepageHeader2 slot="header" />
 

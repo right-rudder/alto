@@ -6,7 +6,17 @@ import "@fontsource-variable/raleway";
 import "@fontsource/poppins";
 import Navbar from "../components/Navbar";
 const { pathname } = Astro.url;
-const { siteTitle, siteDescription, keywords, ogImage } = Astro.props;
+const {
+  siteTitle,
+  siteDescription,
+  keywords,
+  ogImage,
+  robots,
+  articleSchema,
+  breadcrumbSchema,
+  faqSchema,
+  courseSchema,
+} = Astro.props;
 import ChatWidget from "../components/ChatWidget.astro";
 ---
 
@@ -18,6 +28,11 @@ import ChatWidget from "../components/ChatWidget.astro";
       description={siteDescription || SITE_DESCRIPTION}
       keywords={keywords || KEYWORDS}
       image={ogImage || "/Alto-OG-image.png"}
+      robots={robots}
+      articleSchema={articleSchema}
+      breadcrumbSchema={breadcrumbSchema}
+      faqSchema={faqSchema}
+      courseSchema={courseSchema}
     />
   </head>
   <body>

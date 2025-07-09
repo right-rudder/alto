@@ -1,0 +1,92 @@
+---
+// Internal Links Component for SEO
+// Provides contextual internal links to improve site navigation and SEO
+
+interface Props {
+  currentPage: string;
+  category?: 'flight-training' | 'ground-school' | 'about' | 'general';
+}
+
+const { currentPage, category = 'general' } = Astro.props;
+
+// Define related links based on current page category
+const getRelatedLinks = (cat: string, current: string) => {
+  const links = {
+    'flight-training': [
+      { text: 'Private Pilot Training', url: '/flight-training/private-pilot', description: 'Start your aviation journey' },
+      { text: 'Instrument Rating', url: '/flight-training/instrument-rating', description: 'Fly in all weather conditions' },
+      { text: 'Commercial Pilot', url: '/flight-training/commercial-pilot', description: 'Fly for compensation' },
+      { text: 'Flight Instructor', url: '/flight-training/flight-instructor', description: 'Teach others to fly' },
+      { text: 'Multi-Engine Rating', url: '/flight-training/multi-engine-rating', description: 'Advanced aircraft training' },
+      { text: 'ATP Certification', url: '/flight-training/airline-transport-pilot', description: 'Airline pilot certification' }
+    ],
+    'ground-school': [
+      { text: 'Private Pilot Ground School', url: '/ground-school/private-pilot', description: 'Theory and regulations' },
+      { text: 'Instrument Ground School', url: '/ground-school/instrument-rating', description: 'IFR procedures and theory' },
+      { text: 'Commercial Ground School', url: '/ground-school/commercial-pilot', description: 'Advanced aviation knowledge' },
+      { text: 'CFI Ground School', url: '/ground-school/flight-instructor', description: 'Teaching fundamentals' }
+    ],
+    'about': [
+      { text: 'Our Story', url: '/about/our-story', description: '30 years of aviation excellence' },
+      { text: 'Our Team', url: '/about/our-team', description: 'Meet our instructors' },
+      { text: 'Our Fleet', url: '/about/our-fleet', description: 'Modern training aircraft' },
+      { text: 'Learning Center', url: '/about/learning-center', description: 'Aviation resources and articles' }
+    ],
+    'general': [
+      { text: 'Why Become a Pilot?', url: '/why-become-a-pilot', description: 'Discover aviation opportunities' },
+      { text: 'Book Discovery Flight', url: '/intro-flight', description: 'Try flying today' },
+      { text: 'Contact Us', url: '/contact', description: 'Start your training' },
+      { text: 'Aircraft Sales', url: '/acquisitions-sales', description: 'Buy or sell aircraft' }
+    ]
+  };
+  
+  return links[cat] || links.general;
+};
+
+const relatedLinks = getRelatedLinks(category, currentPage).filter(link => link.url !== currentPage);
+---
+
+{relatedLinks.length > 0 && (
+  <section class="py-12 px-5 bg-gray-50" aria-labelledby="related-links-heading">
+    <div class="max-w-7xl mx-auto">
+      <h2 id="related-links-heading" class="text-2xl font-bold text-dark-blue mb-6 text-center">
+        Explore Related Training Programs
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {relatedLinks.slice(0, 6).map(link => (
+          <a 
+            href={link.url} 
+            class="block p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 group"
+            aria-describedby={`link-desc-${link.url.replace(/[^a-zA-Z0-9]/g, '')}`}
+          >
+            <h3 class="font-semibold text-dark-blue group-hover:text-red-700 transition-colors duration-200">
+              {link.text}
+            </h3>
+            <p 
+              id={`link-desc-${link.url.replace(/[^a-zA-Z0-9]/g, '')}`}
+              class="text-gray-600 text-sm mt-2"
+            >
+              {link.description}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- Schema markup for these internal links -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Related Training Programs",
+  "itemListElement": relatedLinks.slice(0, 6).map((link, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": link.text,
+    "description": link.description,
+    "url": `https://altoflight.com${link.url}`
+  }))
+}
+</script>
