@@ -16,7 +16,7 @@ const fleet = [
     name: "Cessna 172RG",
     imagePath: "/src/assets/cessna-172rg.jpg",
     alt: "Cessna 172RG",
-    price: "$219/hr wet",
+    price: "$239/hr wet",
     equipment: [
       "Complex Aircraft – Retractable gear",
       "Avco Lycoming engine producing 182 bhp at 2700 RPM",
