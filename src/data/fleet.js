@@ -1,19 +1,5 @@
 const fleet = [
   {
-    name: "Cessna 152",
-    imagePath: "/src/assets/cessna-152.jpg",
-    alt: "Cessna 152",
-    price: "$159/hr wet",
-    equipment: [
-      "Sparrowhawk Conversion 125 horsepower",
-      "Horton STOL kit",
-      "Garmin IFR package with Garmin 430W GPS/NAV/COM",
-      "Garmin Transponder with ADS-B In & Out",
-      "IFR equipped aircraft",
-      "Leather interior with sheepskin inserts",
-    ],
-  },
-  {
     name: "Cessna 172",
     imagePath: "/src/assets/cessna-172.jpg",
     alt: "Cessna 172",
