@@ -1,23 +1,9 @@
 const fleet = [
   {
-    name: "Cessna 152",
-    imagePath: "/src/assets/cessna-152.jpg",
-    alt: "Cessna 152",
-    price: "$159/hr wet",
-    equipment: [
-      "Sparrowhawk Conversion 125 horsepower",
-      "Horton STOL kit",
-      "Garmin IFR package with Garmin 430W GPS/NAV/COM",
-      "Garmin Transponder with ADS-B In & Out",
-      "IFR equipped aircraft",
-      "Leather interior with sheepskin inserts",
-    ],
-  },
-  {
     name: "Cessna 172",
     imagePath: "/src/assets/cessna-172.jpg",
     alt: "Cessna 172",
-    price: "$189/hr wet",
+    price: "$209/hr wet",
     equipment: [
       "180 hp Conversion",
       "Garmin IFR package with Garmin 430W GPS/NAV/COM",
@@ -30,7 +16,7 @@ const fleet = [
     name: "Cessna 172RG",
     imagePath: "/src/assets/cessna-172rg.jpg",
     alt: "Cessna 172RG",
-    price: "$219/hr wet",
+    price: "$239/hr wet",
     equipment: [
       "Complex Aircraft – Retractable gear",
       "Avco Lycoming engine producing 182 bhp at 2700 RPM",
@@ -42,24 +28,10 @@ const fleet = [
     ],
   },
   {
-    name: "172XP2",
-    imagePath: "/src/assets/plane-placeholder.png",
-    alt: "172XP2",
-    price: "$229/hr wet",
-    equipment: [
-      "Garmin 430W",
-      "ADSB In/out",
-      "DME",
-      "IFR equipped",
-      "Garmin Audio panel",
-      "210 HP engine",
-    ],
-  },
-  {
     name: "Beech Baron",
     imagePath: "/src/assets/beech-baron.jpg",
     alt: "Beech Baron",
-    price: "$489/hr wet",
+    price: "$499/hr wet",
     equipment: [
       "Audio panel",
       "IFR Equipped Aircraft",
