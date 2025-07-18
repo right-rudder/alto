@@ -31,7 +31,7 @@ const fleet = [
     name: "Beech Baron",
     imagePath: "/src/assets/beech-baron.jpg",
     alt: "Beech Baron",
-    price: "$489/hr wet",
+    price: "$499/hr wet",
     equipment: [
       "Audio panel",
       "IFR Equipped Aircraft",
