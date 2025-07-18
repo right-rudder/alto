@@ -28,20 +28,6 @@ const fleet = [
     ],
   },
   {
-    name: "172XP2",
-    imagePath: "/src/assets/plane-placeholder.png",
-    alt: "172XP2",
-    price: "$229/hr wet",
-    equipment: [
-      "Garmin 430W",
-      "ADSB In/out",
-      "DME",
-      "IFR equipped",
-      "Garmin Audio panel",
-      "210 HP engine",
-    ],
-  },
-  {
     name: "Beech Baron",
     imagePath: "/src/assets/beech-baron.jpg",
     alt: "Beech Baron",
