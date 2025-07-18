@@ -3,7 +3,7 @@ const fleet = [
     name: "Cessna 172",
     imagePath: "/src/assets/cessna-172.jpg",
     alt: "Cessna 172",
-    price: "$189/hr wet",
+    price: "$209/hr wet",
     equipment: [
       "180 hp Conversion",
       "Garmin IFR package with Garmin 430W GPS/NAV/COM",
