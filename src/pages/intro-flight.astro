@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerData = {
-  title: "Introductory Flight: Your First Flight Lesson",
+  title: "Introductory Flight: Your First Flight Lesson for only $299",
   headerImage: "/src/assets/cessna-172-n4891j-flying-over-bethany-ok.jpg",
   headerAlt: "Cessna 182 N4891J flying over Bethany, OK",
 };
@@ -21,9 +21,14 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   <section class="py-24 px-5">
     <div class="max-w-4xl mx-auto">
       <h2
-        class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
+        class="text-dark-blue text-pretty text-center text-3xl leading-tight font-extrabold mx-auto w-fit mb-5"
       >
-        Request your first flight lesson at Alto Flight Academy
+        Request your first flight lesson: the introductory flight in the Private
+        Pilot License (PPL) course, following the <a
+          href="https://shop.jeppesen.com/All-Products/Training/Private-pilot/Courseware-%26-Books/Private-Pilot-Syllabus/p/10001292"
+          target="_blank"
+          class="text-red-500 hover:underline">Jeppesen syllabus</a
+        >.
       </h2>
       <h3 class="font-medium text-center mx-auto text-xl">
         Fill out the form below and let's start flying! An Alto team member will
