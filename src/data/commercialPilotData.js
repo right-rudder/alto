@@ -36,7 +36,7 @@ const commercialPilotData = {
       "Give us a call, fill out a form, or stop by",
       "Meet with an Alto Flight Academy team member",
       "Visit Alto Flight Academy",
-      "Complete an introductory flight",
+      "Complete your first flight lesson",
       "Meet with an instructor and create a plan to complete training",
     ],
   },

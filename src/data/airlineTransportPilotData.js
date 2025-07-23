@@ -1,7 +1,8 @@
 const airlineTransportPilotData = {
   data: {
     siteTitle: "ATP Flight School | Flight School Oklahoma City",
-    siteDescription: "Obtaining your ATP is considered to be the pinnacle of your ab-initio pilot training.  Having your ATP is a minimum requirement to fly in the airlines and corporate aviation.  Begin your airline pilot career today and enroll at Alto Flight Academy,  Your premier flight school in Yukon, OK.",
+    siteDescription:
+      "Obtaining your ATP is considered to be the pinnacle of your ab-initio pilot training.  Having your ATP is a minimum requirement to fly in the airlines and corporate aviation.  Begin your airline pilot career today and enroll at Alto Flight Academy,  Your premier flight school in Yukon, OK.",
     title: "Get your ATP",
     hiddenField: "Airline Transport Pilot Flight Training",
     date: "Become an airline pilot at Alto Flight Academy",
@@ -16,9 +17,11 @@ const airlineTransportPilotData = {
     ],
     headerImage: "/src/assets/airliner-cockpit-in-bethany-oklahoma.jpg",
     headerAlt: "Airliner cockpit landing in Bethany Oklahoma",
-    primaryImage: "/src/assets/former-alto-flight-academy-student-flying-jets.jpg",
+    primaryImage:
+      "/src/assets/former-alto-flight-academy-student-flying-jets.jpg",
     primaryAlt: "Student passed his ATP exam",
-    caption: "Former student pilot at Alto Flight Academy flying the Phenom 300",
+    caption:
+      "Former student pilot at Alto Flight Academy flying the Phenom 300",
     secondaryImage: "/src/assets/simulator-type-rating-citation-oklahoma.jpg",
     secondaryAlt: "Student in ATP lesson",
     prerequisites: [
@@ -31,13 +34,13 @@ const airlineTransportPilotData = {
       "Learn advanced aircraft systems and performance characteristics",
       "Receive endorsements from your instructor for ATP flight training",
       "Complete the FAA ATP written exam",
-      "Complete the FAA ATP practical exam"
+      "Complete the FAA ATP practical exam",
     ],
     process: [
       "Give us a call, fill out a form, or stop by",
       "Meet with an Alto Flight Academy team member",
       "Visit Alto Flight Academy",
-      "Complete an introductory flight",
+      "Complete your first flight lesson",
       "Meet with an instructor and create a plan to complete training",
     ],
   },
