@@ -62,7 +62,7 @@ For a mix of urban flying and scenic views, head east toward downtown Oklahoma C
 
 ## **Why Choose Alto Flight Academy?**
 
-Alto Flight Academy, located at [Sundance Airport (KHSD)](https://altoflight.com/about/our-location/) in Yukon, Oklahoma, has been training pilots since 1995. With FAA-certified instructors, a modern fleet of aircraft, and programs ranging from [private pilot](https://altoflight.com/flight-training/private-pilot/) to [commercial pilot licenses](https://altoflight.com/flight-training/commercial-pilot/), we ensure your flight training is both safe and memorable.
+Alto Flight Academy, located at Sundance Airport (KHSD) in Yukon, Oklahoma, has been training pilots since 1995. With FAA-certified instructors, a modern fleet of aircraft, and programs ranging from [private pilot](https://altoflight.com/flight-training/private-pilot/) to [commercial pilot licenses](https://altoflight.com/flight-training/commercial-pilot/), we ensure your flight training is both safe and memorable.
 
 ## **Contact Alto Flight Academy**
 
