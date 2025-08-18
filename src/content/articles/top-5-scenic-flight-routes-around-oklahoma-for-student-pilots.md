@@ -9,12 +9,16 @@ Flying in Oklahoma offers student pilots at [Alto Flight Academy](https://altofl
 
 ## **1. Lake Hefner – Oklahoma City**
 
+![Lake Hefner in Oklahoma City with water](/blog/Sailing_Lake_Hefner_1.webp)
+
 A favorite for local pilots, Lake Hefner provides stunning aerial views of the water and the surrounding cityscape. Flying over the lake during sunset offers spectacular photo opportunities and helps practice altitude control and pattern work near a populated area.
 
 - Distance from Sundance Airport: ~20 miles
 - Highlights: Lake views, Oklahoma City skyline, windmill farms nearby
 
 ## **2. Route 66 Corridor – Classic Americana**
+
+![Route 66 in Oklahoma City](/blog/tamas-szedlak-8_bgXi-MmH8-unsplash.webp)
 
 Take a flight along the historic Route 66 corridor, stretching through Oklahoma’s heartland. This route combines nostalgic attractions with wide-open farmland, making it ideal for VFR navigation practice.
 
@@ -23,6 +27,8 @@ Take a flight along the historic Route 66 corridor, stretching through Oklahoma�
 
 ## **3. Wichita Mountains – Lawton Area**
 
+![Wichita Mountains in Oklahoma](/blog/wichita-mountains-byway-road-traveling-up-mount-scott-fd890b.webp)
+
 For students seeking mountainous terrain and wildlife spotting, the Wichita Mountains offer a unique contrast to Oklahoma’s flat plains. This route is excellent for practicing maneuvering and understanding how geography affects wind and turbulence.
 
 - Distance from Sundance Airport: ~90 miles
@@ -30,17 +36,21 @@ For students seeking mountainous terrain and wildlife spotting, the Wichita Moun
 
 ## **4. Lake Texoma – Northern Oklahoma Border**
 
+![Lake Texoma on the Oklahoma-Texas border](/blog/Lake-texoma.webp)
+
 Lake Texoma, on the border with Texas, provides expansive views of water and forested areas. Flying here teaches students to handle longer cross-country routes while enjoying breathtaking scenery.
 
 - Distance from Sundance Airport: ~120 miles
 - Highlights: Vast water expanse, recreational areas, and seasonal foliage
 
-## **5. Red River and Southern Oklahoma Plains**
+## **5. Bricktown & Downtown Oklahoma City Skyline**
 
-Following the Red River near the Texas border gives student pilots a chance to see meandering waterways and farmland from above. This route is ideal for practicing straight-and-level flight and adjusting to local airspace restrictions.
+![Oklahoma City skyline](/blog/Skyline_oklahoma_city_1.webp)
 
-- Distance from Sundance Airport: ~100 miles
-- Highlights: River landscapes, small towns, and agricultural patterns
+For a mix of urban flying and scenic views, head east toward downtown Oklahoma City. The Bricktown district and skyline look especially impressive from the air, particularly during sunrise or sunset. This route is great for students practicing navigation near controlled airspace while enjoying a unique view of the city they know from the ground.
+
+- Distance from Sundance Airport: ~15–20 miles
+- Highlights: OKC skyline, Bricktown Canal, Chesapeake Arena, and the surrounding urban landscape
 
 ## **Tips for Enjoying Scenic Flights Safely**
 
