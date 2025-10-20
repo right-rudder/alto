@@ -55,6 +55,5 @@ Whether you’re dreaming of your first solo flight or working toward a career i
 
 - [**Schedule Your Discovery Flight**](/contact) – Experience flying for the first time with one of our instructors.
 - [**Private Pilot Training**](/flight-training/private-pilot) – Start your journey with comprehensive ground and flight instruction.
-- [**Explore All Programs**](/flight-training) – See the full range of training options available.
 
 Ready to take the first step? Contact us today at [(405)-784-6209](<tel:(405)-784-6209%3E>) or visit [Alto Flight Academy](/) to begin your aviation journey.
