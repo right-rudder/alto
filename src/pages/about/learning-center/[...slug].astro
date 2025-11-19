@@ -23,11 +23,11 @@ const headerData = {
 };
 import { Image } from "astro:assets";
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/**/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[heroImage]) {
   throw new Error(
-    `"${heroImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+    `"${heroImage}" does not exist in glob: "src/assets/**/*.{jpeg,jpg,png,gif,webp}"`
   );
 }
 ---
