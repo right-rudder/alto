@@ -2,16 +2,22 @@
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const headerData = {
-  title: "Privacy Policy",
+  title: "Privacy Policy & Terms of Service",
   headerImage: "/src/assets/cfi-in-cessna.jpg",
   headerAlt: "CFI in Cessna",
 };
 ---
 
-<BaseLayout siteTitle="Privacy Policy" siteDescription="This is the privacy policy page for Alto Flight Academy's website">
+<BaseLayout
+  siteTitle="Privacy Policy & Terms of Service"
+  siteDescription="This is the privacy policy & terms of service page for Alto Flight Academy's website"
+>
   <Header slot="header" data={headerData} />
 
   <div class="p-5">
+    <div class="text-3xl lg:text-4xl text-center">
+      <h2>Privacy Policy of Alto Flight Academy Website</h2>
+    </div>
     <section class="flex flex-col items-center">
       <div class="w-4/5 lg:w-3/5 py-10">
         <h2 class="font-bold text-xl">Introduction</h2>
@@ -145,7 +151,7 @@ const headerData = {
     </section>
 
     <div class="text-3xl lg:text-4xl text-center">
-      <h1>Terms of Service of Alto Flight Academy Website</h1>
+      <h2>Terms of Service of Alto Flight Academy Website</h2>
     </div>
     <section class="flex flex-col items-center">
       <div class="w-4/5 lg:w-3/5 py-10">
