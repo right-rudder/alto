@@ -1,6 +1,8 @@
 const flightInstructorData = {
   data: {
     siteTitle: "Flight Instructor (CFI) | Flight School Oklahoma City",
+    siteDescription:
+      " Train to become a certified flight instructor (CFI) at Alto Flight Academy in Oklahoma City. Gain the skills and knowledge to teach aspiring pilots and advance your aviation career.",
     title: "Give the Gift of Flight",
     hiddenField: "Flight Instructor Flight Training",
     date: "Training to become a certified flight instructor",
