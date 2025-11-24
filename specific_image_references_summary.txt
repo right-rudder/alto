@@ -1,0 +1,927 @@
+SPECIFIC IMAGE REFERENCES REPORT
+Generated: 2025-11-21T21:25:30.860Z
+
+SUMMARY:
+========
+Total images in list: 135
+Images with references: 105
+Images without references: 30
+Images missing from filesystem: 0
+Total references found: 667
+
+IMAGES WITH REFERENCES:
+=======================
+
+📁 30-years-in-business.png (4 references)
+   📄 src/components/ThirtyYears.astro:3:31 - "30-years-in-business.png"
+   📄 src/components/ThirtyYears.astro:3:30 - "/30-years-in-business.png"
+   📄 src/components/ThirtyYears.astro:3:31 - "30-years-in-business"
+   📄 src/components/ThirtyYears.astro:3:30 - "/30-years-in-business"
+
+📁 aero-commander-front.jpg (8 references)
+   📄 src/data/aircrafts.js:85:23 - "aero-commander-front.jpg"
+   📄 src/data/aircrafts.js:85:22 - "/aero-commander-front.jpg"
+   📄 src/data/aircrafts.js:85:23 - "aero-commander-front"
+   📄 src/data/aircrafts.js:85:22 - "/aero-commander-front"
+   📄 src/pages/acquisitions-sales/index.astro:10:30 - "aero-commander-front.jpg"
+   📄 src/pages/acquisitions-sales/index.astro:10:29 - "/aero-commander-front.jpg"
+   📄 src/pages/acquisitions-sales/index.astro:10:30 - "aero-commander-front"
+   📄 src/pages/acquisitions-sales/index.astro:10:29 - "/aero-commander-front"
+
+📁 aero-commander-side.jpg (8 references)
+   📄 src/data/aircrafts.js:82:32 - "aero-commander-side.jpg"
+   📄 src/data/aircrafts.js:86:23 - "aero-commander-side.jpg"
+   📄 src/data/aircrafts.js:82:31 - "/aero-commander-side.jpg"
+   📄 src/data/aircrafts.js:86:22 - "/aero-commander-side.jpg"
+   📄 src/data/aircrafts.js:82:32 - "aero-commander-side"
+   📄 src/data/aircrafts.js:86:23 - "aero-commander-side"
+   📄 src/data/aircrafts.js:82:31 - "/aero-commander-side"
+   📄 src/data/aircrafts.js:86:22 - "/aero-commander-side"
+
+📁 airliner-cockpit-in-bethany-oklahoma.jpg (4 references)
+   📄 src/data/airlineTransportPilotData.js:18:32 - "airliner-cockpit-in-bethany-oklahoma.jpg"
+   📄 src/data/airlineTransportPilotData.js:18:31 - "/airliner-cockpit-in-bethany-oklahoma.jpg"
+   📄 src/data/airlineTransportPilotData.js:18:32 - "airliner-cockpit-in-bethany-oklahoma"
+   📄 src/data/airlineTransportPilotData.js:18:31 - "/airliner-cockpit-in-bethany-oklahoma"
+
+📁 alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg (4 references)
+   📄 src/data/commercialPilotDataGroundSchool.js:18:32 - "alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg"
+   📄 src/data/commercialPilotDataGroundSchool.js:18:31 - "/alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg"
+   📄 src/data/commercialPilotDataGroundSchool.js:18:32 - "alto-aircraft-airplane-fleet-on-grass-runway-airport"
+   📄 src/data/commercialPilotDataGroundSchool.js:18:31 - "/alto-aircraft-airplane-fleet-on-grass-runway-airport"
+
+📁 alto-community.jpg (32 references)
+   📄 src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md:5:26 - "alto-community.jpg"
+   📄 src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md:5:25 - "/alto-community.jpg"
+   📄 src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md:5:26 - "alto-community"
+   📄 src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md:5:25 - "/alto-community"
+   📄 src/pages/about/our-story.astro:8:30 - "alto-community.jpg"
+   📄 src/pages/about/our-story.astro:8:29 - "/alto-community.jpg"
+   📄 src/pages/about/our-story.astro:8:30 - "alto-community"
+   📄 src/pages/about/our-story.astro:8:29 - "/alto-community"
+   📄 src/pages/contact-confirmation.astro:8:30 - "alto-community.jpg"
+   📄 src/pages/contact-confirmation.astro:8:29 - "/alto-community.jpg"
+   📄 src/pages/contact-confirmation.astro:8:30 - "alto-community"
+   📄 src/pages/contact-confirmation.astro:8:29 - "/alto-community"
+   📄 src/pages/email-confirmation.astro:8:30 - "alto-community.jpg"
+   📄 src/pages/email-confirmation.astro:8:29 - "/alto-community.jpg"
+   📄 src/pages/email-confirmation.astro:8:30 - "alto-community"
+   📄 src/pages/email-confirmation.astro:8:29 - "/alto-community"
+   📄 src/pages/enrollment-confirmation.astro:8:30 - "alto-community.jpg"
+   📄 src/pages/enrollment-confirmation.astro:8:29 - "/alto-community.jpg"
+   📄 src/pages/enrollment-confirmation.astro:8:30 - "alto-community"
+   📄 src/pages/enrollment-confirmation.astro:8:29 - "/alto-community"
+   📄 src/pages/intro-flight-confirmation.astro:8:30 - "alto-community.jpg"
+   📄 src/pages/intro-flight-confirmation.astro:8:29 - "/alto-community.jpg"
+   📄 src/pages/intro-flight-confirmation.astro:8:30 - "alto-community"
+   📄 src/pages/intro-flight-confirmation.astro:8:29 - "/alto-community"
+   📄 src/pages/quick-start-confirmation.astro:8:30 - "alto-community.jpg"
+   📄 src/pages/quick-start-confirmation.astro:8:29 - "/alto-community.jpg"
+   📄 src/pages/quick-start-confirmation.astro:8:30 - "alto-community"
+   📄 src/pages/quick-start-confirmation.astro:8:29 - "/alto-community"
+   📄 src/pages/training-course-confirmation.astro:8:30 - "alto-community.jpg"
+   📄 src/pages/training-course-confirmation.astro:8:29 - "/alto-community.jpg"
+   📄 src/pages/training-course-confirmation.astro:8:30 - "alto-community"
+   📄 src/pages/training-course-confirmation.astro:8:29 - "/alto-community"
+
+📁 alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg (8 references)
+   📄 src/pages/pilot-training/[...slug].astro:11:19 - "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:11:18 - "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:11:19 - "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+   📄 src/pages/pilot-training/[...slug].astro:11:18 - "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+   📄 src/pages/why-become-a-pilot.astro:10:19 - "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+   📄 src/pages/why-become-a-pilot.astro:10:18 - "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+   📄 src/pages/why-become-a-pilot.astro:10:19 - "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+   📄 src/pages/why-become-a-pilot.astro:10:18 - "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+
+📁 alto-fleet.jpg (8 references)
+   📄 src/pages/about/our-fleet.astro:6:30 - "alto-fleet.jpg"
+   📄 src/pages/about/our-fleet.astro:6:29 - "/alto-fleet.jpg"
+   📄 src/pages/about/our-fleet.astro:6:30 - "alto-fleet"
+   📄 src/pages/about/our-fleet.astro:6:29 - "/alto-fleet"
+   📄 src/pages/pilot-training/[...slug].astro:11:19 - "alto-fleet"
+   📄 src/pages/pilot-training/[...slug].astro:11:18 - "/alto-fleet"
+   📄 src/pages/why-become-a-pilot.astro:10:19 - "alto-fleet"
+   📄 src/pages/why-become-a-pilot.astro:10:18 - "/alto-fleet"
+
+📁 Alto-flight-academy_KHSD_airport.webp (8 references)
+   📄 src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md:5:26 - "Alto-flight-academy_KHSD_airport.webp"
+   📄 src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md:5:25 - "/Alto-flight-academy_KHSD_airport.webp"
+   📄 src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md:5:26 - "Alto-flight-academy_KHSD_airport"
+   📄 src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md:5:25 - "/Alto-flight-academy_KHSD_airport"
+   📄 src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md:5:26 - "Alto-flight-academy_KHSD_airport.webp"
+   📄 src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md:5:25 - "/Alto-flight-academy_KHSD_airport.webp"
+   📄 src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md:5:26 - "Alto-flight-academy_KHSD_airport"
+   📄 src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md:5:25 - "/Alto-flight-academy_KHSD_airport"
+
+📁 alto-flight-academy-leadership-team.jpg (4 references)
+   📄 src/pages/about/our-story.astro:16:39 - "alto-flight-academy-leadership-team.jpg"
+   📄 src/pages/about/our-story.astro:16:38 - "/alto-flight-academy-leadership-team.jpg"
+   📄 src/pages/about/our-story.astro:16:39 - "alto-flight-academy-leadership-team"
+   📄 src/pages/about/our-story.astro:16:38 - "/alto-flight-academy-leadership-team"
+
+📁 alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg (4 references)
+   📄 src/data/privatePilotDataGroundSchool.js:17:33 - "alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg"
+   📄 src/data/privatePilotDataGroundSchool.js:17:32 - "/alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg"
+   📄 src/data/privatePilotDataGroundSchool.js:17:33 - "alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany"
+   📄 src/data/privatePilotDataGroundSchool.js:17:32 - "/alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany"
+
+📁 alto-flight-academy-staff-with-jon-and-martha-king.jpg (4 references)
+   📄 src/data/flightInstructorData.js:19:21 - "alto-flight-academy-staff-with-jon-and-martha-king.jpg"
+   📄 src/data/flightInstructorData.js:19:20 - "/alto-flight-academy-staff-with-jon-and-martha-king.jpg"
+   📄 src/data/flightInstructorData.js:19:21 - "alto-flight-academy-staff-with-jon-and-martha-king"
+   📄 src/data/flightInstructorData.js:19:20 - "/alto-flight-academy-staff-with-jon-and-martha-king"
+
+📁 alto-flight-academy-team-at-sundance-airport-touched.jpg (4 references)
+   📄 src/pages/about/our-team.astro:10:19 - "alto-flight-academy-team-at-sundance-airport-touched.jpg"
+   📄 src/pages/about/our-team.astro:10:18 - "/alto-flight-academy-team-at-sundance-airport-touched.jpg"
+   📄 src/pages/about/our-team.astro:10:19 - "alto-flight-academy-team-at-sundance-airport-touched"
+   📄 src/pages/about/our-team.astro:10:18 - "/alto-flight-academy-team-at-sundance-airport-touched"
+
+📁 alto-flight-academy-team-at-sundance-airport.jpg (2 references)
+   📄 src/pages/about/our-team.astro:10:19 - "alto-flight-academy-team-at-sundance-airport"
+   📄 src/pages/about/our-team.astro:10:18 - "/alto-flight-academy-team-at-sundance-airport"
+
+📁 alto-flight-book-mockup.png (4 references)
+   📄 src/components/GuideDownload.astro:27:31 - "alto-flight-book-mockup.png"
+   📄 src/components/GuideDownload.astro:27:30 - "/alto-flight-book-mockup.png"
+   📄 src/components/GuideDownload.astro:27:31 - "alto-flight-book-mockup"
+   📄 src/components/GuideDownload.astro:27:30 - "/alto-flight-book-mockup"
+
+📁 alto-flight-instructors-in-front-of-a-piper-airplane.jpg (8 references)
+   📄 src/pages/how-to-become-a-pilot.astro:18:39 - "alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+   📄 src/pages/how-to-become-a-pilot.astro:18:38 - "/alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+   📄 src/pages/how-to-become-a-pilot.astro:18:39 - "alto-flight-instructors-in-front-of-a-piper-airplane"
+   📄 src/pages/how-to-become-a-pilot.astro:18:38 - "/alto-flight-instructors-in-front-of-a-piper-airplane"
+   📄 src/pages/index.astro:11:39 - "alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+   📄 src/pages/index.astro:11:38 - "/alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+   📄 src/pages/index.astro:11:39 - "alto-flight-instructors-in-front-of-a-piper-airplane"
+   📄 src/pages/index.astro:11:38 - "/alto-flight-instructors-in-front-of-a-piper-airplane"
+
+📁 alto-flight-private-pilot-student-after-solo.jpg (4 references)
+   📄 src/data/privatePilotData.js:15:32 - "alto-flight-private-pilot-student-after-solo.jpg"
+   📄 src/data/privatePilotData.js:15:31 - "/alto-flight-private-pilot-student-after-solo.jpg"
+   📄 src/data/privatePilotData.js:15:32 - "alto-flight-private-pilot-student-after-solo"
+   📄 src/data/privatePilotData.js:15:31 - "/alto-flight-private-pilot-student-after-solo"
+
+📁 alto-flight-sundance-airport-yukon-oklahoma-touched.jpg (4 references)
+   📄 src/pages/index.astro:12:36 - "alto-flight-sundance-airport-yukon-oklahoma-touched.jpg"
+   📄 src/pages/index.astro:12:35 - "/alto-flight-sundance-airport-yukon-oklahoma-touched.jpg"
+   📄 src/pages/index.astro:12:36 - "alto-flight-sundance-airport-yukon-oklahoma-touched"
+   📄 src/pages/index.astro:12:35 - "/alto-flight-sundance-airport-yukon-oklahoma-touched"
+
+📁 alto-flight-sundance-airport-yukon-oklahoma.jpg (2 references)
+   📄 src/pages/index.astro:12:36 - "alto-flight-sundance-airport-yukon-oklahoma"
+   📄 src/pages/index.astro:12:35 - "/alto-flight-sundance-airport-yukon-oklahoma"
+
+📁 alto-flight-yukon-group-photo.jpg (4 references)
+   📄 src/pages/contact.astro:9:30 - "alto-flight-yukon-group-photo.jpg"
+   📄 src/pages/contact.astro:9:29 - "/alto-flight-yukon-group-photo.jpg"
+   📄 src/pages/contact.astro:9:30 - "alto-flight-yukon-group-photo"
+   📄 src/pages/contact.astro:9:29 - "/alto-flight-yukon-group-photo"
+
+📁 alto-pilot-thumbs-up-oklahoma.jpg (4 references)
+   📄 src/components/HomepageHeader2.astro:3:37 - "alto-pilot-thumbs-up-oklahoma.jpg"
+   📄 src/components/HomepageHeader2.astro:3:36 - "/alto-pilot-thumbs-up-oklahoma.jpg"
+   📄 src/components/HomepageHeader2.astro:3:37 - "alto-pilot-thumbs-up-oklahoma"
+   📄 src/components/HomepageHeader2.astro:3:36 - "/alto-pilot-thumbs-up-oklahoma"
+
+📁 american-airlines-jet-yukon-oklahoma.jpg (4 references)
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:17:32 - "american-airlines-jet-yukon-oklahoma.jpg"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:17:31 - "/american-airlines-jet-yukon-oklahoma.jpg"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:17:32 - "american-airlines-jet-yukon-oklahoma"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:17:31 - "/american-airlines-jet-yukon-oklahoma"
+
+📁 aopa-logo.png (4 references)
+   📄 src/components/Memberships.astro:5:34 - "aopa-logo.png"
+   📄 src/components/Memberships.astro:5:33 - "/aopa-logo.png"
+   📄 src/components/Memberships.astro:5:34 - "aopa-logo"
+   📄 src/components/Memberships.astro:5:33 - "/aopa-logo"
+
+📁 beech-baron.jpg (4 references)
+   📄 src/data/fleet.js:32:30 - "beech-baron.jpg"
+   📄 src/data/fleet.js:32:29 - "/beech-baron.jpg"
+   📄 src/data/fleet.js:32:30 - "beech-baron"
+   📄 src/data/fleet.js:32:29 - "/beech-baron"
+
+📁 beech-bonanza-b36tc.jpg (8 references)
+   📄 src/data/aircrafts.js:36:32 - "beech-bonanza-b36tc.jpg"
+   📄 src/data/aircrafts.js:38:35 - "beech-bonanza-b36tc.jpg"
+   📄 src/data/aircrafts.js:36:31 - "/beech-bonanza-b36tc.jpg"
+   📄 src/data/aircrafts.js:38:34 - "/beech-bonanza-b36tc.jpg"
+   📄 src/data/aircrafts.js:36:32 - "beech-bonanza-b36tc"
+   📄 src/data/aircrafts.js:38:35 - "beech-bonanza-b36tc"
+   📄 src/data/aircrafts.js:36:31 - "/beech-bonanza-b36tc"
+   📄 src/data/aircrafts.js:38:34 - "/beech-bonanza-b36tc"
+
+📁 beechjet-400.jpeg (8 references)
+   📄 src/data/aircrafts.js:13:32 - "beechjet-400.jpeg"
+   📄 src/data/aircrafts.js:15:35 - "beechjet-400.jpeg"
+   📄 src/data/aircrafts.js:13:31 - "/beechjet-400.jpeg"
+   📄 src/data/aircrafts.js:15:34 - "/beechjet-400.jpeg"
+   📄 src/data/aircrafts.js:13:32 - "beechjet-400"
+   📄 src/data/aircrafts.js:15:35 - "beechjet-400"
+   📄 src/data/aircrafts.js:13:31 - "/beechjet-400"
+   📄 src/data/aircrafts.js:15:34 - "/beechjet-400"
+
+📁 ben-mullins-oXV3bzR7jxI-unsplash.jpg (4 references)
+   📄 src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md:5:26 - "ben-mullins-oXV3bzR7jxI-unsplash.jpg"
+   📄 src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md:5:25 - "/ben-mullins-oXV3bzR7jxI-unsplash.jpg"
+   📄 src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md:5:26 - "ben-mullins-oXV3bzR7jxI-unsplash"
+   📄 src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md:5:25 - "/ben-mullins-oXV3bzR7jxI-unsplash"
+
+📁 career-path.jpg (4 references)
+   📄 src/content/articles/career-pathways-after-cfi-rating.md:5:26 - "career-path.jpg"
+   📄 src/content/articles/career-pathways-after-cfi-rating.md:5:25 - "/career-path.jpg"
+   📄 src/content/articles/career-pathways-after-cfi-rating.md:5:26 - "career-path"
+   📄 src/content/articles/career-pathways-after-cfi-rating.md:5:25 - "/career-path"
+
+📁 cessna-172-n4891j-flying-over-bethany-ok.jpg (4 references)
+   📄 src/pages/intro-flight.astro:6:30 - "cessna-172-n4891j-flying-over-bethany-ok.jpg"
+   📄 src/pages/intro-flight.astro:6:29 - "/cessna-172-n4891j-flying-over-bethany-ok.jpg"
+   📄 src/pages/intro-flight.astro:6:30 - "cessna-172-n4891j-flying-over-bethany-ok"
+   📄 src/pages/intro-flight.astro:6:29 - "/cessna-172-n4891j-flying-over-bethany-ok"
+
+📁 cessna-172.jpg (10 references)
+   📄 src/data/fleet.js:4:30 - "cessna-172.jpg"
+   📄 src/data/fleet.js:4:29 - "/cessna-172.jpg"
+   📄 src/data/fleet.js:4:30 - "cessna-172"
+   📄 src/data/fleet.js:17:30 - "cessna-172"
+   📄 src/data/fleet.js:4:29 - "/cessna-172"
+   📄 src/data/fleet.js:17:29 - "/cessna-172"
+   📄 src/data/instrumentRatingData.js:17:57 - "cessna-172"
+   📄 src/data/privatePilotData.js:28:47 - "cessna-172"
+   📄 src/pages/intro-flight.astro:6:30 - "cessna-172"
+   📄 src/pages/intro-flight.astro:6:29 - "/cessna-172"
+
+📁 cessna-172rg.jpg (4 references)
+   📄 src/data/fleet.js:17:30 - "cessna-172rg.jpg"
+   📄 src/data/fleet.js:17:29 - "/cessna-172rg.jpg"
+   📄 src/data/fleet.js:17:30 - "cessna-172rg"
+   📄 src/data/fleet.js:17:29 - "/cessna-172rg"
+
+📁 cessna-182a.jpg (8 references)
+   📄 src/data/aircrafts.js:59:32 - "cessna-182a.jpg"
+   📄 src/data/aircrafts.js:61:35 - "cessna-182a.jpg"
+   📄 src/data/aircrafts.js:59:31 - "/cessna-182a.jpg"
+   📄 src/data/aircrafts.js:61:34 - "/cessna-182a.jpg"
+   📄 src/data/aircrafts.js:59:32 - "cessna-182a"
+   📄 src/data/aircrafts.js:61:35 - "cessna-182a"
+   📄 src/data/aircrafts.js:59:31 - "/cessna-182a"
+   📄 src/data/aircrafts.js:61:34 - "/cessna-182a"
+
+📁 cfi-cutting-t-shirt-after-student-pilot-solo.jpg (8 references)
+   📄 src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md:5:26 - "cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+   📄 src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md:5:25 - "/cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+   📄 src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md:5:26 - "cfi-cutting-t-shirt-after-student-pilot-solo"
+   📄 src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md:5:25 - "/cfi-cutting-t-shirt-after-student-pilot-solo"
+   📄 src/data/flightInstructorData.js:22:21 - "cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+   📄 src/data/flightInstructorData.js:22:20 - "/cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+   📄 src/data/flightInstructorData.js:22:21 - "cfi-cutting-t-shirt-after-student-pilot-solo"
+   📄 src/data/flightInstructorData.js:22:20 - "/cfi-cutting-t-shirt-after-student-pilot-solo"
+
+📁 cfi-in-cessna.jpg (18 references)
+   📄 src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md:5:38 - "cfi-in-cessna.jpg"
+   📄 src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md:5:38 - "cfi-in-cessna"
+   📄 src/pages/about/learning-center/index.astro:14:30 - "cfi-in-cessna.jpg"
+   📄 src/pages/about/learning-center/index.astro:14:29 - "/cfi-in-cessna.jpg"
+   📄 src/pages/about/learning-center/index.astro:14:30 - "cfi-in-cessna"
+   📄 src/pages/about/learning-center/index.astro:14:29 - "/cfi-in-cessna"
+   📄 src/pages/enrollment.astro:6:30 - "cfi-in-cessna.jpg"
+   📄 src/pages/enrollment.astro:6:29 - "/cfi-in-cessna.jpg"
+   📄 src/pages/enrollment.astro:6:30 - "cfi-in-cessna"
+   📄 src/pages/enrollment.astro:6:29 - "/cfi-in-cessna"
+   📄 src/pages/pilot-training/[...slug].astro:19:51 - "cfi-in-cessna.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:19:51 - "cfi-in-cessna"
+   📄 src/pages/privacy-policy.astro:6:30 - "cfi-in-cessna.jpg"
+   📄 src/pages/privacy-policy.astro:6:29 - "/cfi-in-cessna.jpg"
+   📄 src/pages/privacy-policy.astro:6:30 - "cfi-in-cessna"
+   📄 src/pages/privacy-policy.astro:6:29 - "/cfi-in-cessna"
+   📄 src/pages/why-become-a-pilot.astro:18:48 - "cfi-in-cessna.jpg"
+   📄 src/pages/why-become-a-pilot.astro:18:48 - "cfi-in-cessna"
+
+📁 CFI-showing-airplane-model-to-interested-student-pilot.jpg (4 references)
+   📄 src/data/flightInstructorDataGroundSchool.js:23:21 - "CFI-showing-airplane-model-to-interested-student-pilot.jpg"
+   📄 src/data/flightInstructorDataGroundSchool.js:23:20 - "/CFI-showing-airplane-model-to-interested-student-pilot.jpg"
+   📄 src/data/flightInstructorDataGroundSchool.js:23:21 - "CFI-showing-airplane-model-to-interested-student-pilot"
+   📄 src/data/flightInstructorDataGroundSchool.js:23:20 - "/CFI-showing-airplane-model-to-interested-student-pilot"
+
+📁 challenge-air-logo.webp (4 references)
+   📄 src/components/Memberships.astro:7:42 - "challenge-air-logo.webp"
+   📄 src/components/Memberships.astro:7:41 - "/challenge-air-logo.webp"
+   📄 src/components/Memberships.astro:7:42 - "challenge-air-logo"
+   📄 src/components/Memberships.astro:7:41 - "/challenge-air-logo"
+
+📁 citation-jet-hal-harris-oklahoma-city.jpg (4 references)
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:21:35 - "citation-jet-hal-harris-oklahoma-city.jpg"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:21:34 - "/citation-jet-hal-harris-oklahoma-city.jpg"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:21:35 - "citation-jet-hal-harris-oklahoma-city"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:21:34 - "/citation-jet-hal-harris-oklahoma-city"
+
+📁 cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg (4 references)
+   📄 src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md:5:26 - "cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg"
+   📄 src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md:5:25 - "/cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg"
+   📄 src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md:5:26 - "cody-fitzgerald-O0Tr0mrzXLA-unsplash"
+   📄 src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md:5:25 - "/cody-fitzgerald-O0Tr0mrzXLA-unsplash"
+
+📁 commercial-pilot-landing-grass-runway-in-cedar-mills.jpg (4 references)
+   📄 src/data/commercialPilotData.js:18:21 - "commercial-pilot-landing-grass-runway-in-cedar-mills.jpg"
+   📄 src/data/commercialPilotData.js:18:20 - "/commercial-pilot-landing-grass-runway-in-cedar-mills.jpg"
+   📄 src/data/commercialPilotData.js:18:21 - "commercial-pilot-landing-grass-runway-in-cedar-mills"
+   📄 src/data/commercialPilotData.js:18:20 - "/commercial-pilot-landing-grass-runway-in-cedar-mills"
+
+📁 commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg (4 references)
+   📄 src/data/commercialPilotData.js:21:21 - "commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg"
+   📄 src/data/commercialPilotData.js:21:20 - "/commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg"
+   📄 src/data/commercialPilotData.js:21:21 - "commercial-pilot-passing-exam-at-alto-flight-oklahoma-city"
+   📄 src/data/commercialPilotData.js:21:20 - "/commercial-pilot-passing-exam-at-alto-flight-oklahoma-city"
+
+📁 commercial-pilot-passing-exam-in-bethany-oklahoma.jpg (4 references)
+   📄 src/data/commercialPilotDataGroundSchool.js:21:21 - "commercial-pilot-passing-exam-in-bethany-oklahoma.jpg"
+   📄 src/data/commercialPilotDataGroundSchool.js:21:20 - "/commercial-pilot-passing-exam-in-bethany-oklahoma.jpg"
+   📄 src/data/commercialPilotDataGroundSchool.js:21:21 - "commercial-pilot-passing-exam-in-bethany-oklahoma"
+   📄 src/data/commercialPilotDataGroundSchool.js:21:20 - "/commercial-pilot-passing-exam-in-bethany-oklahoma"
+
+📁 eaa-logo.png (4 references)
+   📄 src/components/Memberships.astro:2:33 - "eaa-logo.png"
+   📄 src/components/Memberships.astro:2:32 - "/eaa-logo.png"
+   📄 src/components/Memberships.astro:2:33 - "eaa-logo"
+   📄 src/components/Memberships.astro:2:32 - "/eaa-logo"
+
+📁 evan-corder-alto-flight-team.jpg (4 references)
+   📄 src/data/teamInstructors.js:11:30 - "evan-corder-alto-flight-team.jpg"
+   📄 src/data/teamInstructors.js:11:29 - "/evan-corder-alto-flight-team.jpg"
+   📄 src/data/teamInstructors.js:11:30 - "evan-corder-alto-flight-team"
+   📄 src/data/teamInstructors.js:11:29 - "/evan-corder-alto-flight-team"
+
+📁 evan-navarro-alto-flight-team.jpg (4 references)
+   📄 src/data/teamInstructors.js:17:30 - "evan-navarro-alto-flight-team.jpg"
+   📄 src/data/teamInstructors.js:17:29 - "/evan-navarro-alto-flight-team.jpg"
+   📄 src/data/teamInstructors.js:17:30 - "evan-navarro-alto-flight-team"
+   📄 src/data/teamInstructors.js:17:29 - "/evan-navarro-alto-flight-team"
+
+📁 female-pilot-in-front-of-a-king-air-airplane.jpg (4 references)
+   📄 src/data/commercialPilotDataGroundSchool.js:23:35 - "female-pilot-in-front-of-a-king-air-airplane.jpg"
+   📄 src/data/commercialPilotDataGroundSchool.js:23:34 - "/female-pilot-in-front-of-a-king-air-airplane.jpg"
+   📄 src/data/commercialPilotDataGroundSchool.js:23:35 - "female-pilot-in-front-of-a-king-air-airplane"
+   📄 src/data/commercialPilotDataGroundSchool.js:23:34 - "/female-pilot-in-front-of-a-king-air-airplane"
+
+📁 female-pilots-at-sundance-airport-in-front-of-planes.jpg (8 references)
+   📄 src/pages/pilot-training/[...slug].astro:22:41 - "female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:22:40 - "/female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:22:41 - "female-pilots-at-sundance-airport-in-front-of-planes"
+   📄 src/pages/pilot-training/[...slug].astro:22:40 - "/female-pilots-at-sundance-airport-in-front-of-planes"
+   📄 src/pages/why-become-a-pilot.astro:21:38 - "female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+   📄 src/pages/why-become-a-pilot.astro:21:37 - "/female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+   📄 src/pages/why-become-a-pilot.astro:21:38 - "female-pilots-at-sundance-airport-in-front-of-planes"
+   📄 src/pages/why-become-a-pilot.astro:21:37 - "/female-pilots-at-sundance-airport-in-front-of-planes"
+
+📁 flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg (4 references)
+   📄 src/data/instrumentRatingData.js:17:21 - "flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg"
+   📄 src/data/instrumentRatingData.js:17:20 - "/flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg"
+   📄 src/data/instrumentRatingData.js:17:21 - "flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot"
+   📄 src/data/instrumentRatingData.js:17:20 - "/flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot"
+
+📁 flying-IMC-and-pitot-tube-iced-up.jpg (8 references)
+   📄 src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md:5:26 - "flying-IMC-and-pitot-tube-iced-up.jpg"
+   📄 src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md:5:25 - "/flying-IMC-and-pitot-tube-iced-up.jpg"
+   📄 src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md:5:26 - "flying-IMC-and-pitot-tube-iced-up"
+   📄 src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md:5:25 - "/flying-IMC-and-pitot-tube-iced-up"
+   📄 src/data/instrumentRatingDataGroundSchool.js:20:35 - "flying-IMC-and-pitot-tube-iced-up.jpg"
+   📄 src/data/instrumentRatingDataGroundSchool.js:20:34 - "/flying-IMC-and-pitot-tube-iced-up.jpg"
+   📄 src/data/instrumentRatingDataGroundSchool.js:20:35 - "flying-IMC-and-pitot-tube-iced-up"
+   📄 src/data/instrumentRatingDataGroundSchool.js:20:34 - "/flying-IMC-and-pitot-tube-iced-up"
+
+📁 flying-in-a-multi-engine-aircraft.jpg (4 references)
+   📄 src/data/multiEngineRatingDataGroundSchool.js:21:34 - "flying-in-a-multi-engine-aircraft.jpg"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:21:33 - "/flying-in-a-multi-engine-aircraft.jpg"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:21:34 - "flying-in-a-multi-engine-aircraft"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:21:33 - "/flying-in-a-multi-engine-aircraft"
+
+📁 former-alto-flight-academy-student-flying-jets.jpg (8 references)
+   📄 src/data/airlineTransportPilotData.js:21:21 - "former-alto-flight-academy-student-flying-jets.jpg"
+   📄 src/data/airlineTransportPilotData.js:21:20 - "/former-alto-flight-academy-student-flying-jets.jpg"
+   📄 src/data/airlineTransportPilotData.js:21:21 - "former-alto-flight-academy-student-flying-jets"
+   📄 src/data/airlineTransportPilotData.js:21:20 - "/former-alto-flight-academy-student-flying-jets"
+   📄 src/pages/index.astro:15:34 - "former-alto-flight-academy-student-flying-jets.jpg"
+   📄 src/pages/index.astro:15:33 - "/former-alto-flight-academy-student-flying-jets.jpg"
+   📄 src/pages/index.astro:15:34 - "former-alto-flight-academy-student-flying-jets"
+   📄 src/pages/index.astro:15:33 - "/former-alto-flight-academy-student-flying-jets"
+
+📁 former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg (4 references)
+   📄 src/pages/index.astro:16:40 - "former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg"
+   📄 src/pages/index.astro:16:39 - "/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg"
+   📄 src/pages/index.astro:16:40 - "former-alto-student-with-cessna-first-trained-in-bethany-oklahoma"
+   📄 src/pages/index.astro:16:39 - "/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma"
+
+📁 grace-manglicmot-alto-flight-team.jpg (4 references)
+   📄 src/data/team.js:17:30 - "grace-manglicmot-alto-flight-team.jpg"
+   📄 src/data/team.js:17:29 - "/grace-manglicmot-alto-flight-team.jpg"
+   📄 src/data/team.js:17:30 - "grace-manglicmot-alto-flight-team"
+   📄 src/data/team.js:17:29 - "/grace-manglicmot-alto-flight-team"
+
+📁 hal-harris-alto-flight-team.jpg (8 references)
+   📄 src/data/team.js:5:30 - "hal-harris-alto-flight-team.jpg"
+   📄 src/data/team.js:5:29 - "/hal-harris-alto-flight-team.jpg"
+   📄 src/data/team.js:5:30 - "hal-harris-alto-flight-team"
+   📄 src/data/team.js:5:29 - "/hal-harris-alto-flight-team"
+   📄 src/data/teamInstructors.js:5:30 - "hal-harris-alto-flight-team.jpg"
+   📄 src/data/teamInstructors.js:5:29 - "/hal-harris-alto-flight-team.jpg"
+   📄 src/data/teamInstructors.js:5:30 - "hal-harris-alto-flight-team"
+   📄 src/data/teamInstructors.js:5:29 - "/hal-harris-alto-flight-team"
+
+📁 hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg (4 references)
+   📄 src/data/flightInstructorData.js:26:21 - "hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg"
+   📄 src/data/flightInstructorData.js:26:20 - "/hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg"
+   📄 src/data/flightInstructorData.js:26:21 - "hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo"
+   📄 src/data/flightInstructorData.js:26:20 - "/hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo"
+
+📁 IFR-chart-oklahoma-city-kokc-will-rogers-world.png (4 references)
+   📄 src/data/instrumentRatingDataGroundSchool.js:15:32 - "IFR-chart-oklahoma-city-kokc-will-rogers-world.png"
+   📄 src/data/instrumentRatingDataGroundSchool.js:15:31 - "/IFR-chart-oklahoma-city-kokc-will-rogers-world.png"
+   📄 src/data/instrumentRatingDataGroundSchool.js:15:32 - "IFR-chart-oklahoma-city-kokc-will-rogers-world"
+   📄 src/data/instrumentRatingDataGroundSchool.js:15:31 - "/IFR-chart-oklahoma-city-kokc-will-rogers-world"
+
+📁 inside-boeing-737-cockpit.jpg (4 references)
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:19:33 - "inside-boeing-737-cockpit.jpg"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:19:32 - "/inside-boeing-737-cockpit.jpg"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:19:33 - "inside-boeing-737-cockpit"
+   📄 src/data/airlineTransportPilotDataGroundSchool.js:19:32 - "/inside-boeing-737-cockpit"
+
+📁 inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg (8 references)
+   📄 src/pages/pilot-training/[...slug].astro:21:37 - "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:21:36 - "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:21:37 - "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+   📄 src/pages/pilot-training/[...slug].astro:21:36 - "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+   📄 src/pages/why-become-a-pilot.astro:20:34 - "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+   📄 src/pages/why-become-a-pilot.astro:20:33 - "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+   📄 src/pages/why-become-a-pilot.astro:20:34 - "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+   📄 src/pages/why-become-a-pilot.astro:20:33 - "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+
+📁 instrument-ground-school-in-oklahoma-city.jpg (12 references)
+   📄 src/data/instrumentRatingDataGroundSchool.js:18:21 - "instrument-ground-school-in-oklahoma-city.jpg"
+   📄 src/data/instrumentRatingDataGroundSchool.js:18:20 - "/instrument-ground-school-in-oklahoma-city.jpg"
+   📄 src/data/instrumentRatingDataGroundSchool.js:18:21 - "instrument-ground-school-in-oklahoma-city"
+   📄 src/data/instrumentRatingDataGroundSchool.js:18:20 - "/instrument-ground-school-in-oklahoma-city"
+   📄 src/pages/pilot-training/[...slug].astro:23:41 - "instrument-ground-school-in-oklahoma-city.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:23:40 - "/instrument-ground-school-in-oklahoma-city.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:23:41 - "instrument-ground-school-in-oklahoma-city"
+   📄 src/pages/pilot-training/[...slug].astro:23:40 - "/instrument-ground-school-in-oklahoma-city"
+   📄 src/pages/why-become-a-pilot.astro:22:38 - "instrument-ground-school-in-oklahoma-city.jpg"
+   📄 src/pages/why-become-a-pilot.astro:22:37 - "/instrument-ground-school-in-oklahoma-city.jpg"
+   📄 src/pages/why-become-a-pilot.astro:22:38 - "instrument-ground-school-in-oklahoma-city"
+   📄 src/pages/why-become-a-pilot.astro:22:37 - "/instrument-ground-school-in-oklahoma-city"
+
+📁 instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg (4 references)
+   📄 src/data/instrumentRatingData.js:21:21 - "instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg"
+   📄 src/data/instrumentRatingData.js:21:20 - "/instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg"
+   📄 src/data/instrumentRatingData.js:21:21 - "instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok"
+   📄 src/data/instrumentRatingData.js:21:20 - "/instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok"
+
+📁 long-exposure-airport-night.jpg (4 references)
+   📄 src/pages/500.astro:6:30 - "long-exposure-airport-night.jpg"
+   📄 src/pages/500.astro:6:29 - "/long-exposure-airport-night.jpg"
+   📄 src/pages/500.astro:6:30 - "long-exposure-airport-night"
+   📄 src/pages/500.astro:6:29 - "/long-exposure-airport-night"
+
+📁 luizmonteiro-logo.webp (4 references)
+   📄 src/components/Memberships.astro:6:42 - "luizmonteiro-logo.webp"
+   📄 src/components/Memberships.astro:6:41 - "/luizmonteiro-logo.webp"
+   📄 src/components/Memberships.astro:6:42 - "luizmonteiro-logo"
+   📄 src/components/Memberships.astro:6:41 - "/luizmonteiro-logo"
+
+📁 maricris-harris-alto-flight-team.jpg (4 references)
+   📄 src/data/team.js:11:30 - "maricris-harris-alto-flight-team.jpg"
+   📄 src/data/team.js:11:29 - "/maricris-harris-alto-flight-team.jpg"
+   📄 src/data/team.js:11:30 - "maricris-harris-alto-flight-team"
+   📄 src/data/team.js:11:29 - "/maricris-harris-alto-flight-team"
+
+📁 multi-engine-rating-students.jpg (4 references)
+   📄 src/data/multiEngineRatingDataGroundSchool.js:23:35 - "multi-engine-rating-students.jpg"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:23:34 - "/multi-engine-rating-students.jpg"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:23:35 - "multi-engine-rating-students"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:23:34 - "/multi-engine-rating-students"
+
+📁 multi-single-engines.jpg (4 references)
+   📄 src/content/articles/single-engine-vs-multi-engine-aircraft.md:5:26 - "multi-single-engines.jpg"
+   📄 src/content/articles/single-engine-vs-multi-engine-aircraft.md:5:25 - "/multi-single-engines.jpg"
+   📄 src/content/articles/single-engine-vs-multi-engine-aircraft.md:5:26 - "multi-single-engines"
+   📄 src/content/articles/single-engine-vs-multi-engine-aircraft.md:5:25 - "/multi-single-engines"
+
+📁 N99VS.jpg (12 references)
+   📄 src/data/aircrafts.js:154:32 - "N99VS.jpg"
+   📄 src/data/aircrafts.js:156:35 - "N99VS.jpg"
+   📄 src/data/aircrafts.js:154:31 - "/N99VS.jpg"
+   📄 src/data/aircrafts.js:156:34 - "/N99VS.jpg"
+   📄 src/data/aircrafts.js:143:15 - "N99VS"
+   📄 src/data/aircrafts.js:154:32 - "N99VS"
+   📄 src/data/aircrafts.js:156:35 - "N99VS"
+   📄 src/data/aircrafts.js:162:13 - "N99VS"
+   📄 src/data/aircrafts.js:143:14 - ""N99VS""
+   📄 src/data/aircrafts.js:162:12 - ""N99VS""
+   📄 src/data/aircrafts.js:154:31 - "/N99VS"
+   📄 src/data/aircrafts.js:156:34 - "/N99VS"
+
+📁 N225P-side.jpg (12 references)
+   📄 src/data/aircrafts.js:248:60 - "N225P-side.jpg"
+   📄 src/data/aircrafts.js:269:32 - "N225P-side.jpg"
+   📄 src/data/aircrafts.js:271:35 - "N225P-side.jpg"
+   📄 src/data/aircrafts.js:248:59 - "/N225P-side.jpg"
+   📄 src/data/aircrafts.js:269:31 - "/N225P-side.jpg"
+   📄 src/data/aircrafts.js:271:34 - "/N225P-side.jpg"
+   📄 src/data/aircrafts.js:248:60 - "N225P-side"
+   📄 src/data/aircrafts.js:269:32 - "N225P-side"
+   📄 src/data/aircrafts.js:271:35 - "N225P-side"
+   📄 src/data/aircrafts.js:248:59 - "/N225P-side"
+   📄 src/data/aircrafts.js:269:31 - "/N225P-side"
+   📄 src/data/aircrafts.js:271:34 - "/N225P-side"
+
+📁 N225P.jpg (22 references)
+   📄 src/data/aircrafts.js:246:32 - "N225P.jpg"
+   📄 src/data/aircrafts.js:248:35 - "N225P.jpg"
+   📄 src/data/aircrafts.js:246:31 - "/N225P.jpg"
+   📄 src/data/aircrafts.js:248:34 - "/N225P.jpg"
+   📄 src/data/aircrafts.js:235:15 - "N225P"
+   📄 src/data/aircrafts.js:246:32 - "N225P"
+   📄 src/data/aircrafts.js:248:35 - "N225P"
+   📄 src/data/aircrafts.js:248:60 - "N225P"
+   📄 src/data/aircrafts.js:254:13 - "N225P"
+   📄 src/data/aircrafts.js:258:15 - "N225P"
+   📄 src/data/aircrafts.js:269:32 - "N225P"
+   📄 src/data/aircrafts.js:271:35 - "N225P"
+   📄 src/data/aircrafts.js:277:13 - "N225P"
+   📄 src/data/aircrafts.js:235:14 - ""N225P""
+   📄 src/data/aircrafts.js:254:12 - ""N225P""
+   📄 src/data/aircrafts.js:258:14 - ""N225P""
+   📄 src/data/aircrafts.js:277:12 - ""N225P""
+   📄 src/data/aircrafts.js:246:31 - "/N225P"
+   📄 src/data/aircrafts.js:248:34 - "/N225P"
+   📄 src/data/aircrafts.js:248:59 - "/N225P"
+   📄 src/data/aircrafts.js:269:31 - "/N225P"
+   📄 src/data/aircrafts.js:271:34 - "/N225P"
+
+📁 N553HC.jpg (12 references)
+   📄 src/data/aircrafts.js:177:32 - "N553HC.jpg"
+   📄 src/data/aircrafts.js:179:35 - "N553HC.jpg"
+   📄 src/data/aircrafts.js:177:31 - "/N553HC.jpg"
+   📄 src/data/aircrafts.js:179:34 - "/N553HC.jpg"
+   📄 src/data/aircrafts.js:166:15 - "N553HC"
+   📄 src/data/aircrafts.js:177:32 - "N553HC"
+   📄 src/data/aircrafts.js:179:35 - "N553HC"
+   📄 src/data/aircrafts.js:185:13 - "N553HC"
+   📄 src/data/aircrafts.js:166:14 - ""N553HC""
+   📄 src/data/aircrafts.js:185:12 - ""N553HC""
+   📄 src/data/aircrafts.js:177:31 - "/N553HC"
+   📄 src/data/aircrafts.js:179:34 - "/N553HC"
+
+📁 N664JB.jpg (12 references)
+   📄 src/data/aircrafts.js:200:32 - "N664JB.jpg"
+   📄 src/data/aircrafts.js:202:35 - "N664JB.jpg"
+   📄 src/data/aircrafts.js:200:31 - "/N664JB.jpg"
+   📄 src/data/aircrafts.js:202:34 - "/N664JB.jpg"
+   📄 src/data/aircrafts.js:189:15 - "N664JB"
+   📄 src/data/aircrafts.js:200:32 - "N664JB"
+   📄 src/data/aircrafts.js:202:35 - "N664JB"
+   📄 src/data/aircrafts.js:208:13 - "N664JB"
+   📄 src/data/aircrafts.js:189:14 - ""N664JB""
+   📄 src/data/aircrafts.js:208:12 - ""N664JB""
+   📄 src/data/aircrafts.js:200:31 - "/N664JB"
+   📄 src/data/aircrafts.js:202:34 - "/N664JB"
+
+📁 N6137Q-side.png (8 references)
+   📄 src/data/aircrafts.js:223:32 - "N6137Q-side.png"
+   📄 src/data/aircrafts.js:225:35 - "N6137Q-side.png"
+   📄 src/data/aircrafts.js:223:31 - "/N6137Q-side.png"
+   📄 src/data/aircrafts.js:225:34 - "/N6137Q-side.png"
+   📄 src/data/aircrafts.js:223:32 - "N6137Q-side"
+   📄 src/data/aircrafts.js:225:35 - "N6137Q-side"
+   📄 src/data/aircrafts.js:223:31 - "/N6137Q-side"
+   📄 src/data/aircrafts.js:225:34 - "/N6137Q-side"
+
+📁 N6137Q.png (20 references)
+   📄 src/data/aircrafts.js:131:32 - "N6137Q.png"
+   📄 src/data/aircrafts.js:133:35 - "N6137Q.png"
+   📄 src/data/aircrafts.js:131:31 - "/N6137Q.png"
+   📄 src/data/aircrafts.js:133:34 - "/N6137Q.png"
+   📄 src/data/aircrafts.js:120:15 - "N6137Q"
+   📄 src/data/aircrafts.js:131:32 - "N6137Q"
+   📄 src/data/aircrafts.js:133:35 - "N6137Q"
+   📄 src/data/aircrafts.js:139:13 - "N6137Q"
+   📄 src/data/aircrafts.js:212:15 - "N6137Q"
+   📄 src/data/aircrafts.js:223:32 - "N6137Q"
+   📄 src/data/aircrafts.js:225:35 - "N6137Q"
+   📄 src/data/aircrafts.js:231:13 - "N6137Q"
+   📄 src/data/aircrafts.js:120:14 - ""N6137Q""
+   📄 src/data/aircrafts.js:139:12 - ""N6137Q""
+   📄 src/data/aircrafts.js:212:14 - ""N6137Q""
+   📄 src/data/aircrafts.js:231:12 - ""N6137Q""
+   📄 src/data/aircrafts.js:131:31 - "/N6137Q"
+   📄 src/data/aircrafts.js:133:34 - "/N6137Q"
+   📄 src/data/aircrafts.js:223:31 - "/N6137Q"
+   📄 src/data/aircrafts.js:225:34 - "/N6137Q"
+
+📁 N6190C-cessna.png (8 references)
+   📄 src/data/aircrafts.js:108:32 - "N6190C-cessna.png"
+   📄 src/data/aircrafts.js:110:35 - "N6190C-cessna.png"
+   📄 src/data/aircrafts.js:108:31 - "/N6190C-cessna.png"
+   📄 src/data/aircrafts.js:110:34 - "/N6190C-cessna.png"
+   📄 src/data/aircrafts.js:108:32 - "N6190C-cessna"
+   📄 src/data/aircrafts.js:110:35 - "N6190C-cessna"
+   📄 src/data/aircrafts.js:108:31 - "/N6190C-cessna"
+   📄 src/data/aircrafts.js:110:34 - "/N6190C-cessna"
+
+📁 N67797-cessna-flying-over-sundance-airport.jpg (4 references)
+   📄 src/components/HomepageHeader.astro:3:37 - "N67797-cessna-flying-over-sundance-airport.jpg"
+   📄 src/components/HomepageHeader.astro:3:36 - "/N67797-cessna-flying-over-sundance-airport.jpg"
+   📄 src/components/HomepageHeader.astro:3:37 - "N67797-cessna-flying-over-sundance-airport"
+   📄 src/components/HomepageHeader.astro:3:36 - "/N67797-cessna-flying-over-sundance-airport"
+
+📁 nafi-logo.webp (4 references)
+   📄 src/components/Memberships.astro:3:34 - "nafi-logo.webp"
+   📄 src/components/Memberships.astro:3:33 - "/nafi-logo.webp"
+   📄 src/components/Memberships.astro:3:34 - "nafi-logo"
+   📄 src/components/Memberships.astro:3:33 - "/nafi-logo"
+
+📁 night-landing-sundance-airport-yukon-cessna.jpg (4 references)
+   📄 src/data/instrumentRatingData.js:25:21 - "night-landing-sundance-airport-yukon-cessna.jpg"
+   📄 src/data/instrumentRatingData.js:25:20 - "/night-landing-sundance-airport-yukon-cessna.jpg"
+   📄 src/data/instrumentRatingData.js:25:21 - "night-landing-sundance-airport-yukon-cessna"
+   📄 src/data/instrumentRatingData.js:25:20 - "/night-landing-sundance-airport-yukon-cessna"
+
+📁 opa-logo.png (6 references)
+   📄 src/components/Memberships.astro:4:33 - "opa-logo.png"
+   📄 src/components/Memberships.astro:5:35 - "opa-logo.png"
+   📄 src/components/Memberships.astro:4:32 - "/opa-logo.png"
+   📄 src/components/Memberships.astro:4:33 - "opa-logo"
+   📄 src/components/Memberships.astro:5:35 - "opa-logo"
+   📄 src/components/Memberships.astro:4:32 - "/opa-logo"
+
+📁 pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg (4 references)
+   📄 src/data/flightInstructorDataGroundSchool.js:18:21 - "pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg"
+   📄 src/data/flightInstructorDataGroundSchool.js:18:20 - "/pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg"
+   📄 src/data/flightInstructorDataGroundSchool.js:18:21 - "pilot-after-his-private-pilot-checkride-with-flight-instructor"
+   📄 src/data/flightInstructorDataGroundSchool.js:18:20 - "/pilot-after-his-private-pilot-checkride-with-flight-instructor"
+
+📁 pilot-in-a-cirrus-airplane-programing-garmin-430.jpg (8 references)
+   📄 src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md:5:26 - "pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+   📄 src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md:5:25 - "/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+   📄 src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md:5:26 - "pilot-in-a-cirrus-airplane-programing-garmin-430"
+   📄 src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md:5:25 - "/pilot-in-a-cirrus-airplane-programing-garmin-430"
+   📄 src/data/flightInstructorDataGroundSchool.js:20:33 - "pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+   📄 src/data/flightInstructorDataGroundSchool.js:20:32 - "/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+   📄 src/data/flightInstructorDataGroundSchool.js:20:33 - "pilot-in-a-cirrus-airplane-programing-garmin-430"
+   📄 src/data/flightInstructorDataGroundSchool.js:20:32 - "/pilot-in-a-cirrus-airplane-programing-garmin-430"
+
+📁 piper-arrow.jpg (8 references)
+   📄 src/pages/pilot-training/[...slug].astro:18:39 - "piper-arrow.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:18:38 - "/piper-arrow.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:18:39 - "piper-arrow"
+   📄 src/pages/pilot-training/[...slug].astro:18:38 - "/piper-arrow"
+   📄 src/pages/why-become-a-pilot.astro:17:36 - "piper-arrow.jpg"
+   📄 src/pages/why-become-a-pilot.astro:17:35 - "/piper-arrow.jpg"
+   📄 src/pages/why-become-a-pilot.astro:17:36 - "piper-arrow"
+   📄 src/pages/why-become-a-pilot.astro:17:35 - "/piper-arrow"
+
+📁 post1.jpg (8 references)
+   📄 src/data/blogSampleData.js:7:30 - "post1.jpg"
+   📄 src/data/blogSampleData.js:7:29 - "/post1.jpg"
+   📄 src/data/blogSampleData.js:7:30 - "post1"
+   📄 src/data/blogSampleData.js:7:29 - "/post1"
+   📄 src/pages/about/our-story.astro:23:34 - "post1.jpg"
+   📄 src/pages/about/our-story.astro:23:33 - "/post1.jpg"
+   📄 src/pages/about/our-story.astro:23:34 - "post1"
+   📄 src/pages/about/our-story.astro:23:33 - "/post1"
+
+📁 post2.jpg (4 references)
+   📄 src/data/blogSampleData.js:16:30 - "post2.jpg"
+   📄 src/data/blogSampleData.js:16:29 - "/post2.jpg"
+   📄 src/data/blogSampleData.js:16:30 - "post2"
+   📄 src/data/blogSampleData.js:16:29 - "/post2"
+
+📁 post3.jpg (4 references)
+   📄 src/data/blogSampleData.js:25:30 - "post3.jpg"
+   📄 src/data/blogSampleData.js:25:29 - "/post3.jpg"
+   📄 src/data/blogSampleData.js:25:30 - "post3"
+   📄 src/data/blogSampleData.js:25:29 - "/post3"
+
+📁 post4.jpg (4 references)
+   📄 src/data/blogSampleData.js:34:30 - "post4.jpg"
+   📄 src/data/blogSampleData.js:34:29 - "/post4.jpg"
+   📄 src/data/blogSampleData.js:34:30 - "post4"
+   📄 src/data/blogSampleData.js:34:29 - "/post4"
+
+📁 post5.jpg (12 references)
+   📄 src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md:5:26 - "post5.jpg"
+   📄 src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md:5:25 - "/post5.jpg"
+   📄 src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md:5:26 - "post5"
+   📄 src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md:5:25 - "/post5"
+   📄 src/data/blogSampleData.js:43:30 - "post5.jpg"
+   📄 src/data/blogSampleData.js:43:29 - "/post5.jpg"
+   📄 src/data/blogSampleData.js:43:30 - "post5"
+   📄 src/data/blogSampleData.js:43:29 - "/post5"
+   📄 src/pages/about/our-story.astro:24:34 - "post5.jpg"
+   📄 src/pages/about/our-story.astro:24:33 - "/post5.jpg"
+   📄 src/pages/about/our-story.astro:24:34 - "post5"
+   📄 src/pages/about/our-story.astro:24:33 - "/post5"
+
+📁 private-pilot-ground-materials-for-flight-school-yukon-ok.jpg (4 references)
+   📄 src/data/privatePilotDataGroundSchool.js:15:32 - "private-pilot-ground-materials-for-flight-school-yukon-ok.jpg"
+   📄 src/data/privatePilotDataGroundSchool.js:15:31 - "/private-pilot-ground-materials-for-flight-school-yukon-ok.jpg"
+   📄 src/data/privatePilotDataGroundSchool.js:15:32 - "private-pilot-ground-materials-for-flight-school-yukon-ok"
+   📄 src/data/privatePilotDataGroundSchool.js:15:31 - "/private-pilot-ground-materials-for-flight-school-yukon-ok"
+
+📁 reid-grigsby-alto-flight-team.webp (4 references)
+   📄 src/data/teamInstructors.js:23:30 - "reid-grigsby-alto-flight-team.webp"
+   📄 src/data/teamInstructors.js:23:29 - "/reid-grigsby-alto-flight-team.webp"
+   📄 src/data/teamInstructors.js:23:30 - "reid-grigsby-alto-flight-team"
+   📄 src/data/teamInstructors.js:23:29 - "/reid-grigsby-alto-flight-team"
+
+📁 signature.webp (4 references)
+   📄 src/pages/about/our-story.astro:17:38 - "signature.webp"
+   📄 src/pages/about/our-story.astro:17:37 - "/signature.webp"
+   📄 src/pages/about/our-story.astro:17:38 - "signature"
+   📄 src/pages/about/our-story.astro:17:37 - "/signature"
+
+📁 simulator-type-rating-citation-oklahoma.jpg (4 references)
+   📄 src/data/airlineTransportPilotData.js:25:35 - "simulator-type-rating-citation-oklahoma.jpg"
+   📄 src/data/airlineTransportPilotData.js:25:34 - "/simulator-type-rating-citation-oklahoma.jpg"
+   📄 src/data/airlineTransportPilotData.js:25:35 - "simulator-type-rating-citation-oklahoma"
+   📄 src/data/airlineTransportPilotData.js:25:34 - "/simulator-type-rating-citation-oklahoma"
+
+📁 stormy-weather.jpg (4 references)
+   📄 src/content/articles/weather-101-for-student-pilots.md:5:26 - "stormy-weather.jpg"
+   📄 src/content/articles/weather-101-for-student-pilots.md:5:25 - "/stormy-weather.jpg"
+   📄 src/content/articles/weather-101-for-student-pilots.md:5:26 - "stormy-weather"
+   📄 src/content/articles/weather-101-for-student-pilots.md:5:25 - "/stormy-weather"
+
+📁 student-and-cfi-in-cessna.jpg (12 references)
+   📄 src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md:5:26 - "student-and-cfi-in-cessna.jpg"
+   📄 src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md:5:25 - "/student-and-cfi-in-cessna.jpg"
+   📄 src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md:5:26 - "student-and-cfi-in-cessna"
+   📄 src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md:5:25 - "/student-and-cfi-in-cessna"
+   📄 src/pages/pilot-training/[...slug].astro:19:39 - "student-and-cfi-in-cessna.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:19:38 - "/student-and-cfi-in-cessna.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:19:39 - "student-and-cfi-in-cessna"
+   📄 src/pages/pilot-training/[...slug].astro:19:38 - "/student-and-cfi-in-cessna"
+   📄 src/pages/why-become-a-pilot.astro:18:36 - "student-and-cfi-in-cessna.jpg"
+   📄 src/pages/why-become-a-pilot.astro:18:35 - "/student-and-cfi-in-cessna.jpg"
+   📄 src/pages/why-become-a-pilot.astro:18:36 - "student-and-cfi-in-cessna"
+   📄 src/pages/why-become-a-pilot.astro:18:35 - "/student-and-cfi-in-cessna"
+
+📁 student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride.jpg (4 references)
+   📄 src/data/privatePilotData.js:25:21 - "student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride.jpg"
+   📄 src/data/privatePilotData.js:25:20 - "/student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride.jpg"
+   📄 src/data/privatePilotData.js:25:21 - "student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride"
+   📄 src/data/privatePilotData.js:25:20 - "/student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride"
+
+📁 student-earning-multi-engine-rating.jpeg (4 references)
+   📄 src/data/multiEngineRatingData.js:24:33 - "student-earning-multi-engine-rating.jpeg"
+   📄 src/data/multiEngineRatingData.js:24:32 - "/student-earning-multi-engine-rating.jpeg"
+   📄 src/data/multiEngineRatingData.js:24:33 - "student-earning-multi-engine-rating"
+   📄 src/data/multiEngineRatingData.js:24:32 - "/student-earning-multi-engine-rating"
+
+📁 student-passed-his-commercial-pilot-exam.jpg (4 references)
+   📄 src/data/commercialPilotData.js:23:35 - "student-passed-his-commercial-pilot-exam.jpg"
+   📄 src/data/commercialPilotData.js:23:34 - "/student-passed-his-commercial-pilot-exam.jpg"
+   📄 src/data/commercialPilotData.js:23:35 - "student-passed-his-commercial-pilot-exam"
+   📄 src/data/commercialPilotData.js:23:34 - "/student-passed-his-commercial-pilot-exam"
+
+📁 student-passed-his-multi-engine-rating-practical-exam.jpg (8 references)
+   📄 src/data/multiEngineRatingData.js:22:21 - "student-passed-his-multi-engine-rating-practical-exam.jpg"
+   📄 src/data/multiEngineRatingData.js:27:21 - "student-passed-his-multi-engine-rating-practical-exam.jpg"
+   📄 src/data/multiEngineRatingData.js:22:20 - "/student-passed-his-multi-engine-rating-practical-exam.jpg"
+   📄 src/data/multiEngineRatingData.js:27:20 - "/student-passed-his-multi-engine-rating-practical-exam.jpg"
+   📄 src/data/multiEngineRatingData.js:22:21 - "student-passed-his-multi-engine-rating-practical-exam"
+   📄 src/data/multiEngineRatingData.js:27:21 - "student-passed-his-multi-engine-rating-practical-exam"
+   📄 src/data/multiEngineRatingData.js:22:20 - "/student-passed-his-multi-engine-rating-practical-exam"
+   📄 src/data/multiEngineRatingData.js:27:20 - "/student-passed-his-multi-engine-rating-practical-exam"
+
+📁 student-passed-his-multi-engine-rating.jpg (8 references)
+   📄 src/data/multiEngineRatingData.js:22:21 - "student-passed-his-multi-engine-rating"
+   📄 src/data/multiEngineRatingData.js:27:21 - "student-passed-his-multi-engine-rating"
+   📄 src/data/multiEngineRatingData.js:22:20 - "/student-passed-his-multi-engine-rating"
+   📄 src/data/multiEngineRatingData.js:27:20 - "/student-passed-his-multi-engine-rating"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:19:32 - "student-passed-his-multi-engine-rating.jpg"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:19:31 - "/student-passed-his-multi-engine-rating.jpg"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:19:32 - "student-passed-his-multi-engine-rating"
+   📄 src/data/multiEngineRatingDataGroundSchool.js:19:31 - "/student-passed-his-multi-engine-rating"
+
+📁 student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride.jpg (4 references)
+   📄 src/data/privatePilotData.js:28:21 - "student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride.jpg"
+   📄 src/data/privatePilotData.js:28:20 - "/student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride.jpg"
+   📄 src/data/privatePilotData.js:28:21 - "student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride"
+   📄 src/data/privatePilotData.js:28:20 - "/student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride"
+
+📁 student-pilot.jpg (11 references)
+   📄 src/content/articles/faa-regulations-every-student-pilot-should-know.md:5:26 - "student-pilot.jpg"
+   📄 src/content/articles/faa-regulations-every-student-pilot-should-know.md:5:25 - "/student-pilot.jpg"
+   📄 src/content/articles/faa-regulations-every-student-pilot-should-know.md:5:26 - "student-pilot"
+   📄 src/content/articles/faa-regulations-every-student-pilot-should-know.md:5:25 - "/student-pilot"
+   📄 src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md:5:52 - "student-pilot"
+   📄 src/data/flightInstructorData.js:22:47 - "student-pilot"
+   📄 src/data/flightInstructorData.js:26:58 - "student-pilot"
+   📄 src/data/flightInstructorDataGroundSchool.js:23:62 - "student-pilot.jpg"
+   📄 src/data/flightInstructorDataGroundSchool.js:23:62 - "student-pilot"
+   📄 src/data/privatePilotData.js:28:21 - "student-pilot"
+   📄 src/data/privatePilotData.js:28:20 - "/student-pilot"
+
+📁 sunset-plane-wing.jpg (4 references)
+   📄 src/pages/404.astro:6:30 - "sunset-plane-wing.jpg"
+   📄 src/pages/404.astro:6:29 - "/sunset-plane-wing.jpg"
+   📄 src/pages/404.astro:6:30 - "sunset-plane-wing"
+   📄 src/pages/404.astro:6:29 - "/sunset-plane-wing"
+
+📁 team-member-1.jpg (4 references)
+   📄 src/data/teamStaff.js:5:30 - "team-member-1.jpg"
+   📄 src/data/teamStaff.js:5:29 - "/team-member-1.jpg"
+   📄 src/data/teamStaff.js:5:30 - "team-member-1"
+   📄 src/data/teamStaff.js:5:29 - "/team-member-1"
+
+📁 view-from-the-skies-inside-alto-airplane.jpg (16 references)
+   📄 src/components/GetInContact.astro:13:45 - "view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/components/GetInContact.astro:13:44 - "/view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/components/GetInContact.astro:13:45 - "view-from-the-skies-inside-alto-airplane"
+   📄 src/components/GetInContact.astro:13:44 - "/view-from-the-skies-inside-alto-airplane"
+   📄 src/pages/how-to-become-a-pilot.astro:17:45 - "view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/pages/how-to-become-a-pilot.astro:17:44 - "/view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/pages/how-to-become-a-pilot.astro:17:45 - "view-from-the-skies-inside-alto-airplane"
+   📄 src/pages/how-to-become-a-pilot.astro:17:44 - "/view-from-the-skies-inside-alto-airplane"
+   📄 src/pages/pilot-training/[...slug].astro:20:48 - "view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:20:47 - "/view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/pages/pilot-training/[...slug].astro:20:48 - "view-from-the-skies-inside-alto-airplane"
+   📄 src/pages/pilot-training/[...slug].astro:20:47 - "/view-from-the-skies-inside-alto-airplane"
+   📄 src/pages/why-become-a-pilot.astro:19:45 - "view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/pages/why-become-a-pilot.astro:19:44 - "/view-from-the-skies-inside-alto-airplane.jpg"
+   📄 src/pages/why-become-a-pilot.astro:19:45 - "view-from-the-skies-inside-alto-airplane"
+   📄 src/pages/why-become-a-pilot.astro:19:44 - "/view-from-the-skies-inside-alto-airplane"
+
+📁 wall-of-students-passing-checkride-by-sectional.jpg (4 references)
+   📄 src/components/WallOfGrads.astro:4:31 - "wall-of-students-passing-checkride-by-sectional.jpg"
+   📄 src/components/WallOfGrads.astro:4:30 - "/wall-of-students-passing-checkride-by-sectional.jpg"
+   📄 src/components/WallOfGrads.astro:4:31 - "wall-of-students-passing-checkride-by-sectional"
+   📄 src/components/WallOfGrads.astro:4:30 - "/wall-of-students-passing-checkride-by-sectional"
+
+📁 wall-of-students-passing-checkride-near-sectional.jpg (4 references)
+   📄 src/components/WallOfGrads.astro:3:31 - "wall-of-students-passing-checkride-near-sectional.jpg"
+   📄 src/components/WallOfGrads.astro:3:30 - "/wall-of-students-passing-checkride-near-sectional.jpg"
+   📄 src/components/WallOfGrads.astro:3:31 - "wall-of-students-passing-checkride-near-sectional"
+   📄 src/components/WallOfGrads.astro:3:30 - "/wall-of-students-passing-checkride-near-sectional"
+
+📁 wall-of-students-passing-checkride.jpg (8 references)
+   📄 src/components/WallOfGrads.astro:5:31 - "wall-of-students-passing-checkride.jpg"
+   📄 src/components/WallOfGrads.astro:5:30 - "/wall-of-students-passing-checkride.jpg"
+   📄 src/components/WallOfGrads.astro:3:31 - "wall-of-students-passing-checkride"
+   📄 src/components/WallOfGrads.astro:4:31 - "wall-of-students-passing-checkride"
+   📄 src/components/WallOfGrads.astro:5:31 - "wall-of-students-passing-checkride"
+   📄 src/components/WallOfGrads.astro:3:30 - "/wall-of-students-passing-checkride"
+   📄 src/components/WallOfGrads.astro:4:30 - "/wall-of-students-passing-checkride"
+   📄 src/components/WallOfGrads.astro:5:30 - "/wall-of-students-passing-checkride"
+
+📁 what-to-expect-on-your-first-discovery-flight-at-alto.jpg (4 references)
+   📄 src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md:5:26 - "what-to-expect-on-your-first-discovery-flight-at-alto.jpg"
+   📄 src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md:5:25 - "/what-to-expect-on-your-first-discovery-flight-at-alto.jpg"
+   📄 src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md:5:26 - "what-to-expect-on-your-first-discovery-flight-at-alto"
+   📄 src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md:5:25 - "/what-to-expect-on-your-first-discovery-flight-at-alto"
+
+📁 young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy.jpg (4 references)
+   📄 src/data/privatePilotDataGroundSchool.js:19:35 - "young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy.jpg"
+   📄 src/data/privatePilotDataGroundSchool.js:19:34 - "/young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy.jpg"
+   📄 src/data/privatePilotDataGroundSchool.js:19:35 - "young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy"
+   📄 src/data/privatePilotDataGroundSchool.js:19:34 - "/young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy"
+
+IMAGES WITHOUT REFERENCES:
+========================
+❌ Alto-Flight-Academy-FAA-regulations.png
+❌ alto-flight-academy-team-at-sundance-airport(1).jpg
+❌ alto-flight-sundance-airport-yukon-oklahoma(1).jpg
+❌ applicants-passed-their-flight-instructor-exam.jpg
+❌ applicants-passed-their-instrument-instructor-checkrides.jpg
+❌ atp-students.jpg
+❌ cessna-152.jpg
+❌ guide-mockup.webp
+❌ pilot-thumbs-up-in-cessna-172-airplane-just-before-a-solo.jpg
+❌ plane-placeholder.png
+❌ student-in-atp-lesson.jpg
+❌ student-in-front-of-cessna.jpg
+❌ student-obtaining-private-pilot-certificate.jpg
+❌ student-obtains-commercial-pilot-certificate-from-cfi.jpg
+❌ student-obtains-commercial-pilot-certificate.jpg
+❌ student-passed-flight-iinstructor-exam.jpg
+❌ student-passed-his-atp-exam.jpg
+❌ student-passed-his-exam.jpg
+❌ student-passed-his-instrument-practical-exam.jpg
+❌ student-passed-his-instrument-rating.jpg
+❌ student-passed-his-private-pilot-exam.jpg
+❌ student-passed-his-private-pilot-practical-exam.jpg
+❌ student-standing-next-to-his-flight-instructor.jpg
+❌ student-standing-with-his-cfi.jpg
+❌ student-with-his-atp-instructor.jpg
+❌ student-with-his-cfi.jpg
+❌ student-with-his-instructor.jpg
+❌ team-member-2a.jpg
+❌ team-member-2b.jpg
+❌ team-member-3.jpg
+
+MISSING FILES:
+==============
+All files exist! ✅

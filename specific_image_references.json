@@ -1,0 +1,5061 @@
+{
+  "scanDate": "2025-11-21T21:25:30.858Z",
+  "totalImages": 135,
+  "imagesWithReferences": 105,
+  "imagesWithoutReferences": 30,
+  "imagesMissing": 0,
+  "imageReferences": [
+    {
+      "image": "30-years-in-business.png",
+      "path": "src/assets/30-years-in-business.png",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/ThirtyYears.astro",
+          "line": 3,
+          "character": 31,
+          "reference": "30-years-in-business.png"
+        },
+        {
+          "file": "src/components/ThirtyYears.astro",
+          "line": 3,
+          "character": 30,
+          "reference": "/30-years-in-business.png"
+        },
+        {
+          "file": "src/components/ThirtyYears.astro",
+          "line": 3,
+          "character": 31,
+          "reference": "30-years-in-business"
+        },
+        {
+          "file": "src/components/ThirtyYears.astro",
+          "line": 3,
+          "character": 30,
+          "reference": "/30-years-in-business"
+        }
+      ]
+    },
+    {
+      "image": "aero-commander-front.jpg",
+      "path": "src/assets/aero-commander-front.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 85,
+          "character": 23,
+          "reference": "aero-commander-front.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 85,
+          "character": 22,
+          "reference": "/aero-commander-front.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 85,
+          "character": 23,
+          "reference": "aero-commander-front"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 85,
+          "character": 22,
+          "reference": "/aero-commander-front"
+        },
+        {
+          "file": "src/pages/acquisitions-sales/index.astro",
+          "line": 10,
+          "character": 30,
+          "reference": "aero-commander-front.jpg"
+        },
+        {
+          "file": "src/pages/acquisitions-sales/index.astro",
+          "line": 10,
+          "character": 29,
+          "reference": "/aero-commander-front.jpg"
+        },
+        {
+          "file": "src/pages/acquisitions-sales/index.astro",
+          "line": 10,
+          "character": 30,
+          "reference": "aero-commander-front"
+        },
+        {
+          "file": "src/pages/acquisitions-sales/index.astro",
+          "line": 10,
+          "character": 29,
+          "reference": "/aero-commander-front"
+        }
+      ]
+    },
+    {
+      "image": "aero-commander-side.jpg",
+      "path": "src/assets/aero-commander-side.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 82,
+          "character": 32,
+          "reference": "aero-commander-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 86,
+          "character": 23,
+          "reference": "aero-commander-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 82,
+          "character": 31,
+          "reference": "/aero-commander-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 86,
+          "character": 22,
+          "reference": "/aero-commander-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 82,
+          "character": 32,
+          "reference": "aero-commander-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 86,
+          "character": 23,
+          "reference": "aero-commander-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 82,
+          "character": 31,
+          "reference": "/aero-commander-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 86,
+          "character": 22,
+          "reference": "/aero-commander-side"
+        }
+      ]
+    },
+    {
+      "image": "airliner-cockpit-in-bethany-oklahoma.jpg",
+      "path": "src/assets/airliner-cockpit-in-bethany-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 18,
+          "character": 32,
+          "reference": "airliner-cockpit-in-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 18,
+          "character": 31,
+          "reference": "/airliner-cockpit-in-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 18,
+          "character": 32,
+          "reference": "airliner-cockpit-in-bethany-oklahoma"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 18,
+          "character": 31,
+          "reference": "/airliner-cockpit-in-bethany-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg",
+      "path": "src/assets/alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 18,
+          "character": 32,
+          "reference": "alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 18,
+          "character": 31,
+          "reference": "/alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 18,
+          "character": 32,
+          "reference": "alto-aircraft-airplane-fleet-on-grass-runway-airport"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 18,
+          "character": 31,
+          "reference": "/alto-aircraft-airplane-fleet-on-grass-runway-airport"
+        }
+      ]
+    },
+    {
+      "image": "alto-community.jpg",
+      "path": "src/assets/alto-community.jpg",
+      "exists": true,
+      "referenceCount": 32,
+      "references": [
+        {
+          "file": "src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md",
+          "line": 5,
+          "character": 26,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md",
+          "line": 5,
+          "character": 26,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/content/articles/Choosing-the-Right-Flight-School-six-Factors-to-Consider.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/alto-community"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community"
+        },
+        {
+          "file": "src/pages/contact-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/pages/contact-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/pages/contact-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/pages/contact-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community"
+        },
+        {
+          "file": "src/pages/email-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/pages/email-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/pages/email-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/pages/email-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community"
+        },
+        {
+          "file": "src/pages/enrollment-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/pages/enrollment-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/pages/enrollment-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/pages/enrollment-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community"
+        },
+        {
+          "file": "src/pages/intro-flight-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/pages/intro-flight-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/pages/intro-flight-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/pages/intro-flight-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community"
+        },
+        {
+          "file": "src/pages/quick-start-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/pages/quick-start-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/pages/quick-start-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/pages/quick-start-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community"
+        },
+        {
+          "file": "src/pages/training-course-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community.jpg"
+        },
+        {
+          "file": "src/pages/training-course-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community.jpg"
+        },
+        {
+          "file": "src/pages/training-course-confirmation.astro",
+          "line": 8,
+          "character": 30,
+          "reference": "alto-community"
+        },
+        {
+          "file": "src/pages/training-course-confirmation.astro",
+          "line": 8,
+          "character": 29,
+          "reference": "/alto-community"
+        }
+      ]
+    },
+    {
+      "image": "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg",
+      "path": "src/assets/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 11,
+          "character": 19,
+          "reference": "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 11,
+          "character": 18,
+          "reference": "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 11,
+          "character": 19,
+          "reference": "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 11,
+          "character": 18,
+          "reference": "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 10,
+          "character": 19,
+          "reference": "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 10,
+          "character": 18,
+          "reference": "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 10,
+          "character": 19,
+          "reference": "alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 10,
+          "character": 18,
+          "reference": "/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok"
+        }
+      ]
+    },
+    {
+      "image": "alto-fleet.jpg",
+      "path": "src/assets/alto-fleet.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/pages/about/our-fleet.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "alto-fleet.jpg"
+        },
+        {
+          "file": "src/pages/about/our-fleet.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/alto-fleet.jpg"
+        },
+        {
+          "file": "src/pages/about/our-fleet.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "alto-fleet"
+        },
+        {
+          "file": "src/pages/about/our-fleet.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/alto-fleet"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 11,
+          "character": 19,
+          "reference": "alto-fleet"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 11,
+          "character": 18,
+          "reference": "/alto-fleet"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 10,
+          "character": 19,
+          "reference": "alto-fleet"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 10,
+          "character": 18,
+          "reference": "/alto-fleet"
+        }
+      ]
+    },
+    {
+      "image": "Alto-flight-academy_KHSD_airport.webp",
+      "path": "src/assets/Alto-flight-academy_KHSD_airport.webp",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md",
+          "line": 5,
+          "character": 26,
+          "reference": "Alto-flight-academy_KHSD_airport.webp"
+        },
+        {
+          "file": "src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/Alto-flight-academy_KHSD_airport.webp"
+        },
+        {
+          "file": "src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md",
+          "line": 5,
+          "character": 26,
+          "reference": "Alto-flight-academy_KHSD_airport"
+        },
+        {
+          "file": "src/content/articles/mastering-crosswinds-at-sundance-airport-a-local-pilots-advantage.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/Alto-flight-academy_KHSD_airport"
+        },
+        {
+          "file": "src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md",
+          "line": 5,
+          "character": 26,
+          "reference": "Alto-flight-academy_KHSD_airport.webp"
+        },
+        {
+          "file": "src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/Alto-flight-academy_KHSD_airport.webp"
+        },
+        {
+          "file": "src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md",
+          "line": 5,
+          "character": 26,
+          "reference": "Alto-flight-academy_KHSD_airport"
+        },
+        {
+          "file": "src/content/articles/top-5-scenic-flight-routes-around-oklahoma-for-student-pilots.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/Alto-flight-academy_KHSD_airport"
+        }
+      ]
+    },
+    {
+      "image": "Alto-Flight-Academy-FAA-regulations.png",
+      "path": "src/assets/Alto-Flight-Academy-FAA-regulations.png",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "alto-flight-academy-leadership-team.jpg",
+      "path": "src/assets/alto-flight-academy-leadership-team.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 16,
+          "character": 39,
+          "reference": "alto-flight-academy-leadership-team.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 16,
+          "character": 38,
+          "reference": "/alto-flight-academy-leadership-team.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 16,
+          "character": 39,
+          "reference": "alto-flight-academy-leadership-team"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 16,
+          "character": 38,
+          "reference": "/alto-flight-academy-leadership-team"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg",
+      "path": "src/assets/alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 17,
+          "character": 33,
+          "reference": "alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 17,
+          "character": 32,
+          "reference": "/alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany.jpg"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 17,
+          "character": 33,
+          "reference": "alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 17,
+          "character": 32,
+          "reference": "/alto-flight-academy-pilot-flying-above-clouds-over-oklahoma-city-bethany"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-academy-staff-with-jon-and-martha-king.jpg",
+      "path": "src/assets/alto-flight-academy-staff-with-jon-and-martha-king.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 19,
+          "character": 21,
+          "reference": "alto-flight-academy-staff-with-jon-and-martha-king.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 19,
+          "character": 20,
+          "reference": "/alto-flight-academy-staff-with-jon-and-martha-king.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 19,
+          "character": 21,
+          "reference": "alto-flight-academy-staff-with-jon-and-martha-king"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 19,
+          "character": 20,
+          "reference": "/alto-flight-academy-staff-with-jon-and-martha-king"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-academy-team-at-sundance-airport-touched.jpg",
+      "path": "src/assets/alto-flight-academy-team-at-sundance-airport-touched.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/about/our-team.astro",
+          "line": 10,
+          "character": 19,
+          "reference": "alto-flight-academy-team-at-sundance-airport-touched.jpg"
+        },
+        {
+          "file": "src/pages/about/our-team.astro",
+          "line": 10,
+          "character": 18,
+          "reference": "/alto-flight-academy-team-at-sundance-airport-touched.jpg"
+        },
+        {
+          "file": "src/pages/about/our-team.astro",
+          "line": 10,
+          "character": 19,
+          "reference": "alto-flight-academy-team-at-sundance-airport-touched"
+        },
+        {
+          "file": "src/pages/about/our-team.astro",
+          "line": 10,
+          "character": 18,
+          "reference": "/alto-flight-academy-team-at-sundance-airport-touched"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-academy-team-at-sundance-airport.jpg",
+      "path": "src/assets/alto-flight-academy-team-at-sundance-airport.jpg",
+      "exists": true,
+      "referenceCount": 2,
+      "references": [
+        {
+          "file": "src/pages/about/our-team.astro",
+          "line": 10,
+          "character": 19,
+          "reference": "alto-flight-academy-team-at-sundance-airport"
+        },
+        {
+          "file": "src/pages/about/our-team.astro",
+          "line": 10,
+          "character": 18,
+          "reference": "/alto-flight-academy-team-at-sundance-airport"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-academy-team-at-sundance-airport(1).jpg",
+      "path": "src/assets/alto-flight-academy-team-at-sundance-airport(1).jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "alto-flight-book-mockup.png",
+      "path": "src/assets/alto-flight-book-mockup.png",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/GuideDownload.astro",
+          "line": 27,
+          "character": 31,
+          "reference": "alto-flight-book-mockup.png"
+        },
+        {
+          "file": "src/components/GuideDownload.astro",
+          "line": 27,
+          "character": 30,
+          "reference": "/alto-flight-book-mockup.png"
+        },
+        {
+          "file": "src/components/GuideDownload.astro",
+          "line": 27,
+          "character": 31,
+          "reference": "alto-flight-book-mockup"
+        },
+        {
+          "file": "src/components/GuideDownload.astro",
+          "line": 27,
+          "character": 30,
+          "reference": "/alto-flight-book-mockup"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-instructors-in-front-of-a-piper-airplane.jpg",
+      "path": "src/assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 18,
+          "character": 39,
+          "reference": "alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+        },
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 18,
+          "character": 38,
+          "reference": "/alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+        },
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 18,
+          "character": 39,
+          "reference": "alto-flight-instructors-in-front-of-a-piper-airplane"
+        },
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 18,
+          "character": 38,
+          "reference": "/alto-flight-instructors-in-front-of-a-piper-airplane"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 11,
+          "character": 39,
+          "reference": "alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 11,
+          "character": 38,
+          "reference": "/alto-flight-instructors-in-front-of-a-piper-airplane.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 11,
+          "character": 39,
+          "reference": "alto-flight-instructors-in-front-of-a-piper-airplane"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 11,
+          "character": 38,
+          "reference": "/alto-flight-instructors-in-front-of-a-piper-airplane"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-private-pilot-student-after-solo.jpg",
+      "path": "src/assets/alto-flight-private-pilot-student-after-solo.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 15,
+          "character": 32,
+          "reference": "alto-flight-private-pilot-student-after-solo.jpg"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 15,
+          "character": 31,
+          "reference": "/alto-flight-private-pilot-student-after-solo.jpg"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 15,
+          "character": 32,
+          "reference": "alto-flight-private-pilot-student-after-solo"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 15,
+          "character": 31,
+          "reference": "/alto-flight-private-pilot-student-after-solo"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-sundance-airport-yukon-oklahoma-touched.jpg",
+      "path": "src/assets/alto-flight-sundance-airport-yukon-oklahoma-touched.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/index.astro",
+          "line": 12,
+          "character": 36,
+          "reference": "alto-flight-sundance-airport-yukon-oklahoma-touched.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 12,
+          "character": 35,
+          "reference": "/alto-flight-sundance-airport-yukon-oklahoma-touched.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 12,
+          "character": 36,
+          "reference": "alto-flight-sundance-airport-yukon-oklahoma-touched"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 12,
+          "character": 35,
+          "reference": "/alto-flight-sundance-airport-yukon-oklahoma-touched"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-sundance-airport-yukon-oklahoma.jpg",
+      "path": "src/assets/alto-flight-sundance-airport-yukon-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 2,
+      "references": [
+        {
+          "file": "src/pages/index.astro",
+          "line": 12,
+          "character": 36,
+          "reference": "alto-flight-sundance-airport-yukon-oklahoma"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 12,
+          "character": 35,
+          "reference": "/alto-flight-sundance-airport-yukon-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "alto-flight-sundance-airport-yukon-oklahoma(1).jpg",
+      "path": "src/assets/alto-flight-sundance-airport-yukon-oklahoma(1).jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "alto-flight-yukon-group-photo.jpg",
+      "path": "src/assets/alto-flight-yukon-group-photo.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/contact.astro",
+          "line": 9,
+          "character": 30,
+          "reference": "alto-flight-yukon-group-photo.jpg"
+        },
+        {
+          "file": "src/pages/contact.astro",
+          "line": 9,
+          "character": 29,
+          "reference": "/alto-flight-yukon-group-photo.jpg"
+        },
+        {
+          "file": "src/pages/contact.astro",
+          "line": 9,
+          "character": 30,
+          "reference": "alto-flight-yukon-group-photo"
+        },
+        {
+          "file": "src/pages/contact.astro",
+          "line": 9,
+          "character": 29,
+          "reference": "/alto-flight-yukon-group-photo"
+        }
+      ]
+    },
+    {
+      "image": "alto-pilot-thumbs-up-oklahoma.jpg",
+      "path": "src/assets/alto-pilot-thumbs-up-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/HomepageHeader2.astro",
+          "line": 3,
+          "character": 37,
+          "reference": "alto-pilot-thumbs-up-oklahoma.jpg"
+        },
+        {
+          "file": "src/components/HomepageHeader2.astro",
+          "line": 3,
+          "character": 36,
+          "reference": "/alto-pilot-thumbs-up-oklahoma.jpg"
+        },
+        {
+          "file": "src/components/HomepageHeader2.astro",
+          "line": 3,
+          "character": 37,
+          "reference": "alto-pilot-thumbs-up-oklahoma"
+        },
+        {
+          "file": "src/components/HomepageHeader2.astro",
+          "line": 3,
+          "character": 36,
+          "reference": "/alto-pilot-thumbs-up-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "american-airlines-jet-yukon-oklahoma.jpg",
+      "path": "src/assets/american-airlines-jet-yukon-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 17,
+          "character": 32,
+          "reference": "american-airlines-jet-yukon-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 17,
+          "character": 31,
+          "reference": "/american-airlines-jet-yukon-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 17,
+          "character": 32,
+          "reference": "american-airlines-jet-yukon-oklahoma"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 17,
+          "character": 31,
+          "reference": "/american-airlines-jet-yukon-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "aopa-logo.png",
+      "path": "src/assets/aopa-logo.png",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 5,
+          "character": 34,
+          "reference": "aopa-logo.png"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 5,
+          "character": 33,
+          "reference": "/aopa-logo.png"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 5,
+          "character": 34,
+          "reference": "aopa-logo"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 5,
+          "character": 33,
+          "reference": "/aopa-logo"
+        }
+      ]
+    },
+    {
+      "image": "applicants-passed-their-flight-instructor-exam.jpg",
+      "path": "src/assets/applicants-passed-their-flight-instructor-exam.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "applicants-passed-their-instrument-instructor-checkrides.jpg",
+      "path": "src/assets/applicants-passed-their-instrument-instructor-checkrides.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "atp-students.jpg",
+      "path": "src/assets/atp-students.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "beech-baron.jpg",
+      "path": "src/assets/beech-baron.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/fleet.js",
+          "line": 32,
+          "character": 30,
+          "reference": "beech-baron.jpg"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 32,
+          "character": 29,
+          "reference": "/beech-baron.jpg"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 32,
+          "character": 30,
+          "reference": "beech-baron"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 32,
+          "character": 29,
+          "reference": "/beech-baron"
+        }
+      ]
+    },
+    {
+      "image": "beech-bonanza-b36tc.jpg",
+      "path": "src/assets/beech-bonanza-b36tc.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 36,
+          "character": 32,
+          "reference": "beech-bonanza-b36tc.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 38,
+          "character": 35,
+          "reference": "beech-bonanza-b36tc.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 36,
+          "character": 31,
+          "reference": "/beech-bonanza-b36tc.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 38,
+          "character": 34,
+          "reference": "/beech-bonanza-b36tc.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 36,
+          "character": 32,
+          "reference": "beech-bonanza-b36tc"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 38,
+          "character": 35,
+          "reference": "beech-bonanza-b36tc"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 36,
+          "character": 31,
+          "reference": "/beech-bonanza-b36tc"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 38,
+          "character": 34,
+          "reference": "/beech-bonanza-b36tc"
+        }
+      ]
+    },
+    {
+      "image": "beechjet-400.jpeg",
+      "path": "src/assets/beechjet-400.jpeg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 13,
+          "character": 32,
+          "reference": "beechjet-400.jpeg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 15,
+          "character": 35,
+          "reference": "beechjet-400.jpeg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 13,
+          "character": 31,
+          "reference": "/beechjet-400.jpeg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 15,
+          "character": 34,
+          "reference": "/beechjet-400.jpeg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 13,
+          "character": 32,
+          "reference": "beechjet-400"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 15,
+          "character": 35,
+          "reference": "beechjet-400"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 13,
+          "character": 31,
+          "reference": "/beechjet-400"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 15,
+          "character": 34,
+          "reference": "/beechjet-400"
+        }
+      ]
+    },
+    {
+      "image": "ben-mullins-oXV3bzR7jxI-unsplash.jpg",
+      "path": "src/assets/ben-mullins-oXV3bzR7jxI-unsplash.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md",
+          "line": 5,
+          "character": 26,
+          "reference": "ben-mullins-oXV3bzR7jxI-unsplash.jpg"
+        },
+        {
+          "file": "src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/ben-mullins-oXV3bzR7jxI-unsplash.jpg"
+        },
+        {
+          "file": "src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md",
+          "line": 5,
+          "character": 26,
+          "reference": "ben-mullins-oXV3bzR7jxI-unsplash"
+        },
+        {
+          "file": "src/content/articles/preparing-for-the-faa-private-pilot-written-exam.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/ben-mullins-oXV3bzR7jxI-unsplash"
+        }
+      ]
+    },
+    {
+      "image": "career-path.jpg",
+      "path": "src/assets/career-path.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/content/articles/career-pathways-after-cfi-rating.md",
+          "line": 5,
+          "character": 26,
+          "reference": "career-path.jpg"
+        },
+        {
+          "file": "src/content/articles/career-pathways-after-cfi-rating.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/career-path.jpg"
+        },
+        {
+          "file": "src/content/articles/career-pathways-after-cfi-rating.md",
+          "line": 5,
+          "character": 26,
+          "reference": "career-path"
+        },
+        {
+          "file": "src/content/articles/career-pathways-after-cfi-rating.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/career-path"
+        }
+      ]
+    },
+    {
+      "image": "cessna-152.jpg",
+      "path": "src/assets/cessna-152.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "cessna-172-n4891j-flying-over-bethany-ok.jpg",
+      "path": "src/assets/cessna-172-n4891j-flying-over-bethany-ok.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/intro-flight.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "cessna-172-n4891j-flying-over-bethany-ok.jpg"
+        },
+        {
+          "file": "src/pages/intro-flight.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/cessna-172-n4891j-flying-over-bethany-ok.jpg"
+        },
+        {
+          "file": "src/pages/intro-flight.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "cessna-172-n4891j-flying-over-bethany-ok"
+        },
+        {
+          "file": "src/pages/intro-flight.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/cessna-172-n4891j-flying-over-bethany-ok"
+        }
+      ]
+    },
+    {
+      "image": "cessna-172.jpg",
+      "path": "src/assets/cessna-172.jpg",
+      "exists": true,
+      "referenceCount": 10,
+      "references": [
+        {
+          "file": "src/data/fleet.js",
+          "line": 4,
+          "character": 30,
+          "reference": "cessna-172.jpg"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 4,
+          "character": 29,
+          "reference": "/cessna-172.jpg"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 4,
+          "character": 30,
+          "reference": "cessna-172"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 17,
+          "character": 30,
+          "reference": "cessna-172"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 4,
+          "character": 29,
+          "reference": "/cessna-172"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 17,
+          "character": 29,
+          "reference": "/cessna-172"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 17,
+          "character": 57,
+          "reference": "cessna-172"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 28,
+          "character": 47,
+          "reference": "cessna-172"
+        },
+        {
+          "file": "src/pages/intro-flight.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "cessna-172"
+        },
+        {
+          "file": "src/pages/intro-flight.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/cessna-172"
+        }
+      ]
+    },
+    {
+      "image": "cessna-172rg.jpg",
+      "path": "src/assets/cessna-172rg.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/fleet.js",
+          "line": 17,
+          "character": 30,
+          "reference": "cessna-172rg.jpg"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 17,
+          "character": 29,
+          "reference": "/cessna-172rg.jpg"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 17,
+          "character": 30,
+          "reference": "cessna-172rg"
+        },
+        {
+          "file": "src/data/fleet.js",
+          "line": 17,
+          "character": 29,
+          "reference": "/cessna-172rg"
+        }
+      ]
+    },
+    {
+      "image": "cessna-182a.jpg",
+      "path": "src/assets/cessna-182a.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 59,
+          "character": 32,
+          "reference": "cessna-182a.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 61,
+          "character": 35,
+          "reference": "cessna-182a.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 59,
+          "character": 31,
+          "reference": "/cessna-182a.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 61,
+          "character": 34,
+          "reference": "/cessna-182a.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 59,
+          "character": 32,
+          "reference": "cessna-182a"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 61,
+          "character": 35,
+          "reference": "cessna-182a"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 59,
+          "character": 31,
+          "reference": "/cessna-182a"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 61,
+          "character": 34,
+          "reference": "/cessna-182a"
+        }
+      ]
+    },
+    {
+      "image": "cfi-cutting-t-shirt-after-student-pilot-solo.jpg",
+      "path": "src/assets/cfi-cutting-t-shirt-after-student-pilot-solo.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md",
+          "line": 5,
+          "character": 26,
+          "reference": "cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+        },
+        {
+          "file": "src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+        },
+        {
+          "file": "src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md",
+          "line": 5,
+          "character": 26,
+          "reference": "cfi-cutting-t-shirt-after-student-pilot-solo"
+        },
+        {
+          "file": "src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/cfi-cutting-t-shirt-after-student-pilot-solo"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 22,
+          "character": 21,
+          "reference": "cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 22,
+          "character": 20,
+          "reference": "/cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 22,
+          "character": 21,
+          "reference": "cfi-cutting-t-shirt-after-student-pilot-solo"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 22,
+          "character": 20,
+          "reference": "/cfi-cutting-t-shirt-after-student-pilot-solo"
+        }
+      ]
+    },
+    {
+      "image": "cfi-in-cessna.jpg",
+      "path": "src/assets/cfi-in-cessna.jpg",
+      "exists": true,
+      "referenceCount": 18,
+      "references": [
+        {
+          "file": "src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md",
+          "line": 5,
+          "character": 38,
+          "reference": "cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md",
+          "line": 5,
+          "character": 38,
+          "reference": "cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/about/learning-center/index.astro",
+          "line": 14,
+          "character": 30,
+          "reference": "cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/about/learning-center/index.astro",
+          "line": 14,
+          "character": 29,
+          "reference": "/cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/about/learning-center/index.astro",
+          "line": 14,
+          "character": 30,
+          "reference": "cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/about/learning-center/index.astro",
+          "line": 14,
+          "character": 29,
+          "reference": "/cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/enrollment.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/enrollment.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/enrollment.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/enrollment.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 19,
+          "character": 51,
+          "reference": "cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 19,
+          "character": 51,
+          "reference": "cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/privacy-policy.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/privacy-policy.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/privacy-policy.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/privacy-policy.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 18,
+          "character": 48,
+          "reference": "cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 18,
+          "character": 48,
+          "reference": "cfi-in-cessna"
+        }
+      ]
+    },
+    {
+      "image": "CFI-showing-airplane-model-to-interested-student-pilot.jpg",
+      "path": "src/assets/CFI-showing-airplane-model-to-interested-student-pilot.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 23,
+          "character": 21,
+          "reference": "CFI-showing-airplane-model-to-interested-student-pilot.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 23,
+          "character": 20,
+          "reference": "/CFI-showing-airplane-model-to-interested-student-pilot.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 23,
+          "character": 21,
+          "reference": "CFI-showing-airplane-model-to-interested-student-pilot"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 23,
+          "character": 20,
+          "reference": "/CFI-showing-airplane-model-to-interested-student-pilot"
+        }
+      ]
+    },
+    {
+      "image": "challenge-air-logo.webp",
+      "path": "src/assets/challenge-air-logo.webp",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 7,
+          "character": 42,
+          "reference": "challenge-air-logo.webp"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 7,
+          "character": 41,
+          "reference": "/challenge-air-logo.webp"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 7,
+          "character": 42,
+          "reference": "challenge-air-logo"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 7,
+          "character": 41,
+          "reference": "/challenge-air-logo"
+        }
+      ]
+    },
+    {
+      "image": "citation-jet-hal-harris-oklahoma-city.jpg",
+      "path": "src/assets/citation-jet-hal-harris-oklahoma-city.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 35,
+          "reference": "citation-jet-hal-harris-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 34,
+          "reference": "/citation-jet-hal-harris-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 35,
+          "reference": "citation-jet-hal-harris-oklahoma-city"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 34,
+          "reference": "/citation-jet-hal-harris-oklahoma-city"
+        }
+      ]
+    },
+    {
+      "image": "cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg",
+      "path": "src/assets/cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md",
+          "line": 5,
+          "character": 26,
+          "reference": "cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg"
+        },
+        {
+          "file": "src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/cody-fitzgerald-O0Tr0mrzXLA-unsplash.jpg"
+        },
+        {
+          "file": "src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md",
+          "line": 5,
+          "character": 26,
+          "reference": "cody-fitzgerald-O0Tr0mrzXLA-unsplash"
+        },
+        {
+          "file": "src/content/articles/how-airplanes-defy-gravity-the-magic-of-lift.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/cody-fitzgerald-O0Tr0mrzXLA-unsplash"
+        }
+      ]
+    },
+    {
+      "image": "commercial-pilot-landing-grass-runway-in-cedar-mills.jpg",
+      "path": "src/assets/commercial-pilot-landing-grass-runway-in-cedar-mills.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 18,
+          "character": 21,
+          "reference": "commercial-pilot-landing-grass-runway-in-cedar-mills.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 18,
+          "character": 20,
+          "reference": "/commercial-pilot-landing-grass-runway-in-cedar-mills.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 18,
+          "character": 21,
+          "reference": "commercial-pilot-landing-grass-runway-in-cedar-mills"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 18,
+          "character": 20,
+          "reference": "/commercial-pilot-landing-grass-runway-in-cedar-mills"
+        }
+      ]
+    },
+    {
+      "image": "commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg",
+      "path": "src/assets/commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 21,
+          "character": 21,
+          "reference": "commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 21,
+          "character": 21,
+          "reference": "commercial-pilot-passing-exam-at-alto-flight-oklahoma-city"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/commercial-pilot-passing-exam-at-alto-flight-oklahoma-city"
+        }
+      ]
+    },
+    {
+      "image": "commercial-pilot-passing-exam-in-bethany-oklahoma.jpg",
+      "path": "src/assets/commercial-pilot-passing-exam-in-bethany-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 21,
+          "reference": "commercial-pilot-passing-exam-in-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/commercial-pilot-passing-exam-in-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 21,
+          "reference": "commercial-pilot-passing-exam-in-bethany-oklahoma"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/commercial-pilot-passing-exam-in-bethany-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "eaa-logo.png",
+      "path": "src/assets/eaa-logo.png",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 2,
+          "character": 33,
+          "reference": "eaa-logo.png"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 2,
+          "character": 32,
+          "reference": "/eaa-logo.png"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 2,
+          "character": 33,
+          "reference": "eaa-logo"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 2,
+          "character": 32,
+          "reference": "/eaa-logo"
+        }
+      ]
+    },
+    {
+      "image": "evan-corder-alto-flight-team.jpg",
+      "path": "src/assets/evan-corder-alto-flight-team.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 11,
+          "character": 30,
+          "reference": "evan-corder-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 11,
+          "character": 29,
+          "reference": "/evan-corder-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 11,
+          "character": 30,
+          "reference": "evan-corder-alto-flight-team"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 11,
+          "character": 29,
+          "reference": "/evan-corder-alto-flight-team"
+        }
+      ]
+    },
+    {
+      "image": "evan-navarro-alto-flight-team.jpg",
+      "path": "src/assets/evan-navarro-alto-flight-team.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 17,
+          "character": 30,
+          "reference": "evan-navarro-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 17,
+          "character": 29,
+          "reference": "/evan-navarro-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 17,
+          "character": 30,
+          "reference": "evan-navarro-alto-flight-team"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 17,
+          "character": 29,
+          "reference": "/evan-navarro-alto-flight-team"
+        }
+      ]
+    },
+    {
+      "image": "female-pilot-in-front-of-a-king-air-airplane.jpg",
+      "path": "src/assets/female-pilot-in-front-of-a-king-air-airplane.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 23,
+          "character": 35,
+          "reference": "female-pilot-in-front-of-a-king-air-airplane.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 23,
+          "character": 34,
+          "reference": "/female-pilot-in-front-of-a-king-air-airplane.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 23,
+          "character": 35,
+          "reference": "female-pilot-in-front-of-a-king-air-airplane"
+        },
+        {
+          "file": "src/data/commercialPilotDataGroundSchool.js",
+          "line": 23,
+          "character": 34,
+          "reference": "/female-pilot-in-front-of-a-king-air-airplane"
+        }
+      ]
+    },
+    {
+      "image": "female-pilots-at-sundance-airport-in-front-of-planes.jpg",
+      "path": "src/assets/female-pilots-at-sundance-airport-in-front-of-planes.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 22,
+          "character": 41,
+          "reference": "female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 22,
+          "character": 40,
+          "reference": "/female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 22,
+          "character": 41,
+          "reference": "female-pilots-at-sundance-airport-in-front-of-planes"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 22,
+          "character": 40,
+          "reference": "/female-pilots-at-sundance-airport-in-front-of-planes"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 21,
+          "character": 38,
+          "reference": "female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 21,
+          "character": 37,
+          "reference": "/female-pilots-at-sundance-airport-in-front-of-planes.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 21,
+          "character": 38,
+          "reference": "female-pilots-at-sundance-airport-in-front-of-planes"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 21,
+          "character": 37,
+          "reference": "/female-pilots-at-sundance-airport-in-front-of-planes"
+        }
+      ]
+    },
+    {
+      "image": "flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg",
+      "path": "src/assets/flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 17,
+          "character": 21,
+          "reference": "flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 17,
+          "character": 20,
+          "reference": "/flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 17,
+          "character": 21,
+          "reference": "flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 17,
+          "character": 20,
+          "reference": "/flying-above-lake-heffner-in-clouds-cessna-172-instrument-rated-pilot"
+        }
+      ]
+    },
+    {
+      "image": "flying-IMC-and-pitot-tube-iced-up.jpg",
+      "path": "src/assets/flying-IMC-and-pitot-tube-iced-up.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md",
+          "line": 5,
+          "character": 26,
+          "reference": "flying-IMC-and-pitot-tube-iced-up.jpg"
+        },
+        {
+          "file": "src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/flying-IMC-and-pitot-tube-iced-up.jpg"
+        },
+        {
+          "file": "src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md",
+          "line": 5,
+          "character": 26,
+          "reference": "flying-IMC-and-pitot-tube-iced-up"
+        },
+        {
+          "file": "src/content/articles/5-common-mistakes-student-pilots-make-and-how-to-avoid-them.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/flying-IMC-and-pitot-tube-iced-up"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 20,
+          "character": 35,
+          "reference": "flying-IMC-and-pitot-tube-iced-up.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 20,
+          "character": 34,
+          "reference": "/flying-IMC-and-pitot-tube-iced-up.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 20,
+          "character": 35,
+          "reference": "flying-IMC-and-pitot-tube-iced-up"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 20,
+          "character": 34,
+          "reference": "/flying-IMC-and-pitot-tube-iced-up"
+        }
+      ]
+    },
+    {
+      "image": "flying-in-a-multi-engine-aircraft.jpg",
+      "path": "src/assets/flying-in-a-multi-engine-aircraft.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 21,
+          "character": 34,
+          "reference": "flying-in-a-multi-engine-aircraft.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 21,
+          "character": 33,
+          "reference": "/flying-in-a-multi-engine-aircraft.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 21,
+          "character": 34,
+          "reference": "flying-in-a-multi-engine-aircraft"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 21,
+          "character": 33,
+          "reference": "/flying-in-a-multi-engine-aircraft"
+        }
+      ]
+    },
+    {
+      "image": "former-alto-flight-academy-student-flying-jets.jpg",
+      "path": "src/assets/former-alto-flight-academy-student-flying-jets.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 21,
+          "character": 21,
+          "reference": "former-alto-flight-academy-student-flying-jets.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/former-alto-flight-academy-student-flying-jets.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 21,
+          "character": 21,
+          "reference": "former-alto-flight-academy-student-flying-jets"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/former-alto-flight-academy-student-flying-jets"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 15,
+          "character": 34,
+          "reference": "former-alto-flight-academy-student-flying-jets.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 15,
+          "character": 33,
+          "reference": "/former-alto-flight-academy-student-flying-jets.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 15,
+          "character": 34,
+          "reference": "former-alto-flight-academy-student-flying-jets"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 15,
+          "character": 33,
+          "reference": "/former-alto-flight-academy-student-flying-jets"
+        }
+      ]
+    },
+    {
+      "image": "former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg",
+      "path": "src/assets/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/index.astro",
+          "line": 16,
+          "character": 40,
+          "reference": "former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 16,
+          "character": 39,
+          "reference": "/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 16,
+          "character": 40,
+          "reference": "former-alto-student-with-cessna-first-trained-in-bethany-oklahoma"
+        },
+        {
+          "file": "src/pages/index.astro",
+          "line": 16,
+          "character": 39,
+          "reference": "/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "grace-manglicmot-alto-flight-team.jpg",
+      "path": "src/assets/grace-manglicmot-alto-flight-team.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/team.js",
+          "line": 17,
+          "character": 30,
+          "reference": "grace-manglicmot-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 17,
+          "character": 29,
+          "reference": "/grace-manglicmot-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 17,
+          "character": 30,
+          "reference": "grace-manglicmot-alto-flight-team"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 17,
+          "character": 29,
+          "reference": "/grace-manglicmot-alto-flight-team"
+        }
+      ]
+    },
+    {
+      "image": "guide-mockup.webp",
+      "path": "src/assets/guide-mockup.webp",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "hal-harris-alto-flight-team.jpg",
+      "path": "src/assets/hal-harris-alto-flight-team.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/team.js",
+          "line": 5,
+          "character": 30,
+          "reference": "hal-harris-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 5,
+          "character": 29,
+          "reference": "/hal-harris-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 5,
+          "character": 30,
+          "reference": "hal-harris-alto-flight-team"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 5,
+          "character": 29,
+          "reference": "/hal-harris-alto-flight-team"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 5,
+          "character": 30,
+          "reference": "hal-harris-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 5,
+          "character": 29,
+          "reference": "/hal-harris-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 5,
+          "character": 30,
+          "reference": "hal-harris-alto-flight-team"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 5,
+          "character": 29,
+          "reference": "/hal-harris-alto-flight-team"
+        }
+      ]
+    },
+    {
+      "image": "hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg",
+      "path": "src/assets/hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 26,
+          "character": 21,
+          "reference": "hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 26,
+          "character": 20,
+          "reference": "/hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 26,
+          "character": 21,
+          "reference": "hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 26,
+          "character": 20,
+          "reference": "/hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo"
+        }
+      ]
+    },
+    {
+      "image": "IFR-chart-oklahoma-city-kokc-will-rogers-world.png",
+      "path": "src/assets/IFR-chart-oklahoma-city-kokc-will-rogers-world.png",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 15,
+          "character": 32,
+          "reference": "IFR-chart-oklahoma-city-kokc-will-rogers-world.png"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 15,
+          "character": 31,
+          "reference": "/IFR-chart-oklahoma-city-kokc-will-rogers-world.png"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 15,
+          "character": 32,
+          "reference": "IFR-chart-oklahoma-city-kokc-will-rogers-world"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 15,
+          "character": 31,
+          "reference": "/IFR-chart-oklahoma-city-kokc-will-rogers-world"
+        }
+      ]
+    },
+    {
+      "image": "inside-boeing-737-cockpit.jpg",
+      "path": "src/assets/inside-boeing-737-cockpit.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 19,
+          "character": 33,
+          "reference": "inside-boeing-737-cockpit.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 19,
+          "character": 32,
+          "reference": "/inside-boeing-737-cockpit.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 19,
+          "character": 33,
+          "reference": "inside-boeing-737-cockpit"
+        },
+        {
+          "file": "src/data/airlineTransportPilotDataGroundSchool.js",
+          "line": 19,
+          "character": 32,
+          "reference": "/inside-boeing-737-cockpit"
+        }
+      ]
+    },
+    {
+      "image": "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg",
+      "path": "src/assets/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 21,
+          "character": 37,
+          "reference": "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 21,
+          "character": 36,
+          "reference": "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 21,
+          "character": 37,
+          "reference": "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 21,
+          "character": 36,
+          "reference": "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 20,
+          "character": 34,
+          "reference": "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 20,
+          "character": 33,
+          "reference": "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 20,
+          "character": 34,
+          "reference": "inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 20,
+          "character": 33,
+          "reference": "/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "instrument-ground-school-in-oklahoma-city.jpg",
+      "path": "src/assets/instrument-ground-school-in-oklahoma-city.jpg",
+      "exists": true,
+      "referenceCount": 12,
+      "references": [
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 18,
+          "character": 21,
+          "reference": "instrument-ground-school-in-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 18,
+          "character": 20,
+          "reference": "/instrument-ground-school-in-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 18,
+          "character": 21,
+          "reference": "instrument-ground-school-in-oklahoma-city"
+        },
+        {
+          "file": "src/data/instrumentRatingDataGroundSchool.js",
+          "line": 18,
+          "character": 20,
+          "reference": "/instrument-ground-school-in-oklahoma-city"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 23,
+          "character": 41,
+          "reference": "instrument-ground-school-in-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 23,
+          "character": 40,
+          "reference": "/instrument-ground-school-in-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 23,
+          "character": 41,
+          "reference": "instrument-ground-school-in-oklahoma-city"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 23,
+          "character": 40,
+          "reference": "/instrument-ground-school-in-oklahoma-city"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 22,
+          "character": 38,
+          "reference": "instrument-ground-school-in-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 22,
+          "character": 37,
+          "reference": "/instrument-ground-school-in-oklahoma-city.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 22,
+          "character": 38,
+          "reference": "instrument-ground-school-in-oklahoma-city"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 22,
+          "character": 37,
+          "reference": "/instrument-ground-school-in-oklahoma-city"
+        }
+      ]
+    },
+    {
+      "image": "instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg",
+      "path": "src/assets/instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 21,
+          "character": 21,
+          "reference": "instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 21,
+          "character": 21,
+          "reference": "instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 21,
+          "character": 20,
+          "reference": "/instrument-rating-training-pilot-flying-in-clouds-above-ardmore-ok"
+        }
+      ]
+    },
+    {
+      "image": "long-exposure-airport-night.jpg",
+      "path": "src/assets/long-exposure-airport-night.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/500.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "long-exposure-airport-night.jpg"
+        },
+        {
+          "file": "src/pages/500.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/long-exposure-airport-night.jpg"
+        },
+        {
+          "file": "src/pages/500.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "long-exposure-airport-night"
+        },
+        {
+          "file": "src/pages/500.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/long-exposure-airport-night"
+        }
+      ]
+    },
+    {
+      "image": "luizmonteiro-logo.webp",
+      "path": "src/assets/luizmonteiro-logo.webp",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 6,
+          "character": 42,
+          "reference": "luizmonteiro-logo.webp"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 6,
+          "character": 41,
+          "reference": "/luizmonteiro-logo.webp"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 6,
+          "character": 42,
+          "reference": "luizmonteiro-logo"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 6,
+          "character": 41,
+          "reference": "/luizmonteiro-logo"
+        }
+      ]
+    },
+    {
+      "image": "maricris-harris-alto-flight-team.jpg",
+      "path": "src/assets/maricris-harris-alto-flight-team.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/team.js",
+          "line": 11,
+          "character": 30,
+          "reference": "maricris-harris-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 11,
+          "character": 29,
+          "reference": "/maricris-harris-alto-flight-team.jpg"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 11,
+          "character": 30,
+          "reference": "maricris-harris-alto-flight-team"
+        },
+        {
+          "file": "src/data/team.js",
+          "line": 11,
+          "character": 29,
+          "reference": "/maricris-harris-alto-flight-team"
+        }
+      ]
+    },
+    {
+      "image": "multi-engine-rating-students.jpg",
+      "path": "src/assets/multi-engine-rating-students.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 23,
+          "character": 35,
+          "reference": "multi-engine-rating-students.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 23,
+          "character": 34,
+          "reference": "/multi-engine-rating-students.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 23,
+          "character": 35,
+          "reference": "multi-engine-rating-students"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 23,
+          "character": 34,
+          "reference": "/multi-engine-rating-students"
+        }
+      ]
+    },
+    {
+      "image": "multi-single-engines.jpg",
+      "path": "src/assets/multi-single-engines.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/content/articles/single-engine-vs-multi-engine-aircraft.md",
+          "line": 5,
+          "character": 26,
+          "reference": "multi-single-engines.jpg"
+        },
+        {
+          "file": "src/content/articles/single-engine-vs-multi-engine-aircraft.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/multi-single-engines.jpg"
+        },
+        {
+          "file": "src/content/articles/single-engine-vs-multi-engine-aircraft.md",
+          "line": 5,
+          "character": 26,
+          "reference": "multi-single-engines"
+        },
+        {
+          "file": "src/content/articles/single-engine-vs-multi-engine-aircraft.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/multi-single-engines"
+        }
+      ]
+    },
+    {
+      "image": "N99VS.jpg",
+      "path": "src/assets/N99VS.jpg",
+      "exists": true,
+      "referenceCount": 12,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 154,
+          "character": 32,
+          "reference": "N99VS.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 156,
+          "character": 35,
+          "reference": "N99VS.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 154,
+          "character": 31,
+          "reference": "/N99VS.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 156,
+          "character": 34,
+          "reference": "/N99VS.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 143,
+          "character": 15,
+          "reference": "N99VS"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 154,
+          "character": 32,
+          "reference": "N99VS"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 156,
+          "character": 35,
+          "reference": "N99VS"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 162,
+          "character": 13,
+          "reference": "N99VS"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 143,
+          "character": 14,
+          "reference": "\"N99VS\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 162,
+          "character": 12,
+          "reference": "\"N99VS\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 154,
+          "character": 31,
+          "reference": "/N99VS"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 156,
+          "character": 34,
+          "reference": "/N99VS"
+        }
+      ]
+    },
+    {
+      "image": "N225P-side.jpg",
+      "path": "src/assets/N225P-side.jpg",
+      "exists": true,
+      "referenceCount": 12,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 60,
+          "reference": "N225P-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 269,
+          "character": 32,
+          "reference": "N225P-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 271,
+          "character": 35,
+          "reference": "N225P-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 59,
+          "reference": "/N225P-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 269,
+          "character": 31,
+          "reference": "/N225P-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 271,
+          "character": 34,
+          "reference": "/N225P-side.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 60,
+          "reference": "N225P-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 269,
+          "character": 32,
+          "reference": "N225P-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 271,
+          "character": 35,
+          "reference": "N225P-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 59,
+          "reference": "/N225P-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 269,
+          "character": 31,
+          "reference": "/N225P-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 271,
+          "character": 34,
+          "reference": "/N225P-side"
+        }
+      ]
+    },
+    {
+      "image": "N225P.jpg",
+      "path": "src/assets/N225P.jpg",
+      "exists": true,
+      "referenceCount": 22,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 246,
+          "character": 32,
+          "reference": "N225P.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 35,
+          "reference": "N225P.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 246,
+          "character": 31,
+          "reference": "/N225P.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 34,
+          "reference": "/N225P.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 235,
+          "character": 15,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 246,
+          "character": 32,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 35,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 60,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 254,
+          "character": 13,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 258,
+          "character": 15,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 269,
+          "character": 32,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 271,
+          "character": 35,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 277,
+          "character": 13,
+          "reference": "N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 235,
+          "character": 14,
+          "reference": "\"N225P\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 254,
+          "character": 12,
+          "reference": "\"N225P\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 258,
+          "character": 14,
+          "reference": "\"N225P\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 277,
+          "character": 12,
+          "reference": "\"N225P\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 246,
+          "character": 31,
+          "reference": "/N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 34,
+          "reference": "/N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 248,
+          "character": 59,
+          "reference": "/N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 269,
+          "character": 31,
+          "reference": "/N225P"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 271,
+          "character": 34,
+          "reference": "/N225P"
+        }
+      ]
+    },
+    {
+      "image": "N553HC.jpg",
+      "path": "src/assets/N553HC.jpg",
+      "exists": true,
+      "referenceCount": 12,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 177,
+          "character": 32,
+          "reference": "N553HC.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 179,
+          "character": 35,
+          "reference": "N553HC.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 177,
+          "character": 31,
+          "reference": "/N553HC.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 179,
+          "character": 34,
+          "reference": "/N553HC.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 166,
+          "character": 15,
+          "reference": "N553HC"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 177,
+          "character": 32,
+          "reference": "N553HC"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 179,
+          "character": 35,
+          "reference": "N553HC"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 185,
+          "character": 13,
+          "reference": "N553HC"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 166,
+          "character": 14,
+          "reference": "\"N553HC\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 185,
+          "character": 12,
+          "reference": "\"N553HC\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 177,
+          "character": 31,
+          "reference": "/N553HC"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 179,
+          "character": 34,
+          "reference": "/N553HC"
+        }
+      ]
+    },
+    {
+      "image": "N664JB.jpg",
+      "path": "src/assets/N664JB.jpg",
+      "exists": true,
+      "referenceCount": 12,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 200,
+          "character": 32,
+          "reference": "N664JB.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 202,
+          "character": 35,
+          "reference": "N664JB.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 200,
+          "character": 31,
+          "reference": "/N664JB.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 202,
+          "character": 34,
+          "reference": "/N664JB.jpg"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 189,
+          "character": 15,
+          "reference": "N664JB"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 200,
+          "character": 32,
+          "reference": "N664JB"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 202,
+          "character": 35,
+          "reference": "N664JB"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 208,
+          "character": 13,
+          "reference": "N664JB"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 189,
+          "character": 14,
+          "reference": "\"N664JB\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 208,
+          "character": 12,
+          "reference": "\"N664JB\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 200,
+          "character": 31,
+          "reference": "/N664JB"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 202,
+          "character": 34,
+          "reference": "/N664JB"
+        }
+      ]
+    },
+    {
+      "image": "N6137Q-side.png",
+      "path": "src/assets/N6137Q-side.png",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 223,
+          "character": 32,
+          "reference": "N6137Q-side.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 225,
+          "character": 35,
+          "reference": "N6137Q-side.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 223,
+          "character": 31,
+          "reference": "/N6137Q-side.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 225,
+          "character": 34,
+          "reference": "/N6137Q-side.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 223,
+          "character": 32,
+          "reference": "N6137Q-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 225,
+          "character": 35,
+          "reference": "N6137Q-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 223,
+          "character": 31,
+          "reference": "/N6137Q-side"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 225,
+          "character": 34,
+          "reference": "/N6137Q-side"
+        }
+      ]
+    },
+    {
+      "image": "N6137Q.png",
+      "path": "src/assets/N6137Q.png",
+      "exists": true,
+      "referenceCount": 20,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 131,
+          "character": 32,
+          "reference": "N6137Q.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 133,
+          "character": 35,
+          "reference": "N6137Q.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 131,
+          "character": 31,
+          "reference": "/N6137Q.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 133,
+          "character": 34,
+          "reference": "/N6137Q.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 120,
+          "character": 15,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 131,
+          "character": 32,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 133,
+          "character": 35,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 139,
+          "character": 13,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 212,
+          "character": 15,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 223,
+          "character": 32,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 225,
+          "character": 35,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 231,
+          "character": 13,
+          "reference": "N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 120,
+          "character": 14,
+          "reference": "\"N6137Q\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 139,
+          "character": 12,
+          "reference": "\"N6137Q\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 212,
+          "character": 14,
+          "reference": "\"N6137Q\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 231,
+          "character": 12,
+          "reference": "\"N6137Q\""
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 131,
+          "character": 31,
+          "reference": "/N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 133,
+          "character": 34,
+          "reference": "/N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 223,
+          "character": 31,
+          "reference": "/N6137Q"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 225,
+          "character": 34,
+          "reference": "/N6137Q"
+        }
+      ]
+    },
+    {
+      "image": "N6190C-cessna.png",
+      "path": "src/assets/N6190C-cessna.png",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 108,
+          "character": 32,
+          "reference": "N6190C-cessna.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 110,
+          "character": 35,
+          "reference": "N6190C-cessna.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 108,
+          "character": 31,
+          "reference": "/N6190C-cessna.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 110,
+          "character": 34,
+          "reference": "/N6190C-cessna.png"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 108,
+          "character": 32,
+          "reference": "N6190C-cessna"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 110,
+          "character": 35,
+          "reference": "N6190C-cessna"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 108,
+          "character": 31,
+          "reference": "/N6190C-cessna"
+        },
+        {
+          "file": "src/data/aircrafts.js",
+          "line": 110,
+          "character": 34,
+          "reference": "/N6190C-cessna"
+        }
+      ]
+    },
+    {
+      "image": "N67797-cessna-flying-over-sundance-airport.jpg",
+      "path": "src/assets/N67797-cessna-flying-over-sundance-airport.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/HomepageHeader.astro",
+          "line": 3,
+          "character": 37,
+          "reference": "N67797-cessna-flying-over-sundance-airport.jpg"
+        },
+        {
+          "file": "src/components/HomepageHeader.astro",
+          "line": 3,
+          "character": 36,
+          "reference": "/N67797-cessna-flying-over-sundance-airport.jpg"
+        },
+        {
+          "file": "src/components/HomepageHeader.astro",
+          "line": 3,
+          "character": 37,
+          "reference": "N67797-cessna-flying-over-sundance-airport"
+        },
+        {
+          "file": "src/components/HomepageHeader.astro",
+          "line": 3,
+          "character": 36,
+          "reference": "/N67797-cessna-flying-over-sundance-airport"
+        }
+      ]
+    },
+    {
+      "image": "nafi-logo.webp",
+      "path": "src/assets/nafi-logo.webp",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 3,
+          "character": 34,
+          "reference": "nafi-logo.webp"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 3,
+          "character": 33,
+          "reference": "/nafi-logo.webp"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 3,
+          "character": 34,
+          "reference": "nafi-logo"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 3,
+          "character": 33,
+          "reference": "/nafi-logo"
+        }
+      ]
+    },
+    {
+      "image": "night-landing-sundance-airport-yukon-cessna.jpg",
+      "path": "src/assets/night-landing-sundance-airport-yukon-cessna.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 25,
+          "character": 21,
+          "reference": "night-landing-sundance-airport-yukon-cessna.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 25,
+          "character": 20,
+          "reference": "/night-landing-sundance-airport-yukon-cessna.jpg"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 25,
+          "character": 21,
+          "reference": "night-landing-sundance-airport-yukon-cessna"
+        },
+        {
+          "file": "src/data/instrumentRatingData.js",
+          "line": 25,
+          "character": 20,
+          "reference": "/night-landing-sundance-airport-yukon-cessna"
+        }
+      ]
+    },
+    {
+      "image": "opa-logo.png",
+      "path": "src/assets/opa-logo.png",
+      "exists": true,
+      "referenceCount": 6,
+      "references": [
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 4,
+          "character": 33,
+          "reference": "opa-logo.png"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 5,
+          "character": 35,
+          "reference": "opa-logo.png"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 4,
+          "character": 32,
+          "reference": "/opa-logo.png"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 4,
+          "character": 33,
+          "reference": "opa-logo"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 5,
+          "character": 35,
+          "reference": "opa-logo"
+        },
+        {
+          "file": "src/components/Memberships.astro",
+          "line": 4,
+          "character": 32,
+          "reference": "/opa-logo"
+        }
+      ]
+    },
+    {
+      "image": "pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg",
+      "path": "src/assets/pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 18,
+          "character": 21,
+          "reference": "pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 18,
+          "character": 20,
+          "reference": "/pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 18,
+          "character": 21,
+          "reference": "pilot-after-his-private-pilot-checkride-with-flight-instructor"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 18,
+          "character": 20,
+          "reference": "/pilot-after-his-private-pilot-checkride-with-flight-instructor"
+        }
+      ]
+    },
+    {
+      "image": "pilot-in-a-cirrus-airplane-programing-garmin-430.jpg",
+      "path": "src/assets/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md",
+          "line": 5,
+          "character": 26,
+          "reference": "pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+        },
+        {
+          "file": "src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+        },
+        {
+          "file": "src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md",
+          "line": 5,
+          "character": 26,
+          "reference": "pilot-in-a-cirrus-airplane-programing-garmin-430"
+        },
+        {
+          "file": "src/content/articles/understanding-flight-instruments-what-every-pilot-needs-to-know.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/pilot-in-a-cirrus-airplane-programing-garmin-430"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 20,
+          "character": 33,
+          "reference": "pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 20,
+          "character": 32,
+          "reference": "/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 20,
+          "character": 33,
+          "reference": "pilot-in-a-cirrus-airplane-programing-garmin-430"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 20,
+          "character": 32,
+          "reference": "/pilot-in-a-cirrus-airplane-programing-garmin-430"
+        }
+      ]
+    },
+    {
+      "image": "pilot-thumbs-up-in-cessna-172-airplane-just-before-a-solo.jpg",
+      "path": "src/assets/pilot-thumbs-up-in-cessna-172-airplane-just-before-a-solo.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "piper-arrow.jpg",
+      "path": "src/assets/piper-arrow.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 18,
+          "character": 39,
+          "reference": "piper-arrow.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 18,
+          "character": 38,
+          "reference": "/piper-arrow.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 18,
+          "character": 39,
+          "reference": "piper-arrow"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 18,
+          "character": 38,
+          "reference": "/piper-arrow"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 17,
+          "character": 36,
+          "reference": "piper-arrow.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 17,
+          "character": 35,
+          "reference": "/piper-arrow.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 17,
+          "character": 36,
+          "reference": "piper-arrow"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 17,
+          "character": 35,
+          "reference": "/piper-arrow"
+        }
+      ]
+    },
+    {
+      "image": "plane-placeholder.png",
+      "path": "src/assets/plane-placeholder.png",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "post1.jpg",
+      "path": "src/assets/post1.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 7,
+          "character": 30,
+          "reference": "post1.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 7,
+          "character": 29,
+          "reference": "/post1.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 7,
+          "character": 30,
+          "reference": "post1"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 7,
+          "character": 29,
+          "reference": "/post1"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 23,
+          "character": 34,
+          "reference": "post1.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 23,
+          "character": 33,
+          "reference": "/post1.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 23,
+          "character": 34,
+          "reference": "post1"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 23,
+          "character": 33,
+          "reference": "/post1"
+        }
+      ]
+    },
+    {
+      "image": "post2.jpg",
+      "path": "src/assets/post2.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 16,
+          "character": 30,
+          "reference": "post2.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 16,
+          "character": 29,
+          "reference": "/post2.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 16,
+          "character": 30,
+          "reference": "post2"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 16,
+          "character": 29,
+          "reference": "/post2"
+        }
+      ]
+    },
+    {
+      "image": "post3.jpg",
+      "path": "src/assets/post3.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 25,
+          "character": 30,
+          "reference": "post3.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 25,
+          "character": 29,
+          "reference": "/post3.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 25,
+          "character": 30,
+          "reference": "post3"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 25,
+          "character": 29,
+          "reference": "/post3"
+        }
+      ]
+    },
+    {
+      "image": "post4.jpg",
+      "path": "src/assets/post4.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 34,
+          "character": 30,
+          "reference": "post4.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 34,
+          "character": 29,
+          "reference": "/post4.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 34,
+          "character": 30,
+          "reference": "post4"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 34,
+          "character": 29,
+          "reference": "/post4"
+        }
+      ]
+    },
+    {
+      "image": "post5.jpg",
+      "path": "src/assets/post5.jpg",
+      "exists": true,
+      "referenceCount": 12,
+      "references": [
+        {
+          "file": "src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md",
+          "line": 5,
+          "character": 26,
+          "reference": "post5.jpg"
+        },
+        {
+          "file": "src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/post5.jpg"
+        },
+        {
+          "file": "src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md",
+          "line": 5,
+          "character": 26,
+          "reference": "post5"
+        },
+        {
+          "file": "src/content/articles/6-tips-to-get-the-most-of-your-flight-school-experience.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/post5"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 43,
+          "character": 30,
+          "reference": "post5.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 43,
+          "character": 29,
+          "reference": "/post5.jpg"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 43,
+          "character": 30,
+          "reference": "post5"
+        },
+        {
+          "file": "src/data/blogSampleData.js",
+          "line": 43,
+          "character": 29,
+          "reference": "/post5"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 24,
+          "character": 34,
+          "reference": "post5.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 24,
+          "character": 33,
+          "reference": "/post5.jpg"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 24,
+          "character": 34,
+          "reference": "post5"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 24,
+          "character": 33,
+          "reference": "/post5"
+        }
+      ]
+    },
+    {
+      "image": "private-pilot-ground-materials-for-flight-school-yukon-ok.jpg",
+      "path": "src/assets/private-pilot-ground-materials-for-flight-school-yukon-ok.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 15,
+          "character": 32,
+          "reference": "private-pilot-ground-materials-for-flight-school-yukon-ok.jpg"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 15,
+          "character": 31,
+          "reference": "/private-pilot-ground-materials-for-flight-school-yukon-ok.jpg"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 15,
+          "character": 32,
+          "reference": "private-pilot-ground-materials-for-flight-school-yukon-ok"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 15,
+          "character": 31,
+          "reference": "/private-pilot-ground-materials-for-flight-school-yukon-ok"
+        }
+      ]
+    },
+    {
+      "image": "reid-grigsby-alto-flight-team.webp",
+      "path": "src/assets/reid-grigsby-alto-flight-team.webp",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 23,
+          "character": 30,
+          "reference": "reid-grigsby-alto-flight-team.webp"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 23,
+          "character": 29,
+          "reference": "/reid-grigsby-alto-flight-team.webp"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 23,
+          "character": 30,
+          "reference": "reid-grigsby-alto-flight-team"
+        },
+        {
+          "file": "src/data/teamInstructors.js",
+          "line": 23,
+          "character": 29,
+          "reference": "/reid-grigsby-alto-flight-team"
+        }
+      ]
+    },
+    {
+      "image": "signature.webp",
+      "path": "src/assets/signature.webp",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 17,
+          "character": 38,
+          "reference": "signature.webp"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 17,
+          "character": 37,
+          "reference": "/signature.webp"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 17,
+          "character": 38,
+          "reference": "signature"
+        },
+        {
+          "file": "src/pages/about/our-story.astro",
+          "line": 17,
+          "character": 37,
+          "reference": "/signature"
+        }
+      ]
+    },
+    {
+      "image": "simulator-type-rating-citation-oklahoma.jpg",
+      "path": "src/assets/simulator-type-rating-citation-oklahoma.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 25,
+          "character": 35,
+          "reference": "simulator-type-rating-citation-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 25,
+          "character": 34,
+          "reference": "/simulator-type-rating-citation-oklahoma.jpg"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 25,
+          "character": 35,
+          "reference": "simulator-type-rating-citation-oklahoma"
+        },
+        {
+          "file": "src/data/airlineTransportPilotData.js",
+          "line": 25,
+          "character": 34,
+          "reference": "/simulator-type-rating-citation-oklahoma"
+        }
+      ]
+    },
+    {
+      "image": "stormy-weather.jpg",
+      "path": "src/assets/stormy-weather.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/content/articles/weather-101-for-student-pilots.md",
+          "line": 5,
+          "character": 26,
+          "reference": "stormy-weather.jpg"
+        },
+        {
+          "file": "src/content/articles/weather-101-for-student-pilots.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/stormy-weather.jpg"
+        },
+        {
+          "file": "src/content/articles/weather-101-for-student-pilots.md",
+          "line": 5,
+          "character": 26,
+          "reference": "stormy-weather"
+        },
+        {
+          "file": "src/content/articles/weather-101-for-student-pilots.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/stormy-weather"
+        }
+      ]
+    },
+    {
+      "image": "student-and-cfi-in-cessna.jpg",
+      "path": "src/assets/student-and-cfi-in-cessna.jpg",
+      "exists": true,
+      "referenceCount": 12,
+      "references": [
+        {
+          "file": "src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md",
+          "line": 5,
+          "character": 26,
+          "reference": "student-and-cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md",
+          "line": 5,
+          "character": 25,
+          "reference": "/student-and-cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md",
+          "line": 5,
+          "character": 26,
+          "reference": "student-and-cfi-in-cessna"
+        },
+        {
+          "file": "src/content/articles/How-to-Prepare-for-Your-First-Solo-Flight .md",
+          "line": 5,
+          "character": 25,
+          "reference": "/student-and-cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 19,
+          "character": 39,
+          "reference": "student-and-cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 19,
+          "character": 38,
+          "reference": "/student-and-cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 19,
+          "character": 39,
+          "reference": "student-and-cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 19,
+          "character": 38,
+          "reference": "/student-and-cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 18,
+          "character": 36,
+          "reference": "student-and-cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 18,
+          "character": 35,
+          "reference": "/student-and-cfi-in-cessna.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 18,
+          "character": 36,
+          "reference": "student-and-cfi-in-cessna"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 18,
+          "character": 35,
+          "reference": "/student-and-cfi-in-cessna"
+        }
+      ]
+    },
+    {
+      "image": "student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride.jpg",
+      "path": "src/assets/student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 25,
+          "character": 21,
+          "reference": "student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride.jpg"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 25,
+          "character": 20,
+          "reference": "/student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride.jpg"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 25,
+          "character": 21,
+          "reference": "student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 25,
+          "character": 20,
+          "reference": "/student-at-alto-flight-school-sundance-airport-oklahoma-after-checkride"
+        }
+      ]
+    },
+    {
+      "image": "student-earning-multi-engine-rating.jpeg",
+      "path": "src/assets/student-earning-multi-engine-rating.jpeg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 24,
+          "character": 33,
+          "reference": "student-earning-multi-engine-rating.jpeg"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 24,
+          "character": 32,
+          "reference": "/student-earning-multi-engine-rating.jpeg"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 24,
+          "character": 33,
+          "reference": "student-earning-multi-engine-rating"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 24,
+          "character": 32,
+          "reference": "/student-earning-multi-engine-rating"
+        }
+      ]
+    },
+    {
+      "image": "student-in-atp-lesson.jpg",
+      "path": "src/assets/student-in-atp-lesson.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-in-front-of-cessna.jpg",
+      "path": "src/assets/student-in-front-of-cessna.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-obtaining-private-pilot-certificate.jpg",
+      "path": "src/assets/student-obtaining-private-pilot-certificate.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-obtains-commercial-pilot-certificate-from-cfi.jpg",
+      "path": "src/assets/student-obtains-commercial-pilot-certificate-from-cfi.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-obtains-commercial-pilot-certificate.jpg",
+      "path": "src/assets/student-obtains-commercial-pilot-certificate.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-passed-flight-iinstructor-exam.jpg",
+      "path": "src/assets/student-passed-flight-iinstructor-exam.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-passed-his-atp-exam.jpg",
+      "path": "src/assets/student-passed-his-atp-exam.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-passed-his-commercial-pilot-exam.jpg",
+      "path": "src/assets/student-passed-his-commercial-pilot-exam.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 23,
+          "character": 35,
+          "reference": "student-passed-his-commercial-pilot-exam.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 23,
+          "character": 34,
+          "reference": "/student-passed-his-commercial-pilot-exam.jpg"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 23,
+          "character": 35,
+          "reference": "student-passed-his-commercial-pilot-exam"
+        },
+        {
+          "file": "src/data/commercialPilotData.js",
+          "line": 23,
+          "character": 34,
+          "reference": "/student-passed-his-commercial-pilot-exam"
+        }
+      ]
+    },
+    {
+      "image": "student-passed-his-exam.jpg",
+      "path": "src/assets/student-passed-his-exam.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-passed-his-instrument-practical-exam.jpg",
+      "path": "src/assets/student-passed-his-instrument-practical-exam.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-passed-his-instrument-rating.jpg",
+      "path": "src/assets/student-passed-his-instrument-rating.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-passed-his-multi-engine-rating-practical-exam.jpg",
+      "path": "src/assets/student-passed-his-multi-engine-rating-practical-exam.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 22,
+          "character": 21,
+          "reference": "student-passed-his-multi-engine-rating-practical-exam.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 27,
+          "character": 21,
+          "reference": "student-passed-his-multi-engine-rating-practical-exam.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 22,
+          "character": 20,
+          "reference": "/student-passed-his-multi-engine-rating-practical-exam.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 27,
+          "character": 20,
+          "reference": "/student-passed-his-multi-engine-rating-practical-exam.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 22,
+          "character": 21,
+          "reference": "student-passed-his-multi-engine-rating-practical-exam"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 27,
+          "character": 21,
+          "reference": "student-passed-his-multi-engine-rating-practical-exam"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 22,
+          "character": 20,
+          "reference": "/student-passed-his-multi-engine-rating-practical-exam"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 27,
+          "character": 20,
+          "reference": "/student-passed-his-multi-engine-rating-practical-exam"
+        }
+      ]
+    },
+    {
+      "image": "student-passed-his-multi-engine-rating.jpg",
+      "path": "src/assets/student-passed-his-multi-engine-rating.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 22,
+          "character": 21,
+          "reference": "student-passed-his-multi-engine-rating"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 27,
+          "character": 21,
+          "reference": "student-passed-his-multi-engine-rating"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 22,
+          "character": 20,
+          "reference": "/student-passed-his-multi-engine-rating"
+        },
+        {
+          "file": "src/data/multiEngineRatingData.js",
+          "line": 27,
+          "character": 20,
+          "reference": "/student-passed-his-multi-engine-rating"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 19,
+          "character": 32,
+          "reference": "student-passed-his-multi-engine-rating.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 19,
+          "character": 31,
+          "reference": "/student-passed-his-multi-engine-rating.jpg"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 19,
+          "character": 32,
+          "reference": "student-passed-his-multi-engine-rating"
+        },
+        {
+          "file": "src/data/multiEngineRatingDataGroundSchool.js",
+          "line": 19,
+          "character": 31,
+          "reference": "/student-passed-his-multi-engine-rating"
+        }
+      ]
+    },
+    {
+      "image": "student-passed-his-private-pilot-exam.jpg",
+      "path": "src/assets/student-passed-his-private-pilot-exam.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-passed-his-private-pilot-practical-exam.jpg",
+      "path": "src/assets/student-passed-his-private-pilot-practical-exam.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride.jpg",
+      "path": "src/assets/student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 28,
+          "character": 21,
+          "reference": "student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride.jpg"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 28,
+          "character": 20,
+          "reference": "/student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride.jpg"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 28,
+          "character": 21,
+          "reference": "student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 28,
+          "character": 20,
+          "reference": "/student-pilot-in-front-of-cessna-172-in-yukon-ok-after-private-pilot-checkride"
+        }
+      ]
+    },
+    {
+      "image": "student-pilot.jpg",
+      "path": "src/assets/student-pilot.jpg",
+      "exists": true,
+      "referenceCount": 11,
+      "references": [
+        {
+          "file": "src/content/articles/faa-regulations-every-student-pilot-should-know.md",
+          "line": 5,
+          "character": 26,
+          "reference": "student-pilot.jpg"
+        },
+        {
+          "file": "src/content/articles/faa-regulations-every-student-pilot-should-know.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/student-pilot.jpg"
+        },
+        {
+          "file": "src/content/articles/faa-regulations-every-student-pilot-should-know.md",
+          "line": 5,
+          "character": 26,
+          "reference": "student-pilot"
+        },
+        {
+          "file": "src/content/articles/faa-regulations-every-student-pilot-should-know.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/student-pilot"
+        },
+        {
+          "file": "src/content/articles/your-first-steps-in-aviation-what-to-expect-as-a-new-pilot.md.md",
+          "line": 5,
+          "character": 52,
+          "reference": "student-pilot"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 22,
+          "character": 47,
+          "reference": "student-pilot"
+        },
+        {
+          "file": "src/data/flightInstructorData.js",
+          "line": 26,
+          "character": 58,
+          "reference": "student-pilot"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 23,
+          "character": 62,
+          "reference": "student-pilot.jpg"
+        },
+        {
+          "file": "src/data/flightInstructorDataGroundSchool.js",
+          "line": 23,
+          "character": 62,
+          "reference": "student-pilot"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 28,
+          "character": 21,
+          "reference": "student-pilot"
+        },
+        {
+          "file": "src/data/privatePilotData.js",
+          "line": 28,
+          "character": 20,
+          "reference": "/student-pilot"
+        }
+      ]
+    },
+    {
+      "image": "student-standing-next-to-his-flight-instructor.jpg",
+      "path": "src/assets/student-standing-next-to-his-flight-instructor.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-standing-with-his-cfi.jpg",
+      "path": "src/assets/student-standing-with-his-cfi.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-with-his-atp-instructor.jpg",
+      "path": "src/assets/student-with-his-atp-instructor.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-with-his-cfi.jpg",
+      "path": "src/assets/student-with-his-cfi.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "student-with-his-instructor.jpg",
+      "path": "src/assets/student-with-his-instructor.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "sunset-plane-wing.jpg",
+      "path": "src/assets/sunset-plane-wing.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/pages/404.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "sunset-plane-wing.jpg"
+        },
+        {
+          "file": "src/pages/404.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/sunset-plane-wing.jpg"
+        },
+        {
+          "file": "src/pages/404.astro",
+          "line": 6,
+          "character": 30,
+          "reference": "sunset-plane-wing"
+        },
+        {
+          "file": "src/pages/404.astro",
+          "line": 6,
+          "character": 29,
+          "reference": "/sunset-plane-wing"
+        }
+      ]
+    },
+    {
+      "image": "team-member-1.jpg",
+      "path": "src/assets/team-member-1.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/teamStaff.js",
+          "line": 5,
+          "character": 30,
+          "reference": "team-member-1.jpg"
+        },
+        {
+          "file": "src/data/teamStaff.js",
+          "line": 5,
+          "character": 29,
+          "reference": "/team-member-1.jpg"
+        },
+        {
+          "file": "src/data/teamStaff.js",
+          "line": 5,
+          "character": 30,
+          "reference": "team-member-1"
+        },
+        {
+          "file": "src/data/teamStaff.js",
+          "line": 5,
+          "character": 29,
+          "reference": "/team-member-1"
+        }
+      ]
+    },
+    {
+      "image": "team-member-2a.jpg",
+      "path": "src/assets/team-member-2a.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "team-member-2b.jpg",
+      "path": "src/assets/team-member-2b.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "team-member-3.jpg",
+      "path": "src/assets/team-member-3.jpg",
+      "exists": true,
+      "referenceCount": 0,
+      "references": []
+    },
+    {
+      "image": "view-from-the-skies-inside-alto-airplane.jpg",
+      "path": "src/assets/view-from-the-skies-inside-alto-airplane.jpg",
+      "exists": true,
+      "referenceCount": 16,
+      "references": [
+        {
+          "file": "src/components/GetInContact.astro",
+          "line": 13,
+          "character": 45,
+          "reference": "view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/components/GetInContact.astro",
+          "line": 13,
+          "character": 44,
+          "reference": "/view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/components/GetInContact.astro",
+          "line": 13,
+          "character": 45,
+          "reference": "view-from-the-skies-inside-alto-airplane"
+        },
+        {
+          "file": "src/components/GetInContact.astro",
+          "line": 13,
+          "character": 44,
+          "reference": "/view-from-the-skies-inside-alto-airplane"
+        },
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 17,
+          "character": 45,
+          "reference": "view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 17,
+          "character": 44,
+          "reference": "/view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 17,
+          "character": 45,
+          "reference": "view-from-the-skies-inside-alto-airplane"
+        },
+        {
+          "file": "src/pages/how-to-become-a-pilot.astro",
+          "line": 17,
+          "character": 44,
+          "reference": "/view-from-the-skies-inside-alto-airplane"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 20,
+          "character": 48,
+          "reference": "view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 20,
+          "character": 47,
+          "reference": "/view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 20,
+          "character": 48,
+          "reference": "view-from-the-skies-inside-alto-airplane"
+        },
+        {
+          "file": "src/pages/pilot-training/[...slug].astro",
+          "line": 20,
+          "character": 47,
+          "reference": "/view-from-the-skies-inside-alto-airplane"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 19,
+          "character": 45,
+          "reference": "view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 19,
+          "character": 44,
+          "reference": "/view-from-the-skies-inside-alto-airplane.jpg"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 19,
+          "character": 45,
+          "reference": "view-from-the-skies-inside-alto-airplane"
+        },
+        {
+          "file": "src/pages/why-become-a-pilot.astro",
+          "line": 19,
+          "character": 44,
+          "reference": "/view-from-the-skies-inside-alto-airplane"
+        }
+      ]
+    },
+    {
+      "image": "wall-of-students-passing-checkride-by-sectional.jpg",
+      "path": "src/assets/wall-of-students-passing-checkride-by-sectional.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 4,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride-by-sectional.jpg"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 4,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride-by-sectional.jpg"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 4,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride-by-sectional"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 4,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride-by-sectional"
+        }
+      ]
+    },
+    {
+      "image": "wall-of-students-passing-checkride-near-sectional.jpg",
+      "path": "src/assets/wall-of-students-passing-checkride-near-sectional.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 3,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride-near-sectional.jpg"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 3,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride-near-sectional.jpg"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 3,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride-near-sectional"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 3,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride-near-sectional"
+        }
+      ]
+    },
+    {
+      "image": "wall-of-students-passing-checkride.jpg",
+      "path": "src/assets/wall-of-students-passing-checkride.jpg",
+      "exists": true,
+      "referenceCount": 8,
+      "references": [
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 5,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride.jpg"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 5,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride.jpg"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 3,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 4,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 5,
+          "character": 31,
+          "reference": "wall-of-students-passing-checkride"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 3,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 4,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride"
+        },
+        {
+          "file": "src/components/WallOfGrads.astro",
+          "line": 5,
+          "character": 30,
+          "reference": "/wall-of-students-passing-checkride"
+        }
+      ]
+    },
+    {
+      "image": "what-to-expect-on-your-first-discovery-flight-at-alto.jpg",
+      "path": "src/assets/what-to-expect-on-your-first-discovery-flight-at-alto.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md",
+          "line": 5,
+          "character": 26,
+          "reference": "what-to-expect-on-your-first-discovery-flight-at-alto.jpg"
+        },
+        {
+          "file": "src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/what-to-expect-on-your-first-discovery-flight-at-alto.jpg"
+        },
+        {
+          "file": "src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md",
+          "line": 5,
+          "character": 26,
+          "reference": "what-to-expect-on-your-first-discovery-flight-at-alto"
+        },
+        {
+          "file": "src/content/articles/what-to-expect-on-your-first-discovery-flight-at-alto.md",
+          "line": 5,
+          "character": 25,
+          "reference": "/what-to-expect-on-your-first-discovery-flight-at-alto"
+        }
+      ]
+    },
+    {
+      "image": "young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy.jpg",
+      "path": "src/assets/young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy.jpg",
+      "exists": true,
+      "referenceCount": 4,
+      "references": [
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 19,
+          "character": 35,
+          "reference": "young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy.jpg"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 19,
+          "character": 34,
+          "reference": "/young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy.jpg"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 19,
+          "character": 35,
+          "reference": "young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy"
+        },
+        {
+          "file": "src/data/privatePilotDataGroundSchool.js",
+          "line": 19,
+          "character": 34,
+          "reference": "/young-17-year-old-private-pilot-pass-checkride-at-alto-flight-academy"
+        }
+      ]
+    }
+  ]
+}
