@@ -46,9 +46,8 @@ const SRC_FILE_EXT = [".astro", ".js", ".ts", ".jsx", ".md", ".mdx"];
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const importFilePath = import.meta.url
-  .replace("file:///", "")
-  .replaceAll("/", "\\");
+const importFilePath = "/" + import.meta.url.replace("file:///", "");
+// .replaceAll("/", "\\");
 
 const isCommandLineExecution = importFilePath === process.argv[1];
 let rl;
