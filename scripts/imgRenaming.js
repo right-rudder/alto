@@ -39,6 +39,8 @@ import { scanDirectory, CSV_COLUMNS, CSV_ERRORS } from "./imgNewNameCSV.js";
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 
+console.log("Starting imgReanming...");
+
 const SRC_FILE_EXT = [".astro", ".js", ".ts", ".jsx", ".md", ".mdx"];
 
 const __filename = fileURLToPath(import.meta.url);

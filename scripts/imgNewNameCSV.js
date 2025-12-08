@@ -41,6 +41,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
+console.log("Starting ...");
+
 const CSV_COLUMNS = {
   ORIGINAL_IMG_FULL_PATH: 0,
   NEW_IMG_FULL_PATH: 1,
@@ -61,7 +63,7 @@ const IMG_EXT = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"];
 // ONLY CHANGE THIS CONST
 const keywords = {
   company: "alto flight academy",
-  location: ["Oklahoma City", "Oklahoma"],
+  location: ["oklahoma city", "oklahoma"],
   generic: [
     "flight-school",
     "flight-training",
@@ -89,10 +91,14 @@ const fullKeywordList = [
 const generalKeywords = [...keywords.generic, ...keywords.programs];
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const importFilePath = import.meta.url
-  .replace("file:///", "")
-  .replaceAll("/", "\\");
+const importFilePath = "/" + import.meta.url.replace("file:///", "");
+//   .replaceAll("/", "\\");
 const isCommandLineExecution = importFilePath === process.argv[1];
+
+console.log("Debug - __filename:", __filename);
+console.log("Debug - process.argv[1]:", process.argv[1]);
+console.log("Debug - importFilePath:", importFilePath);
+console.log("Debug - isCommandLineExecution:", isCommandLineExecution);
 
 function randomFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -197,8 +203,10 @@ async function generateCSV() {
 }
 
 async function runCommand() {
+  console.log("runCommand before");
   if (!isCommandLineExecution) return;
 
+  console.log("runCommand after");
   await generateCSV();
 }
 
