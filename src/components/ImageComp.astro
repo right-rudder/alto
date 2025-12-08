@@ -23,18 +23,7 @@ if (!images[imagePath])
 
 const image = await images[imagePath]();
 const { width } = image.default;
-const widths = userWidths ?? [
-  120,
-  240,
-  360,
-  540,
-  600,
-  720,
-  800,
-  1080,
-  1200,
-  width,
-];
+const widths = userWidths ?? [120, 240, 360, 540, 600, 720, 800, 1200, width];
 const sizes =
   userSizes ??
   `(max-width: 480px) 360px, (max-width: 720px) 540px, (max-width: 1200px) 720px, (max-width: 1600px) 1080px, ${width}px`;
