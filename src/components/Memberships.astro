@@ -1,11 +1,12 @@
 ---
-import eaaLogo from "../assets/eaa-logo.png";
-import nafiLogo from "../assets/nafi-logo.webp";
-import opaLogo from "../assets/opa-logo.png";
-import aopaLogo from "../assets/aopa-logo.png";
-import luizmonteiroLogo from "../assets/luizmonteiro-logo.webp";
-import challengeAirLogo from "../assets/challenge-air-logo.webp";
-import { Image } from "astro:assets";
+import ImageComp from "./ImageComp.astro";
+
+const eaaLogo = "/src/assets/eaa-logo.png";
+const nafiLogo = "/src/assets/nafi-logo.webp";
+const opaLogo = "/src/assets/opa-logo.png";
+const aopaLogo = "/src/assets/aopa-logo.png";
+const luizmonteiroLogo = "/src/assets/luizmonteiro-logo.webp";
+const challengeAirLogo = "/src/assets/challenge-air-logo.webp";
 ---
 
 <section
@@ -23,10 +24,10 @@ import { Image } from "astro:assets";
       ia-label="Visit Experimental Aircraft Association website"
       rel="noopener noreferrer"
     >
-      <Image
-        src={eaaLogo}
-        alt="EAA logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      <ImageComp
+        imagePath={eaaLogo}
+        imageAlt="EAA logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
     <a
@@ -35,10 +36,10 @@ import { Image } from "astro:assets";
       rel="noopener noreferrer"
       target="_blank"
     >
-      <Image
-        src={nafiLogo}
-        alt="NAFI logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      <ImageComp
+        imagePath={nafiLogo}
+        imageAlt="NAFI logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
     <a
@@ -47,10 +48,10 @@ import { Image } from "astro:assets";
       rel="noopener noreferrer"
       target="_blank"
     >
-      <Image
-        src={opaLogo}
-        alt="OPA logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      <ImageComp
+        imagePath={opaLogo}
+        imageAlt="OPA logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
     <a
@@ -59,10 +60,10 @@ import { Image } from "astro:assets";
       rel="noopener noreferrer"
       target="_blank"
     >
-      <Image
-        src={aopaLogo}
-        alt="AOPA logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      <ImageComp
+        imagePath={aopaLogo}
+        imageAlt="AOPA logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
     <a
@@ -71,10 +72,10 @@ import { Image } from "astro:assets";
       rel="noopener noreferrer"
       target="_blank"
     >
-      <Image
-        src={luizmonteiroLogo}
-        alt="LuizMonteiro logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
+      <ImageComp
+        imagePath={luizmonteiroLogo}
+        imageAlt="LuizMonteiro logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
       />
     </a>
     <a
@@ -83,10 +84,10 @@ import { Image } from "astro:assets";
       rel="noopener noreferrer"
       target="_blank"
     >
-      <Image
-        src={challengeAirLogo}
-        alt="Challenge Air for kids & friends logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
+      <ImageComp
+        imagePath={challengeAirLogo}
+        imageAlt="Challenge Air for kids & friends logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
       />
     </a>
   </div>
