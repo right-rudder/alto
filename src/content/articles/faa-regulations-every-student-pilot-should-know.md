@@ -2,7 +2,7 @@
 pubDate: "June 15, 2025"
 title: "FAA Regulations Every Student Pilot Should Know"
 description: "Discover the key FAA regulations every student pilot must know—from eligibility and solo flight rules to airspace communication. Learn how Alto Flight Academy in Oklahoma City helps you master aviation safety and compliance."
-heroImage: "/src/assets/student-pilot.jpg"
+heroImage: "/src/assets/student-pilot-alto flight academy-oklahoma city-certified-flight-instructor.jpg"
 ---
 
 ## Essential FAA Regulations Every Student Pilot Must Master

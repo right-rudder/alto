@@ -2,7 +2,7 @@
 title: "Choosing the Right Flight School: 6 Factors to Consider"
 description: "Choosing the right flight school is a crucial step in your journey to becoming a pilot. Here are six important factors to consider, and how Alto Flight Academy meets these criteria to help you make an informed decision."
 pubDate: "May 28 2024"
-heroImage: "/src/assets/alto-community.jpg"
+heroImage: "/src/assets/alto-community-alto flight academy-oklahoma city-commercial-pilot.jpg"
 ---
 
 ### Choosing the Right Flight School: 6 Factors to Consider

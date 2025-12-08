@@ -2,7 +2,7 @@
 title: "Understanding Flight Instruments: What Every Pilot Needs to Know"
 description: "Flight instruments are essential for safe flying. Learn how Alto Flight Academy helps pilots master these critical tools for safe and effective navigation."
 pubDate: "Oct 12, 2024"
-heroImage: "/src/assets/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg"
+heroImage: "/src/assets/pilot-in-a-cirrus-airplane-programing-garmin-430-alto flight academy-oklahoma city-multi-engine-rating.jpg"
 category: "Pilot Training"
 tags:
   [

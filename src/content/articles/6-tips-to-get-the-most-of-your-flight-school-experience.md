@@ -2,7 +2,7 @@
 title: "6 Tips to Get the Most Out of Flight School Experience"
 description: "Learn how to make the most of your flight training experience at Alto Flight Academy in Oklahoma City. Start your aviation journey today!"
 pubDate: "January 14, 2025"
-heroImage: "/src/assets/post5.jpg"
+heroImage: "/src/assets/post5-alto flight academy-oklahoma-commercial-pilot.jpg"
 ---
 
 Starting flight training at [Alto Flight Academy](https://altoflight.com/) in Oklahoma City is your first step toward becoming a pilot. Whether your goal is to fly for leisure or pursue a career in aviation, maximizing your training experience is crucial. Here are six tips to help you succeed and enjoy the process.

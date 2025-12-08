@@ -97,7 +97,7 @@ const Navbar = ({ pathname }) => {
                 className="lg:w-1/4 flex justify-start text-white z-50"
               >
                 <img
-                  src="/Alto-Flight-Academy-logo-2025-2-1.png"
+                  src="/alto-flight-academy-logo-2025-2-1-alto flight academy-oklahoma-become-a-pilot.png"
                   alt="Alto Flight Academy"
                   className="h-16 lg:h-20 object-contain"
                 />
@@ -251,7 +251,7 @@ const Navbar = ({ pathname }) => {
 
         <a href="/" className="mx-auto px-10 w-fit block z-40 relative">
           <img
-            src="/Alto-Flight-Academy-logo-2025-2-1.png"
+            src="/alto-flight-academy-logo-2025-2-1-alto flight academy-oklahoma-become-a-pilot.png"
             alt="Alto Flight Academy"
             className="h-16 object-contain"
           />

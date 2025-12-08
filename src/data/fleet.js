@@ -1,7 +1,7 @@
 const fleet = [
   {
     name: "Cessna 172",
-    imagePath: "/src/assets/cessna-172.jpg",
+    imagePath: "/src/assets/cessna-172-alto flight academy-oklahoma city-become-a-pilot.jpg",
     alt: "Cessna 172",
     price: "$209/hr wet",
     equipment: [
@@ -14,7 +14,7 @@ const fleet = [
   },
   {
     name: "Cessna 172RG",
-    imagePath: "/src/assets/cessna-172rg.jpg",
+    imagePath: "/src/assets/cessna-172rg-alto flight academy-oklahoma city-multi-engine-rating.jpg",
     alt: "Cessna 172RG",
     price: "$239/hr wet",
     equipment: [
@@ -29,7 +29,7 @@ const fleet = [
   },
   {
     name: "Beech Baron",
-    imagePath: "/src/assets/beech-baron.jpg",
+    imagePath: "/src/assets/beech-baron-alto flight academy-oklahoma-commercial-pilot.jpg",
     alt: "Beech Baron",
     price: "$499/hr wet",
     equipment: [

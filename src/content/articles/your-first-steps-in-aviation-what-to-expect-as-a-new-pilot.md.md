@@ -2,7 +2,7 @@
 pubDate: "Sep 22, 2025"
 title: "Your First Steps in Aviation: What to Expect as a New Pilot"
 description: "Thinking about becoming a pilot? Learn what the journey looks like, what you’ll need to get started, and how Alto Flight Academy can help you achieve your aviation goals."
-heroImage: "/src/assets/cfi-cutting-t-shirt-after-student-pilot-solo.jpg"
+heroImage: "/src/assets/cfi-cutting-t-shirt-after-student-pilot-solo-alto flight academy-oklahoma city-private-pilot.jpg"
 ---
 
 Dreaming of flight is one thing—taking the controls for the first time is another. At Alto Flight Academy, we know the excitement, challenges, and opportunities that come with beginning your aviation journey. Whether you’re considering your very first lesson or planning a professional career, here’s what you can expect as you take off into the world of aviation.

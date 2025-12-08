@@ -15,12 +15,12 @@ const commercialPilotData = {
       "Students are encouraged to complete their written exam before beginning commercial flight training or to be enrolled in a commercial ground school. During commercial flight training, you'll apply the advanced navigation and flight techniques covered in ground school. You'll learn about commercial regulations, flight maneuvers, and the precise flying required for commercial operations. You'll be paired with a certified flight instructor (CFI) to fine-tune your skills and help you become more proficient and accurate. Together, you and your CFI will develop a personalized plan that fits your learning style and schedule, ensuring you meet all the necessary requirements to obtain your commercial pilot certificate. The first step is reaching out to us by phone or filling out one of our contact forms to connect with an Alto Flight Academy team member. Give us a call today and take the next step towards mastering commercial flight!",
     ],
     headerImage:
-      "/src/assets/commercial-pilot-landing-grass-runway-in-cedar-mills.jpg",
+      "/src/assets/landing-grass-runway-in-cedar-mills-alto flight academy-oklahoma city-commercial-pilot.jpg",
     headerAlt: "Kayden Russell passed his commercial pilot exam",
     primaryImage:
-      "/src/assets/commercial-pilot-passing-exam-at-alto-flight-oklahoma-city.jpg",
+      "/src/assets/passing-exam-at-alto-flight-city-alto flight academy-oklahoma city-flying-lessons.jpg",
     primaryAlt: "Jordan Saxton passed his commercial pilot exam",
-    secondaryImage: "/src/assets/student-passed-his-commercial-pilot-exam.jpg",
+    secondaryImage: "/src/assets/student-passed-his-exam-alto flight academy-oklahoma-certified-flight-instructor.jpg",
     secondaryAlt: "Alto Flight Academy student passing commercial checkride",
     prerequisites: [
       "Complete necessary cross-country flight time (50 hours as Pilot in Command)",

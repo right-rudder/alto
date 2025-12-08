@@ -15,12 +15,12 @@ const flightInstructorDataGroundSchool = {
       "To enroll in our CFI Ground School, the cost is $645. At the end of the course, you'll receive an endorsement from our certified flight instructor. This endorsement will certify that you have completed the necessary ground training and are prepared for the FAA written exams and practical test. Take the next step in your aviation career by joining Alto Flight Academy's CFI Ground School today and start building the experience needed to achieve your dream of becoming an airline pilot!"
     ],
     headerImage:
-      "/src/assets/pilot-after-his-private-pilot-checkride-with-flight-instructor.jpg",
+      "/src/assets/pilot-after-his-checkride-with-flight-instructor-alto flight academy-oklahoma city-flying-lessons.jpg",
     headerAlt: "CFI with his student pilot after passing private pilot checkride",
-    primaryImage: "/src/assets/pilot-in-a-cirrus-airplane-programing-garmin-430.jpg",
+    primaryImage: "/src/assets/pilot-in-a-cirrus-airplane-programing-garmin-430-alto flight academy-oklahoma city-multi-engine-rating.jpg",
     primaryAlt: "pilot in a cirrus sr22 airplane programming garmin 430",
     secondaryImage:
-      "/src/assets/CFI-showing-airplane-model-to-interested-student-pilot.jpg",
+      "/src/assets/cfi-showing-airplane-model-to-interested-student-pilot-alto flight academy-oklahoma-certified-flight-instructor.jpg",
     secondaryAlt: "CFI showing airplane model to interested student pilot",
     prerequisites: [
       "Meet your instructor and classmates",

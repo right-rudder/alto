@@ -19,12 +19,12 @@ const multiEngineRatingData = {
       "To begin your Multi-Engine Rating training at Alto Flight Academy, reach out to our team today. Connect with us to explore our state-of-the-art training facilities and aircraft, and review our detailed syllabus. Embark on your multi-engine training journey with Alto Flight Academy and take the next step in advancing your aviation career. This is your opportunity to enhance your piloting skills and open doors to new aviation opportunities.",
     ],
     headerImage:
-      "/src/assets/student-passed-his-multi-engine-rating-practical-exam.jpg",
+      "/src/assets/student-passed-his-practical-exam-alto flight academy-oklahoma-commercial-pilot.jpg",
     headerAlt: "Cole Shipes passed his multi-engine rating practical exam",
-    primaryImage: "/src/assets/student-earning-multi-engine-rating.jpeg",
+    primaryImage: "/src/assets/student-earning-multi-engine-rating-alto flight academy-oklahoma-flight-school.jpeg",
     primaryAlt: "Student earning his multi-engine rating",
     secondaryImage:
-      "/src/assets/student-passed-his-multi-engine-rating-practical-exam.jpg",
+      "/src/assets/student-passed-his-practical-exam-alto flight academy-oklahoma-commercial-pilot.jpg",
     secondaryAlt: "Cole Shipes passed his multi-engine rating practical exam",
     prerequisites: [
       "Gain experience in multi-engine operations (typically around 10-15 hours of training)",

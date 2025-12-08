@@ -16,14 +16,14 @@ const flightInstructorData = {
       "To begin your CFI training at Alto Flight Academy, reach out to our team today. Connect with us to explore our classrooms and aircraft, and review our detailed syllabus. Let's embark on your CFI training journey. This is your opportunity to train the next generation of pilots and make a lasting impact!",
     ],
     headerImage:
-      "/src/assets/alto-flight-academy-staff-with-jon-and-martha-king.jpg",
+      "/src/assets/alto-flight-academy-staff-with-jon-and-martha-king-alto flight academy-oklahoma city-private-pilot.jpg",
     headerAlt: "Student passed his flight instructor exam",
     primaryImage:
-      "/src/assets/cfi-cutting-t-shirt-after-student-pilot-solo.jpg",
+      "/src/assets/cfi-cutting-t-shirt-after-student-pilot-solo-alto flight academy-oklahoma city-private-pilot.jpg",
     primaryAlt:
       "CFI cutting t-shirt after his student pilot competed his first solo flight",
     secondaryImage:
-      "/src/assets/hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo.jpg",
+      "/src/assets/hal-harris-cfi-cutting-shirt-after-a-student-pilot-first-solo-alto flight academy-oklahoma-private-pilot.jpg",
     secondaryAlt:
       "Hal Harris, CFI at ALto Flight Academy Bethany OK cutting t shirt after his student pilot completed his first solo",
     prerequisites: [

@@ -2,7 +2,7 @@
 title: "How to Prepare for Your First Solo Flight "
 description: "Your first solo flight is a big step in becoming a pilot. At Alto Flight Academy in Sundance Airport, Yukon, Oklahoma, we guide new pilots through every stage of their training. If you’re getting ready for this important milestone, here’s a straightforward guide to help you prepare."
 pubDate: "Nov 10 2024"
-heroImage: "/src/assets/student-and-cfi-in-cessna.jpg"
+heroImage: "/src/assets/student-and-cfi-in-cessna-alto flight academy-oklahoma city-flying-lessons.jpg"
 ---
 
 # How to Prepare for Your First Solo Flight

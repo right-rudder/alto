@@ -2,7 +2,7 @@
 pubDate: "Jul 24, 2025"
 title: "Single-Engine vs. Multi-Engine Aircraft: All You Need to Know"
 description: "Explore the key differences between single-engine and multi-engine aircraft, including performance, complexity, and training considerations."
-heroImage: "/src/assets/multi-single-engines.jpg"
+heroImage: "/src/assets/multi-single-engines-alto flight academy-oklahoma-pilot-training.jpg"
 ---
 
 Whether you are a beginner pilot or an experienced aviator, understanding the differences between single-engine and multi-engine aircraft is crucial to best navigating your aviation journey. This article
