@@ -15,13 +15,19 @@ const headerData = {
 import EmailCTA from "../../components/EmailCTA.astro";
 import { FaCheck } from "react-icons/fa";
 import { Image } from "astro:assets";
-import PiperArrow from "../../assets/piper-arrow.jpg";
-import IntroImage from "../../assets/student-and-cfi-in-cessna.jpg";
-import ComponentBackground from "../../assets/view-from-the-skies-inside-alto-airplane.jpg";
-import Airliner from "../../assets/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg";
-import FemalePilots from "../../assets/female-pilots-at-sundance-airport-in-front-of-planes.jpg";
-import GroundSchool from "../../assets/instrument-ground-school-in-oklahoma-city.jpg";
 import { createBreadcrumbSchema, createServiceSchema } from "../../utils/seo";
+import ImageComp from "../../components/ImageComp.astro";
+
+const PiperArrow = "/src/assets/piper-arrow.jpg";
+const IntroImage = "/src/assets/student-and-cfi-in-cessna.jpg";
+const ComponentBackground =
+  "/src/assets/view-from-the-skies-inside-alto-airplane.jpg";
+const Airliner =
+  "/src/assets/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg";
+const FemalePilots =
+  "/src/assets/female-pilots-at-sundance-airport-in-front-of-planes.jpg";
+const GroundSchool =
+  "/src/assets/instrument-ground-school-in-oklahoma-city.jpg";
 
 export async function getStaticPaths() {
   const locations = await getCollection("location");
@@ -94,10 +100,10 @@ Alto Flight Academy, sundance airport flight training, professional pilot traini
       <div
         class="flex-[1.5_1.5_0] w-full lg:sticky lg:top-[30%] lg:self-start lg:justify-start"
       >
-        <Image
-          class="rounded-lg"
-          src={IntroImage}
-          alt="Student and CFI in Alto Flight Academy"
+        <ImageComp
+          styles="rounded-lg"
+          imagePath={IntroImage}
+          imageAlt="Student and CFI in Alto Flight Academy"
         />
       </div>
       <div class="flex flex-col flex-1 gap-5">
@@ -188,10 +194,10 @@ Alto Flight Academy, sundance airport flight training, professional pilot traini
   <section
     class="relative isolate overflow-hidden bg-gray-900 pt-24 sm:pt-32 lg:-mt-12 -mt-16"
   >
-    <Image
-      src={Airliner}
-      alt="back of pilot flying"
-      class="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+    <ImageComp
+      imagePath={Airliner}
+      imageAlt="back of pilot flying"
+      styles="absolute inset-0 -z-10 h-full w-full object-cover object-center"
     />
 
     <div class="absolute inset-0 bg-gradient-to-tr from-black from-25%"></div>
@@ -295,10 +301,10 @@ Alto Flight Academy, sundance airport flight training, professional pilot traini
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:gap-20"
     >
       <div class="flex-[1.5_1.5_0] w-full">
-        <Image
-          class="rounded-lg"
-          src={FemalePilots}
-          alt="Student and CFI in Alto Flight Academy"
+        <ImageComp
+          styles="rounded-lg"
+          imagePath={FemalePilots}
+          imageAlt="Student and CFI in Alto Flight Academy"
         />
       </div>
       <div class="flex flex-col flex-1 gap-5">
@@ -329,10 +335,10 @@ Alto Flight Academy, sundance airport flight training, professional pilot traini
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
     >
       <div class="flex-[1.5_1.5_0] w-full">
-        <Image
-          class="rounded-lg"
-          src={GroundSchool}
-          alt="Student and CFI in Alto Flight Academy"
+        <ImageComp
+          styles="rounded-lg"
+          imagePath={GroundSchool}
+          imageAlt="Student and CFI in Alto Flight Academy"
         />
       </div>
       <div class="flex flex-col flex-1 gap-5">
@@ -410,10 +416,10 @@ Alto Flight Academy, sundance airport flight training, professional pilot traini
   </section>
 
   <section class="py-36 px-5 relative overflow-hidden">
-    <Image
-      src={ComponentBackground}
-      alt="View from the skies inside Alto airplane"
-      class="absolute inset-0 object-cover w-full h-full"
+    <ImageComp
+      imagePath={ComponentBackground}
+      imageAlt="View from the skies inside Alto airplane"
+      styles="absolute inset-0 object-cover w-full h-full"
     />
     <div class="bg-white/10 w-full h-full absolute inset-0"></div>
     <div
