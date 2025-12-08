@@ -8,15 +8,21 @@ import WallOfGrads from "../components/WallOfGrads.astro";
 import ThirtyYears from "../components/ThirtyYears.astro";
 import TrainingCoursesCarrousel from "../components/TrainingCoursesCarrousel";
 import EmailNotificationForm from "../components/EmailNotificationForm.astro";
-import SectionImage1 from "../assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg";
-import GroupPhoto from "../assets/alto-flight-sundance-airport-yukon-oklahoma-touched.jpg";
 import GetInContact from "../components/GetInContact.astro";
 import GoogleMaps from "../components/GoogleMaps.astro";
-import AltoGrad from "../assets/former-alto-flight-academy-student-flying-jets.jpg";
-import AltoGradCessna from "../assets/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg";
 import GuideDownload from "../components/GuideDownload.astro";
 import { createBreadcrumbSchema, createFAQSchema } from "../utils/seo";
 import { KEYWORDS } from "../consts";
+import ImageComp from "../components/ImageComp.astro";
+
+const SectionImage1 =
+  "/src/assets/alto-flight-instructors-in-front-of-a-piper-airplane.jpg";
+const GroupPhoto =
+  "/src/assets/alto-flight-sundance-airport-yukon-oklahoma-touched.jpg";
+const AltoGrad =
+  "/src/assets/former-alto-flight-academy-student-flying-jets.jpg";
+const AltoGradCessna =
+  "/src/assets/former-alto-student-with-cessna-first-trained-in-bethany-oklahoma.jpg";
 
 // Enhanced SEO data
 const breadcrumbSchema = createBreadcrumbSchema([
@@ -63,9 +69,9 @@ const enhancedKeywords = `${KEYWORDS}, flight training oklahoma city, pilot scho
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
     >
       <div class="flex-[1.5_1.5_0] w-full">
-        <Image
-          src={GroupPhoto}
-          alt="Alto Flight Academy team in front of multi engine airplane at Sundance Airport KHSD"
+        <ImageComp
+          imagePath={GroupPhoto}
+          imageAlt="Alto Flight Academy team in front of multi engine airplane at Sundance Airport KHSD"
           widths={[120, 240, 360, 480, 600, 800, 1200]}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
@@ -102,9 +108,9 @@ const enhancedKeywords = `${KEYWORDS}, flight training oklahoma city, pilot scho
       class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:gap-20"
     >
       <div class="flex-[1.5_1.5_0] w-full">
-        <Image
-          src={SectionImage1}
-          alt="Alto Flight Academy instructors in front of a piper aircraft in Oklahoma City, OK."
+        <ImageComp
+          imagePath={SectionImage1}
+          imageAlt="Alto Flight Academy instructors in front of a piper aircraft in Oklahoma City, OK."
           widths={[120, 240, 360, 480, 600, 800, 1200]}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
@@ -202,9 +208,9 @@ const enhancedKeywords = `${KEYWORDS}, flight training oklahoma city, pilot scho
           Alto Flight Academy graduate flying the Phenom 300
         </h3>
 
-        <Image
-          src={AltoGrad}
-          alt="Former student at Alto Flight Academy flying the Phenom 300 jet"
+        <ImageComp
+          imagePath={AltoGrad}
+          imageAlt="Former student at Alto Flight Academy flying the Phenom 300 jet"
           class="px-5 lg:px-0 lg:w-3/4"
           widths={[120, 240, 360, 480, 600, 800, 1200]}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -238,9 +244,9 @@ const enhancedKeywords = `${KEYWORDS}, flight training oklahoma city, pilot scho
           corporate aircraft, but I’ll never forget where I started!
         </p>
 
-        <Image
-          src={AltoGradCessna}
-          alt="Former student at Alto Flight Academy with cessna plane he trained on 20 years ago Bethany, Oklahoma"
+        <ImageComp
+          imagePath={AltoGradCessna}
+          imageAlt="Former student at Alto Flight Academy with cessna plane he trained on 20 years ago Bethany, Oklahoma"
           class="px-5 lg:px-0 lg:w-3/4 pt-16"
           widths={[120, 240, 360, 480, 600, 800, 1200]}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
