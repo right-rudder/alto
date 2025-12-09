@@ -2,7 +2,7 @@
 pubDate: "Oct 30, 2025"
 title: "Career Pathways After Your CFI Rating: From Instructor to Airline Pilot"
 description: "Discover the career opportunities available after earning your Certified Flight Instructor rating and learn how Alto Flight Academy helps pilots advance from teaching to airline careers."
-heroImage: "/src/assets/career-path.jpg"
+heroImage: "/src/assets/career-path-alto flight academy-oklahoma city-flight-school.jpg"
 ---
 
 Earning your Certified Flight Instructor (CFI) rating is more than just a milestone, it’s a gateway to a world of aviation opportunities. At Alto Flight Academy, we guide our students through every step of their career, from building flight hours to reaching the airline cockpit.

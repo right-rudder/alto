@@ -2,14 +2,14 @@
 title: "Top 5 Scenic Flight Routes Around Oklahoma for Student Pilots"
 description: "Discover the most breathtaking flight routes around Oklahoma for student pilots at Alto Flight Academy. Enjoy stunning views while learning to fly safely!"
 pubDate: "August 18, 2025"
-heroImage: "/src/assets/Alto-flight-academy_KHSD_airport.webp"
+heroImage: "/src/assets/alto-flight-academy_khsd_airport-alto flight academy-oklahoma city-become-a-pilot.webp"
 ---
 
 Flying in Oklahoma offers student pilots at [Alto Flight Academy](https://altoflight.com/) the perfect combination of clear skies, scenic landscapes, and exciting flight experiences. While training is essential, exploring the state from the air can make your lessons memorable and help improve your navigation skills. Here are the top five scenic flight routes around Oklahoma to consider during your training.
 
 ## **1. Lake Hefner – Oklahoma City**
 
-![Lake Hefner in Oklahoma City with water](/blog/Sailing_Lake_Hefner_1.webp)
+![Lake Hefner in Oklahoma City with water](/blog/sailing_lake_hefner_1-alto flight academy-oklahoma city-commercial-pilot.webp)
 
 A favorite for local pilots, Lake Hefner provides stunning aerial views of the water and the surrounding cityscape. Flying over the lake during sunset offers spectacular photo opportunities and helps practice altitude control and pattern work near a populated area.
 
@@ -18,7 +18,7 @@ A favorite for local pilots, Lake Hefner provides stunning aerial views of the w
 
 ## **2. Route 66 Corridor – Classic Americana**
 
-![Route 66 in Oklahoma City](/blog/tamas-szedlak-8_bgXi-MmH8-unsplash.webp)
+![Route 66 in Oklahoma City](/blog/tamas-szedlak-8_bgxi-mmh8-unsplash-alto flight academy-oklahoma city-become-a-pilot.webp)
 
 Take a flight along the historic Route 66 corridor, stretching through Oklahoma’s heartland. This route combines nostalgic attractions with wide-open farmland, making it ideal for VFR navigation practice.
 
@@ -27,7 +27,7 @@ Take a flight along the historic Route 66 corridor, stretching through Oklahoma�
 
 ## **3. Wichita Mountains – Lawton Area**
 
-![Wichita Mountains in Oklahoma](/blog/wichita-mountains-byway-road-traveling-up-mount-scott-fd890b.webp)
+![Wichita Mountains in Oklahoma](/blog/wichita-mountains-byway-road-traveling-up-mount-scott-fd890b-alto flight academy-oklahoma city-flight-training.webp)
 
 For students seeking mountainous terrain and wildlife spotting, the Wichita Mountains offer a unique contrast to Oklahoma’s flat plains. This route is excellent for practicing maneuvering and understanding how geography affects wind and turbulence.
 
@@ -36,7 +36,7 @@ For students seeking mountainous terrain and wildlife spotting, the Wichita Moun
 
 ## **4. Lake Texoma – Northern Oklahoma Border**
 
-![Lake Texoma on the Oklahoma-Texas border](/blog/Lake-texoma.webp)
+![Lake Texoma on the Oklahoma-Texas border](/blog/lake-texoma-alto flight academy-oklahoma city-certified-flight-instructor.webp)
 
 Lake Texoma, on the border with Texas, provides expansive views of water and forested areas. Flying here teaches students to handle longer cross-country routes while enjoying breathtaking scenery.
 
@@ -45,7 +45,7 @@ Lake Texoma, on the border with Texas, provides expansive views of water and for
 
 ## **5. Bricktown & Downtown Oklahoma City Skyline**
 
-![Oklahoma City skyline](/blog/Skyline_oklahoma_city_1.webp)
+![Oklahoma City skyline](/blog/skyline_oklahoma_city_1-alto flight academy-oklahoma city-private-pilot.webp)
 
 For a mix of urban flying and scenic views, head east toward downtown Oklahoma City. The Bricktown district and skyline look especially impressive from the air, particularly during sunrise or sunset. This route is great for students practicing navigation near controlled airspace while enjoying a unique view of the city they know from the ground.
 

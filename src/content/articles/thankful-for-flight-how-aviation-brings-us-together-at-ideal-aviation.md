@@ -2,12 +2,12 @@
 title: "Thankful for Flight: How Aviation Brings Us Together at Alto Flight Academy"
 description: "This Thanksgiving, Alto Flight Academy reflects on the people, planes, and passion that make our flight school a thriving aviation community in Oklahoma City."
 pubDate: "November 19, 2025"
-heroImage: "/src/assets/alto-flight-academy-team-at-sundance-airport-touched.jpg"
+heroImage: "/src/assets/alto-flight-academy-team-at-sundance-airport-touched-alto flight academy-oklahoma-certified-flight-instructor.jpg"
 ---
 
 ### Thankful for Flight: How Aviation Brings Us Together at Alto Flight Academy
 
-Thanksgiving is a time to pause, reflect, and appreciate the people and experiences that enrich our lives. At Alto Flight Academy, we’re constantly reminded of something special: **aviation has a unique way of bringing people together**.  
+Thanksgiving is a time to pause, reflect, and appreciate the people and experiences that enrich our lives. At Alto Flight Academy, we’re constantly reminded of something special: **aviation has a unique way of bringing people together**.
 
 From first solo celebrations to late-night study sessions, from instructors guiding students through checkride prep to families cheering at the hangar, our community thrives because of the people who make flying more than a skill, but a shared journey.
 
@@ -25,15 +25,15 @@ Watching your progress, from your first preflight to your first solo to your cer
 
 ## Our Incredible Flight Instructors
 
-Behind every pilot is a dedicated instructor who showed them the way.  
+Behind every pilot is a dedicated instructor who showed them the way.
 
 Our CFIs put in long days, early mornings, and hundreds of hours each year to ensure our students learn safely, confidently, and enthusiastically.
 
 We are thankful for their:
 
-- **Patience and professionalism**  
-- **Commitment to safety**  
-- **Ability to turn challenges into teachable moments**  
+- **Patience and professionalism**
+- **Commitment to safety**
+- **Ability to turn challenges into teachable moments**
 - **Passion for helping the next generation of pilots grow**
 
 Their mentorship shapes the aviation community here in Oklahoma City.
@@ -50,7 +50,7 @@ This Thanksgiving, we appreciate the machines that help inspire confidence, skil
 
 ## A Community That Feels Like Family
 
-At Alto Flight Academy, flying isn't something you do alone.  
+At Alto Flight Academy, flying isn't something you do alone.
 
 Students study together, celebrate milestones together, and support one another through the ups and downs of training. Our hangar is full of conversations, laughter, and stories that only pilots truly understand.
 
@@ -63,7 +63,7 @@ It’s a place where friendships are formed, careers begin, and lifelong memorie
 Whether you’re a student pilot, parent, instructor, staff member, or part of the Oklahoma City aviation community, **thank you**. You help make Alto Flight Academy more than a flight school.  
 You make it a home for dreamers, doers, and future aviators.
 
-From all of us at Alto Flight Academy,  
+From all of us at Alto Flight Academy,
 
 > ## Happy Thanksgiving!
 
@@ -76,4 +76,3 @@ Schedule a Discovery Flight or speak with our training team today.
 Let’s make the dream of flight part of your story.
 
 👉 **[Contact Us](/contact)**
-

@@ -1,11 +1,12 @@
 ---
-import eaaLogo from "../assets/eaa-logo.png";
-import nafiLogo from "../assets/nafi-logo.webp";
-import opaLogo from "../assets/opa-logo.png";
-import aopaLogo from "../assets/aopa-logo.png";
-import luizmonteiroLogo from "../assets/luizmonteiro-logo.webp";
-import challengeAirLogo from "../assets/challenge-air-logo.webp";
-import { Image } from "astro:assets";
+import ImageComp from "./ImageComp.astro";
+
+const eaaLogo = "/src/assets/eaa-logo-alto flight academy-oklahoma-instrument-rating.png";
+const nafiLogo = "/src/assets/nafi-logo-alto flight academy-oklahoma city-flight-school.webp";
+const opaLogo = "/src/assets/opa-logo-alto flight academy-oklahoma city-certified-flight-instructor.png";
+const aopaLogo = "/src/assets/aopa-logo-alto flight academy-oklahoma city-commercial-pilot.png";
+const luizmonteiroLogo = "/src/assets/luizmonteiro-logo-alto flight academy-oklahoma-become-a-pilot.webp";
+const challengeAirLogo = "/src/assets/challenge-air-logo-alto flight academy-oklahoma-commercial-pilot.webp";
 ---
 
 <section
@@ -17,46 +18,76 @@ import { Image } from "astro:assets";
   <div
     class="gap-y-24 gap-x-10 grid grid-cols-2 px-10 sm:grid-cols-3 place-content-center place-items-center"
   >
-    <a href="https://www.eaa.org/eaa">
-      <Image
-        src={eaaLogo}
-        alt="EAA logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+    <a
+      href="https://www.eaa.org/eaa"
+      target="_blank"
+      ia-label="Visit Experimental Aircraft Association website"
+      rel="noopener noreferrer"
+    >
+      <ImageComp
+        imagePath={eaaLogo}
+        imageAlt="EAA logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
-    <a href="https://www.nafinet.org/">
-      <Image
-        src={nafiLogo}
-        alt="NAFI logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+    <a
+      href="https://www.nafinet.org/"
+      aria-label="Visit National Association of Flight Instructors website"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <ImageComp
+        imagePath={nafiLogo}
+        imageAlt="NAFI logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
-    <a href="https://opa.aero/">
-      <Image
-        src={opaLogo}
-        alt="OPA logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+    <a
+      href="https://opa.aero/"
+      aria-label="Visit Organizations of Professional Astrologers website"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <ImageComp
+        imagePath={opaLogo}
+        imageAlt="OPA logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
-    <a href="https://www.aopa.org/">
-      <Image
-        src={aopaLogo}
-        alt="AOPA logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+    <a
+      href="https://www.aopa.org/"
+      aria-label="Visit Aircraft Owners and Pilots Association website"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <ImageComp
+        imagePath={aopaLogo}
+        imageAlt="AOPA logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
       />
     </a>
-    <a href="https://www.luizmonteiro.com/Index.aspx">
-      <Image
-        src={luizmonteiroLogo}
-        alt="LuizMonteiro logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
+    <a
+      href="https://www.luizmonteiro.com/Index.aspx"
+      aria-label="Visit Luiz Monteiro website"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <ImageComp
+        imagePath={luizmonteiroLogo}
+        imageAlt="LuizMonteiro logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
       />
     </a>
-    <a href="https://www.challengeair.com/">
-      <Image
-        src={challengeAirLogo}
-        alt="Challenge Air for kids & friends logo"
-        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
+    <a
+      href="https://www.challengeair.com/"
+      aria-label="Visit Challenge Air for Kids and Friends website"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <ImageComp
+        imagePath={challengeAirLogo}
+        imageAlt="Challenge Air for kids & friends logo"
+        styles="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
       />
     </a>
   </div>

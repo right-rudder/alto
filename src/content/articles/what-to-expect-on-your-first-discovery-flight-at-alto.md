@@ -2,7 +2,7 @@
 title: "What to Expect on Your First Discovery Flight at Alto"
 description: "Thinking about learning to fly? Find out exactly what happens on your first discovery flight at Alto Flight Academy—no experience needed!"
 pubDate: "Mar 28 2025"
-heroImage: "/src/assets/what-to-expect-on-your-first-discovery-flight-at-alto.jpg"
+heroImage: "/src/assets/what-to-expect-on-your-first-at-alto-alto flight academy-oklahoma-flying-lessons.jpg"
 ---
 
 If you've ever dreamed of flying but weren’t sure where to start, a **discovery flight** is the perfect first step. At Alto Flight Academy, it’s more than just a ride—it’s a hands-on introduction to the world of aviation. Whether you're thinking about becoming a pilot or just curious about what it's like to fly, here's what you can expect from your very first flight.

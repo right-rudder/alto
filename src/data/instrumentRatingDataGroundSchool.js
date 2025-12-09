@@ -12,12 +12,12 @@ const instrumentRatingDataGroundSchool = {
     content: [
       "Our Instrument Pilot Ground School are group classes held at Sundance Airport KHSD in Oklahoma City, OK.  These classes will help prepare you to take the FAA written exam: one of the prerequisites you must complete in order to get your instrument rating.  When you enroll in our instrument ground school course, you'll also get your ground school kit.  This kit contains all of the essentials you'll need to start your instrument training.  You'll receive a syllabus which contains the lesson plans of your future flights and also the specific ground lessons we'll go over.  You'll also receive the Jeppesen Instrument and Commercial textbook, a procedures textbook, and a pair of foggles.  To enroll in our Instrument Pilot Ground School, it is $645 to enroll and $354.96 for the ground school kit.  At the end of the course, you'll receive an endorsement from our certified flight instructor.",
     ],
-    headerImage: "/src/assets/IFR-chart-oklahoma-city-kokc-will-rogers-world.png",
+    headerImage: "/src/assets/ifr-chart-city-kokc-will-rogers-world-alto flight academy-oklahoma city-flight-training.png",
     headerAlt: "IFR chart of Oklahoma City, OK KOKC Will Rogers World",
     primaryImage:
-      "/src/assets/instrument-ground-school-in-oklahoma-city.jpg",
+      "/src/assets/instrument-ground-school-in-city-alto flight academy-oklahoma city-multi-engine-rating.jpg",
     primaryAlt: "Applicants passed their instrument instructor checkrides",
-    secondaryImage: "/src/assets/flying-IMC-and-pitot-tube-iced-up.jpg",
+    secondaryImage: "/src/assets/flying-imc-and-pitot-tube-iced-up-alto flight academy-oklahoma-instrument-rating.jpg",
     secondaryAlt: "Instrument panel of a cessna 172 during IMC where the pitot tube is blocked and iced up",
     secondaryCaption: "Are you able to spot what's wrong with these instruments?",
     prerequisites: [

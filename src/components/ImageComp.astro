@@ -7,22 +7,34 @@ const {
   imageAlt,
   quality = 70,
   styles = "",
+  widths: userWidths,
   loading = "lazy",
+  sizes: userSizes,
 } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/**/*.{jpeg,jpg,png,gif,webp}",
+  "/src/assets/**/*.{jpeg,jpg,png,gif,webp,avif}",
 );
+
 if (!images[imagePath])
   throw new Error(
-    `"${imagePath}" does not exist in glob: "src/assets/**/*.{jpeg,jpg,png,gif,webp}"`,
+    `"${imagePath}" does not exist in glob: "src/assets/**/*.{jpeg,jpg,png,gif,webp,avif}"`,
   );
+
+const image = await images[imagePath]();
+const { width } = image.default;
+const widths = userWidths ?? [120, 240, 360, 540, 600, 720, 800, 1200, width];
+const sizes =
+  userSizes ??
+  `(max-width: 480px) 360px, (max-width: 720px) 540px, (max-width: 1200px) 720px, (max-width: 1600px) 1080px, ${width}px`;
 ---
 
 <Image
   src={images[imagePath]()}
   alt={imageAlt}
   class={styles}
+  widths={widths}
+  sizes={sizes}
   quality={quality}
   loading={loading}
 />

@@ -15,14 +15,14 @@ const airlineTransportPilotData = {
       "Our ATP course is led by experienced airline pilots and industry professionals who are dedicated to your success. Through a combination of classroom instruction, simulator training, and flight experience, we will guide you through the rigorous training required to obtain your ATP certificate. Our state-of-the-art training facilities and advanced flight simulators provide a realistic and immersive learning environment, allowing you to develop the proficiency and confidence needed to excel as a commercial airline pilot.",
       "To begin your ATP course at Alto Flight Academy, contact our team today. We will provide you with detailed information about our course curriculum, training schedule, and enrollment process. Join us and embark on your journey towards becoming a certified airline transport pilot. This is your opportunity to elevate your aviation career to new heights and pursue your dreams of flying for major airlines around the world.",
     ],
-    headerImage: "/src/assets/airliner-cockpit-in-bethany-oklahoma.jpg",
+    headerImage: "/src/assets/airliner-cockpit-in-bethany-oklahoma-alto flight academy-oklahoma city-private-pilot.jpg",
     headerAlt: "Airliner cockpit landing in Bethany Oklahoma",
     primaryImage:
-      "/src/assets/former-alto-flight-academy-student-flying-jets.jpg",
+      "/src/assets/former-alto-flight-academy-student-flying-jets-alto flight academy-oklahoma-private-pilot.jpg",
     primaryAlt: "Student passed his ATP exam",
     caption:
       "Former student pilot at Alto Flight Academy flying the Phenom 300",
-    secondaryImage: "/src/assets/simulator-type-rating-citation-oklahoma.jpg",
+    secondaryImage: "/src/assets/simulator-type-rating-citation-oklahoma-alto flight academy-oklahoma-pilot-training.jpg",
     secondaryAlt: "Student in ATP lesson",
     prerequisites: [
       "Accumulate a minimum of 1500 total flight hours",

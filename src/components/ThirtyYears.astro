@@ -1,7 +1,8 @@
 ---
-import { Image } from "astro:assets";
-import Badge from "../assets/30-years-in-business.png";
 import ThirtyYearsText from "../components/ThirtyYearsText.jsx";
+import ImageComp from "./ImageComp.astro";
+
+const Badge = "/src/assets/30-years-in-business-alto flight academy-oklahoma-pilot-training.png";
 ---
 
 <section
@@ -10,10 +11,10 @@ import ThirtyYearsText from "../components/ThirtyYearsText.jsx";
   <div class="grid place-items-center">
     <div class="flex flex-col items-center">
       <ThirtyYearsText client:only="react" />
-      <Image
-        src={Badge}
-        alt="Alto FLight Academy has been training pilots for 30 years"
-        class="w-28 lg:w-56"
+      <ImageComp
+        imagePath={Badge}
+        imageAlt="Alto FLight Academy has been training pilots for 30 years"
+        styles="w-28 lg:w-56"
       />
 
       <p class="paragraph pt-10 text-gray-400 text-center">

@@ -2,7 +2,7 @@
 pubDate: "May 15, 2025"
 title: "5 Common Mistakes Student Pilots Make (And How to Avoid Them)"
 description: "Learn the 5 most common mistakes student pilots make and how to avoid them with expert training from Alto Flight Academy in Oklahoma City. Master your flight skills and navigate Oklahoma's airspace with confidence."
-heroImage: "/src/assets/flying-IMC-and-pitot-tube-iced-up.jpg"
+heroImage: "/src/assets/flying-imc-and-pitot-tube-iced-up-alto flight academy-oklahoma-instrument-rating.jpg"
 ---
 
 Learning to fly is an exhilarating journey that opens up the skies to endless possibilities. However, like any skill, mastering the art of piloting takes time, practice, and a keen awareness of common pitfalls. While the freedom of flight is unmatched, the path to becoming a competent pilot requires understanding both the aircraft and the environment in which you operate. Here are five common mistakes student pilots often make—and practical tips on how to avoid them.

@@ -5,7 +5,7 @@ import team from "../../data/team";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const headerData = {
   title: "We are Alto Flight Academy",
-  headerImage: "/src/assets/alto-community.jpg",
+  headerImage: "/src/assets/alto-community-alto flight academy-oklahoma city-commercial-pilot.jpg",
   headerAlt: "Alto Flight Academy Community",
 };
 import Memberships from "../../components/Memberships.astro";
@@ -13,19 +13,21 @@ import ThirtyYears from "../../components/ThirtyYears.astro";
 import EmailCTA from "../../components/EmailCTA.astro";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-import PilotImage from "../../assets/alto-flight-academy-leadership-team.jpg";
-import Signature from "../../assets/signature.webp";
 import { ImQuotesLeft } from "react-icons/im";
 import { ImAirplane } from "react-icons/im";
 import { GrVirtualMachine } from "react-icons/gr";
 import { FaClipboardUser } from "react-icons/fa6";
 import { MdVerifiedUser } from "react-icons/md";
-import Post1 from "../../assets/post1.jpg";
-import Post5 from "../../assets/post5.jpg";
 import reviews from "../../data/reviews";
 import WallOfGrads from "../../components/WallOfGrads.astro";
 import { createBreadcrumbSchema } from "../../utils/seo";
 import { ABOUT_KEYWORDS } from "../../consts";
+import ImageComp from "../../components/ImageComp.astro";
+
+const PilotImage = "/src/assets/alto-flight-academy-leadership-team-alto flight academy-oklahoma city-commercial-pilot.jpg";
+const Signature = "/src/assets/signature-alto flight academy-oklahoma city-certified-flight-instructor.webp";
+const Post1 = "/src/assets/post1-alto flight academy-oklahoma-pilot-training.jpg";
+const Post5 = "/src/assets/post5-alto flight academy-oklahoma-commercial-pilot.jpg";
 
 const breadcrumbSchema = createBreadcrumbSchema([
   { name: "Home", url: "https://altoflight.com/" },
@@ -77,10 +79,10 @@ const breadcrumbSchema = createBreadcrumbSchema([
         </p>
       </div>
       <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
-        <Image
-          src={PilotImage}
-          alt="Cessna flying over Sundance Airport"
-          class="h-full w-full object-cover object-center lg:max-h-none"
+        <ImageComp
+          imagePath={PilotImage}
+          imageAlt="Cessna flying over Sundance Airport"
+          styles="h-full w-full object-cover object-center lg:max-h-none"
         />
       </div>
       <div
@@ -99,9 +101,9 @@ const breadcrumbSchema = createBreadcrumbSchema([
           heights. Your journey into the world of aviation begins here, where
           your dreams take wing with Alto Flight Academy.
         </p>
-        <!-- <Image
-          src={Signature}
-          alt="Cessna flying over Sundance Airport"
+        <!-- <ImageComp
+          imagePath={Signature}
+          imageAlt="Cessna flying over Sundance Airport"
           class=""
         /> -->
       </div>
@@ -187,16 +189,16 @@ const breadcrumbSchema = createBreadcrumbSchema([
         </div>
       </div>
       <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
-        <Image
-          src={Post1}
-          alt="Cessna flying over Sundance Airport"
+        <ImageComp
+          imagePath={Post1}
+          imageAlt="Cessna flying over Sundance Airport"
           class="h-full w-full object-cover object-top lg:max-h-none"
         />
       </div>
       <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none">
-        <Image
-          src={Post5}
-          alt="Cessna flying over Sundance Airport"
+        <ImageComp
+          imagePath={Post5}
+          imageAlt="Cessna flying over Sundance Airport"
           class="h-full w-full object-cover object-top lg:max-h-none"
         />
       </div>

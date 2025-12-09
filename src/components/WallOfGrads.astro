@@ -1,8 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import Wall1 from "../assets/wall-of-students-passing-checkride-near-sectional.jpg";
-import Wall2 from "../assets/wall-of-students-passing-checkride-by-sectional.jpg";
-import Wall3 from "../assets/wall-of-students-passing-checkride.jpg";
+import ImageComp from "./ImageComp.astro";
+const Wall1 =
+  "/src/assets/wall-of-students-passing-checkride-near-sectional-alto flight academy-oklahoma-flight-school.jpg";
+const Wall2 = "/src/assets/wall-of-students-passing-checkride-by-sectional-alto flight academy-oklahoma-commercial-pilot.jpg";
+const Wall3 = "/src/assets/wall-of-students-passing-checkride-alto flight academy-oklahoma city-multi-engine-rating.jpg";
 ---
 
 <section
@@ -15,23 +17,26 @@ import Wall3 from "../assets/wall-of-students-passing-checkride.jpg";
     their pilot training
   </h2>
   <div class="gap-y-24 gap-x-10 px-10 grid place-items-center">
-    <Image
-      src={Wall1}
-      alt="Alto Flight Academy Students after completing checkride"
-      widths={[120, 240, 360, 480, 600, 800, 1200]}
+    <ImageComp
+      imagePath={Wall1}
+      imageAlt="Alto Flight Academy Students after completing checkride"
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
-    <Image
-      src={Wall2}
-      alt="Alto Flight Academy Students after completing checkride"
-      widths={[120, 240, 360, 480, 600, 800, 1200]}
+    <ImageComp
+      imagePath={Wall2}
+      imageAlt="Alto Flight Academy Students after completing checkride"
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
-    <Image
-      src={Wall3}
-      alt="Alto Flight Academy Students after completing checkride"
-      widths={[120, 240, 360, 480, 600, 800, 1200]}
+    <ImageComp
+      imagePath={Wall3}
+      imageAlt="Alto Flight Academy Students after completing checkride"
       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
     />
   </div>
 </section>
+
+<!-- <Image
+
+<img 
+
+<ImageComp -->

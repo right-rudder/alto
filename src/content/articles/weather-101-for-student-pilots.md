@@ -2,7 +2,7 @@
 pubDate: "Oct 15, 2025"
 title: "Weather 101: How to Understand and Fly Safely in Changing Conditions"
 description: "Learn the basics of aviation weather, how it impacts your flight, and how Alto Flight Academy prepares students to fly safely in all conditions."
-heroImage: "/src/assets/stormy-weather.jpg"
+heroImage: "/src/assets/stormy-weather-alto flight academy-oklahoma-discovery-flight.jpg"
 ---
 
 Weather is one of the most important factors in aviation, and understanding it is key to flying safely. At Alto Flight Academy, we equip student pilots with the knowledge and skills to make smart decisions in changing conditions.

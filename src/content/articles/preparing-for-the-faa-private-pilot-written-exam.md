@@ -2,7 +2,7 @@
 title: "Preparing for the FAA Private Pilot Written Test"
 description: 'Achieving a private pilot license is the beginning of a new, thrilling chapter in the skies. At Alto Flight Academy, located in Yukon, OK, we guide aspiring pilots through one of the first major milestones in their aviation journey—the FAA Private Pilot Written Test, often simply called the "written test." Our goal is to ease the anxiety associated with this examination by providing a clear overview of what to expect.'
 pubDate: "December 16 2024"
-heroImage: "/src/assets/ben-mullins-oXV3bzR7jxI-unsplash.jpg"
+heroImage: "/src/assets/ben-mullins-oxv3bzr7jxi-unsplash-alto flight academy-oklahoma city-become-a-pilot.jpg"
 ---
 
 # Preparing for the FAA Private Pilot Written Test

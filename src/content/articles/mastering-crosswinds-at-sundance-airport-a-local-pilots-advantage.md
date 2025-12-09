@@ -2,7 +2,7 @@
 pubDate: "July 1, 2025"
 title: "Mastering Crosswinds at Sundance Airport: A Local Pilot's Advantage"
 description: "Discover how training at Sundance Airport (KHSD) with Alto Flight Academy gives student pilots a real-world advantage in mastering crosswind landings and building flight confidence."
-heroImage: "/src/assets/Alto-flight-academy_KHSD_airport.webp"
+heroImage: "/src/assets/alto-flight-academy_khsd_airport-alto flight academy-oklahoma city-become-a-pilot.webp"
 ---
 
 Picture this: You're on final approach, runway in sight, when suddenly the aircraft drifts sideways as gusting winds challenge your control inputs. Your heart rate spikes, but your hands remain steady—because you've done this dance dozens of times before. This is the reality for student pilots training at Alto Flight Academy in Yukon, Oklahoma, where Mother Nature serves as an unforgiving but invaluable instructor.

@@ -15,12 +15,12 @@ const commercialPilotDataGroundSchool = {
       
       "This kit contains all of the essentials you'll need to start your commercial pilot ground training. You'll receive a syllabus which contains the lesson plans of your future flights and also the specific ground lessons we'll go over. You'll also receive the Jeppesen Instrument and Commercial textbook which we will use in the course. To enroll in our Commercial Pilot Ground School, it is $645 to enroll and $354.96 for the ground school kit. At the end of the course, you'll receive an endorsement from our certified flight instructor.",
     ],
-    headerImage: "/src/assets/alto-aircraft-airplane-fleet-on-grass-runway-airport.jpg",
+    headerImage: "/src/assets/alto-aircraft-airplane-fleet-on-grass-runway-airport-alto flight academy-oklahoma city-flight-training.jpg",
     headerAlt: "Alto Flight Academy fleet of aircraft on grass airport Cedar Mills",
     primaryImage:
-      "/src/assets/commercial-pilot-passing-exam-in-bethany-oklahoma.jpg",
+      "/src/assets/passing-exam-in-bethany-oklahoma-alto flight academy-oklahoma city-instrument-rating.jpg",
     primaryAlt: "Commercial pilot passing FAA practical exam in Bethany Oklahoma",
-    secondaryImage: "/src/assets/female-pilot-in-front-of-a-king-air-airplane.jpg",
+    secondaryImage: "/src/assets/female-pilot-in-front-of-a-king-air-airplane-alto flight academy-oklahoma city-commercial-pilot.jpg",
     secondaryAlt: "Female pilot in front of a king air airplane",
     prerequisites: [
       "Meet your instructor and classmates",
